@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T16:17:53+00:00",
-  "all_listings_count": 655,
+  "generated_at": "2026-07-10T17:08:33+00:00",
+  "all_listings_count": 657,
   "matches": [
     {
       "source": "agenz",
@@ -594,7 +594,7 @@
       "summary": "490 000 DH Appartement bien placé OULFA ALFERDAOUS Oulfa, Casablanca 56 m² 3 Pièces 2 Chambres 1 Salle de bain Salon Marocain Antenne parabolique Double vitrage Porte blindée Cuisine équipée Réfrigérateur L'appartemen...",
       "rank_in_source": 4,
       "source_listing_id": "8314349",
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-07-10T16:17:53+00:00",
       "price_label": "490 000 DH",
       "surface_label": "56 m2",
@@ -831,30 +831,6 @@
       "area_anchor": "area-californie"
     }
   ],
-  "new_matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab El Oulfa",
-      "source_page": "https://www.mubawab.ma/fr/sd/casablanca/oulfa/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8314349/appartement-bien-plac%C3%A9-oulfa-alferdaous",
-      "title": "Appartement bien placé OULFA ALFERDAOUS",
-      "price_mad": 490000,
-      "surface_m2": 56,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "3",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "490 000 DH Appartement bien placé OULFA ALFERDAOUS Oulfa, Casablanca 56 m² 3 Pièces 2 Chambres 1 Salle de bain Salon Marocain Antenne parabolique Double vitrage Porte blindée Cuisine équipée Réfrigérateur L'appartemen...",
-      "rank_in_source": 4,
-      "source_listing_id": "8314349",
-      "is_new": true,
-      "first_seen_at": "2026-07-10T16:17:53+00:00",
-      "price_label": "490 000 DH",
-      "surface_label": "56 m2",
-      "area_anchor": "area-el-oulfa"
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
