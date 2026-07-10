@@ -47,6 +47,7 @@ jobs:
           else
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git pull --rebase origin main
             git add data/state.json data/last_scan.json public/index.html public/last_scan.json public/.nojekyll
             git commit -m "chore: update casablanca watch state"
             git push
