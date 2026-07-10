@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T09:07:18+00:00",
+  "generated_at": "2026-07-10T10:12:25+00:00",
   "all_listings_count": 662,
   "matches": [
     {
@@ -316,7 +316,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "300 000 DH Appartement à vendre à Riad El Oulfa Oulfa, Casablanca 52 m² 1 Pièce 1 Ch. 1 Salle de bain Je mets en vente un bel appartement d'une superficie de 52 m², idéalement situé au rez-de-chaussée (RDC) dans le qu...",
-      "rank_in_source": 4,
+      "rank_in_source": 5,
       "source_listing_id": "8379873",
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
@@ -438,29 +438,6 @@
       "price_label": "620 000 DH",
       "surface_label": "60 m2",
       "area_anchor": "area-sidi-maarouf"
-    },
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab El Oulfa",
-      "source_page": "https://www.mubawab.ma/fr/sd/casablanca/oulfa/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8362693/bonne-affaire-rez-de-chausse%C3%A9",
-      "title": "Bonne affaire Rez de chausseé",
-      "price_mad": 600000,
-      "surface_m2": 42,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "1",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "400 000 DH Bonne affaire Rez de chausseé Oulfa, Casablanca 42 m² 1 Pièce 1 Ch. 1 Salle de bain M'avertir d'une baisse de prix! 42 m² 1 Ch. 1 Salle de bain Oulfa à Casablanca Appartement en vente à oulfa Surface de 42...",
-      "rank_in_source": 33,
-      "source_listing_id": "8362693",
-      "is_new": false,
-      "first_seen_at": "2026-07-10T08:47:23+00:00",
-      "price_label": "600 000 DH",
-      "surface_label": "42 m2",
-      "area_anchor": "area-el-oulfa"
     },
     {
       "source": "mubawab",
