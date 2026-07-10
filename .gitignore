@@ -1,0 +1,5 @@
+output/
+__pycache__/
+data/launchd.log
+data/launchd.err.log
+data/server.log

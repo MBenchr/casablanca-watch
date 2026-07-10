@@ -1,0 +1,208 @@
+{
+  "criteria": {
+    "max_price_mad": 950000,
+    "min_surface_m2": 30,
+    "max_surface_m2": 60,
+    "required_keywords_all": [],
+    "required_keywords_any": [],
+    "excluded_keywords": []
+  },
+  "areas": [
+    {
+      "label": "Casablanca Finance City",
+      "aliases": ["casablanca finance city", "casablanca-finance-city", "finance city", "cfc"],
+      "agenz_slug": "casablanca-finance-city",
+      "mubawab_slug": "casablanca-finance-city",
+      "yakeey_slug": null
+    },
+    {
+      "label": "Ferme Bretonne",
+      "aliases": ["ferme bretonne", "ferme-bretonne"],
+      "agenz_slug": "ferme-bretonne",
+      "mubawab_slug": null,
+      "yakeey_slug": "ferme-bretonne"
+    },
+    {
+      "label": "CIL",
+      "aliases": ["cil"],
+      "agenz_slug": "cil",
+      "mubawab_slug": null,
+      "yakeey_slug": "cil"
+    },
+    {
+      "label": "Beausejour",
+      "aliases": ["beausejour", "beauséjour"],
+      "agenz_slug": "beausejour",
+      "mubawab_slug": null,
+      "yakeey_slug": "beausejour"
+    },
+    {
+      "label": "Riviera",
+      "aliases": ["riviera"],
+      "agenz_slug": "riviera",
+      "mubawab_slug": "riviera",
+      "yakeey_slug": "riviera"
+    },
+    {
+      "label": "L'Oasis",
+      "aliases": ["oasis", "l'oasis", "l’oasis"],
+      "agenz_slug": "oasis",
+      "mubawab_slug": "oasis",
+      "yakeey_slug": "oasis"
+    },
+    {
+      "label": "Maarif",
+      "aliases": ["maarif", "maârif", "maarif extension", "maarif ext"],
+      "agenz_slug": "maarif",
+      "mubawab_slug": null,
+      "yakeey_slug": "maarif"
+    },
+    {
+      "label": "Hay Hassani",
+      "aliases": ["hay hassani", "hay-hassani"],
+      "agenz_slug": "hay-hassani",
+      "mubawab_slug": "hay-hassani",
+      "yakeey_slug": "hay-hassani"
+    },
+    {
+      "label": "Quartier El Hana",
+      "aliases": ["quartier el hana", "el hana", "elhana"],
+      "agenz_slug": "quartier-el-hana",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Littoral",
+      "aliases": ["littoral"],
+      "agenz_slug": "littoral",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Ain Diab / Sindibad",
+      "aliases": ["ain diab", "aïn diab", "aindiab", "sindibad"],
+      "agenz_slug": "ain-diab",
+      "mubawab_slug": "ain-diab",
+      "yakeey_slug": "ain-diab"
+    },
+    {
+      "label": "Sid Al Khadir",
+      "aliases": ["sid al khadir", "sidi al khadir", "sidi el khadir", "sidi-el-khadir"],
+      "agenz_slug": "sid-al-khadir",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "El Oulfa",
+      "aliases": ["el oulfa", "oulfa", "riad el oulfa"],
+      "agenz_slug": "el-oulfa",
+      "mubawab_slug": "oulfa",
+      "yakeey_slug": "el-oulfa"
+    },
+    {
+      "label": "Californie",
+      "aliases": ["californie", "california"],
+      "agenz_slug": "californie",
+      "mubawab_slug": "californie",
+      "yakeey_slug": "californie"
+    },
+    {
+      "label": "Bachkou / Taddart",
+      "aliases": ["bachkou", "taddart", "oasis sud"],
+      "agenz_slug": null,
+      "mubawab_slug": "oasis-sud",
+      "yakeey_slug": null
+    },
+    {
+      "label": "Sidi Maarouf",
+      "aliases": ["sidi maarouf", "sidi maârouf", "sidi-maarouf"],
+      "agenz_slug": "sidi-maarouf",
+      "mubawab_slug": "sidi-maarouf",
+      "yakeey_slug": "sidi-maarouf"
+    }
+  ],
+  "scan_sites": {
+    "agenz": true,
+    "mubawab": true,
+    "yakeey": true
+  },
+  "manual_pages": [
+    {
+      "label": "Sarouty Oasis",
+      "url": "https://www.sarouty.ma/en/buy/casablanca/oasis/"
+    },
+    {
+      "label": "Sarouty Ferme Bretonne",
+      "url": "https://www.sarouty.ma/en/buy/casablanca/ferme-bretone/"
+    },
+    {
+      "label": "Sarouty Sidi Maarouf",
+      "url": "https://www.sarouty.ma/en/buy/casablanca/sidi-maarouf/"
+    },
+    {
+      "label": "Yakeey Referentiel Casablanca",
+      "url": "https://yakeey.com/fr-ma/referentiel-de-prix-immobilier/casablanca"
+    }
+  ],
+  "official_pages": [
+    {
+      "label": "AUC Geoportail",
+      "url": "https://auc.ma/e-services-2/geoportail/"
+    },
+    {
+      "label": "AUC Open data",
+      "url": "https://auc.ma/?page_id=425"
+    },
+    {
+      "label": "AUC Etat d'avancement des PA",
+      "url": "https://www.auc.ma/gestion-planification-urbaine/plans-damenagement/etat-davancement-des-pa/"
+    },
+    {
+      "label": "AUC Note de renseignements",
+      "url": "https://www.auc.ma/gestion-urbaine/note-de-reseignement/notes-de-reseignements/"
+    },
+    {
+      "label": "AUC PA Anfa",
+      "url": "https://www.auc.ma/e-services-2/e-documents/?IdP=1095"
+    },
+    {
+      "label": "AUC PA Hay Hassani",
+      "url": "https://www.auc.ma/e-services-2/e-documents/?IdP=1068"
+    },
+    {
+      "label": "AUC PA Ain Chock",
+      "url": "https://www.auc.ma/e-services-2/e-documents/?IdP=1075"
+    },
+    {
+      "label": "AUC PA Maarif",
+      "url": "https://www.auc.ma/e-services-2/e-documents/?IdP=1085"
+    },
+    {
+      "label": "ROKHAS",
+      "url": "https://rokhas.ma/"
+    },
+    {
+      "label": "ANCFCC IPAI T1 2026",
+      "url": "https://www.ancfcc.gov.ma/media/ipai/ipai-t1-2026-fr.pdf"
+    }
+  ],
+  "notifications": {
+    "launchd": {
+      "interval_seconds": 1800
+    },
+    "github_issue": {
+      "repository": ""
+    },
+    "sendgrid_email": {
+      "from_email": "",
+      "from_name": "Casablanca Watch",
+      "to_emails": [],
+      "subject_prefix": "Casablanca Watch",
+      "public_url": ""
+    }
+  },
+  "server": {
+    "host": "127.0.0.1",
+    "port": 8765
+  }
+}

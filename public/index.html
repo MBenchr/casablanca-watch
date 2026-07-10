@@ -1,0 +1,2161 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casablanca Watch</title>
+  <style>
+    :root {
+      --bg: #f5f1e7;
+      --paper: #fffdfa;
+      --ink: #182c3c;
+      --muted: #5a6d7d;
+      --line: #d7d0bf;
+      --accent: #185f56;
+      --accent-2: #9d6a1d;
+      --accent-3: #0f4e7b;
+      --new: #d3533d;
+      --soft: #eef3f7;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, #eee6d7 0, transparent 22%),
+        radial-gradient(circle at top right, #e2efe9 0, transparent 20%),
+        var(--bg);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+    a { color: #125a8b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    code {
+      background: rgba(12, 32, 44, 0.06);
+      padding: 2px 6px;
+      border-radius: 6px;
+      font-size: 13px;
+    }
+    .wrap {
+      max-width: 1380px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+    .hero {
+      border-radius: 28px;
+      padding: 28px;
+      color: white;
+      background: linear-gradient(135deg, #16324a, #20554c 58%, #7c5623);
+      box-shadow: 0 20px 54px rgba(12, 28, 38, 0.18);
+    }
+    .hero h1 {
+      margin: 0 0 10px;
+      font-size: 46px;
+      line-height: 1;
+      letter-spacing: -0.03em;
+    }
+    .hero p {
+      max-width: 930px;
+      margin: 0;
+      color: rgba(255,255,255,0.88);
+      font-size: 18px;
+      line-height: 1.48;
+    }
+    .meta {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(255,255,255,0.2);
+      background: rgba(255,255,255,0.09);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+    .actions {
+      margin-top: 18px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    button.action {
+      appearance: none;
+      border: none;
+      cursor: pointer;
+      border-radius: 999px;
+      padding: 12px 18px;
+      background: white;
+      color: #17344b;
+      font-weight: 700;
+      font-size: 14px;
+      box-shadow: 0 8px 22px rgba(10, 18, 26, 0.14);
+    }
+    button.action.secondary {
+      background: rgba(255,255,255,0.12);
+      color: white;
+      border: 1px solid rgba(255,255,255,0.18);
+      box-shadow: none;
+    }
+    button.action:disabled {
+      opacity: 0.7;
+      cursor: wait;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 1.75fr 1fr;
+      gap: 20px;
+      margin-top: 22px;
+    }
+    .panel {
+      border-radius: 24px;
+      background: var(--paper);
+      border: 1px solid var(--line);
+      padding: 20px;
+      box-shadow: 0 14px 38px rgba(19, 33, 45, 0.06);
+    }
+    .panel h2 {
+      margin: 0 0 10px;
+      font-size: 28px;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+    }
+    .panel h3 {
+      margin: 18px 0 10px;
+      font-size: 20px;
+      line-height: 1.15;
+    }
+    .small {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.52;
+    }
+    .grid-two {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .stat-card {
+      padding: 14px;
+      border-radius: 18px;
+      border: 1px solid var(--line);
+      background: white;
+    }
+    .stat-big {
+      display: block;
+      font-size: 28px;
+      font-weight: 700;
+      margin-top: 4px;
+    }
+    .warning {
+      margin-top: 12px;
+      border-left: 4px solid var(--accent-2);
+      padding-left: 12px;
+      color: #65451a;
+    }
+    .button-list {
+      display: grid;
+      gap: 8px;
+    }
+    .button-list a, .button-list button.linkish {
+      display: block;
+      width: 100%;
+      text-align: left;
+      border: 1px solid var(--line);
+      background: white;
+      border-radius: 14px;
+      padding: 10px 12px;
+      font-size: 15px;
+      color: var(--accent-3);
+    }
+    .group {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid var(--line);
+    }
+    .group:first-of-type {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+    .badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 8px 0 10px;
+    }
+    .badge {
+      padding: 6px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.03em;
+      background: var(--soft);
+      color: #2d445b;
+    }
+    .badge.new {
+      background: rgba(211, 83, 61, 0.12);
+      color: var(--new);
+    }
+    .badge.status-exact {
+      background: rgba(24, 95, 86, 0.12);
+      color: #0f5d53;
+    }
+    .badge.status-raw {
+      background: rgba(157, 106, 29, 0.14);
+      color: #855312;
+    }
+    .badge.status-internal {
+      background: rgba(15, 78, 123, 0.1);
+      color: #0f4e7b;
+    }
+    .area-grid, .source-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+    }
+    .area-card, .source-card {
+      display: block;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 14px;
+      background: white;
+      color: inherit;
+    }
+    .area-card strong, .source-card strong {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+    .count {
+      color: var(--accent);
+      font-size: 26px;
+      font-weight: 700;
+    }
+    .cards {
+      display: grid;
+      gap: 14px;
+    }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 14px;
+      background: white;
+    }
+    .card h4 {
+      margin: 0;
+      font-size: 21px;
+      line-height: 1.15;
+    }
+    .kv {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 14px;
+      margin: 8px 0;
+      color: #24384b;
+      font-size: 15px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .links a {
+      display: inline-flex;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #edf4f8;
+      color: #144d77;
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .empty {
+      padding: 18px;
+      border-radius: 16px;
+      background: #f7f3ec;
+      border: 1px dashed #c9bdab;
+      color: #715d44;
+    }
+    .section-anchor {
+      scroll-margin-top: 16px;
+    }
+    .search-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 10px 12px;
+      background: white;
+      margin-top: 8px;
+    }
+    .search-link-meta {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+    @media (max-width: 980px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 34px;
+      }
+      .grid-two {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <h1>Casablanca Watch</h1>
+      <p>
+        Interface locale pour surveiller les annonces autour de CFC, avec les quartiers de votre carte,
+        un bouton d'actualisation direct, et des vues exactes filtrees dans cette interface meme.
+      </p>
+      <div class="meta">
+        <span class="pill">Budget max: 950000 DH</span>
+        <span class="pill">Surface: 30 a 60 m2</span>
+        <span class="pill">Dernier scan: 2026-07-10T08:57:27+00:00</span>
+        <span class="pill">Matches: 24</span>
+      </div>
+      <div class="actions">
+        
+        <button class="action" onclick="window.location.reload()">Actualiser</button>
+        
+        <button class="action" onclick='openMany([])'>Ouvrir les nouveaux biens</button>
+        <button class="action" onclick='openMany(["https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/525140", "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/701874", "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/600374", "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/108002", "https://www.mubawab.ma/fr/a/8379873/appartement-%C3%A0-vendre-%C3%A0-riad-el-oulfa", "https://www.mubawab.ma/fr/a/8379698/appartement-%C3%A0-vendre", "https://www.mubawab.ma/fr/a/8378548/appartement-%C3%A0-vendre-%E2%80%93-riyad-al-oulfa-casablanca", "https://www.mubawab.ma/fr/a/8369912/vend-appartement-%C3%A0-oulfa-superficie-58-m%C2%B2-antenne-parabolique", "https://www.mubawab.ma/fr/a/8363889/villa-villon-studio-%C3%A0-vendre-39-m%C2%B2-riviera-casablanca", "https://www.mubawab.ma/fr/a/8363351/appartement-%C3%A0-vendre-%E2%80%93-sidi-ma%C3%A2rouf-chaimaa", "https://www.mubawab.ma/fr/a/8362693/bonne-affaire-rez-de-chausse%C3%A9", "https://www.mubawab.ma/fr/a/8362219/appartement-%C3%A0-vendre-a-hay-hassani-el-baraka", "https://www.mubawab.ma/fr/a/8358100/appartement-quartier-chaimaa-sidi-maarouf", "https://www.mubawab.ma/fr/pa/8353724/superbe-appartement-%C3%A0-vendre-%C3%A0-oulfa-superficie-57-m%C2%B2", "https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2", "https://www.mubawab.ma/fr/a/8329514/projet-neuf-%E2%80%93-studios-haut-standing-%C3%A0-5-min-de-cfc", "https://www.mubawab.ma/fr/a/8320955/garden-taddart-investissement-s%C3%A9curis%C3%A9", "https://www.mubawab.ma/fr/pa/8234646/vente-d-un-bel-appartement-%C3%A0-oasis-surface-totale-53-m%C2%B2-places-de-parking-et-terrasse", "https://www.mubawab.ma/fr/a/8195699/appartement-meubl%C3%A9-%C3%A0-oulfa", "https://www.mubawab.ma/fr/pa/8191757/bel-appartement-%C3%A0-vendre-%C3%A0-californie-surface-de-43-m%C2%B2", "https://www.mubawab.ma/fr/a/7968810/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-1-pi%C3%A8ce-meubl%C3%A9", "https://www.mubawab.ma/fr/a/7758086/appartements-neufs-%C3%A0-vendre-%C3%A0-oulfa-centre", "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/193099", "https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-ca127516"])'>Ouvrir tous les biens exacts</button>
+        <button class="action secondary" onclick='openMany(["https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/casablanca-finance-city?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/ferme-bretonne?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/cil?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/beausejour?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/riviera?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/oasis?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/maarif?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/hay-hassani?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/quartier-el-hana?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/littoral?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/ain-diab?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/sid-al-khadir?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/el-oulfa?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/californie?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc", "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/sidi-maarouf?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc"])'>Ouvrir Agenz exact + recent</button>
+        <button class="action secondary" onclick='openMany(["https://www.mubawab.ma/fr/sd/casablanca/casablanca-finance-city/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/riviera/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/oasis/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/hay-hassani/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/ain-diab/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/oulfa/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/californie/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/oasis-sud/appartements-a-vendre", "https://www.mubawab.ma/fr/sd/casablanca/sidi-maarouf/appartements-a-vendre", "https://yakeey.com/fr-ma/achat/appartement/casablanca/ferme-bretonne?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/cil?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/beausejour?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/riviera?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/oasis?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/maarif?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/hay-hassani?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/ain-diab?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/el-oulfa?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/californie?sortBy=dateDesc", "https://yakeey.com/fr-ma/achat/appartement/casablanca/sidi-maarouf?sortBy=dateDesc"])'>Ouvrir pages quartier brutes</button>
+      </div>
+    </section>
+
+    <div class="layout">
+      <main class="panel">
+        <h2>Nouveaux biens detectes</h2>
+        <p class="small">
+          
+          Le site public est republie automatiquement. Le bouton <code>Actualiser</code> recharge simplement la derniere version disponible.
+          
+        </p>
+        
+        
+        <div class="empty">Aucun nouveau bien matching pour le moment.</div>
+        
+
+        <h2 style="margin-top: 24px;">Quartiers suivis depuis la carte</h2>
+        <div class="area-grid">
+          
+          <a class="area-card" href="#area-casablanca-finance-city">
+            <strong>Casablanca Finance City</strong>
+            <span class="count">1</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-ferme-bretonne">
+            <strong>Ferme Bretonne</strong>
+            <span class="count">3</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-cil">
+            <strong>CIL</strong>
+            <span class="count">0</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-beausejour">
+            <strong>Beausejour</strong>
+            <span class="count">0</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-riviera">
+            <strong>Riviera</strong>
+            <span class="count">1</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-loasis">
+            <strong>L'Oasis</strong>
+            <span class="count">1</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-maarif">
+            <strong>Maarif</strong>
+            <span class="count">0</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-hay-hassani">
+            <strong>Hay Hassani</strong>
+            <span class="count">1</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-quartier-el-hana">
+            <strong>Quartier El Hana</strong>
+            <span class="count">0</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-littoral">
+            <strong>Littoral</strong>
+            <span class="count">0</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-ain-diab-sindibad">
+            <strong>Ain Diab / Sindibad</strong>
+            <span class="count">0</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-sid-al-khadir">
+            <strong>Sid Al Khadir</strong>
+            <span class="count">0</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-el-oulfa">
+            <strong>El Oulfa</strong>
+            <span class="count">9</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-californie">
+            <strong>Californie</strong>
+            <span class="count">2</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-bachkou-taddart">
+            <strong>Bachkou / Taddart</strong>
+            <span class="count">1</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+          <a class="area-card" href="#area-sidi-maarouf">
+            <strong>Sidi Maarouf</strong>
+            <span class="count">5</span>
+            <span class="small">Cliquez pour voir les biens exacts de ce quartier.</span>
+          </a>
+          
+        </div>
+
+        <h2 style="margin-top: 24px;">Vues par source</h2>
+        <div class="source-grid">
+          
+          <a class="source-card" href="#source-agenz">
+            <strong>Agenz</strong>
+            <span class="count">5</span>
+            <span class="small">Ordre recent fiable via pages filtrees et tri date_desc.</span>
+          </a>
+          
+          <a class="source-card" href="#source-mubawab">
+            <strong>Mubawab</strong>
+            <span class="count">18</span>
+            <span class="small">Vue interne exacte; le site brut n'expose pas un tri date URL aussi fiable.</span>
+          </a>
+          
+          <a class="source-card" href="#source-yakeey">
+            <strong>Yakeey</strong>
+            <span class="count">1</span>
+            <span class="small">Vue interne exacte; le site brut sert surtout comme page quartier complementaire.</span>
+          </a>
+          
+        </div>
+
+        
+        <section class="section-anchor" id="source-agenz" style="margin-top: 26px;">
+          <h2>Agenz</h2>
+          <p class="small">Ordre recent fiable via pages filtrees et tri date_desc.</p>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Appartement à vendre Casablanca -Sidi Maarouf</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Sidi Maarouf</span>
+                <span class="badge">Il y a 2 jours</span>
+                <span class="badge">Ordre source: 1</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 750 000 DH</span>
+                <span><strong>Surface:</strong> 59 m2</span>
+                
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer un...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/525140" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-sidi-maarouf">Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Studio à vendre Casablanca -Ferme Bretonne</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Ferme Bretonne</span>
+                <span class="badge">Il y a 8 jours</span>
+                <span class="badge">Ordre source: 1</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 950 000 DH</span>
+                <span><strong>Surface:</strong> 48 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a 8 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 950 000 DH 1 CH 1 SDB 48 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Terrasse Accessible...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/701874" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-ferme-bretonne">Ferme Bretonne</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre Casablanca -Sidi Maarouf</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Sidi Maarouf</span>
+                <span class="badge">Il y a 10 jours</span>
+                <span class="badge">Ordre source: 2</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 720 000 DH</span>
+                <span><strong>Surface:</strong> 60 m2</span>
+                
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a 10 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/600374" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-sidi-maarouf">Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Studio à vendre Casablanca -Ferme Bretonne</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Ferme Bretonne</span>
+                <span class="badge">Il y a un mois</span>
+                <span class="badge">Ordre source: 3</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 900 000 DH</span>
+                <span><strong>Surface:</strong> 38 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a un mois Déjà Vu Agence partenaire 900 000 DH 1 CH 1 SDB 38 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Parking Non meublé Créer une visite Appeler Whatsapp</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/108002" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-ferme-bretonne">Ferme Bretonne</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Studio à vendre Casablanca -Ferme Bretonne</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Ferme Bretonne</span>
+                
+                <span class="badge">Ordre source: 2</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 920 000 DH</span>
+                <span><strong>Surface:</strong> 40 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/193099" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-ferme-bretonne">Ferme Bretonne</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="source-mubawab" style="margin-top: 26px;">
+          <h2>Mubawab</h2>
+          <p class="small">Vue interne exacte; le site brut n'expose pas un tri date URL aussi fiable.</p>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Appartement à vendre à Riad El Oulfa</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 4</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 300 000 DH</span>
+                <span><strong>Surface:</strong> 52 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">300 000 DH Appartement à vendre à Riad El Oulfa Oulfa, Casablanca 52 m² 1 Pièce 1 Ch. 1 Salle de bain Je mets en vente un bel appartement d'une superficie de 52 m², idéalement situé au rez-de-chaussée (RDC) dans le qu...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8379873/appartement-%C3%A0-vendre-%C3%A0-riad-el-oulfa" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Sidi Maarouf</span>
+                
+                <span class="badge">Ordre source: 10</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 650 000 DH</span>
+                <span><strong>Surface:</strong> 58 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">650 000 DH Appartement à vendre Sidi Maarouf, Casablanca 58 m² 1 Pièce 2 Chambres 1 Salle de bain Je mets cette appartement à vendre 2 chambres 1 salle de bain 1 salon Séjour Contacter Appelez WhatsApp</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8379698/appartement-%C3%A0-vendre" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-sidi-maarouf">Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre – Riyad Al Oulfa, Casablanca</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 13</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 400 000 DH</span>
+                <span><strong>Surface:</strong> 49 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">400 000 DH Appartement à vendre – Riyad Al Oulfa, Casablanca Oulfa, Casablanca 49 m² 3 Pièces 2 Chambres 1 Salle de bain Appartement à vendre – Riyad Al Oulfa, Casablanca Excellente opportunité pour habitation ou inve...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8378548/appartement-%C3%A0-vendre-%E2%80%93-riyad-al-oulfa-casablanca" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Vend appartement à Oulfa. Superficie 58 m². Antenne paraboli...</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 29</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 750 000 DH</span>
+                <span><strong>Surface:</strong> 58 m2</span>
+                <span><strong>Pieces:</strong> 4</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">750 000 DH Vend appartement à Oulfa. Superficie 58 m². Antenne paraboli... Oulfa, Casablanca 58 m² 4 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Concierge Antenne parabolique Cuisine équipée Découvrez ce charma...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8369912/vend-appartement-%C3%A0-oulfa-superficie-58-m%C2%B2-antenne-parabolique" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>VILLA VILLON Studio à vendre 39 m² Riviera Casablanca</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Riviera</span>
+                
+                <span class="badge">Ordre source: 16</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 950 000 DH</span>
+                <span><strong>Surface:</strong> 39 m2</span>
+                
+                
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">950 000 DH VILLA VILLON Studio à vendre 39 m² Riviera Casablanca Riviera, Casablanca 39 m² 1 Salle de bain Terrasse Garage Ascenseur Climatisation Sécurité Villa Villon – Résidence neuve haut standing à Riviera, Casab...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8363889/villa-villon-studio-%C3%A0-vendre-39-m%C2%B2-riviera-casablanca" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-riviera">Riviera</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre – Sidi Maârouf Chaimaa</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Sidi Maarouf</span>
+                
+                <span class="badge">Ordre source: 17</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 620 000 DH</span>
+                <span><strong>Surface:</strong> 60 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">620 000 DH Appartement à vendre – Sidi Maârouf Chaimaa Sidi Maarouf, Casablanca 60 m² 3 Pièces 2 Chambres 1 Salle de bain Serraj immobilier Vous propose:À vendre, bel appartement de 60 m² situé au 1er étage dans la ré...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8363351/appartement-%C3%A0-vendre-%E2%80%93-sidi-ma%C3%A2rouf-chaimaa" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-sidi-maarouf">Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Bonne affaire Rez de chausseé</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 33</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 600 000 DH</span>
+                <span><strong>Surface:</strong> 42 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">400 000 DH Bonne affaire Rez de chausseé Oulfa, Casablanca 42 m² 1 Pièce 1 Ch. 1 Salle de bain M'avertir d'une baisse de prix! 42 m² 1 Ch. 1 Salle de bain Oulfa à Casablanca Appartement en vente à oulfa Surface de 42...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8362693/bonne-affaire-rez-de-chausse%C3%A9" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre a hay hassani el baraka</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Hay Hassani</span>
+                
+                <span class="badge">Ordre source: 22</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 400 000 DH</span>
+                <span><strong>Surface:</strong> 56 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">400 000 DH Appartement à vendre a hay hassani el baraka Hay Hassani, Casablanca 56 m² 1 Pièce 2 Chambres 1 Salle de bain Façade extérieure Salon Marocain Appartement bien horizontal Contacter Appelez WhatsApp</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8362219/appartement-%C3%A0-vendre-a-hay-hassani-el-baraka" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-hay-hassani">Hay Hassani</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement quartier Chaimaa Sidi maarouf</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Sidi Maarouf</span>
+                
+                <span class="badge">Ordre source: 33</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 630 000 DH</span>
+                <span><strong>Surface:</strong> 56 m2</span>
+                <span><strong>Pieces:</strong> 5</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">630 000 DH Appartement quartier Chaimaa Sidi maarouf Sidi Maarouf, Casablanca 56 m² 5 Pièces 2 Chambres 1 Salle de bain Je mets en vente un appartement de 56 m² situé à Sidi Maarouf quartier Chaimae, Casablanca. - Sur...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8358100/appartement-quartier-chaimaa-sidi-maarouf" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-sidi-maarouf">Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Superbe appartement à vendre à Oulfa. Superficie 57 m²</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 2</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 655 500 DH</span>
+                <span><strong>Surface:</strong> 57 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">655 500 DH Superbe appartement à vendre à Oulfa. Superficie 57 m² Oulfa, Casablanca 57 m² 3 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Meublé Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8353724/superbe-appartement-%C3%A0-vendre-%C3%A0-oulfa-superficie-57-m%C2%B2" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Bel appartement à vendre à Oulfa. Surface de 45 m²</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 1</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 585 000 DH</span>
+                <span><strong>Surface:</strong> 45 m2</span>
+                <span><strong>Pieces:</strong> 2</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">585 000 DH Bel appartement à vendre à Oulfa. Surface de 45 m² Oulfa, Casablanca 45 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3 Chambres , Duple...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Projet neuf – Studios Haut Standing à 5 min de CFC</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Casablanca Finance City</span>
+                
+                <span class="badge">Ordre source: 15</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 900 000 DH</span>
+                <span><strong>Surface:</strong> 50 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">900 000 DH Projet neuf – Studios Haut Standing à 5 min de CFC Hay Hassani, Casablanca 50 m² 1 Pièce 1 Ch. 1 Salle de bain Terrasse Garage Ascenseur Concierge Façade extérieure Sécurité Double vitrage Porte blindée Cui...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8329514/projet-neuf-%E2%80%93-studios-haut-standing-%C3%A0-5-min-de-cfc" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-casablanca-finance-city">Casablanca Finance City</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Garden Taddart Investissement sécurisé</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Bachkou / Taddart</span>
+                
+                <span class="badge">Ordre source: 4</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 885 000 DH</span>
+                <span><strong>Surface:</strong> 36 m2</span>
+                <span><strong>Pieces:</strong> 2</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">885 000 DH Garden Taddart Investissement sécurisé Oasis sud, Casablanca 36 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Concierge Antenne parabolique Climatisation Chauffage central Sécurité Cuisine équipée Four...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8320955/garden-taddart-investissement-s%C3%A9curis%C3%A9" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-bachkou-taddart">Bachkou / Taddart</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Vente d'un bel appartement à Oasis. Surface totale 53 m². Pl...</h4>
+              <div class="badge-row">
+                
+                <span class="badge">L'Oasis</span>
+                
+                <span class="badge">Ordre source: 3</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 941 700 DH</span>
+                <span><strong>Surface:</strong> 43 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">941 700 DH Vente d'un bel appartement à Oasis. Surface totale 53 m². Pl... Oasis, Casablanca 43 m² 3 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Concierge Sécurité Découvrez cet appartement à vendre. 3 pièces, 1 sal...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8234646/vente-d-un-bel-appartement-%C3%A0-oasis-surface-totale-53-m%C2%B2-places-de-parking-et-terrasse" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-loasis">L'Oasis</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement meublé à oulfa</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 32</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 350 000 DH</span>
+                <span><strong>Surface:</strong> 50 m2</span>
+                <span><strong>Pieces:</strong> 2</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">350 000 DH Appartement meublé à oulfa Hay Hassani, Casablanca 50 m² 2 Pièces 2 Chambres 1 Salle de bain Meublé Salon Marocain Réfrigérateur Four Machine à laver Propre et avec les meubles, en deuxième étage, pas de vi...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8195699/appartement-meubl%C3%A9-%C3%A0-oulfa" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Bel appartement à vendre à Californie. Surface de 43 m²</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Californie</span>
+                
+                <span class="badge">Ordre source: 3</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 893 500 DH</span>
+                <span><strong>Surface:</strong> 43 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">893 500 DH Bel appartement à vendre à Californie. Surface de 43 m² Californie, Casablanca 43 m² 1 Ch. 1 Salle de bain Jardin Piscine EVERGREEN - Quand la nature s'invite chez vous Une résidence d'exception au cœur de...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8191757/bel-appartement-%C3%A0-vendre-%C3%A0-californie-surface-de-43-m%C2%B2" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-californie">Californie</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Bel appartement à vendre à Oulfa. 1 Pièce. Meublé</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 28</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 500 000 DH</span>
+                <span><strong>Surface:</strong> 56 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">430 000 DH Bel appartement à vendre à Oulfa. 1 Pièce. Meublé Oulfa, Casablanca 56 m² 1 Pièce 2 Chambres 1 Salle de bain Terrasse Meublé Façade extérieure Salon Marocain Antenne parabolique Climatisation Cuisine équipé...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/7968810/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-1-pi%C3%A8ce-meubl%C3%A9" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartements neufs à vendre à Oulfa Centre</h4>
+              <div class="badge-row">
+                
+                <span class="badge">El Oulfa</span>
+                
+                <span class="badge">Ordre source: 15</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 750 000 DH</span>
+                <span><strong>Surface:</strong> 52 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 2</span>
+              </div>
+              <p class="small">750 000 DH Appartements neufs à vendre à Oulfa Centre Oulfa, Casablanca 52 m² 3 Pièces 2 Chambres 2 Salles de bains Jardin Terrasse Garage Ascenseur Vue sur les montagnes Concierge Chambre rangement Meublé Façade exté...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/7758086/appartements-neufs-%C3%A0-vendre-%C3%A0-oulfa-centre" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-el-oulfa">El Oulfa</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="source-yakeey" style="margin-top: 26px;">
+          <h2>Yakeey</h2>
+          <p class="small">Vue interne exacte; le site brut sert surtout comme page quartier complementaire.</p>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Acheter Appartement Casablanca Californie</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Californie</span>
+                
+                <span class="badge">Ordre source: 5</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 540 000 DH</span>
+                <span><strong>Surface:</strong> 57 m2</span>
+                
+                
+                
+              </div>
+              <p class="small">Plus de détails › 540 000 DH À partir de 3 106 DH/mois Californie , Casablanca 2 1 57 m² Appartement</p>
+              <div class="links">
+                <a href="https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-ca127516" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#area-californie">Californie</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+
+        
+        <section class="section-anchor" id="area-casablanca-finance-city" style="margin-top: 26px;">
+          <h2>Casablanca Finance City</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Projet neuf – Studios Haut Standing à 5 min de CFC</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Hay Hassani</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 900 000 DH</span>
+                <span><strong>Surface:</strong> 50 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">900 000 DH Projet neuf – Studios Haut Standing à 5 min de CFC Hay Hassani, Casablanca 50 m² 1 Pièce 1 Ch. 1 Salle de bain Terrasse Garage Ascenseur Concierge Façade extérieure Sécurité Double vitrage Porte blindée Cui...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8329514/projet-neuf-%E2%80%93-studios-haut-standing-%C3%A0-5-min-de-cfc" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Hay Hassani</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-ferme-bretonne" style="margin-top: 26px;">
+          <h2>Ferme Bretonne</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Studio à vendre Casablanca -Ferme Bretonne</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Agenz Ferme Bretonne</span>
+                <span class="badge">Il y a 8 jours</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 950 000 DH</span>
+                <span><strong>Surface:</strong> 48 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a 8 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 950 000 DH 1 CH 1 SDB 48 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Terrasse Accessible...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/701874" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-agenz">Agenz Ferme Bretonne</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Studio à vendre Casablanca -Ferme Bretonne</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Agenz Ferme Bretonne</span>
+                <span class="badge">Il y a un mois</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 900 000 DH</span>
+                <span><strong>Surface:</strong> 38 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a un mois Déjà Vu Agence partenaire 900 000 DH 1 CH 1 SDB 38 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Parking Non meublé Créer une visite Appeler Whatsapp</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/108002" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-agenz">Agenz Ferme Bretonne</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Studio à vendre Casablanca -Ferme Bretonne</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Agenz Ferme Bretonne</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 920 000 DH</span>
+                <span><strong>Surface:</strong> 40 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/193099" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-agenz">Agenz Ferme Bretonne</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-cil" style="margin-top: 26px;">
+          <h2>CIL</h2>
+          
+          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-beausejour" style="margin-top: 26px;">
+          <h2>Beausejour</h2>
+          
+          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-riviera" style="margin-top: 26px;">
+          <h2>Riviera</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>VILLA VILLON Studio à vendre 39 m² Riviera Casablanca</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Riviera</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 950 000 DH</span>
+                <span><strong>Surface:</strong> 39 m2</span>
+                
+                
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">950 000 DH VILLA VILLON Studio à vendre 39 m² Riviera Casablanca Riviera, Casablanca 39 m² 1 Salle de bain Terrasse Garage Ascenseur Climatisation Sécurité Villa Villon – Résidence neuve haut standing à Riviera, Casab...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8363889/villa-villon-studio-%C3%A0-vendre-39-m%C2%B2-riviera-casablanca" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Riviera</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-loasis" style="margin-top: 26px;">
+          <h2>L'Oasis</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Vente d'un bel appartement à Oasis. Surface totale 53 m². Pl...</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab L'Oasis</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 941 700 DH</span>
+                <span><strong>Surface:</strong> 43 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">941 700 DH Vente d'un bel appartement à Oasis. Surface totale 53 m². Pl... Oasis, Casablanca 43 m² 3 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Concierge Sécurité Découvrez cet appartement à vendre. 3 pièces, 1 sal...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8234646/vente-d-un-bel-appartement-%C3%A0-oasis-surface-totale-53-m%C2%B2-places-de-parking-et-terrasse" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab L'Oasis</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-maarif" style="margin-top: 26px;">
+          <h2>Maarif</h2>
+          
+          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-hay-hassani" style="margin-top: 26px;">
+          <h2>Hay Hassani</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Appartement à vendre a hay hassani el baraka</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Hay Hassani</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 400 000 DH</span>
+                <span><strong>Surface:</strong> 56 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">400 000 DH Appartement à vendre a hay hassani el baraka Hay Hassani, Casablanca 56 m² 1 Pièce 2 Chambres 1 Salle de bain Façade extérieure Salon Marocain Appartement bien horizontal Contacter Appelez WhatsApp</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8362219/appartement-%C3%A0-vendre-a-hay-hassani-el-baraka" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Hay Hassani</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-quartier-el-hana" style="margin-top: 26px;">
+          <h2>Quartier El Hana</h2>
+          
+          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-littoral" style="margin-top: 26px;">
+          <h2>Littoral</h2>
+          
+          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-ain-diab-sindibad" style="margin-top: 26px;">
+          <h2>Ain Diab / Sindibad</h2>
+          
+          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-sid-al-khadir" style="margin-top: 26px;">
+          <h2>Sid Al Khadir</h2>
+          
+          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-el-oulfa" style="margin-top: 26px;">
+          <h2>El Oulfa</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Appartement à vendre à Riad El Oulfa</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 300 000 DH</span>
+                <span><strong>Surface:</strong> 52 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">300 000 DH Appartement à vendre à Riad El Oulfa Oulfa, Casablanca 52 m² 1 Pièce 1 Ch. 1 Salle de bain Je mets en vente un bel appartement d'une superficie de 52 m², idéalement situé au rez-de-chaussée (RDC) dans le qu...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8379873/appartement-%C3%A0-vendre-%C3%A0-riad-el-oulfa" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre – Riyad Al Oulfa, Casablanca</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 400 000 DH</span>
+                <span><strong>Surface:</strong> 49 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">400 000 DH Appartement à vendre – Riyad Al Oulfa, Casablanca Oulfa, Casablanca 49 m² 3 Pièces 2 Chambres 1 Salle de bain Appartement à vendre – Riyad Al Oulfa, Casablanca Excellente opportunité pour habitation ou inve...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8378548/appartement-%C3%A0-vendre-%E2%80%93-riyad-al-oulfa-casablanca" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Vend appartement à Oulfa. Superficie 58 m². Antenne paraboli...</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 750 000 DH</span>
+                <span><strong>Surface:</strong> 58 m2</span>
+                <span><strong>Pieces:</strong> 4</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">750 000 DH Vend appartement à Oulfa. Superficie 58 m². Antenne paraboli... Oulfa, Casablanca 58 m² 4 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Concierge Antenne parabolique Cuisine équipée Découvrez ce charma...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8369912/vend-appartement-%C3%A0-oulfa-superficie-58-m%C2%B2-antenne-parabolique" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Bonne affaire Rez de chausseé</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 600 000 DH</span>
+                <span><strong>Surface:</strong> 42 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">400 000 DH Bonne affaire Rez de chausseé Oulfa, Casablanca 42 m² 1 Pièce 1 Ch. 1 Salle de bain M'avertir d'une baisse de prix! 42 m² 1 Ch. 1 Salle de bain Oulfa à Casablanca Appartement en vente à oulfa Surface de 42...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8362693/bonne-affaire-rez-de-chausse%C3%A9" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Superbe appartement à vendre à Oulfa. Superficie 57 m²</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 655 500 DH</span>
+                <span><strong>Surface:</strong> 57 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">655 500 DH Superbe appartement à vendre à Oulfa. Superficie 57 m² Oulfa, Casablanca 57 m² 3 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Meublé Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8353724/superbe-appartement-%C3%A0-vendre-%C3%A0-oulfa-superficie-57-m%C2%B2" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Bel appartement à vendre à Oulfa. Surface de 45 m²</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 585 000 DH</span>
+                <span><strong>Surface:</strong> 45 m2</span>
+                <span><strong>Pieces:</strong> 2</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">585 000 DH Bel appartement à vendre à Oulfa. Surface de 45 m² Oulfa, Casablanca 45 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3 Chambres , Duple...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement meublé à oulfa</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Hay Hassani</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 350 000 DH</span>
+                <span><strong>Surface:</strong> 50 m2</span>
+                <span><strong>Pieces:</strong> 2</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">350 000 DH Appartement meublé à oulfa Hay Hassani, Casablanca 50 m² 2 Pièces 2 Chambres 1 Salle de bain Meublé Salon Marocain Réfrigérateur Four Machine à laver Propre et avec les meubles, en deuxième étage, pas de vi...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8195699/appartement-meubl%C3%A9-%C3%A0-oulfa" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Hay Hassani</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Bel appartement à vendre à Oulfa. 1 Pièce. Meublé</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 500 000 DH</span>
+                <span><strong>Surface:</strong> 56 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">430 000 DH Bel appartement à vendre à Oulfa. 1 Pièce. Meublé Oulfa, Casablanca 56 m² 1 Pièce 2 Chambres 1 Salle de bain Terrasse Meublé Façade extérieure Salon Marocain Antenne parabolique Climatisation Cuisine équipé...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/7968810/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-1-pi%C3%A8ce-meubl%C3%A9" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartements neufs à vendre à Oulfa Centre</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab El Oulfa</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 750 000 DH</span>
+                <span><strong>Surface:</strong> 52 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 2</span>
+              </div>
+              <p class="small">750 000 DH Appartements neufs à vendre à Oulfa Centre Oulfa, Casablanca 52 m² 3 Pièces 2 Chambres 2 Salles de bains Jardin Terrasse Garage Ascenseur Vue sur les montagnes Concierge Chambre rangement Meublé Façade exté...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/7758086/appartements-neufs-%C3%A0-vendre-%C3%A0-oulfa-centre" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab El Oulfa</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-californie" style="margin-top: 26px;">
+          <h2>Californie</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Bel appartement à vendre à Californie. Surface de 43 m²</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Californie</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 893 500 DH</span>
+                <span><strong>Surface:</strong> 43 m2</span>
+                
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">893 500 DH Bel appartement à vendre à Californie. Surface de 43 m² Californie, Casablanca 43 m² 1 Ch. 1 Salle de bain Jardin Piscine EVERGREEN - Quand la nature s'invite chez vous Une résidence d'exception au cœur de...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/pa/8191757/bel-appartement-%C3%A0-vendre-%C3%A0-californie-surface-de-43-m%C2%B2" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Californie</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Acheter Appartement Casablanca Californie</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Yakeey Californie</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 540 000 DH</span>
+                <span><strong>Surface:</strong> 57 m2</span>
+                
+                
+                
+              </div>
+              <p class="small">Plus de détails › 540 000 DH À partir de 3 106 DH/mois Californie , Casablanca 2 1 57 m² Appartement</p>
+              <div class="links">
+                <a href="https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-ca127516" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-yakeey">Yakeey Californie</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-bachkou-taddart" style="margin-top: 26px;">
+          <h2>Bachkou / Taddart</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Garden Taddart Investissement sécurisé</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Bachkou / Taddart</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 885 000 DH</span>
+                <span><strong>Surface:</strong> 36 m2</span>
+                <span><strong>Pieces:</strong> 2</span>
+                <span><strong>Ch:</strong> 1</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">885 000 DH Garden Taddart Investissement sécurisé Oasis sud, Casablanca 36 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Concierge Antenne parabolique Climatisation Chauffage central Sécurité Cuisine équipée Four...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8320955/garden-taddart-investissement-s%C3%A9curis%C3%A9" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Bachkou / Taddart</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+        <section class="section-anchor" id="area-sidi-maarouf" style="margin-top: 26px;">
+          <h2>Sidi Maarouf</h2>
+          
+          <div class="cards">
+            
+            <article class="card">
+              <h4>Appartement à vendre Casablanca -Sidi Maarouf</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Agenz Sidi Maarouf</span>
+                <span class="badge">Il y a 2 jours</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 750 000 DH</span>
+                <span><strong>Surface:</strong> 59 m2</span>
+                
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer un...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/525140" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-agenz">Agenz Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre Casablanca -Sidi Maarouf</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Agenz Sidi Maarouf</span>
+                <span class="badge">Il y a 10 jours</span>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 720 000 DH</span>
+                <span><strong>Surface:</strong> 60 m2</span>
+                
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">Voir l'annonce Il y a 10 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...</p>
+              <div class="links">
+                <a href="https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/600374" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-agenz">Agenz Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Sidi Maarouf</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 650 000 DH</span>
+                <span><strong>Surface:</strong> 58 m2</span>
+                <span><strong>Pieces:</strong> 1</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">650 000 DH Appartement à vendre Sidi Maarouf, Casablanca 58 m² 1 Pièce 2 Chambres 1 Salle de bain Je mets cette appartement à vendre 2 chambres 1 salle de bain 1 salon Séjour Contacter Appelez WhatsApp</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8379698/appartement-%C3%A0-vendre" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement à vendre – Sidi Maârouf Chaimaa</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Sidi Maarouf</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 620 000 DH</span>
+                <span><strong>Surface:</strong> 60 m2</span>
+                <span><strong>Pieces:</strong> 3</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">620 000 DH Appartement à vendre – Sidi Maârouf Chaimaa Sidi Maarouf, Casablanca 60 m² 3 Pièces 2 Chambres 1 Salle de bain Serraj immobilier Vous propose:À vendre, bel appartement de 60 m² situé au 1er étage dans la ré...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8363351/appartement-%C3%A0-vendre-%E2%80%93-sidi-ma%C3%A2rouf-chaimaa" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Sidi Maarouf</a>
+              </div>
+            </article>
+            
+            <article class="card">
+              <h4>Appartement quartier Chaimaa Sidi maarouf</h4>
+              <div class="badge-row">
+                
+                <span class="badge">Mubawab Sidi Maarouf</span>
+                
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> 630 000 DH</span>
+                <span><strong>Surface:</strong> 56 m2</span>
+                <span><strong>Pieces:</strong> 5</span>
+                <span><strong>Ch:</strong> 2</span>
+                <span><strong>Sdb:</strong> 1</span>
+              </div>
+              <p class="small">630 000 DH Appartement quartier Chaimaa Sidi maarouf Sidi Maarouf, Casablanca 56 m² 5 Pièces 2 Chambres 1 Salle de bain Je mets en vente un appartement de 56 m² situé à Sidi Maarouf quartier Chaimae, Casablanca. - Sur...</p>
+              <div class="links">
+                <a href="https://www.mubawab.ma/fr/a/8358100/appartement-quartier-chaimaa-sidi-maarouf" target="_blank" rel="noreferrer">Annonce</a>
+                <a href="#source-mubawab">Mubawab Sidi Maarouf</a>
+              </div>
+            </article>
+            
+          </div>
+          
+        </section>
+        
+      </main>
+
+      <aside class="panel">
+        <h2>Etat du scan</h2>
+        <div class="grid-two">
+          <div class="stat-card">
+            <span class="small">Biens parses</span>
+            <span class="stat-big">614</span>
+          </div>
+          <div class="stat-card">
+            <span class="small">Biens exacts</span>
+            <span class="stat-big">24</span>
+          </div>
+          <div class="stat-card">
+            <span class="small">Nouveaux biens</span>
+            <span class="stat-big">0</span>
+          </div>
+          <div class="stat-card">
+            <span class="small">Mode</span>
+            <span class="stat-big" style="font-size:22px;">Statique</span>
+          </div>
+        </div>
+
+        
+        <h3>Acces public</h3>
+        <p class="small">
+          Cette version est faite pour etre partagee. Toute personne avec ce lien voit les annonces exactes du dernier scan publie.
+        </p>
+        <div class="button-list">
+          <button class="linkish" onclick="window.location.reload()">Recharger la page</button>
+        </div>
+        
+
+        <h3>Liens externes exacts verifies</h3>
+        <p class="small">
+          Ici je ne mets que les liens dont le filtre prix/surface et le tri recent sont directement portes par l'URL.
+        </p>
+        
+        <div class="group">
+          <strong>Agenz</strong>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/casablanca-finance-city?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Casablanca Finance City</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/ferme-bretonne?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Ferme Bretonne</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/cil?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">CIL</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/beausejour?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Beausejour</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/riviera?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Riviera</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/oasis?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">L'Oasis</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/maarif?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Maarif</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/hay-hassani?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Hay Hassani</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/quartier-el-hana?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Quartier El Hana</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/littoral?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Littoral</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/ain-diab?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Ain Diab / Sindibad</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/sid-al-khadir?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Sid Al Khadir</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/el-oulfa?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">El Oulfa</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/californie?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Californie</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/sidi-maarouf?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc" target="_blank" rel="noreferrer">Sidi Maarouf</a></div>
+              <div class="small">Filtre prix/surface et tri date verifies sur l'URL.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-exact">exact + recent</span>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <h3>Pages quartier brutes</h3>
+        <p class="small">
+          Ces liens ouvrent bien les quartiers, mais je ne les marque pas "exacts" quand le site n'expose pas un filtre URL
+          fiable pour le prix ou le tri date. La vue interne ci-contre reste la reference propre.
+        </p>
+        
+        <div class="group">
+          <strong>Mubawab</strong>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/casablanca-finance-city/appartements-a-vendre" target="_blank" rel="noreferrer">Casablanca Finance City</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/riviera/appartements-a-vendre" target="_blank" rel="noreferrer">Riviera</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/oasis/appartements-a-vendre" target="_blank" rel="noreferrer">L'Oasis</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/hay-hassani/appartements-a-vendre" target="_blank" rel="noreferrer">Hay Hassani</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/ain-diab/appartements-a-vendre" target="_blank" rel="noreferrer">Ain Diab / Sindibad</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/oulfa/appartements-a-vendre" target="_blank" rel="noreferrer">El Oulfa</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/californie/appartements-a-vendre" target="_blank" rel="noreferrer">Californie</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/oasis-sud/appartements-a-vendre" target="_blank" rel="noreferrer">Bachkou / Taddart</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://www.mubawab.ma/fr/sd/casablanca/sidi-maarouf/appartements-a-vendre" target="_blank" rel="noreferrer">Sidi Maarouf</a></div>
+              <div class="small">Bonne page quartier, mais filtre prix/date non garanti proprement par URL publique.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+        </div>
+        
+        <div class="group">
+          <strong>Yakeey</strong>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/ferme-bretonne?sortBy=dateDesc" target="_blank" rel="noreferrer">Ferme Bretonne</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/cil?sortBy=dateDesc" target="_blank" rel="noreferrer">CIL</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/beausejour?sortBy=dateDesc" target="_blank" rel="noreferrer">Beausejour</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/riviera?sortBy=dateDesc" target="_blank" rel="noreferrer">Riviera</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/oasis?sortBy=dateDesc" target="_blank" rel="noreferrer">L'Oasis</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/maarif?sortBy=dateDesc" target="_blank" rel="noreferrer">Maarif</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/hay-hassani?sortBy=dateDesc" target="_blank" rel="noreferrer">Hay Hassani</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/ain-diab?sortBy=dateDesc" target="_blank" rel="noreferrer">Ain Diab / Sindibad</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/el-oulfa?sortBy=dateDesc" target="_blank" rel="noreferrer">El Oulfa</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/californie?sortBy=dateDesc" target="_blank" rel="noreferrer">Californie</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+          <div class="search-link">
+            <div>
+              <div><a href="https://yakeey.com/fr-ma/achat/appartement/casablanca/sidi-maarouf?sortBy=dateDesc" target="_blank" rel="noreferrer">Sidi Maarouf</a></div>
+              <div class="small">Bonne page quartier; le tri hint est present, mais le filtre exact doit surtout etre lu dans Casablanca Watch.</div>
+            </div>
+            <div class="search-link-meta">
+              <span class="badge status-raw">quartier brut</span>
+            </div>
+          </div>
+          
+        </div>
+        
+
+        <h3>Verification officielle</h3>
+        <div class="button-list">
+          
+          <a href="https://auc.ma/e-services-2/geoportail/" target="_blank" rel="noreferrer">AUC Geoportail</a>
+          
+          <a href="https://auc.ma/?page_id=425" target="_blank" rel="noreferrer">AUC Open data</a>
+          
+          <a href="https://www.auc.ma/gestion-planification-urbaine/plans-damenagement/etat-davancement-des-pa/" target="_blank" rel="noreferrer">AUC Etat d'avancement des PA</a>
+          
+          <a href="https://www.auc.ma/gestion-urbaine/note-de-reseignement/notes-de-reseignements/" target="_blank" rel="noreferrer">AUC Note de renseignements</a>
+          
+          <a href="https://www.auc.ma/e-services-2/e-documents/?IdP=1095" target="_blank" rel="noreferrer">AUC PA Anfa</a>
+          
+          <a href="https://www.auc.ma/e-services-2/e-documents/?IdP=1068" target="_blank" rel="noreferrer">AUC PA Hay Hassani</a>
+          
+          <a href="https://www.auc.ma/e-services-2/e-documents/?IdP=1075" target="_blank" rel="noreferrer">AUC PA Ain Chock</a>
+          
+          <a href="https://www.auc.ma/e-services-2/e-documents/?IdP=1085" target="_blank" rel="noreferrer">AUC PA Maarif</a>
+          
+          <a href="https://rokhas.ma/" target="_blank" rel="noreferrer">ROKHAS</a>
+          
+          <a href="https://www.ancfcc.gov.ma/media/ipai/ipai-t1-2026-fr.pdf" target="_blank" rel="noreferrer">ANCFCC IPAI T1 2026</a>
+          
+        </div>
+
+        <h3>Sources manuelles</h3>
+        <div class="button-list">
+          
+          <a href="https://www.sarouty.ma/en/buy/casablanca/oasis/" target="_blank" rel="noreferrer">Sarouty Oasis</a>
+          
+          <a href="https://www.sarouty.ma/en/buy/casablanca/ferme-bretone/" target="_blank" rel="noreferrer">Sarouty Ferme Bretonne</a>
+          
+          <a href="https://www.sarouty.ma/en/buy/casablanca/sidi-maarouf/" target="_blank" rel="noreferrer">Sarouty Sidi Maarouf</a>
+          
+          <a href="https://yakeey.com/fr-ma/referentiel-de-prix-immobilier/casablanca" target="_blank" rel="noreferrer">Yakeey Referentiel Casablanca</a>
+          
+        </div>
+
+        <h3>Notes de fiabilite</h3>
+        <p class="small">
+          <strong>Agenz</strong>: URL verifiees avec filtre prix/surface et tri <code>date_desc</code>.<br>
+          <strong>Mubawab</strong>: bonnes pages quartier, mais le site n'applique pas proprement le filtre prix/surface via une simple URL publique stable.<br>
+          <strong>Yakeey</strong>: bonnes pages quartier, mais le filtre URL n'est pas suffisamment fiable pour etre marque exact.
+        </p>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    function openMany(urls) {
+      if (!Array.isArray(urls) || urls.length === 0) {
+        return;
+      }
+      for (const url of urls) {
+        window.open(url, "_blank", "noopener,noreferrer");
+      }
+    }
+
+    async function refreshNow() {
+      const button = document.getElementById("refreshButton");
+      if (!button) return;
+      const original = button.textContent;
+      button.disabled = true;
+      button.textContent = "Actualisation...";
+      try {
+        const response = await fetch("/api/scan", { method: "POST" });
+        if (!response.ok) {
+          throw new Error("Scan failed");
+        }
+        window.location.reload();
+      } catch (error) {
+        alert("Le scan a echoue. Regardez le terminal si besoin.");
+        button.disabled = false;
+        button.textContent = original;
+      }
+    }
+  </script>
+</body>
+</html>

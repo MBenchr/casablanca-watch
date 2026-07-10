@@ -1,0 +1,125 @@
+{
+  "schema": 1,
+  "seen": {
+    "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/525140": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement à vendre Casablanca -Sidi Maarouf",
+      "source": "agenz"
+    },
+    "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/701874": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Studio à vendre Casablanca -Ferme Bretonne",
+      "source": "agenz"
+    },
+    "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/sidi-maarouf/600374": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement à vendre Casablanca -Sidi Maarouf",
+      "source": "agenz"
+    },
+    "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/108002": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Studio à vendre Casablanca -Ferme Bretonne",
+      "source": "agenz"
+    },
+    "https://www.mubawab.ma/fr/a/8379873/appartement-%C3%A0-vendre-%C3%A0-riad-el-oulfa": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement à vendre à Riad El Oulfa",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8379698/appartement-%C3%A0-vendre": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement à vendre",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8378548/appartement-%C3%A0-vendre-%E2%80%93-riyad-al-oulfa-casablanca": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement à vendre – Riyad Al Oulfa, Casablanca",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8369912/vend-appartement-%C3%A0-oulfa-superficie-58-m%C2%B2-antenne-parabolique": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Vend appartement à Oulfa. Superficie 58 m². Antenne paraboli...",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8363889/villa-villon-studio-%C3%A0-vendre-39-m%C2%B2-riviera-casablanca": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "VILLA VILLON Studio à vendre 39 m² Riviera Casablanca",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8363351/appartement-%C3%A0-vendre-%E2%80%93-sidi-ma%C3%A2rouf-chaimaa": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement à vendre – Sidi Maârouf Chaimaa",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8362693/bonne-affaire-rez-de-chausse%C3%A9": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Bonne affaire Rez de chausseé",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8362219/appartement-%C3%A0-vendre-a-hay-hassani-el-baraka": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement à vendre a hay hassani el baraka",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8358100/appartement-quartier-chaimaa-sidi-maarouf": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement quartier Chaimaa Sidi maarouf",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/pa/8353724/superbe-appartement-%C3%A0-vendre-%C3%A0-oulfa-superficie-57-m%C2%B2": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Superbe appartement à vendre à Oulfa. Superficie 57 m²",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Bel appartement à vendre à Oulfa. Surface de 45 m²",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8329514/projet-neuf-%E2%80%93-studios-haut-standing-%C3%A0-5-min-de-cfc": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Projet neuf – Studios Haut Standing à 5 min de CFC",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8320955/garden-taddart-investissement-s%C3%A9curis%C3%A9": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Garden Taddart Investissement sécurisé",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/pa/8234646/vente-d-un-bel-appartement-%C3%A0-oasis-surface-totale-53-m%C2%B2-places-de-parking-et-terrasse": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Vente d'un bel appartement à Oasis. Surface totale 53 m². Pl...",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/8195699/appartement-meubl%C3%A9-%C3%A0-oulfa": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartement meublé à oulfa",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/pa/8191757/bel-appartement-%C3%A0-vendre-%C3%A0-californie-surface-de-43-m%C2%B2": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Bel appartement à vendre à Californie. Surface de 43 m²",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/7968810/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-1-pi%C3%A8ce-meubl%C3%A9": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Bel appartement à vendre à Oulfa. 1 Pièce. Meublé",
+      "source": "mubawab"
+    },
+    "https://www.mubawab.ma/fr/a/7758086/appartements-neufs-%C3%A0-vendre-%C3%A0-oulfa-centre": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Appartements neufs à vendre à Oulfa Centre",
+      "source": "mubawab"
+    },
+    "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/193099": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Studio à vendre Casablanca -Ferme Bretonne",
+      "source": "agenz"
+    },
+    "https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-ca127516": {
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "title": "Acheter Appartement Casablanca Californie",
+      "source": "yakeey"
+    }
+  }
+}

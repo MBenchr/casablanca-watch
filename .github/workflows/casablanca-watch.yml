@@ -1,0 +1,66 @@
+name: casablanca-watch
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: casablanca-watch
+  cancel-in-progress: false
+
+jobs:
+  scan-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run scan
+        env:
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          WATCH_EMAIL_FROM: ${{ secrets.WATCH_EMAIL_FROM }}
+          WATCH_EMAIL_TO: ${{ secrets.WATCH_EMAIL_TO }}
+          WATCH_EMAIL_FROM_NAME: ${{ vars.WATCH_EMAIL_FROM_NAME }}
+          WATCH_PUBLIC_URL: ${{ vars.WATCH_PUBLIC_URL }}
+        run: python watch.py scan --notify stdout --notify sendgrid-email
+
+      - name: Commit updated state if needed
+        run: |
+          if git diff --quiet -- data/state.json data/last_scan.json public/index.html public/last_scan.json public/.nojekyll; then
+            echo "No state changes"
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add data/state.json data/last_scan.json public/index.html public/last_scan.json public/.nojekyll
+            git commit -m "chore: update casablanca watch state"
+            git push
+          fi
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
