@@ -191,7 +191,8 @@
       "interval_seconds": 1800
     },
     "github_issue": {
-      "repository": ""
+      "repository": "",
+      "assignees": []
     },
     "sendgrid_email": {
       "from_email": "",

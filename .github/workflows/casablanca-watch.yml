@@ -36,6 +36,7 @@ jobs:
       - name: Run scan
         env:
           GITHUB_NOTIFY_REPO: ${{ github.repository }}
+          GITHUB_NOTIFY_ASSIGNEES: MBenchr
           GH_TOKEN: ${{ github.token }}
         run: python watch.py scan --notify stdout --notify github-issue
 

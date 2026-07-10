@@ -95,7 +95,7 @@ Le principe:
 Usage type:
 
 1. laissez `data/state.json` versionne pour garder la memoire des liens deja vus
-2. abonnez le compte GitHub qui doit recevoir les alertes aux notifications du repo
+2. configurez le workflow pour assigner les issues au compte GitHub qui doit recevoir l'alerte
 3. le workflow planifie executera le scan toutes les 30 minutes
 4. si un nouveau bien exact apparait, une issue GitHub sera creee
 5. GitHub enverra alors un e-mail de notification contenant les details du bien et son URL

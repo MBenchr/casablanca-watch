@@ -1479,6 +1479,13 @@ def github_repository_from_config(config: dict[str, Any]) -> str:
     return config.get("notifications", {}).get("github_issue", {}).get("repository", "").strip()
 
 
+def github_assignees_from_config(config: dict[str, Any]) -> list[str]:
+    from_env = os.environ.get("GITHUB_NOTIFY_ASSIGNEES", "").strip()
+    if from_env:
+        return split_csvish(from_env)
+    return config.get("notifications", {}).get("github_issue", {}).get("assignees", [])
+
+
 def notify_github_issue(new_matches: list[Listing], bootstrapped: bool, config: dict[str, Any]) -> None:
     if bootstrapped or not new_matches:
         return
@@ -1506,10 +1513,11 @@ def notify_github_issue(new_matches: list[Listing], bootstrapped: bool, config: 
             ]
         )
     body = "\n".join(lines)
-    subprocess.run(
-        ["gh", "issue", "create", "--repo", repository, "--title", title, "--body", body],
-        check=True,
-    )
+    command = ["gh", "issue", "create", "--repo", repository, "--title", title, "--body", body]
+    assignees = github_assignees_from_config(config)
+    if assignees:
+        command.extend(["--assignee", ",".join(assignees)])
+    subprocess.run(command, check=True)
 
 
 def dispatch_notifications(notifiers: list[str], new_matches: list[Listing], bootstrapped: bool, config: dict[str, Any]) -> None:
