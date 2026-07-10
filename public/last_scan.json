@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-10T12:21:52+00:00",
-  "all_listings_count": 660,
+  "generated_at": "2026-07-10T13:15:17+00:00",
+  "all_listings_count": 662,
   "matches": [
     {
       "source": "agenz",
@@ -50,8 +50,8 @@
     },
     {
       "source": "agenz",
-      "source_name": "Agenz Beausejour",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/beausejour?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "source_name": "Agenz Ferme Bretonne",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/ferme-bretonne?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
       "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/701874",
       "title": "Studio à vendre Casablanca -Ferme Bretonne",
       "price_mad": 950000,
@@ -119,8 +119,8 @@
     },
     {
       "source": "agenz",
-      "source_name": "Agenz Beausejour",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/beausejour?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "source_name": "Agenz Ferme Bretonne",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/ferme-bretonne?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
       "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/108002",
       "title": "Studio à vendre Casablanca -Ferme Bretonne",
       "price_mad": 900000,
@@ -316,7 +316,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "630 000 DH Appartement meublé à vendre à Sidi Maârouf Sidi Maarouf, Casablanca 47 m² 3 Pièces 2 Chambres 1 Salle de bain Concierge Meublé Façade extérieure Sécurité Double vitrage Cuisine équipée Appartement meublé à...",
-      "rank_in_source": 8,
+      "rank_in_source": 10,
       "source_listing_id": "8380103",
       "is_new": false,
       "first_seen_at": "2026-07-10T11:28:32+00:00",
@@ -362,7 +362,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "650 000 DH Appartement à vendre Sidi Maarouf, Casablanca 58 m² 1 Pièce 2 Chambres 1 Salle de bain Je mets cette appartement à vendre 2 chambres 1 salle de bain 1 salon Séjour Contacter Appelez WhatsApp",
-      "rank_in_source": 11,
+      "rank_in_source": 12,
       "source_listing_id": "8379698",
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
@@ -763,8 +763,8 @@
     },
     {
       "source": "agenz",
-      "source_name": "Agenz Beausejour",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/beausejour?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "source_name": "Agenz Ferme Bretonne",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/ferme-bretonne?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
       "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/193099",
       "title": "Studio à vendre Casablanca -Ferme Bretonne",
       "price_mad": 920000,
