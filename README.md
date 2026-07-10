@@ -35,7 +35,7 @@ Quartiers actuellement integres depuis la carte:
 - une base des annonces deja vues
 - une detection des nouveaux liens
 - des notifications locales macOS
-- un workflow GitHub Actions pour republier le site et envoyer les alertes e-mail
+- un workflow GitHub Actions pour republier le site et envoyer les alertes
 
 ## Fichiers importants
 
@@ -90,18 +90,19 @@ Le principe:
 3. il deploie `public/` sur GitHub Pages
 4. tu peux partager l'URL publique avec n'importe qui
 
-## Alertes e-mail SendGrid
+## Alertes e-mail GitHub
 
 Usage type:
 
 1. laissez `data/state.json` versionne pour garder la memoire des liens deja vus
-2. ajoutez ces secrets GitHub au repo:
-   - `SENDGRID_API_KEY`
-   - `WATCH_EMAIL_FROM`
-   - `WATCH_EMAIL_TO`
-3. optionnel: ajoutez la variable GitHub `WATCH_EMAIL_FROM_NAME`
-4. le workflow planifie executera le scan toutes les 30 minutes
-5. si un nouveau bien exact apparait, un e-mail avec le lien, le prix, la surface et la source sera envoye
+2. abonnez le compte GitHub qui doit recevoir les alertes aux notifications du repo
+3. le workflow planifie executera le scan toutes les 30 minutes
+4. si un nouveau bien exact apparait, une issue GitHub sera creee
+5. GitHub enverra alors un e-mail de notification contenant les details du bien et son URL
+
+## Alertes e-mail SendGrid optionnelles
+
+Le code supporte aussi `--notify sendgrid-email` si vous voulez plus tard un vrai expediteur dedie.
 
 Variables supportees:
 
