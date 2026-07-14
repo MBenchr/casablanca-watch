@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-14T11:02:48+00:00",
-  "all_listings_count": 656,
+  "generated_at": "2026-07-14T11:59:08+00:00",
+  "all_listings_count": 655,
   "matches": [
     {
       "source": "agenz",
@@ -19,7 +19,7 @@
       "summary": "Voir l'annonce Il y a 6 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer une...",
       "rank_in_source": 1,
       "source_listing_id": "917306",
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
       "surface_label": "60 m2",
@@ -293,7 +293,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "720 000 DH Appartement à vendre à Oulfa Oulfa, Casablanca 60 m² 1 Pièce 2 Chambres 1 Salle de bain Ascenseur Serraj immobilier Vous propose:À vendre, appartement de 60 m² situé au 4ᵉ étage d'un immeuble moyen standing...",
-      "rank_in_source": 5,
+      "rank_in_source": 7,
       "source_listing_id": "8382078",
       "is_new": false,
       "first_seen_at": "2026-07-14T09:13:20+00:00",
@@ -831,30 +831,6 @@
       "area_anchor": "area-californie"
     }
   ],
-  "new_matches": [
-    {
-      "source": "agenz",
-      "source_name": "Agenz Beausejour",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements/beausejour?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/beausejour/917306",
-      "title": "Appartement à vendre Casablanca -Beauséjour",
-      "price_mad": 750000,
-      "surface_m2": 60,
-      "location_text": "Beauséjour",
-      "area_guess": "Beausejour",
-      "rooms_label": "",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "Il y a 6 jours",
-      "summary": "Voir l'annonce Il y a 6 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer une...",
-      "rank_in_source": 1,
-      "source_listing_id": "917306",
-      "is_new": true,
-      "first_seen_at": "2026-07-14T11:02:48+00:00",
-      "price_label": "750 000 DH",
-      "surface_label": "60 m2",
-      "area_anchor": "area-beausejour"
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
