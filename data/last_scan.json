@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-14T09:13:20+00:00",
+  "generated_at": "2026-07-14T10:09:35+00:00",
   "all_listings_count": 655,
   "matches": [
     {
@@ -270,9 +270,9 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "720 000 DH Appartement à vendre à Oulfa Oulfa, Casablanca 60 m² 1 Pièce 2 Chambres 1 Salle de bain Ascenseur Serraj immobilier Vous propose:À vendre, appartement de 60 m² situé au 4ᵉ étage d'un immeuble moyen standing...",
-      "rank_in_source": 4,
+      "rank_in_source": 5,
       "source_listing_id": "8382078",
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-07-14T09:13:20+00:00",
       "price_label": "720 000 DH",
       "surface_label": "60 m2",
@@ -500,7 +500,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "655 500 DH Superbe appartement à vendre à Oulfa. Superficie 57 m² Oulfa, Casablanca 57 m² 3 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Meublé Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3...",
-      "rank_in_source": 2,
+      "rank_in_source": 3,
       "source_listing_id": "8353724",
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
@@ -661,7 +661,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "893 500 DH Bel appartement à vendre à Californie. Surface de 43 m² Californie, Casablanca 43 m² 1 Ch. 1 Salle de bain Jardin Piscine EVERGREEN - Quand la nature s'invite chez vous Une résidence d'exception au cœur de...",
-      "rank_in_source": 3,
+      "rank_in_source": 5,
       "source_listing_id": "8191757",
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
@@ -808,30 +808,6 @@
       "area_anchor": "area-californie"
     }
   ],
-  "new_matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab El Oulfa",
-      "source_page": "https://www.mubawab.ma/fr/sd/casablanca/oulfa/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8382078/appartement-%C3%A0-vendre-%C3%A0-oulfa",
-      "title": "Appartement à vendre à Oulfa",
-      "price_mad": 720000,
-      "surface_m2": 60,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "1",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "720 000 DH Appartement à vendre à Oulfa Oulfa, Casablanca 60 m² 1 Pièce 2 Chambres 1 Salle de bain Ascenseur Serraj immobilier Vous propose:À vendre, appartement de 60 m² situé au 4ᵉ étage d'un immeuble moyen standing...",
-      "rank_in_source": 4,
-      "source_listing_id": "8382078",
-      "is_new": true,
-      "first_seen_at": "2026-07-14T09:13:20+00:00",
-      "price_label": "720 000 DH",
-      "surface_label": "60 m2",
-      "area_anchor": "area-el-oulfa"
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
