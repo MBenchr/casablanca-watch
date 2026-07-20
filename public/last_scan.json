@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T21:51:59+00:00",
+  "generated_at": "2026-07-20T22:20:19+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 8 heures",
-      "summary": "Voir l'annonce Il y a 8 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
+      "age_label": "Il y a 9 heures",
+      "summary": "Voir l'annonce Il y a 9 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
       "rank_in_source": 1,
       "source_listing_id": "70435",
       "image_url": "listing-thumbs/agenz-70435-b5711722da72.avif",
@@ -26,14 +26,14 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784555494,
+      "published_at_ts": 1784553591,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
       "surface_label": "50 m2",
       "source_label": "Agenz",
       "area_anchor": "area-bourgogne-ouest",
-      "published_label": "Il y a 8 heures",
+      "published_label": "Il y a 9 heures",
       "amenity_labels": [
         "Ascenseur",
         "Parking",
@@ -63,7 +63,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784497894,
+      "published_at_ts": 1784499591,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -100,7 +100,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784325094,
+      "published_at_ts": 1784326791,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -138,7 +138,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784325094,
+      "published_at_ts": 1784326791,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -174,7 +174,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784325094,
+      "published_at_ts": 1784326791,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -210,7 +210,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784238694,
+      "published_at_ts": 1784240391,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -249,7 +249,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784238694,
+      "published_at_ts": 1784240391,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -287,7 +287,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784152294,
+      "published_at_ts": 1784153991,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -323,7 +323,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783806694,
+      "published_at_ts": 1783808391,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -359,7 +359,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783633894,
+      "published_at_ts": 1783635591,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -394,7 +394,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783547494,
+      "published_at_ts": 1783549191,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -429,7 +429,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783547494,
+      "published_at_ts": 1783549191,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
