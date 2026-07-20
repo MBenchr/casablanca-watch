@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T20:29:50+00:00",
+  "generated_at": "2026-07-20T20:56:24+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -26,7 +26,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784554169,
+      "published_at_ts": 1784555752,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -63,7 +63,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784492969,
+      "published_at_ts": 1784494552,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -100,7 +100,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784320169,
+      "published_at_ts": 1784321752,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -138,7 +138,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784320169,
+      "published_at_ts": 1784321752,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -174,7 +174,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784320169,
+      "published_at_ts": 1784321752,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -210,7 +210,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784233769,
+      "published_at_ts": 1784235352,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -249,7 +249,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784233769,
+      "published_at_ts": 1784235352,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -287,7 +287,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784147369,
+      "published_at_ts": 1784148952,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -323,7 +323,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783801769,
+      "published_at_ts": 1783803352,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -359,7 +359,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783628969,
+      "published_at_ts": 1783630552,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -394,7 +394,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783542569,
+      "published_at_ts": 1783544152,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -429,7 +429,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783542569,
+      "published_at_ts": 1783544152,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -441,43 +441,6 @@
         "Meuble"
       ],
       "default_sort_index": 11
-    },
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2",
-      "title": "Bel appartement à vendre à Oulfa. Surface de 45 m²",
-      "price_mad": 585000,
-      "surface_m2": 45,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "2",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "585 000 DH Bel appartement à vendre à Oulfa. Surface de 45 m² Oulfa, Casablanca 45 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3 Chambres , Duple...",
-      "rank_in_source": 3,
-      "source_listing_id": "8353719",
-      "image_url": "listing-thumbs/mubawab-8353719-1acdfba92126.avif",
-      "photo_count": 15,
-      "amenity_keys": [
-        "elevator",
-        "parking"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-10T08:47:23+00:00",
-      "price_label": "585 000 DH",
-      "surface_label": "45 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "",
-      "amenity_labels": [
-        "Ascenseur",
-        "Parking"
-      ],
-      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -518,7 +481,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 13
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -559,7 +522,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -598,7 +561,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -639,7 +602,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -680,7 +643,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 17
+      "default_sort_index": 16
     },
     {
       "source": "agenz",
@@ -721,7 +684,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 18
+      "default_sort_index": 17
     }
   ],
   "new_matches": [],
