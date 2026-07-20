@@ -1,6 +1,14 @@
 name: casablanca-watch
 
 on:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/casablanca-watch.yml"
+      - "watch.py"
+      - "config.json"
+      - "requirements.txt"
   workflow_dispatch:
   schedule:
     - cron: "*/30 * * * *"
