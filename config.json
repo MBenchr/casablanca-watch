@@ -1,5 +1,6 @@
 {
   "criteria": {
+    "min_price_mad": 100000,
     "max_price_mad": 950000,
     "min_surface_m2": 30,
     "max_surface_m2": 60,
@@ -119,25 +120,235 @@
       "agenz_slug": "sidi-maarouf",
       "mubawab_slug": "sidi-maarouf",
       "yakeey_slug": "sidi-maarouf"
+    },
+    {
+      "label": "Gauthier",
+      "aliases": ["gauthier"],
+      "agenz_slug": "gauthier",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Les Princesses",
+      "aliases": ["les princesses", "princesses"],
+      "agenz_slug": "les-princesses",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Palmier",
+      "aliases": ["palmier"],
+      "agenz_slug": "palmier",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Val Fleurie",
+      "aliases": ["val fleurie", "val-fleurie"],
+      "agenz_slug": "val-fleurie",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Anfa",
+      "aliases": ["anfa"],
+      "agenz_slug": null,
+      "mubawab_slug": "anfa",
+      "yakeey_slug": null
+    },
+    {
+      "label": "Anfa Supérieur",
+      "aliases": ["anfa superieur", "anfa supérieur"],
+      "agenz_slug": "anfa-superieur",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Racine",
+      "aliases": ["racine"],
+      "agenz_slug": "racine",
+      "mubawab_slug": "racine",
+      "yakeey_slug": null
+    },
+    {
+      "label": "Bourgogne Ouest",
+      "aliases": ["bourgogne ouest"],
+      "agenz_slug": "bourgogne-ouest",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Bourgogne Est",
+      "aliases": ["bourgogne est"],
+      "agenz_slug": "bourgogne-est",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Franceville",
+      "aliases": ["franceville"],
+      "agenz_slug": "franceville",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Bd Abdelmoumen",
+      "aliases": ["bd abdelmoumen", "boulevard abdelmoumen", "abdelmoumen"],
+      "agenz_slug": "bd-abdelmoumen",
+      "mubawab_slug": "bd-abdelmoumen",
+      "yakeey_slug": null
+    },
+    {
+      "label": "Bir Anzarane",
+      "aliases": ["bir anzarane"],
+      "agenz_slug": "bir-anzarane",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "2 Mars",
+      "aliases": ["2 mars", "deux mars"],
+      "agenz_slug": "2-mars",
+      "mubawab_slug": "2-mars",
+      "yakeey_slug": null
+    },
+    {
+      "label": "Liberté",
+      "aliases": ["liberte", "liberté"],
+      "agenz_slug": "liberte",
+      "mubawab_slug": "liberte",
+      "yakeey_slug": null
+    },
+    {
+      "label": "Burger",
+      "aliases": ["burger"],
+      "agenz_slug": "burger",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Almaz",
+      "aliases": ["almaz"],
+      "agenz_slug": "almaz",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Hay Chrifa",
+      "aliases": ["hay chrifa", "hay-chrifa"],
+      "agenz_slug": "hay-chrifa",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Ziraoui",
+      "aliases": ["ziraoui"],
+      "agenz_slug": "ziraoui",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Marina",
+      "aliases": ["marina"],
+      "agenz_slug": "marina",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Les Hôpitaux",
+      "aliases": ["les hopitaux", "les hôpitaux", "hopitaux"],
+      "agenz_slug": "les-hopitaux",
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Ghandi",
+      "aliases": ["ghandi"],
+      "agenz_slug": null,
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Anoual",
+      "aliases": ["anoual"],
+      "agenz_slug": null,
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Hermitage",
+      "aliases": ["hermitage"],
+      "agenz_slug": null,
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Longchamps",
+      "aliases": ["longchamps"],
+      "agenz_slug": null,
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Polo",
+      "aliases": ["polo"],
+      "agenz_slug": null,
+      "mubawab_slug": null,
+      "yakeey_slug": null
+    },
+    {
+      "label": "Derb Ghallef",
+      "aliases": ["derb ghallef", "derb-ghallef"],
+      "agenz_slug": null,
+      "mubawab_slug": null,
+      "yakeey_slug": null
     }
   ],
   "scan_sites": {
     "agenz": true,
     "mubawab": true,
-    "yakeey": true
+    "yakeey": false,
+    "marocannonces": true
+  },
+  "scan_limits": {
+    "marocannonces_pages": 2
   },
   "manual_pages": [
     {
-      "label": "Sarouty Oasis",
-      "url": "https://www.sarouty.ma/en/buy/casablanca/oasis/"
+      "label": "Avito appartements Casablanca",
+      "url": "https://www.avito.ma/fr/casablanca/appartements-%C3%A0_vendre"
     },
     {
-      "label": "Sarouty Ferme Bretonne",
-      "url": "https://www.sarouty.ma/en/buy/casablanca/ferme-bretone/"
+      "label": "Avito studios Casablanca",
+      "url": "https://www.avito.ma/fr/casablanca/studios-%C3%A0_vendre"
     },
     {
-      "label": "Sarouty Sidi Maarouf",
-      "url": "https://www.sarouty.ma/en/buy/casablanca/sidi-maarouf/"
+      "label": "Avito Immo Neuf Casablanca",
+      "url": "https://immoneuf.avito.ma/fr/s/casablanca"
+    },
+    {
+      "label": "Agenz Immobilier Neuf Casablanca",
+      "url": "https://agenz.ma/fr/immobilier-neuf/immo-casablanca"
+    },
+    {
+      "label": "Sarouty appartements Casablanca",
+      "url": "https://www.sarouty.ma/acheter/casablanca/appartements-a-vendre/"
+    },
+    {
+      "label": "LogicImmo Maroc",
+      "url": "https://logicimmo.ma/"
+    },
+    {
+      "label": "Chridari appartement neuf Casablanca",
+      "url": "https://chridari.ma/fr/selections/appartement-neuf-a-vendre-a-casablanca"
+    },
+    {
+      "label": "Masaken appartements Casablanca",
+      "url": "https://www.masaken.ma/fr/vendre/appartement/casablanca"
+    },
+    {
+      "label": "MarocAnnonces Casablanca",
+      "url": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1"
     },
     {
       "label": "Yakeey Referentiel Casablanca",
@@ -180,6 +391,10 @@
     {
       "label": "ROKHAS",
       "url": "https://rokhas.ma/"
+    },
+    {
+      "label": "Taamir Geoportail urbanisme",
+      "url": "https://www.taamir.gov.ma/"
     },
     {
       "label": "ANCFCC IPAI T1 2026",

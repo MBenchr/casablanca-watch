@@ -2,10 +2,11 @@
 
 Outil local pour surveiller les annonces autour de CFC avec:
 
-- budget max `950000 DH`
+- budget `100000-950000 DH`
 - surface `30-60 m2`
 - quartiers etendus depuis votre carte
-- bouton `Actualiser` dans l'interface live
+- bouton `Actualiser` dans l'interface live et sur la version publique
+- vue mixee avec filtres quartiers / sources / equipements
 
 Quartiers actuellement integres depuis la carte:
 
@@ -25,10 +26,17 @@ Quartiers actuellement integres depuis la carte:
 - Californie
 - Bachkou / Taddart
 - Sidi Maarouf
+- Ghandi
+- Anoual
+- Hermitage
+- Longchamps
+- Polo
+- Derb Ghallef
 
 ## Ce que ce dossier apporte maintenant
 
 - un scan multi-sites configurable
+- un scan recent centre sur les flux ville entiere puis filtre localement par quartier
 - une interface live locale sur `http://127.0.0.1:8765`
 - un dashboard statique de secours
 - une version publique generee dans `public/` pour GitHub Pages
@@ -76,8 +84,10 @@ Installer la surveillance locale macOS toutes les 30 minutes:
 ## Fiabilite des liens externes
 
 - `Agenz`: liens verifies avec filtre prix/surface et tri recent directement dans l'URL
-- `Mubawab`: bonnes pages quartier, mais le filtre public exact par URL n'est pas assez fiable; la vue interne reste la reference propre
-- `Yakeey`: bonnes pages quartier, mais meme logique; la vue interne fait le filtrage exact
+- `Mubawab`: bonne source d'agences, mais le filtre public exact par URL n'est pas assez fiable; la vue interne reste la reference propre
+- `MarocAnnonces`: bon complement avec dates et images souvent lisibles
+- `Avito`: utile, mais bloque l'automatisation serveur par Cloudflare; conserve en source manuelle directe
+- `Yakeey`: pages publiques actuellement instables, donc desactive du scan automatique par defaut
 
 ## Hebergement public
 
@@ -116,6 +126,7 @@ Variables supportees:
 Editez `config.json`:
 
 - `max_price_mad`
+- `min_price_mad`
 - `min_surface_m2`
 - `max_surface_m2`
 - `required_keywords_all`
@@ -127,5 +138,7 @@ Editez `config.json`:
 ## Limites connues
 
 - l'interface locale est la vue exacte de reference
+- la page publique recharge le dernier `public/last_scan.json` publie quand on clique sur `Actualiser`
 - le premier run initialise la base et n'envoie pas d'alerte, sinon il vous spammerait avec tout l'existant
-- pour `Mubawab` et `Yakeey`, les pages externes quartier restent utiles, mais l'exactitude prix/surface et tri recent est surtout garantie dans Casablanca Watch
+- les liens externes `Agenz` restent les plus fiables quand vous voulez aussi verifier directement les pages source avec tri recent
+- certaines sources restent en manuel par choix de robustesse: mieux vaut un lien direct qui marche qu'un scraper fragile qui casse silencieusement

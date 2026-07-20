@@ -9,7 +9,7 @@ import subprocess
 import sys
 import textwrap
 import webbrowser
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, field
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from typing import Any
@@ -37,7 +37,64 @@ USER_AGENT = (
 )
 TIMEOUT = 25.0
 DEFAULT_PORT = 8765
-SOURCE_ORDER = ["agenz", "mubawab", "yakeey"]
+SOURCE_ORDER = ["agenz", "mubawab", "marocannonces", "yakeey"]
+
+AMENITY_PATTERNS = {
+    "terrace": r"\bterrasse?s?\b",
+    "balcony": r"\bbalcon(?:s)?\b",
+    "elevator": r"\bascenseur\b",
+    "parking": r"\b(parking|garage|place de parking)\b",
+    "concierge": r"\bconcierge|gardien|gardiennage\b",
+    "furnished": r"\bmeubl[éee]?\b",
+    "new_project": r"\b(projet neuf|immobilier neuf|comme neuf|neuf)\b",
+}
+
+AMENITY_LABELS = {
+    "terrace": "Terrasse",
+    "balcony": "Balcon",
+    "elevator": "Ascenseur",
+    "parking": "Parking",
+    "concierge": "Concierge",
+    "furnished": "Meuble",
+    "new_project": "Neuf",
+}
+
+MAROCANNONCES_MONTHS = {
+    "jan": 1,
+    "janv": 1,
+    "janvier": 1,
+    "fev": 2,
+    "fevr": 2,
+    "fevrier": 2,
+    "fév": 2,
+    "févr": 2,
+    "février": 2,
+    "mar": 3,
+    "mars": 3,
+    "avr": 4,
+    "avril": 4,
+    "mai": 5,
+    "jun": 6,
+    "juin": 6,
+    "jul": 7,
+    "juil": 7,
+    "juillet": 7,
+    "aou": 8,
+    "aoû": 8,
+    "aout": 8,
+    "août": 8,
+    "sep": 9,
+    "sept": 9,
+    "septembre": 9,
+    "oct": 10,
+    "octobre": 10,
+    "nov": 11,
+    "novembre": 11,
+    "dec": 12,
+    "déc": 12,
+    "decembre": 12,
+    "décembre": 12,
+}
 
 
 DASHBOARD_TEMPLATE = Template(
@@ -342,6 +399,151 @@ DASHBOARD_TEMPLATE = Template(
       gap: 8px;
       flex-wrap: wrap;
     }
+    .filter-shell {
+      margin-top: 18px;
+      padding: 16px;
+      border-radius: 20px;
+      border: 1px solid var(--line);
+      background: #fcfaf5;
+    }
+    .filter-shell h3 {
+      margin: 0 0 10px;
+    }
+    .chip-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+    .chip {
+      border: 1px solid var(--line);
+      background: white;
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 8px 12px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .chip.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+    .numeric-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .range-field {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: white;
+      padding: 12px;
+    }
+    .range-field input[type="number"],
+    .range-field select {
+      width: 100%;
+      margin-top: 8px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 8px 10px;
+      background: #fffdfa;
+      color: var(--ink);
+      font: inherit;
+    }
+    .range-field input[type="range"] {
+      width: 100%;
+      margin-top: 8px;
+    }
+    .mini-label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--muted);
+    }
+    .table-actions {
+      margin-top: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .listings-grid {
+      display: grid;
+      gap: 14px;
+      margin-top: 18px;
+    }
+    .listing-row {
+      display: grid;
+      grid-template-columns: 180px 1fr;
+      gap: 14px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 14px;
+      background: white;
+    }
+    .thumb {
+      border-radius: 16px;
+      overflow: hidden;
+      min-height: 130px;
+      background: linear-gradient(135deg, #e9edf1, #d9e4dd);
+    }
+    .thumb img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .thumb-empty {
+      display: grid;
+      place-items: center;
+      height: 100%;
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .listing-copy h3 {
+      margin: 0;
+      font-size: 22px;
+      line-height: 1.15;
+    }
+    .listing-topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .listing-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: flex-end;
+    }
+    .feature-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+    .feature-pill {
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #eef4ef;
+      color: #195e54;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .secondary-debug {
+      margin-top: 24px;
+      border-top: 1px solid var(--line);
+      padding-top: 18px;
+    }
+    .secondary-debug summary {
+      cursor: pointer;
+      font-weight: 700;
+    }
     @media (max-width: 980px) {
       .layout {
         grid-template-columns: 1fr;
@@ -350,6 +552,9 @@ DASHBOARD_TEMPLATE = Template(
         font-size: 34px;
       }
       .grid-two {
+        grid-template-columns: 1fr;
+      }
+      .listing-row {
         grid-template-columns: 1fr;
       }
     }
@@ -364,19 +569,19 @@ DASHBOARD_TEMPLATE = Template(
         un bouton d'actualisation direct, et des vues exactes filtrees dans cette interface meme.
       </p>
       <div class="meta">
-        <span class="pill">Budget max: {{ criteria.max_price_mad }} DH</span>
+        <span class="pill">Budget: {{ criteria.min_price_mad }} a {{ criteria.max_price_mad }} DH</span>
         <span class="pill">Surface: {{ criteria.min_surface_m2 }} a {{ criteria.max_surface_m2 }} m2</span>
-        <span class="pill">Dernier scan: {{ generated_at }}</span>
-        <span class="pill">Matches: {{ matches|length }}</span>
+        <span id="heroGeneratedAt" class="pill">Dernier scan: {{ generated_at }}</span>
+        <span id="heroMatchesCount" class="pill">Matches: {{ matches|length }}</span>
       </div>
       <div class="actions">
         {% if refresh_mode == "live" %}
         <button id="refreshButton" class="action" onclick="refreshNow()">Actualiser</button>
         {% elif refresh_mode == "reload" %}
-        <button class="action" onclick="window.location.reload()">Actualiser</button>
+        <button id="refreshButton" class="action" onclick="reloadPublishedSnapshot()">Actualiser</button>
         {% endif %}
-        <button class="action" onclick='openMany({{ new_match_urls_json }})'>Ouvrir les nouveaux biens</button>
-        <button class="action" onclick='openMany({{ current_match_urls_json }})'>Ouvrir tous les biens exacts</button>
+        <button class="action" onclick="openNewListings()">Ouvrir les nouveaux biens</button>
+        <button class="action" onclick="openAllCurrentListings()">Ouvrir tous les biens exacts</button>
         <button class="action secondary" onclick='openMany({{ agenz_exact_urls_json }})'>Ouvrir Agenz exact + recent</button>
         <button class="action secondary" onclick='openMany({{ raw_external_urls_json }})'>Ouvrir pages quartier brutes</button>
       </div>
@@ -384,12 +589,12 @@ DASHBOARD_TEMPLATE = Template(
 
     <div class="layout">
       <main class="panel">
-        <h2>Nouveaux biens detectes</h2>
+        <h2>Flux mixte CFC</h2>
         <p class="small">
           {% if refresh_mode == "live" %}
-          Le bouton <code>Actualiser</code> relance le scan, recharge la page, et fait remonter les nouvelles annonces exactes.
+          Le bouton <code>Actualiser</code> relance le scan, puis la vue melangee se remet a jour.
           {% elif refresh_mode == "reload" %}
-          Le site public est republie automatiquement. Le bouton <code>Actualiser</code> recharge simplement la derniere version disponible.
+          Le bouton <code>Actualiser</code> recharge le dernier snapshot publie sur le site partageable.
           {% endif %}
         </p>
         {% if bootstrapped %}
@@ -398,128 +603,159 @@ DASHBOARD_TEMPLATE = Template(
           comme du neuf.
         </div>
         {% endif %}
-        {% if new_matches %}
-        <div class="cards">
-          {% for item in new_matches %}
-          <article class="card">
-            <h4>{{ item.title }}</h4>
-            <div class="badge-row">
-              <span class="badge new">Nouveau</span>
-              <span class="badge">{{ item.source_name }}</span>
-              <span class="badge">{{ item.area_guess or item.location_text or "Zone a verifier" }}</span>
-              {% if item.age_label %}<span class="badge">{{ item.age_label }}</span>{% endif %}
-            </div>
-            <div class="kv">
-              <span><strong>Prix:</strong> {{ item.price_label }}</span>
-              <span><strong>Surface:</strong> {{ item.surface_label }}</span>
-              {% if item.rooms_label %}<span><strong>Pieces:</strong> {{ item.rooms_label }}</span>{% endif %}
-              {% if item.bedrooms_label %}<span><strong>Ch:</strong> {{ item.bedrooms_label }}</span>{% endif %}
-              {% if item.bathrooms_label %}<span><strong>Sdb:</strong> {{ item.bathrooms_label }}</span>{% endif %}
-            </div>
-            <p class="small">{{ item.summary }}</p>
-            <div class="links">
-              <a href="{{ item.url }}" target="_blank" rel="noreferrer">Annonce</a>
-              <a href="#source-{{ item.source }}">{{ item.source_name }}</a>
-              {% if item.area_anchor %}<a href="#{{ item.area_anchor }}">{{ item.area_guess }}</a>{% endif %}
-            </div>
-          </article>
-          {% endfor %}
+        <div class="filter-shell">
+          <h3>Filtres rapides</h3>
+          <p class="small">
+            Selectionnez les quartiers a garder, bougez les seuils prix/surface, puis ouvrez en une fois
+            toutes les annonces visibles. L'ordre par defaut suit la fraicheur detectable du scan.
+          </p>
+          <div class="group">
+            <strong>Quartiers CFC suivis</strong>
+            <div id="areaFilters" class="chip-list"></div>
+          </div>
+          <div class="group">
+            <strong>Sources</strong>
+            <div id="sourceFilters" class="chip-list"></div>
+          </div>
+          <div class="group">
+            <strong>Equipements utiles</strong>
+            <div id="amenityFilters" class="chip-list"></div>
+          </div>
+          <div class="numeric-grid">
+            <label class="range-field">
+              <span class="mini-label">Prix min</span>
+              <input id="minPriceRange" type="range" min="0" max="2000000" step="25000" value="{{ criteria.min_price_mad }}">
+              <input id="minPriceNumber" type="number" min="0" step="25000" value="{{ criteria.min_price_mad }}">
+            </label>
+            <label class="range-field">
+              <span class="mini-label">Prix max</span>
+              <input id="maxPriceRange" type="range" min="200000" max="2000000" step="25000" value="{{ criteria.max_price_mad }}">
+              <input id="maxPriceNumber" type="number" min="0" step="25000" value="{{ criteria.max_price_mad }}">
+            </label>
+            <label class="range-field">
+              <span class="mini-label">Surface min</span>
+              <input id="minSurfaceRange" type="range" min="15" max="120" step="1" value="{{ criteria.min_surface_m2 }}">
+              <input id="minSurfaceNumber" type="number" min="0" step="1" value="{{ criteria.min_surface_m2 }}">
+            </label>
+            <label class="range-field">
+              <span class="mini-label">Surface max</span>
+              <input id="maxSurfaceRange" type="range" min="15" max="120" step="1" value="{{ criteria.max_surface_m2 }}">
+              <input id="maxSurfaceNumber" type="number" min="0" step="1" value="{{ criteria.max_surface_m2 }}">
+            </label>
+            <label class="range-field">
+              <span class="mini-label">Tri</span>
+              <select id="sortModeSelect">
+                <option value="latest">Plus recents / visibles d'abord</option>
+                <option value="price_asc">Prix croissant</option>
+                <option value="price_desc">Prix decroissant</option>
+                <option value="surface_desc">Surface decroissante</option>
+              </select>
+            </label>
+          </div>
+          <div class="table-actions">
+            <button class="action" onclick="openVisibleListings()">Ouvrir les annonces visibles</button>
+            <button class="action secondary" onclick="resetDashboardFilters()">Reinitialiser les filtres</button>
+          </div>
+          <p id="mixedSummary" class="small"></p>
         </div>
-        {% else %}
-        <div class="empty">Aucun nouveau bien matching pour le moment.</div>
-        {% endif %}
 
-        <h2 style="margin-top: 24px;">Quartiers suivis depuis la carte</h2>
-        <div class="area-grid">
-          {% for area in area_cards %}
-          <a class="area-card" href="#{{ area.anchor }}">
-            <strong>{{ area.label }}</strong>
-            <span class="count">{{ area.count }}</span>
-            <span class="small">{{ area.note }}</span>
-          </a>
-          {% endfor %}
-        </div>
+        <div id="mixedRows" class="listings-grid"></div>
 
-        <h2 style="margin-top: 24px;">Vues par source</h2>
-        <div class="source-grid">
-          {% for source in source_cards %}
-          <a class="source-card" href="#source-{{ source.id }}">
-            <strong>{{ source.label }}</strong>
-            <span class="count">{{ source.count }}</span>
-            <span class="small">{{ source.note }}</span>
-          </a>
-          {% endfor %}
-        </div>
+        <details class="secondary-debug">
+          <summary>Vues secondaires par source et par quartier</summary>
 
-        {% for source in source_sections %}
-        <section class="section-anchor" id="source-{{ source.id }}" style="margin-top: 26px;">
-          <h2>{{ source.label }}</h2>
-          <p class="small">{{ source.note }}</p>
-          {% if source.listings %}
-          <div class="cards">
-            {% for item in source.listings %}
-            <article class="card">
-              <h4>{{ item.title }}</h4>
-              <div class="badge-row">
-                {% if item.is_new %}<span class="badge new">Nouveau</span>{% endif %}
-                <span class="badge">{{ item.area_guess or item.location_text or "Zone a verifier" }}</span>
-                {% if item.age_label %}<span class="badge">{{ item.age_label }}</span>{% endif %}
-                <span class="badge">Ordre source: {{ item.rank_in_source }}</span>
-              </div>
-              <div class="kv">
-                <span><strong>Prix:</strong> {{ item.price_label }}</span>
-                <span><strong>Surface:</strong> {{ item.surface_label }}</span>
-                {% if item.rooms_label %}<span><strong>Pieces:</strong> {{ item.rooms_label }}</span>{% endif %}
-                {% if item.bedrooms_label %}<span><strong>Ch:</strong> {{ item.bedrooms_label }}</span>{% endif %}
-                {% if item.bathrooms_label %}<span><strong>Sdb:</strong> {{ item.bathrooms_label }}</span>{% endif %}
-              </div>
-              <p class="small">{{ item.summary }}</p>
-              <div class="links">
-                <a href="{{ item.url }}" target="_blank" rel="noreferrer">Annonce</a>
-                {% if item.area_anchor %}<a href="#{{ item.area_anchor }}">{{ item.area_guess }}</a>{% endif %}
-              </div>
-            </article>
+          <h2 style="margin-top: 18px;">Quartiers presents dans le scan</h2>
+          <div class="area-grid">
+            {% for area in area_cards %}
+            <a class="area-card" href="#{{ area.anchor }}">
+              <strong>{{ area.label }}</strong>
+              <span class="count">{{ area.count }}</span>
+              <span class="small">{{ area.note }}</span>
+            </a>
             {% endfor %}
           </div>
-          {% else %}
-          <div class="empty">Aucun bien exact retenu pour cette source.</div>
-          {% endif %}
-        </section>
-        {% endfor %}
 
-        {% for area in area_sections %}
-        <section class="section-anchor" id="{{ area.anchor }}" style="margin-top: 26px;">
-          <h2>{{ area.label }}</h2>
-          {% if area.listings %}
-          <div class="cards">
-            {% for item in area.listings %}
-            <article class="card">
-              <h4>{{ item.title }}</h4>
-              <div class="badge-row">
-                {% if item.is_new %}<span class="badge new">Nouveau</span>{% endif %}
-                <span class="badge">{{ item.source_name }}</span>
-                {% if item.age_label %}<span class="badge">{{ item.age_label }}</span>{% endif %}
-              </div>
-              <div class="kv">
-                <span><strong>Prix:</strong> {{ item.price_label }}</span>
-                <span><strong>Surface:</strong> {{ item.surface_label }}</span>
-                {% if item.rooms_label %}<span><strong>Pieces:</strong> {{ item.rooms_label }}</span>{% endif %}
-                {% if item.bedrooms_label %}<span><strong>Ch:</strong> {{ item.bedrooms_label }}</span>{% endif %}
-                {% if item.bathrooms_label %}<span><strong>Sdb:</strong> {{ item.bathrooms_label }}</span>{% endif %}
-              </div>
-              <p class="small">{{ item.summary }}</p>
-              <div class="links">
-                <a href="{{ item.url }}" target="_blank" rel="noreferrer">Annonce</a>
-                <a href="#source-{{ item.source }}">{{ item.source_name }}</a>
-              </div>
-            </article>
+          <h2 style="margin-top: 24px;">Vues par source</h2>
+          <div class="source-grid">
+            {% for source in source_cards %}
+            <a class="source-card" href="#source-{{ source.id }}">
+              <strong>{{ source.label }}</strong>
+              <span class="count">{{ source.count }}</span>
+              <span class="small">{{ source.note }}</span>
+            </a>
             {% endfor %}
           </div>
-          {% else %}
-          <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
-          {% endif %}
-        </section>
-        {% endfor %}
+
+          {% for source in source_sections %}
+          <section class="section-anchor" id="source-{{ source.id }}" style="margin-top: 26px;">
+            <h2>{{ source.label }}</h2>
+            <p class="small">{{ source.note }}</p>
+            {% if source.listings %}
+            <div class="cards">
+              {% for item in source.listings %}
+              <article class="card">
+                <h4>{{ item.title }}</h4>
+                <div class="badge-row">
+                  {% if item.is_new %}<span class="badge new">Nouveau</span>{% endif %}
+                  <span class="badge">{{ item.area_guess or item.location_text or "Zone a verifier" }}</span>
+                  {% if item.age_label %}<span class="badge">{{ item.age_label }}</span>{% endif %}
+                  <span class="badge">Ordre source: {{ item.rank_in_source }}</span>
+                </div>
+                <div class="kv">
+                  <span><strong>Prix:</strong> {{ item.price_label }}</span>
+                  <span><strong>Surface:</strong> {{ item.surface_label }}</span>
+                  {% if item.rooms_label %}<span><strong>Pieces:</strong> {{ item.rooms_label }}</span>{% endif %}
+                  {% if item.bedrooms_label %}<span><strong>Ch:</strong> {{ item.bedrooms_label }}</span>{% endif %}
+                  {% if item.bathrooms_label %}<span><strong>Sdb:</strong> {{ item.bathrooms_label }}</span>{% endif %}
+                </div>
+                <p class="small">{{ item.summary }}</p>
+                <div class="links">
+                  <a href="{{ item.url }}" target="_blank" rel="noreferrer">Annonce</a>
+                  {% if item.area_anchor %}<a href="#{{ item.area_anchor }}">{{ item.area_guess }}</a>{% endif %}
+                </div>
+              </article>
+              {% endfor %}
+            </div>
+            {% else %}
+            <div class="empty">Aucun bien exact retenu pour cette source.</div>
+            {% endif %}
+          </section>
+          {% endfor %}
+
+          {% for area in area_sections %}
+          <section class="section-anchor" id="{{ area.anchor }}" style="margin-top: 26px;">
+            <h2>{{ area.label }}</h2>
+            {% if area.listings %}
+            <div class="cards">
+              {% for item in area.listings %}
+              <article class="card">
+                <h4>{{ item.title }}</h4>
+                <div class="badge-row">
+                  {% if item.is_new %}<span class="badge new">Nouveau</span>{% endif %}
+                  <span class="badge">{{ item.source_name }}</span>
+                  {% if item.age_label %}<span class="badge">{{ item.age_label }}</span>{% endif %}
+                </div>
+                <div class="kv">
+                  <span><strong>Prix:</strong> {{ item.price_label }}</span>
+                  <span><strong>Surface:</strong> {{ item.surface_label }}</span>
+                  {% if item.rooms_label %}<span><strong>Pieces:</strong> {{ item.rooms_label }}</span>{% endif %}
+                  {% if item.bedrooms_label %}<span><strong>Ch:</strong> {{ item.bedrooms_label }}</span>{% endif %}
+                  {% if item.bathrooms_label %}<span><strong>Sdb:</strong> {{ item.bathrooms_label }}</span>{% endif %}
+                </div>
+                <p class="small">{{ item.summary }}</p>
+                <div class="links">
+                  <a href="{{ item.url }}" target="_blank" rel="noreferrer">Annonce</a>
+                  <a href="#source-{{ item.source }}">{{ item.source_name }}</a>
+                </div>
+              </article>
+              {% endfor %}
+            </div>
+            {% else %}
+            <div class="empty">Aucun bien exact actuellement pour ce quartier.</div>
+            {% endif %}
+          </section>
+          {% endfor %}
+        </details>
       </main>
 
       <aside class="panel">
@@ -527,15 +763,15 @@ DASHBOARD_TEMPLATE = Template(
         <div class="grid-two">
           <div class="stat-card">
             <span class="small">Biens parses</span>
-            <span class="stat-big">{{ all_listings_count }}</span>
+            <span id="allListingsStat" class="stat-big">{{ all_listings_count }}</span>
           </div>
           <div class="stat-card">
             <span class="small">Biens exacts</span>
-            <span class="stat-big">{{ matches|length }}</span>
+            <span id="matchesStat" class="stat-big">{{ matches|length }}</span>
           </div>
           <div class="stat-card">
             <span class="small">Nouveaux biens</span>
-            <span class="stat-big">{{ new_matches|length }}</span>
+            <span id="newMatchesStat" class="stat-big">{{ new_matches|length }}</span>
           </div>
           <div class="stat-card">
             <span class="small">Mode</span>
@@ -549,7 +785,7 @@ DASHBOARD_TEMPLATE = Template(
           Cette version est faite pour etre partagee. Toute personne avec ce lien voit les annonces exactes du dernier scan publie.
         </p>
         <div class="button-list">
-          <button class="linkish" onclick="window.location.reload()">Recharger la page</button>
+          <button class="linkish" onclick="reloadPublishedSnapshot()">Recharger le snapshot</button>
         </div>
         {% else %}
         <h3>Commande locale</h3>
@@ -627,7 +863,9 @@ DASHBOARD_TEMPLATE = Template(
         <p class="small">
           <strong>Agenz</strong>: URL verifiees avec filtre prix/surface et tri <code>date_desc</code>.<br>
           <strong>Mubawab</strong>: bonnes pages quartier, mais le site n'applique pas proprement le filtre prix/surface via une simple URL publique stable.<br>
-          <strong>Yakeey</strong>: bonnes pages quartier, mais le filtre URL n'est pas suffisamment fiable pour etre marque exact.
+          <strong>MarocAnnonces</strong>: bon complement city-wide, avec dates et images lisibles dans beaucoup de fiches.<br>
+          <strong>Avito</strong>: utile a surveiller, mais protection Cloudflare cote bot; conserve ici en source manuelle directe.<br>
+          <strong>Yakeey</strong>: source conservee, mais comportement actuellement instable sur certaines pages publiques.
         </p>
       </aside>
     </div>
@@ -643,6 +881,512 @@ DASHBOARD_TEMPLATE = Template(
       }
     }
 
+    const DEFAULT_FILTERS = {
+      minPrice: {{ criteria.min_price_mad }},
+      maxPrice: {{ criteria.max_price_mad }},
+      minSurface: {{ criteria.min_surface_m2 }},
+      maxSurface: {{ criteria.max_surface_m2 }}
+    };
+    const SNAPSHOT_URL = "{{ snapshot_url }}";
+    const INITIAL_MATCHES = {{ matches_json }};
+    const INITIAL_NEW_MATCHES = {{ new_matches_json }};
+    const INITIAL_AREA_OPTIONS = {{ area_filter_options_json }};
+    const INITIAL_SOURCE_OPTIONS = {{ source_filter_options_json }};
+    const INITIAL_AMENITY_OPTIONS = {{ amenity_filter_options_json }};
+
+    const amenityLabelMap = Object.fromEntries(
+      INITIAL_AMENITY_OPTIONS.map((item) => [item.id, item.label])
+    );
+
+    let dashboardState = {
+      selectedAreas: new Set(),
+      selectedSources: new Set(),
+      selectedAmenities: new Set(),
+      minPrice: DEFAULT_FILTERS.minPrice,
+      maxPrice: DEFAULT_FILTERS.maxPrice,
+      minSurface: DEFAULT_FILTERS.minSurface,
+      maxSurface: DEFAULT_FILTERS.maxSurface,
+      sortMode: "latest"
+    };
+
+    let currentScanData = normalizeScanData({
+      generated_at: "{{ generated_at }}",
+      all_listings_count: {{ all_listings_count }},
+      matches: INITIAL_MATCHES,
+      new_matches: INITIAL_NEW_MATCHES,
+      bootstrapped: {{ "true" if bootstrapped else "false" }}
+    });
+
+    function escapeHtml(value) {
+      return String(value ?? "")
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function formatPrice(priceMad) {
+      if (!Number.isFinite(priceMad)) {
+        return "Prix non lu";
+      }
+      return `${priceMad.toLocaleString("fr-FR")} DH`;
+    }
+
+    function formatSurface(surfaceM2) {
+      if (!Number.isFinite(surfaceM2)) {
+        return "Surface non lue";
+      }
+      return `${surfaceM2} m2`;
+    }
+
+    function sourceDisplayName(source, fallback) {
+      const match = INITIAL_SOURCE_OPTIONS.find((item) => item.id === source);
+      return match?.label || fallback || source || "Source";
+    }
+
+    function normalizeListing(item, index, newUrls) {
+      const amenityKeys = Array.isArray(item.amenity_keys) ? item.amenity_keys : [];
+      const amenityLabels = Array.isArray(item.amenity_labels) && item.amenity_labels.length
+        ? item.amenity_labels
+        : amenityKeys.map((key) => amenityLabelMap[key] || key);
+      return {
+        ...item,
+        area_guess: item.area_guess || item.location_text || "",
+        price_mad: Number.isFinite(item.price_mad) ? item.price_mad : null,
+        surface_m2: Number.isFinite(item.surface_m2) ? item.surface_m2 : null,
+        photo_count: Number.isFinite(item.photo_count) ? item.photo_count : (item.image_url ? 1 : 0),
+        default_sort_index: Number.isFinite(item.default_sort_index) ? item.default_sort_index : index,
+        published_at_ts: Number.isFinite(item.published_at_ts) ? item.published_at_ts : null,
+        published_label: item.published_label || item.age_label || "",
+        price_label: item.price_label || formatPrice(item.price_mad),
+        surface_label: item.surface_label || formatSurface(item.surface_m2),
+        source_name: sourceDisplayName(item.source, item.source_name),
+        image_url: item.image_url || "",
+        summary: item.summary || "",
+        amenity_keys: amenityKeys,
+        amenity_labels: amenityLabels,
+        is_new: Boolean(item.is_new || newUrls.has(item.url))
+      };
+    }
+
+    function normalizeScanData(payload) {
+      const newUrls = new Set((payload.new_matches || []).map((item) => item.url));
+      const matches = (payload.matches || []).map((item, index) => normalizeListing(item, index, newUrls));
+      const countsByArea = {};
+      const countsBySource = {};
+      for (const item of matches) {
+        const areaLabel = item.area_guess || "";
+        if (areaLabel) {
+          countsByArea[areaLabel] = (countsByArea[areaLabel] || 0) + 1;
+        }
+        const sourceId = item.source || "";
+        if (sourceId) {
+          countsBySource[sourceId] = (countsBySource[sourceId] || 0) + 1;
+        }
+      }
+
+      const areaOptions = INITIAL_AREA_OPTIONS.map((item) => ({ ...item }));
+      const knownAreas = new Set(areaOptions.map((item) => item.label));
+      for (const option of areaOptions) {
+        option.count = countsByArea[option.label] || 0;
+      }
+      for (const [label, count] of Object.entries(countsByArea)) {
+        if (knownAreas.has(label)) {
+          continue;
+        }
+        areaOptions.push({ label, count });
+      }
+      areaOptions.sort((left, right) => {
+        if (right.count !== left.count) {
+          return right.count - left.count;
+        }
+        return left.label.localeCompare(right.label, "fr");
+      });
+
+      const sourceOptions = INITIAL_SOURCE_OPTIONS.map((item) => ({ ...item }));
+      const knownSources = new Set(sourceOptions.map((item) => item.id));
+      for (const option of sourceOptions) {
+        option.count = countsBySource[option.id] || 0;
+      }
+      for (const [id, count] of Object.entries(countsBySource)) {
+        if (knownSources.has(id)) {
+          continue;
+        }
+        sourceOptions.push({ id, label: sourceDisplayName(id, ""), count });
+      }
+      sourceOptions.sort((left, right) => {
+        if (right.count !== left.count) {
+          return right.count - left.count;
+        }
+        return left.label.localeCompare(right.label, "fr");
+      });
+
+      return {
+        generated_at: payload.generated_at || "",
+        all_listings_count: payload.all_listings_count || 0,
+        matches,
+        new_matches: matches.filter((item) => item.is_new),
+        bootstrapped: Boolean(payload.bootstrapped),
+        area_options: areaOptions,
+        source_options: sourceOptions
+      };
+    }
+
+    function activeFilterSummary() {
+      const parts = [];
+      if (dashboardState.selectedAreas.size) {
+        parts.push(`${dashboardState.selectedAreas.size} quartier(s)`);
+      }
+      if (dashboardState.selectedSources.size) {
+        parts.push(`${dashboardState.selectedSources.size} source(s)`);
+      }
+      if (dashboardState.selectedAmenities.size) {
+        parts.push(`${dashboardState.selectedAmenities.size} equipement(s)`);
+      }
+      if (!parts.length) {
+        return "Aucun filtre quartier/source/equipement actif";
+      }
+      return parts.join(" • ");
+    }
+
+    function setChipList(containerId, options, selectedSet, getValue) {
+      const container = document.getElementById(containerId);
+      if (!container) {
+        return;
+      }
+      container.innerHTML = options.map((option) => {
+        const value = getValue(option);
+        const active = selectedSet.has(value) ? " active" : "";
+        return `
+          <button class="chip${active}" type="button" data-chip-value="${escapeHtml(value)}">
+            ${escapeHtml(option.label)} <span class="small">(${option.count || 0})</span>
+          </button>
+        `;
+      }).join("");
+      for (const button of container.querySelectorAll("[data-chip-value]")) {
+        button.addEventListener("click", () => {
+          const value = button.getAttribute("data-chip-value") || "";
+          if (selectedSet.has(value)) {
+            selectedSet.delete(value);
+          } else {
+            selectedSet.add(value);
+          }
+          renderDashboard();
+        });
+      }
+    }
+
+    function syncNumericControls() {
+      const minPriceRange = document.getElementById("minPriceRange");
+      const minPriceNumber = document.getElementById("minPriceNumber");
+      const maxPriceRange = document.getElementById("maxPriceRange");
+      const maxPriceNumber = document.getElementById("maxPriceNumber");
+      const minSurfaceRange = document.getElementById("minSurfaceRange");
+      const minSurfaceNumber = document.getElementById("minSurfaceNumber");
+      const maxSurfaceRange = document.getElementById("maxSurfaceRange");
+      const maxSurfaceNumber = document.getElementById("maxSurfaceNumber");
+      const sortModeSelect = document.getElementById("sortModeSelect");
+
+      if (!minPriceRange || !minPriceNumber || !maxPriceRange || !maxPriceNumber || !minSurfaceRange || !minSurfaceNumber || !maxSurfaceRange || !maxSurfaceNumber || !sortModeSelect) {
+        return;
+      }
+
+      minPriceRange.value = String(dashboardState.minPrice);
+      minPriceNumber.value = String(dashboardState.minPrice);
+      maxPriceRange.value = String(dashboardState.maxPrice);
+      maxPriceNumber.value = String(dashboardState.maxPrice);
+      minSurfaceRange.value = String(dashboardState.minSurface);
+      minSurfaceNumber.value = String(dashboardState.minSurface);
+      maxSurfaceRange.value = String(dashboardState.maxSurface);
+      maxSurfaceNumber.value = String(dashboardState.maxSurface);
+      sortModeSelect.value = dashboardState.sortMode;
+    }
+
+    function listingVisible(item) {
+      if (dashboardState.selectedAreas.size && !dashboardState.selectedAreas.has(item.area_guess)) {
+        return false;
+      }
+      if (dashboardState.selectedSources.size && !dashboardState.selectedSources.has(item.source)) {
+        return false;
+      }
+      if (dashboardState.selectedAmenities.size) {
+        for (const amenity of dashboardState.selectedAmenities) {
+          if (!item.amenity_keys.includes(amenity)) {
+            return false;
+          }
+        }
+      }
+      if (Number.isFinite(item.price_mad) && item.price_mad < dashboardState.minPrice) {
+        return false;
+      }
+      if (Number.isFinite(item.price_mad) && item.price_mad > dashboardState.maxPrice) {
+        return false;
+      }
+      if (!Number.isFinite(item.surface_m2)) {
+        return false;
+      }
+      if (item.surface_m2 < dashboardState.minSurface || item.surface_m2 > dashboardState.maxSurface) {
+        return false;
+      }
+      return true;
+    }
+
+    function compareListings(left, right) {
+      switch (dashboardState.sortMode) {
+        case "price_asc":
+          return (left.price_mad ?? Number.MAX_SAFE_INTEGER) - (right.price_mad ?? Number.MAX_SAFE_INTEGER);
+        case "price_desc":
+          return (right.price_mad ?? -1) - (left.price_mad ?? -1);
+        case "surface_desc":
+          return (right.surface_m2 ?? -1) - (left.surface_m2 ?? -1);
+        case "latest":
+        default: {
+          const leftTs = left.published_at_ts ?? null;
+          const rightTs = right.published_at_ts ?? null;
+          if (leftTs !== rightTs) {
+            return (rightTs ?? -1) - (leftTs ?? -1);
+          }
+          return (left.default_sort_index ?? 9999) - (right.default_sort_index ?? 9999);
+        }
+      }
+    }
+
+    function visibleListings() {
+      return currentScanData.matches.filter(listingVisible).sort(compareListings);
+    }
+
+    function listingBadges(item) {
+      const badges = [];
+      if (item.is_new) {
+        badges.push('<span class="badge new">Nouveau</span>');
+      }
+      badges.push(`<span class="badge">${escapeHtml(item.source_name)}</span>`);
+      if (item.area_guess) {
+        badges.push(`<span class="badge">${escapeHtml(item.area_guess)}</span>`);
+      }
+      if (item.published_label) {
+        badges.push(`<span class="badge">${escapeHtml(item.published_label)}</span>`);
+      }
+      if (item.photo_count) {
+        badges.push(`<span class="badge">${item.photo_count} photo(s)</span>`);
+      }
+      return badges.join("");
+    }
+
+    function listingFeatures(item) {
+      const features = [];
+      if (item.rooms_label) {
+        features.push(`<span><strong>Pieces:</strong> ${escapeHtml(item.rooms_label)}</span>`);
+      }
+      if (item.bedrooms_label) {
+        features.push(`<span><strong>Ch:</strong> ${escapeHtml(item.bedrooms_label)}</span>`);
+      }
+      if (item.bathrooms_label) {
+        features.push(`<span><strong>Sdb:</strong> ${escapeHtml(item.bathrooms_label)}</span>`);
+      }
+      return features.join("");
+    }
+
+    function listingAmenityPills(item) {
+      return item.amenity_labels.map((label) => {
+        return `<span class="feature-pill">${escapeHtml(label)}</span>`;
+      }).join("");
+    }
+
+    function renderRows(listings) {
+      const container = document.getElementById("mixedRows");
+      if (!container) {
+        return;
+      }
+      if (!listings.length) {
+        container.innerHTML = '<div class="empty">Aucune annonce visible avec ces filtres.</div>';
+        return;
+      }
+      container.innerHTML = listings.map((item) => {
+        const thumb = item.image_url
+          ? `<img src="${escapeHtml(item.image_url)}" alt="${escapeHtml(item.title)}" loading="lazy">`
+          : '<div class="thumb-empty">Photo non lue</div>';
+        const amenities = listingAmenityPills(item);
+        const summary = item.summary ? `<p class="small">${escapeHtml(item.summary)}</p>` : "";
+        return `
+          <article class="listing-row">
+            <div class="thumb">${thumb}</div>
+            <div class="listing-copy">
+              <div class="listing-topline">
+                <div>
+                  <div class="badge-row">${listingBadges(item)}</div>
+                  <h3>${escapeHtml(item.title)}</h3>
+                </div>
+                <div class="listing-links">
+                  <a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Annonce</a>
+                  <a href="${escapeHtml(item.source_page)}" target="_blank" rel="noreferrer">Page source</a>
+                </div>
+              </div>
+              <div class="kv">
+                <span><strong>Prix:</strong> ${escapeHtml(item.price_label)}</span>
+                <span><strong>Surface:</strong> ${escapeHtml(item.surface_label)}</span>
+                ${listingFeatures(item)}
+              </div>
+              ${amenities ? `<div class="feature-row">${amenities}</div>` : ""}
+              ${summary}
+            </div>
+          </article>
+        `;
+      }).join("");
+    }
+
+    function updateCounters(listings) {
+      const summary = document.getElementById("mixedSummary");
+      const generatedAt = document.getElementById("heroGeneratedAt");
+      const heroMatches = document.getElementById("heroMatchesCount");
+      const allListingsStat = document.getElementById("allListingsStat");
+      const matchesStat = document.getElementById("matchesStat");
+      const newMatchesStat = document.getElementById("newMatchesStat");
+
+      if (summary) {
+        summary.textContent = `${listings.length} annonce(s) visibles sur ${currentScanData.matches.length} match(s). ${activeFilterSummary()}.`;
+      }
+      if (generatedAt) {
+        generatedAt.textContent = `Dernier scan: ${currentScanData.generated_at || "n/a"}`;
+      }
+      if (heroMatches) {
+        heroMatches.textContent = `Matches: ${currentScanData.matches.length}`;
+      }
+      if (allListingsStat) {
+        allListingsStat.textContent = String(currentScanData.all_listings_count || 0);
+      }
+      if (matchesStat) {
+        matchesStat.textContent = String(currentScanData.matches.length);
+      }
+      if (newMatchesStat) {
+        newMatchesStat.textContent = String(currentScanData.new_matches.length);
+      }
+    }
+
+    function renderDashboard() {
+      syncNumericControls();
+      setChipList("areaFilters", currentScanData.area_options, dashboardState.selectedAreas, (item) => item.label);
+      setChipList("sourceFilters", currentScanData.source_options, dashboardState.selectedSources, (item) => item.id);
+      setChipList("amenityFilters", INITIAL_AMENITY_OPTIONS.map((item) => ({ ...item, count: currentScanData.matches.filter((listing) => listing.amenity_keys.includes(item.id)).length })), dashboardState.selectedAmenities, (item) => item.id);
+      const listings = visibleListings();
+      renderRows(listings);
+      updateCounters(listings);
+    }
+
+    function readInteger(value, fallback) {
+      const parsed = Number.parseInt(String(value || ""), 10);
+      return Number.isFinite(parsed) ? parsed : fallback;
+    }
+
+    function bindControls() {
+      const minPriceRange = document.getElementById("minPriceRange");
+      const minPriceNumber = document.getElementById("minPriceNumber");
+      const maxPriceRange = document.getElementById("maxPriceRange");
+      const maxPriceNumber = document.getElementById("maxPriceNumber");
+      const minSurfaceRange = document.getElementById("minSurfaceRange");
+      const minSurfaceNumber = document.getElementById("minSurfaceNumber");
+      const maxSurfaceRange = document.getElementById("maxSurfaceRange");
+      const maxSurfaceNumber = document.getElementById("maxSurfaceNumber");
+      const sortModeSelect = document.getElementById("sortModeSelect");
+
+      const setMinPrice = (value) => {
+        dashboardState.minPrice = Math.max(0, readInteger(value, DEFAULT_FILTERS.minPrice));
+        if (dashboardState.minPrice > dashboardState.maxPrice) {
+          dashboardState.maxPrice = dashboardState.minPrice;
+        }
+        renderDashboard();
+      };
+      const setMaxPrice = (value) => {
+        dashboardState.maxPrice = Math.max(0, readInteger(value, DEFAULT_FILTERS.maxPrice));
+        if (dashboardState.maxPrice < dashboardState.minPrice) {
+          dashboardState.minPrice = dashboardState.maxPrice;
+        }
+        renderDashboard();
+      };
+      const setMinSurface = (value) => {
+        dashboardState.minSurface = Math.max(0, readInteger(value, DEFAULT_FILTERS.minSurface));
+        if (dashboardState.minSurface > dashboardState.maxSurface) {
+          dashboardState.maxSurface = dashboardState.minSurface;
+        }
+        renderDashboard();
+      };
+      const setMaxSurface = (value) => {
+        dashboardState.maxSurface = Math.max(0, readInteger(value, DEFAULT_FILTERS.maxSurface));
+        if (dashboardState.maxSurface < dashboardState.minSurface) {
+          dashboardState.minSurface = dashboardState.maxSurface;
+        }
+        renderDashboard();
+      };
+
+      minPriceRange?.addEventListener("input", (event) => setMinPrice(event.target.value));
+      minPriceNumber?.addEventListener("change", (event) => setMinPrice(event.target.value));
+      maxPriceRange?.addEventListener("input", (event) => setMaxPrice(event.target.value));
+      maxPriceNumber?.addEventListener("change", (event) => setMaxPrice(event.target.value));
+      minSurfaceRange?.addEventListener("input", (event) => setMinSurface(event.target.value));
+      minSurfaceNumber?.addEventListener("change", (event) => setMinSurface(event.target.value));
+      maxSurfaceRange?.addEventListener("input", (event) => setMaxSurface(event.target.value));
+      maxSurfaceNumber?.addEventListener("change", (event) => setMaxSurface(event.target.value));
+      sortModeSelect?.addEventListener("change", (event) => {
+        dashboardState.sortMode = event.target.value || "latest";
+        renderDashboard();
+      });
+    }
+
+    function openVisibleListings() {
+      openMany(visibleListings().map((item) => item.url));
+    }
+
+    function openNewListings() {
+      openMany(currentScanData.new_matches.map((item) => item.url));
+    }
+
+    function openAllCurrentListings() {
+      openMany(currentScanData.matches.map((item) => item.url));
+    }
+
+    function resetDashboardFilters() {
+      dashboardState = {
+        selectedAreas: new Set(),
+        selectedSources: new Set(),
+        selectedAmenities: new Set(),
+        minPrice: DEFAULT_FILTERS.minPrice,
+        maxPrice: DEFAULT_FILTERS.maxPrice,
+        minSurface: DEFAULT_FILTERS.minSurface,
+        maxSurface: DEFAULT_FILTERS.maxSurface,
+        sortMode: "latest"
+      };
+      renderDashboard();
+    }
+
+    async function loadSnapshot(url) {
+      const response = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" });
+      if (!response.ok) {
+        throw new Error(`Fetch failed: ${response.status}`);
+      }
+      return response.json();
+    }
+
+    async function reloadPublishedSnapshot() {
+      const button = document.getElementById("refreshButton");
+      const original = button?.textContent || "Actualiser";
+      if (button) {
+        button.disabled = true;
+        button.textContent = "Actualisation...";
+      }
+      try {
+        const payload = await loadSnapshot(SNAPSHOT_URL);
+        currentScanData = normalizeScanData(payload);
+        renderDashboard();
+      } catch (error) {
+        alert("Impossible de recharger le dernier snapshot publie.");
+      } finally {
+        if (button) {
+          button.disabled = false;
+          button.textContent = original;
+        }
+      }
+    }
+
     async function refreshNow() {
       const button = document.getElementById("refreshButton");
       if (!button) return;
@@ -654,13 +1398,18 @@ DASHBOARD_TEMPLATE = Template(
         if (!response.ok) {
           throw new Error("Scan failed");
         }
-        window.location.reload();
+        currentScanData = normalizeScanData(await loadSnapshot("/api/state"));
+        renderDashboard();
       } catch (error) {
         alert("Le scan a echoue. Regardez le terminal si besoin.");
+      } finally {
         button.disabled = false;
         button.textContent = original;
       }
     }
+
+    bindControls();
+    renderDashboard();
   </script>
 </body>
 </html>
@@ -686,6 +1435,10 @@ class Listing:
     summary: str
     rank_in_source: int
     source_listing_id: str
+    image_url: str = ""
+    photo_count: int = 0
+    amenity_keys: list[str] = field(default_factory=list)
+    published_at_ts: int | None = None
     is_new: bool = False
     first_seen_at: str = ""
 
@@ -712,9 +1465,45 @@ def normalize_spaces(value: str) -> str:
     return " ".join(value.split())
 
 
+def ascii_fold(value: str) -> str:
+    replacements = {
+        "à": "a",
+        "â": "a",
+        "ä": "a",
+        "é": "e",
+        "è": "e",
+        "ê": "e",
+        "ë": "e",
+        "î": "i",
+        "ï": "i",
+        "ô": "o",
+        "ö": "o",
+        "ù": "u",
+        "û": "u",
+        "ü": "u",
+        "ç": "c",
+    }
+    folded = value.lower()
+    for old, new in replacements.items():
+        folded = folded.replace(old, new)
+    return folded
+
+
 def visible_text(node: Any) -> str:
     texts = node.xpath(".//text()[not(ancestor::script) and not(ancestor::style)]")
     return normalize_spaces(" ".join(texts))
+
+
+def unique_preserve(items: list[str]) -> list[str]:
+    seen: set[str] = set()
+    result: list[str] = []
+    for item in items:
+        cleaned = item.strip()
+        if not cleaned or cleaned in seen:
+            continue
+        seen.add(cleaned)
+        result.append(cleaned)
+    return result
 
 
 def slugify_fragment(value: str) -> str:
@@ -833,10 +1622,19 @@ def parse_bathrooms_label(text: str) -> str:
     return ""
 
 
+def normalize_date_label(text: str) -> str:
+    cleaned = normalize_spaces(text)
+    cleaned = cleaned.replace("Publiée le:", "").replace("Publiee le:", "").strip()
+    return cleaned
+
+
 def parse_age_label(text: str) -> str:
     cleaned = normalize_spaces(text)
     patterns = [
         r"\b[Ii]l y a (?:un|une|\d+)\s+(?:heure|heures|jour|jours|mois|an|ans)\b",
+        r"\b[Aa]ujourd'hui\s+\d{1,2}:\d{2}\b",
+        r"\bHier\s+\d{1,2}:\d{2}\b",
+        r"\b\d{1,2}\s+[A-Za-zéûôî\.]+\s*-\s*\d{1,2}:\d{2}\b",
         r"\ba day ago\b",
         r"\b\d+\s+days?\s+ago\b",
         r"\b\d+\s+months?\s+ago\b",
@@ -874,11 +1672,90 @@ def parse_relative_age_seconds(label: str) -> int | None:
     return None
 
 
+def parse_absolute_age_ts(label: str) -> int | None:
+    cleaned = normalize_date_label(label)
+    folded = ascii_fold(cleaned).replace(".", "")
+    now = dt.datetime.now(dt.timezone.utc)
+
+    today_match = re.search(r"aujourd'hui\s+(\d{1,2}):(\d{2})", cleaned, flags=re.IGNORECASE)
+    if today_match:
+        published = now.astimezone().replace(
+            hour=int(today_match.group(1)),
+            minute=int(today_match.group(2)),
+            second=0,
+            microsecond=0,
+        )
+        return int(published.timestamp())
+
+    yesterday_match = re.search(r"hier\s+(\d{1,2}):(\d{2})", cleaned, flags=re.IGNORECASE)
+    if yesterday_match:
+        published = now.astimezone() - dt.timedelta(days=1)
+        published = published.replace(
+            hour=int(yesterday_match.group(1)),
+            minute=int(yesterday_match.group(2)),
+            second=0,
+            microsecond=0,
+        )
+        return int(published.timestamp())
+
+    absolute_match = re.search(
+        r"(\d{1,2})\s+([a-zéûôî]+)\s*-?\s*(\d{1,2}:\d{2})?",
+        folded,
+        flags=re.IGNORECASE,
+    )
+    if not absolute_match:
+        return None
+    day = int(absolute_match.group(1))
+    month_name = absolute_match.group(2).lower()
+    month = MAROCANNONCES_MONTHS.get(month_name)
+    if not month:
+        return None
+    year = now.year
+    hour = 0
+    minute = 0
+    if absolute_match.group(3):
+        hour, minute = [int(part) for part in absolute_match.group(3).split(":")]
+    try:
+        published = dt.datetime(year, month, day, hour, minute, tzinfo=now.astimezone().tzinfo)
+    except ValueError:
+        return None
+    if published > now.astimezone() + dt.timedelta(hours=2):
+        published = published.replace(year=year - 1)
+    return int(published.timestamp())
+
+
+def derive_published_ts(label: str) -> int | None:
+    relative_seconds = parse_relative_age_seconds(label)
+    if relative_seconds is not None:
+        return int((dt.datetime.now(dt.timezone.utc) - dt.timedelta(seconds=relative_seconds)).timestamp())
+    return parse_absolute_age_ts(label)
+
+
 def parse_numeric_id(value: str) -> int | None:
     matches = re.findall(r"(\d+)", value or "")
     if not matches:
         return None
     return int(matches[-1])
+
+
+def extract_amenity_keys(text: str) -> list[str]:
+    cleaned = normalize_spaces(text)
+    keys = []
+    for key, pattern in AMENITY_PATTERNS.items():
+        if re.search(pattern, cleaned, flags=re.IGNORECASE):
+            keys.append(key)
+    return keys
+
+
+def amenity_labels(keys: list[str]) -> list[str]:
+    return [AMENITY_LABELS[key] for key in keys if key in AMENITY_LABELS]
+
+
+def first_image_url(urls: list[str]) -> str:
+    for url in unique_preserve(urls):
+        if url.startswith("http"):
+            return url
+    return ""
 
 
 def slug_to_title(url: str) -> str:
@@ -986,6 +1863,13 @@ def criteria_query(config: dict[str, Any]) -> dict[str, str]:
     }
 
 
+def build_agenz_city_url(config: dict[str, Any]) -> str:
+    base = "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements"
+    query = criteria_query(config)
+    query_string = "&".join(f"{key}={quote(value)}" for key, value in query.items())
+    return f"{base}?{query_string}"
+
+
 def build_agenz_area_url(area: dict[str, Any], config: dict[str, Any]) -> str | None:
     slug = area.get("agenz_slug")
     if not slug:
@@ -1003,6 +1887,10 @@ def build_mubawab_area_url(area: dict[str, Any]) -> str | None:
     return f"https://www.mubawab.ma/fr/sd/casablanca/{slug}/appartements-a-vendre"
 
 
+def build_mubawab_city_url() -> str:
+    return "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre"
+
+
 def build_yakeey_area_url(area: dict[str, Any], with_filter_hint: bool = True) -> str | None:
     slug = area.get("yakeey_slug")
     if not slug:
@@ -1013,36 +1901,32 @@ def build_yakeey_area_url(area: dict[str, Any], with_filter_hint: bool = True) -
     return base + "?sortBy=dateDesc"
 
 
+def build_marocannonces_city_url(page_number: int) -> str:
+    return f"https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge={page_number}"
+
+
 def build_scan_pages(config: dict[str, Any]) -> list[dict[str, Any]]:
     pages: list[dict[str, Any]] = []
 
     if config["scan_sites"].get("agenz", True):
-        for area in config["areas"]:
-            url = build_agenz_area_url(area, config)
-            if not url:
-                continue
-            pages.append(
-                {
-                    "parser": "agenz",
-                    "label": f"Agenz {area['label']}",
-                    "area_label": area["label"],
-                    "url": url,
-                }
-            )
+        pages.append(
+            {
+                "parser": "agenz",
+                "label": "Agenz Casablanca",
+                "area_label": "Casablanca",
+                "url": build_agenz_city_url(config),
+            }
+        )
 
     if config["scan_sites"].get("mubawab", True):
-        for area in config["areas"]:
-            url = build_mubawab_area_url(area)
-            if not url:
-                continue
-            pages.append(
-                {
-                    "parser": "mubawab",
-                    "label": f"Mubawab {area['label']}",
-                    "area_label": area["label"],
-                    "url": url,
-                }
-            )
+        pages.append(
+            {
+                "parser": "mubawab",
+                "label": "Mubawab Casablanca",
+                "area_label": "Casablanca",
+                "url": build_mubawab_city_url(),
+            }
+        )
 
     if config["scan_sites"].get("yakeey", True):
         for area in config["areas"]:
@@ -1055,6 +1939,18 @@ def build_scan_pages(config: dict[str, Any]) -> list[dict[str, Any]]:
                     "label": f"Yakeey {area['label']}",
                     "area_label": area["label"],
                     "url": url,
+                }
+            )
+
+    if config["scan_sites"].get("marocannonces", True):
+        max_pages = int(config.get("scan_limits", {}).get("marocannonces_pages", 2))
+        for page_number in range(1, max_pages + 1):
+            pages.append(
+                {
+                    "parser": "marocannonces",
+                    "label": f"MarocAnnonces Casablanca page {page_number}",
+                    "area_label": "Casablanca",
+                    "url": build_marocannonces_city_url(page_number),
                 }
             )
 
@@ -1072,6 +1968,13 @@ def scrape_agenz(page: dict[str, Any], config: dict[str, Any]) -> list[Listing]:
         url = urljoin(page["url"], data_url)
         title = normalize_spaces(" ".join(card.xpath('.//a[contains(@href, "/annonces/")][1]//text()')))
         source_listing_id = card.attrib.get("data-id", url.split("/")[-1])
+        published_label = normalize_date_label(
+            normalize_spaces(" ".join(card.xpath('.//*[contains(@class, "dateCreationList")]//text()')))
+        )
+        image_urls = unique_preserve(
+            card.xpath('.//img[contains(@src, "media.agenz.ma")]/@src')
+            + card.xpath('.//img[contains(@srcset, "media.agenz.ma")]/@src')
+        )
         listings.append(
             Listing(
                 source="agenz",
@@ -1086,10 +1989,14 @@ def scrape_agenz(page: dict[str, Any], config: dict[str, Any]) -> list[Listing]:
                 rooms_label=parse_rooms_label(text),
                 bedrooms_label=parse_bedrooms_label(text),
                 bathrooms_label=parse_bathrooms_label(text),
-                age_label=parse_age_label(text),
+                age_label=published_label or parse_age_label(text),
                 summary=make_summary(text),
                 rank_in_source=rank,
                 source_listing_id=source_listing_id,
+                image_url=first_image_url(image_urls),
+                photo_count=len(image_urls),
+                amenity_keys=extract_amenity_keys(text),
+                published_at_ts=derive_published_ts(published_label or parse_age_label(text)),
             )
         )
     for item in listings:
@@ -1111,6 +2018,11 @@ def scrape_mubawab(page: dict[str, Any], config: dict[str, Any]) -> list[Listing
             normalize_spaces(" ".join(card.xpath('.//input[contains(@class, "adId")]/@value')))
             or url.split("/a/")[-1].split("/")[0]
         )
+        image_urls = unique_preserve(
+            card.xpath('.//img[contains(@class, "sliderImage")]/@data-lazy')
+            + card.xpath('.//img[contains(@class, "sliderImage")]/@data-url')
+            + card.xpath('.//img[contains(@class, "sliderImage")]/@src')
+        )
         listings.append(
             Listing(
                 source="mubawab",
@@ -1129,6 +2041,9 @@ def scrape_mubawab(page: dict[str, Any], config: dict[str, Any]) -> list[Listing
                 summary=make_summary(text),
                 rank_in_source=rank,
                 source_listing_id=source_listing_id,
+                image_url=first_image_url(image_urls),
+                photo_count=len(image_urls),
+                amenity_keys=extract_amenity_keys(text),
             )
         )
     for item in listings:
@@ -1191,6 +2106,71 @@ def scrape_yakeey(page: dict[str, Any], config: dict[str, Any]) -> list[Listing]
                 summary=make_summary(text),
                 rank_in_source=rank,
                 source_listing_id=url.rstrip("/").split("-")[-1],
+                amenity_keys=extract_amenity_keys(text),
+            )
+        )
+    for item in listings:
+        item.area_guess = guess_listing_area(item.title, item.url, item.location_text, item.summary, config)
+    return listings
+
+
+def scrape_marocannonces(page: dict[str, Any], config: dict[str, Any]) -> list[Listing]:
+    doc = html.fromstring(fetch_html(page["url"]))
+    listings: list[Listing] = []
+    for rank, row in enumerate(doc.xpath('//li[a[div[@class="holder"]]]'), start=1):
+        link = row.xpath('./a[div[@class="holder"]][1]')
+        if not link:
+            continue
+        anchor = link[0]
+        url = urljoin(page["url"], anchor.attrib.get("href", "").strip())
+        title = normalize_spaces(anchor.attrib.get("title", "") or " ".join(anchor.xpath('.//h3//text()')))
+        location_text = normalize_spaces(" ".join(anchor.xpath('.//span[contains(@class, "location")]//text()')))
+        price_text = normalize_spaces(" ".join(anchor.xpath('.//strong[contains(@class, "price")]//text()')))
+        image_candidates = unique_preserve(
+            [urljoin(page["url"], src) for src in anchor.xpath('.//img/@data-original')]
+            + [urljoin(page["url"], src) for src in anchor.xpath('.//img/@src')]
+        )
+        published_label = normalize_date_label(
+            normalize_spaces(" ".join(row.xpath('.//div[contains(@class, "time")]//text()')))
+        )
+        description_text = ""
+        page_text = visible_text(row)
+        try:
+            detail_text = fetch_html(url)
+            detail_doc = html.fromstring(detail_text)
+            description_bits = [
+                item
+                for item in detail_doc.xpath('//div[contains(@class, "description")]//text()')
+                if normalize_spaces(item)
+            ]
+            description_text = normalize_spaces(" ".join(description_bits))
+            page_text = visible_text(detail_doc)
+        except Exception:
+            pass
+        searchable_text = normalize_spaces(" ".join([price_text, location_text, description_text, page_text]))
+        source_listing_id = url.rstrip("/").split("/")[-2] if "/annonce/" in url else url.rstrip("/").split("/")[-1]
+        listings.append(
+            Listing(
+                source="marocannonces",
+                source_name=page["label"],
+                source_page=page["url"],
+                url=url,
+                title=title or slug_to_title(url),
+                price_mad=parse_price_mad(price_text or searchable_text),
+                surface_m2=parse_surface_m2(searchable_text),
+                location_text=location_text,
+                area_guess="",
+                rooms_label=parse_rooms_label(searchable_text),
+                bedrooms_label=parse_bedrooms_label(searchable_text),
+                bathrooms_label=parse_bathrooms_label(searchable_text),
+                age_label=published_label,
+                summary=make_summary(description_text or searchable_text),
+                rank_in_source=rank,
+                source_listing_id=source_listing_id,
+                image_url=first_image_url(image_candidates),
+                photo_count=len(image_candidates),
+                amenity_keys=extract_amenity_keys(searchable_text),
+                published_at_ts=derive_published_ts(published_label),
             )
         )
     for item in listings:
@@ -1201,6 +2181,7 @@ def scrape_yakeey(page: dict[str, Any], config: dict[str, Any]) -> list[Listing]
 SCRAPERS = {
     "agenz": scrape_agenz,
     "mubawab": scrape_mubawab,
+    "marocannonces": scrape_marocannonces,
     "yakeey": scrape_yakeey,
 }
 
@@ -1219,7 +2200,8 @@ def dedupe_listings(listings: list[Listing]) -> list[Listing]:
 
 def listing_matches(listing: Listing, config: dict[str, Any]) -> bool:
     criteria = config["criteria"]
-    if listing.price_mad is None or listing.price_mad > criteria["max_price_mad"]:
+    min_price_mad = int(criteria.get("min_price_mad", 0))
+    if listing.price_mad is None or listing.price_mad < min_price_mad or listing.price_mad > criteria["max_price_mad"]:
         return False
     if listing.surface_m2 is None:
         return False
@@ -1239,6 +2221,8 @@ def listing_matches(listing: Listing, config: dict[str, Any]) -> bool:
     ).lower()
 
     if re.search(r"\b(a louer|à louer|location)\b", searchable, flags=re.IGNORECASE):
+        return False
+    if "casablanca" not in searchable and "cfc" not in searchable:
         return False
 
     matched_area = guess_listing_area(
@@ -1308,14 +2292,16 @@ def scan_all(config: dict[str, Any]) -> list[Listing]:
 
 
 def listing_sort_key(item: Listing) -> tuple[Any, ...]:
-    age_seconds = parse_relative_age_seconds(item.age_label)
     numeric_id = parse_numeric_id(item.source_listing_id or item.url)
     source_priority = SOURCE_ORDER.index(item.source) if item.source in SOURCE_ORDER else 99
+    if item.published_at_ts is not None:
+        return (0, -item.published_at_ts, source_priority, item.rank_in_source, item.url)
+    age_seconds = parse_relative_age_seconds(item.age_label)
     if age_seconds is not None:
-        return (0, age_seconds, source_priority, item.rank_in_source, item.url)
+        return (1, age_seconds, source_priority, item.rank_in_source, item.url)
     if numeric_id is not None:
-        return (1, -numeric_id, source_priority, item.rank_in_source, item.url)
-    return (2, source_priority, item.rank_in_source, item.url)
+        return (2, -numeric_id, source_priority, item.rank_in_source, item.url)
+    return (3, source_priority, item.rank_in_source, item.url)
 
 
 def sort_matches(listings: list[Listing]) -> list[Listing]:
@@ -1327,6 +2313,8 @@ def serialize_listing(item: Listing) -> dict[str, Any]:
     payload["price_label"] = item.price_label
     payload["surface_label"] = item.surface_label
     payload["area_anchor"] = f"area-{slugify_fragment(item.area_guess)}" if item.area_guess else ""
+    payload["published_label"] = item.age_label
+    payload["amenity_labels"] = amenity_labels(item.amenity_keys)
     return payload
 
 
@@ -1580,6 +2568,20 @@ def build_exact_search_groups(config: dict[str, Any]) -> list[dict[str, Any]]:
 def build_raw_search_groups(config: dict[str, Any]) -> list[dict[str, Any]]:
     groups: list[dict[str, Any]] = []
 
+    groups.append(
+        {
+            "name": "MarocAnnonces",
+            "links": [
+                {
+                    "label": "Casablanca - page recente",
+                    "url": build_marocannonces_city_url(1),
+                    "status": "ville brute",
+                    "help": "Page recente Casablanca avec dates visibles; le filtrage exact est fait dans Casablanca Watch.",
+                }
+            ],
+        }
+    )
+
     mubawab_links = []
     for area in config["areas"]:
         url = build_mubawab_area_url(area)
@@ -1623,11 +2625,13 @@ def group_items_by_source(matches: list[dict[str, Any]]) -> list[dict[str, Any]]
     notes = {
         "agenz": "Ordre recent fiable via pages filtrees et tri date_desc.",
         "mubawab": "Vue interne exacte; le site brut n'expose pas un tri date URL aussi fiable.",
+        "marocannonces": "Source additionnelle utile avec dates visibles sur la liste et details complets sur la fiche.",
         "yakeey": "Vue interne exacte; le site brut sert surtout comme page quartier complementaire.",
     }
     labels = {
         "agenz": "Agenz",
         "mubawab": "Mubawab",
+        "marocannonces": "MarocAnnonces",
         "yakeey": "Yakeey",
     }
     for source in SOURCE_ORDER:
@@ -1685,9 +2689,69 @@ def build_source_cards(source_sections: list[dict[str, Any]]) -> list[dict[str, 
     ]
 
 
+def build_area_filter_options(config: dict[str, Any], matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    counts = {}
+    for item in matches:
+        label = item.get("area_guess") or ""
+        counts[label] = counts.get(label, 0) + 1
+    options = []
+    known_labels = set()
+    for area in config["areas"]:
+        known_labels.add(area["label"])
+        options.append(
+            {
+                "label": area["label"],
+                "count": counts.get(area["label"], 0),
+            }
+        )
+    for label, count in counts.items():
+        if not label or label in known_labels:
+            continue
+        options.append({"label": label, "count": count})
+    options.sort(key=lambda item: (-item["count"], item["label"]))
+    return options
+
+
+def build_source_filter_options(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    labels = {
+        "agenz": "Agenz",
+        "mubawab": "Mubawab",
+        "marocannonces": "MarocAnnonces",
+        "yakeey": "Yakeey",
+    }
+    counts = {}
+    for item in matches:
+        source = item.get("source") or ""
+        counts[source] = counts.get(source, 0) + 1
+    options = [
+        {
+            "id": source,
+            "label": labels.get(source, source.title()),
+            "count": counts.get(source, 0),
+        }
+        for source in SOURCE_ORDER
+        if counts.get(source, 0) or source in labels
+    ]
+    known_sources = {item["id"] for item in options}
+    for source, count in counts.items():
+        if not source or source in known_sources:
+            continue
+        options.append(
+            {
+                "id": source,
+                "label": labels.get(source, source.title()),
+                "count": count,
+            }
+        )
+    options.sort(key=lambda item: (-item["count"], item["label"]))
+    return options
+
+
 def build_dashboard_payload(config: dict[str, Any], scan_data: dict[str, Any], refresh_enabled: bool) -> dict[str, Any]:
     matches = scan_data.get("matches", [])
     new_matches = scan_data.get("new_matches", [])
+    for index, item in enumerate(matches):
+        item["default_sort_index"] = index
     exact_groups = build_exact_search_groups(config)
     raw_groups = build_raw_search_groups(config)
     source_sections = group_items_by_source(matches)
@@ -1728,6 +2792,19 @@ def build_dashboard_payload(config: dict[str, Any], scan_data: dict[str, Any], r
         "raw_external_urls_json": json.dumps(
             [link["url"] for group in raw_groups for link in group["links"]]
         ),
+        "matches_json": json.dumps(matches, ensure_ascii=False),
+        "new_matches_json": json.dumps(new_matches, ensure_ascii=False),
+        "area_filter_options_json": json.dumps(
+            build_area_filter_options(config, matches), ensure_ascii=False
+        ),
+        "source_filter_options_json": json.dumps(
+            build_source_filter_options(matches), ensure_ascii=False
+        ),
+        "amenity_filter_options_json": json.dumps(
+            [{"id": key, "label": label} for key, label in AMENITY_LABELS.items()],
+            ensure_ascii=False,
+        ),
+        "snapshot_url": "last_scan.json" if public_mode else "/api/state",
     }
 
 
