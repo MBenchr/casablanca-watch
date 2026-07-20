@@ -147,6 +147,16 @@ DASHBOARD_TEMPLATE = Template(
       background: linear-gradient(135deg, #16324a, #20554c 58%, #7c5623);
       box-shadow: 0 20px 54px rgba(12, 28, 38, 0.18);
     }
+    .hero-bar {
+      display: flex;
+      justify-content: space-between;
+      gap: 18px;
+      align-items: flex-start;
+    }
+    .hero-copy {
+      min-width: 0;
+      flex: 1;
+    }
     .hero h1 {
       margin: 0 0 10px;
       font-size: 46px;
@@ -159,6 +169,9 @@ DASHBOARD_TEMPLATE = Template(
       color: rgba(255,255,255,0.88);
       font-size: 18px;
       line-height: 1.48;
+    }
+    .hero-refresh {
+      flex-shrink: 0;
     }
     .meta {
       margin-top: 18px;
@@ -484,6 +497,7 @@ DASHBOARD_TEMPLATE = Template(
       background: white;
     }
     .thumb {
+      position: relative;
       border-radius: 16px;
       overflow: hidden;
       min-height: 130px;
@@ -495,7 +509,7 @@ DASHBOARD_TEMPLATE = Template(
       height: 100%;
       object-fit: cover;
     }
-    .thumb-empty {
+    .thumb-fallback, .thumb-empty {
       display: grid;
       place-items: center;
       height: 100%;
@@ -503,6 +517,25 @@ DASHBOARD_TEMPLATE = Template(
       font-size: 13px;
       text-transform: uppercase;
       letter-spacing: 0.04em;
+      text-align: center;
+      padding: 16px;
+    }
+    .thumb-fallback {
+      background: linear-gradient(135deg, rgba(22, 50, 74, 0.06), rgba(32, 85, 76, 0.08));
+    }
+    .thumb-fallback strong {
+      display: block;
+      color: #24465d;
+      font-size: 15px;
+      letter-spacing: 0;
+      text-transform: none;
+      margin-bottom: 6px;
+    }
+    .thumb-fallback span {
+      display: block;
+      line-height: 1.45;
+      text-transform: none;
+      letter-spacing: 0;
     }
     .listing-copy h3 {
       margin: 0;
@@ -548,6 +581,12 @@ DASHBOARD_TEMPLATE = Template(
       .layout {
         grid-template-columns: 1fr;
       }
+      .hero-bar {
+        flex-direction: column;
+      }
+      .hero-refresh {
+        width: 100%;
+      }
       .hero h1 {
         font-size: 34px;
       }
@@ -563,27 +602,21 @@ DASHBOARD_TEMPLATE = Template(
 <body>
   <div class="wrap">
     <section class="hero">
-      <h1>Casablanca Watch</h1>
-      <p>
-        Interface locale pour surveiller les annonces autour de CFC, avec les quartiers de votre carte,
-        un bouton d'actualisation direct, et des vues exactes filtrees dans cette interface meme.
-      </p>
-      <div class="meta">
-        <span class="pill">Budget: {{ criteria.min_price_mad }} a {{ criteria.max_price_mad }} DH</span>
-        <span class="pill">Surface: {{ criteria.min_surface_m2 }} a {{ criteria.max_surface_m2 }} m2</span>
-        <span id="heroGeneratedAt" class="pill">Dernier scan: {{ generated_at }}</span>
-        <span id="heroMatchesCount" class="pill">Matches: {{ matches|length }}</span>
-      </div>
-      <div class="actions">
+      <div class="hero-bar">
+        <div class="hero-copy">
+          <h1>Casablanca Watch</h1>
+          <p>
+            Interface locale pour surveiller les annonces autour de CFC, avec les quartiers de votre carte,
+            un bouton d'actualisation direct, et des vues exactes filtrees dans cette interface meme.
+          </p>
+        </div>
+        <div class="hero-refresh">
         {% if refresh_mode == "live" %}
         <button id="refreshButton" class="action" onclick="refreshNow()">Actualiser</button>
         {% elif refresh_mode == "reload" %}
         <button id="refreshButton" class="action" onclick="reloadPublishedSnapshot()">Actualiser</button>
         {% endif %}
-        <button class="action" onclick="openNewListings()">Ouvrir les nouveaux biens</button>
-        <button class="action" onclick="openAllCurrentListings()">Ouvrir tous les biens exacts</button>
-        <button class="action secondary" onclick='openMany({{ agenz_exact_urls_json }})'>Ouvrir Agenz exact + recent</button>
-        <button class="action secondary" onclick='openMany({{ raw_external_urls_json }})'>Ouvrir pages quartier brutes</button>
+        </div>
       </div>
     </section>
 
@@ -1193,6 +1226,20 @@ DASHBOARD_TEMPLATE = Template(
       }).join("");
     }
 
+    function thumbFallbackMarkup(item) {
+      const message = item.source === "agenz"
+        ? "Photo protegee par la source. Ouvrez l'annonce pour la voir."
+        : "Photo non chargee. Ouvrez l'annonce source pour la voir.";
+      return `
+        <div class="thumb-fallback" ${item.image_url ? 'style="display:none"' : ""}>
+          <div>
+            <strong>${item.photo_count ? `${item.photo_count} photo(s)` : "Apercu indisponible"}</strong>
+            <span>${escapeHtml(message)}</span>
+          </div>
+        </div>
+      `;
+    }
+
     function renderRows(listings) {
       const container = document.getElementById("mixedRows");
       if (!container) {
@@ -1204,8 +1251,17 @@ DASHBOARD_TEMPLATE = Template(
       }
       container.innerHTML = listings.map((item) => {
         const thumb = item.image_url
-          ? `<img src="${escapeHtml(item.image_url)}" alt="${escapeHtml(item.title)}" loading="lazy">`
-          : '<div class="thumb-empty">Photo non lue</div>';
+          ? `
+            <img
+              src="${escapeHtml(item.image_url)}"
+              alt="${escapeHtml(item.title)}"
+              loading="lazy"
+              referrerpolicy="no-referrer"
+              onerror="this.style.display='none'; const fallback=this.parentElement.querySelector('.thumb-fallback'); if (fallback) fallback.style.display='grid';"
+            >
+            ${thumbFallbackMarkup(item)}
+          `
+          : thumbFallbackMarkup(item);
         const amenities = listingAmenityPills(item);
         const summary = item.summary ? `<p class="small">${escapeHtml(item.summary)}</p>` : "";
         return `
