@@ -170,9 +170,6 @@ DASHBOARD_TEMPLATE = Template(
       font-size: 18px;
       line-height: 1.48;
     }
-    .hero-refresh {
-      flex-shrink: 0;
-    }
     .meta {
       margin-top: 18px;
       display: flex;
@@ -211,6 +208,11 @@ DASHBOARD_TEMPLATE = Template(
       color: white;
       border: 1px solid rgba(255,255,255,0.18);
       box-shadow: none;
+    }
+    button.action.emphasis {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 12px 28px rgba(17, 94, 84, 0.22);
     }
     button.action:disabled {
       opacity: 0.7;
@@ -550,9 +552,32 @@ DASHBOARD_TEMPLATE = Template(
     }
     .listing-links {
       display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      justify-content: flex-end;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+      min-width: 180px;
+    }
+    .listing-source-note {
+      color: var(--muted);
+      font-size: 13px;
+      text-align: right;
+    }
+    .listing-cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 180px;
+      padding: 11px 16px;
+      border-radius: 999px;
+      background: var(--accent-3);
+      color: white;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 10px 24px rgba(15, 78, 123, 0.18);
+    }
+    .listing-cta:hover {
+      text-decoration: none;
+      background: #0c4770;
     }
     .feature-row {
       display: flex;
@@ -584,9 +609,6 @@ DASHBOARD_TEMPLATE = Template(
       .hero-bar {
         flex-direction: column;
       }
-      .hero-refresh {
-        width: 100%;
-      }
       .hero h1 {
         font-size: 34px;
       }
@@ -610,13 +632,6 @@ DASHBOARD_TEMPLATE = Template(
             un bouton d'actualisation direct, et des vues exactes filtrees dans cette interface meme.
           </p>
         </div>
-        <div class="hero-refresh">
-        {% if refresh_mode == "live" %}
-        <button id="refreshButton" class="action" onclick="refreshNow()">Actualiser</button>
-        {% elif refresh_mode == "reload" %}
-        <button id="refreshButton" class="action" onclick="reloadPublishedSnapshot()">Actualiser</button>
-        {% endif %}
-        </div>
       </div>
     </section>
 
@@ -639,16 +654,12 @@ DASHBOARD_TEMPLATE = Template(
         <div class="filter-shell">
           <h3>Filtres rapides</h3>
           <p class="small">
-            Selectionnez les quartiers a garder, bougez les seuils prix/surface, puis ouvrez en une fois
-            toutes les annonces visibles. L'ordre par defaut suit la fraicheur detectable du scan.
+            Selectionnez les quartiers a garder, bougez les seuils prix/surface, puis actualisez la liste.
+            L'ordre par defaut suit la fraicheur detectable du scan.
           </p>
           <div class="group">
             <strong>Quartiers CFC suivis</strong>
             <div id="areaFilters" class="chip-list"></div>
-          </div>
-          <div class="group">
-            <strong>Sources</strong>
-            <div id="sourceFilters" class="chip-list"></div>
           </div>
           <div class="group">
             <strong>Equipements utiles</strong>
@@ -686,7 +697,11 @@ DASHBOARD_TEMPLATE = Template(
             </label>
           </div>
           <div class="table-actions">
-            <button class="action" onclick="openVisibleListings()">Ouvrir les annonces visibles</button>
+            {% if refresh_mode == "live" %}
+            <button id="refreshButton" class="action emphasis" onclick="refreshNow()">Actualiser les annonces</button>
+            {% elif refresh_mode == "reload" %}
+            <button id="refreshButton" class="action emphasis" onclick="reloadPublishedSnapshot()">Actualiser les annonces</button>
+            {% endif %}
             <button class="action secondary" onclick="resetDashboardFilters()">Reinitialiser les filtres</button>
           </div>
           <p id="mixedSummary" class="small"></p>
@@ -695,7 +710,7 @@ DASHBOARD_TEMPLATE = Template(
         <div id="mixedRows" class="listings-grid"></div>
 
         <details class="secondary-debug">
-          <summary>Vues secondaires par source et par quartier</summary>
+          <summary>Vues secondaires par quartier</summary>
 
           <h2 style="margin-top: 18px;">Quartiers presents dans le scan</h2>
           <div class="area-grid">
@@ -707,53 +722,6 @@ DASHBOARD_TEMPLATE = Template(
             </a>
             {% endfor %}
           </div>
-
-          <h2 style="margin-top: 24px;">Vues par source</h2>
-          <div class="source-grid">
-            {% for source in source_cards %}
-            <a class="source-card" href="#source-{{ source.id }}">
-              <strong>{{ source.label }}</strong>
-              <span class="count">{{ source.count }}</span>
-              <span class="small">{{ source.note }}</span>
-            </a>
-            {% endfor %}
-          </div>
-
-          {% for source in source_sections %}
-          <section class="section-anchor" id="source-{{ source.id }}" style="margin-top: 26px;">
-            <h2>{{ source.label }}</h2>
-            <p class="small">{{ source.note }}</p>
-            {% if source.listings %}
-            <div class="cards">
-              {% for item in source.listings %}
-              <article class="card">
-                <h4>{{ item.title }}</h4>
-                <div class="badge-row">
-                  {% if item.is_new %}<span class="badge new">Nouveau</span>{% endif %}
-                  <span class="badge">{{ item.area_guess or item.location_text or "Zone a verifier" }}</span>
-                  {% if item.age_label %}<span class="badge">{{ item.age_label }}</span>{% endif %}
-                  <span class="badge">Ordre source: {{ item.rank_in_source }}</span>
-                </div>
-                <div class="kv">
-                  <span><strong>Prix:</strong> {{ item.price_label }}</span>
-                  <span><strong>Surface:</strong> {{ item.surface_label }}</span>
-                  {% if item.rooms_label %}<span><strong>Pieces:</strong> {{ item.rooms_label }}</span>{% endif %}
-                  {% if item.bedrooms_label %}<span><strong>Ch:</strong> {{ item.bedrooms_label }}</span>{% endif %}
-                  {% if item.bathrooms_label %}<span><strong>Sdb:</strong> {{ item.bathrooms_label }}</span>{% endif %}
-                </div>
-                <p class="small">{{ item.summary }}</p>
-                <div class="links">
-                  <a href="{{ item.url }}" target="_blank" rel="noreferrer">Annonce</a>
-                  {% if item.area_anchor %}<a href="#{{ item.area_anchor }}">{{ item.area_guess }}</a>{% endif %}
-                </div>
-              </article>
-              {% endfor %}
-            </div>
-            {% else %}
-            <div class="empty">Aucun bien exact retenu pour cette source.</div>
-            {% endif %}
-          </section>
-          {% endfor %}
 
           {% for area in area_sections %}
           <section class="section-anchor" id="{{ area.anchor }}" style="margin-top: 26px;">
@@ -792,23 +760,23 @@ DASHBOARD_TEMPLATE = Template(
       </main>
 
       <aside class="panel">
-        <h2>Etat du scan</h2>
+        <h2>Etat du scan en temps reel</h2>
         <div class="grid-two">
           <div class="stat-card">
             <span class="small">Biens parses</span>
             <span id="allListingsStat" class="stat-big">{{ all_listings_count }}</span>
           </div>
           <div class="stat-card">
-            <span class="small">Biens exacts</span>
+            <span class="small">Dans vos criteres</span>
             <span id="matchesStat" class="stat-big">{{ matches|length }}</span>
           </div>
           <div class="stat-card">
-            <span class="small">Nouveaux biens</span>
+            <span class="small">Nouveautes</span>
             <span id="newMatchesStat" class="stat-big">{{ new_matches|length }}</span>
           </div>
           <div class="stat-card">
-            <span class="small">Mode</span>
-            <span class="stat-big" style="font-size:22px;">{% if refresh_enabled %}Local live{% else %}Statique{% endif %}</span>
+            <span class="small">Dernier scan</span>
+            <span id="lastScanStat" class="stat-big" style="font-size:20px;">{{ generated_at }}</span>
           </div>
         </div>
 
@@ -933,7 +901,6 @@ DASHBOARD_TEMPLATE = Template(
 
     let dashboardState = {
       selectedAreas: new Set(),
-      selectedSources: new Set(),
       selectedAmenities: new Set(),
       minPrice: DEFAULT_FILTERS.minPrice,
       maxPrice: DEFAULT_FILTERS.maxPrice,
@@ -1070,14 +1037,11 @@ DASHBOARD_TEMPLATE = Template(
       if (dashboardState.selectedAreas.size) {
         parts.push(`${dashboardState.selectedAreas.size} quartier(s)`);
       }
-      if (dashboardState.selectedSources.size) {
-        parts.push(`${dashboardState.selectedSources.size} source(s)`);
-      }
       if (dashboardState.selectedAmenities.size) {
         parts.push(`${dashboardState.selectedAmenities.size} equipement(s)`);
       }
       if (!parts.length) {
-        return "Aucun filtre quartier/source/equipement actif";
+        return "Aucun filtre quartier/equipement actif";
       }
       return parts.join(" • ");
     }
@@ -1139,9 +1103,6 @@ DASHBOARD_TEMPLATE = Template(
       if (dashboardState.selectedAreas.size && !dashboardState.selectedAreas.has(item.area_guess)) {
         return false;
       }
-      if (dashboardState.selectedSources.size && !dashboardState.selectedSources.has(item.source)) {
-        return false;
-      }
       if (dashboardState.selectedAmenities.size) {
         for (const amenity of dashboardState.selectedAmenities) {
           if (!item.amenity_keys.includes(amenity)) {
@@ -1193,7 +1154,6 @@ DASHBOARD_TEMPLATE = Template(
       if (item.is_new) {
         badges.push('<span class="badge new">Nouveau</span>');
       }
-      badges.push(`<span class="badge">${escapeHtml(item.source_name)}</span>`);
       if (item.area_guess) {
         badges.push(`<span class="badge">${escapeHtml(item.area_guess)}</span>`);
       }
@@ -1274,8 +1234,8 @@ DASHBOARD_TEMPLATE = Template(
                   <h3>${escapeHtml(item.title)}</h3>
                 </div>
                 <div class="listing-links">
-                  <a href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Annonce</a>
-                  <a href="${escapeHtml(item.source_page)}" target="_blank" rel="noreferrer">Page source</a>
+                  <div class="listing-source-note">Annonce sur ${escapeHtml(item.source_name)}</div>
+                  <a class="listing-cta" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Voir l'annonce</a>
                 </div>
               </div>
               <div class="kv">
@@ -1298,6 +1258,7 @@ DASHBOARD_TEMPLATE = Template(
       const allListingsStat = document.getElementById("allListingsStat");
       const matchesStat = document.getElementById("matchesStat");
       const newMatchesStat = document.getElementById("newMatchesStat");
+      const lastScanStat = document.getElementById("lastScanStat");
 
       if (summary) {
         summary.textContent = `${listings.length} annonce(s) visibles sur ${currentScanData.matches.length} match(s). ${activeFilterSummary()}.`;
@@ -1317,12 +1278,14 @@ DASHBOARD_TEMPLATE = Template(
       if (newMatchesStat) {
         newMatchesStat.textContent = String(currentScanData.new_matches.length);
       }
+      if (lastScanStat) {
+        lastScanStat.textContent = currentScanData.generated_at || "n/a";
+      }
     }
 
     function renderDashboard() {
       syncNumericControls();
       setChipList("areaFilters", currentScanData.area_options, dashboardState.selectedAreas, (item) => item.label);
-      setChipList("sourceFilters", currentScanData.source_options, dashboardState.selectedSources, (item) => item.id);
       setChipList("amenityFilters", INITIAL_AMENITY_OPTIONS.map((item) => ({ ...item, count: currentScanData.matches.filter((listing) => listing.amenity_keys.includes(item.id)).length })), dashboardState.selectedAmenities, (item) => item.id);
       const listings = visibleListings();
       renderRows(listings);
@@ -1388,10 +1351,6 @@ DASHBOARD_TEMPLATE = Template(
       });
     }
 
-    function openVisibleListings() {
-      openMany(visibleListings().map((item) => item.url));
-    }
-
     function openNewListings() {
       openMany(currentScanData.new_matches.map((item) => item.url));
     }
@@ -1403,7 +1362,6 @@ DASHBOARD_TEMPLATE = Template(
     function resetDashboardFilters() {
       dashboardState = {
         selectedAreas: new Set(),
-        selectedSources: new Set(),
         selectedAmenities: new Set(),
         minPrice: DEFAULT_FILTERS.minPrice,
         maxPrice: DEFAULT_FILTERS.maxPrice,
