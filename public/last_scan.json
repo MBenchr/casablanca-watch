@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T17:50:35+00:00",
+  "generated_at": "2026-07-20T18:37:57+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 4 heures",
-      "summary": "Voir l'annonce Il y a 4 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
+      "age_label": "Il y a 5 heures",
+      "summary": "Voir l'annonce Il y a 5 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
       "rank_in_source": 1,
       "source_listing_id": "70435",
       "image_url": "listing-thumbs/agenz-70435-b5711722da72.avif",
@@ -26,13 +26,13 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784555413,
+      "published_at_ts": 1784554647,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
       "surface_label": "50 m2",
       "area_anchor": "area-bourgogne-ouest",
-      "published_label": "Il y a 4 heures",
+      "published_label": "Il y a 5 heures",
       "amenity_labels": [
         "Ascenseur",
         "Parking",
@@ -62,7 +62,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784483413,
+      "published_at_ts": 1784486247,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -98,7 +98,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784310613,
+      "published_at_ts": 1784313447,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -135,7 +135,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784310613,
+      "published_at_ts": 1784313447,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -170,7 +170,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784310613,
+      "published_at_ts": 1784313447,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -205,7 +205,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784224213,
+      "published_at_ts": 1784227047,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -243,7 +243,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784224213,
+      "published_at_ts": 1784227047,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -280,7 +280,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784137813,
+      "published_at_ts": 1784140647,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -315,7 +315,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783792213,
+      "published_at_ts": 1783795047,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -350,7 +350,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783619413,
+      "published_at_ts": 1783622247,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -384,7 +384,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783533013,
+      "published_at_ts": 1783535847,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -418,7 +418,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783533013,
+      "published_at_ts": 1783535847,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -429,78 +429,6 @@
         "Meuble"
       ],
       "default_sort_index": 11
-    },
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/pa/8353724/superbe-appartement-%C3%A0-vendre-%C3%A0-oulfa-superficie-57-m%C2%B2",
-      "title": "Superbe appartement à vendre à Oulfa. Superficie 57 m²",
-      "price_mad": 655500,
-      "surface_m2": 57,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "3",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "655 500 DH Superbe appartement à vendre à Oulfa. Superficie 57 m² Oulfa, Casablanca 57 m² 3 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Meublé Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3...",
-      "rank_in_source": 16,
-      "source_listing_id": "8353724",
-      "image_url": "listing-thumbs/mubawab-8353724-c0a88524792e.avif",
-      "photo_count": 15,
-      "amenity_keys": [
-        "elevator",
-        "parking",
-        "furnished"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-10T08:47:23+00:00",
-      "price_label": "655 500 DH",
-      "surface_label": "57 m2",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "",
-      "amenity_labels": [
-        "Ascenseur",
-        "Parking",
-        "Meuble"
-      ],
-      "default_sort_index": 12
-    },
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8344370/studio-%C3%A0-vendre-%E2%80%93-beaulieu",
-      "title": "Studio à vendre – Beaulieu",
-      "price_mad": 817000,
-      "surface_m2": 43,
-      "location_text": "Franceville, Casablanca",
-      "area_guess": "Franceville",
-      "rooms_label": "1",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "817 000 DH Studio à vendre – Beaulieu Franceville, Casablanca 43 m² 1 Pièce 1 Ch. 1 Salle de bain Ascenseur Climatisation Sécurité Double vitrage Cuisine équipée Découvrez ce charmant studio d'une superficie de 43 m²,...",
-      "rank_in_source": 24,
-      "source_listing_id": "8344370",
-      "image_url": "listing-thumbs/mubawab-8344370-430764a7c217.avif",
-      "photo_count": 3,
-      "amenity_keys": [
-        "elevator"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-20T16:48:15+00:00",
-      "price_label": "817 000 DH",
-      "surface_label": "43 m2",
-      "area_anchor": "area-franceville",
-      "published_label": "",
-      "amenity_labels": [
-        "Ascenseur"
-      ],
-      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -540,7 +468,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -580,7 +508,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -618,7 +546,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -658,7 +586,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 17
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -698,7 +626,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 18
+      "default_sort_index": 16
     },
     {
       "source": "agenz",
@@ -738,7 +666,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 19
+      "default_sort_index": 17
     }
   ],
   "new_matches": [],
