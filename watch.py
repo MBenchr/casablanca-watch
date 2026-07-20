@@ -2,7 +2,9 @@ from __future__ import annotations
 
 import argparse
 import datetime as dt
+import hashlib
 import json
+import mimetypes
 import os
 import re
 import subprocess
@@ -26,6 +28,9 @@ CONFIG_PATH = ROOT / "config.json"
 DATA_DIR = ROOT / "data"
 OUTPUT_DIR = ROOT / "output"
 PUBLIC_DIR = ROOT / "public"
+THUMB_DIRNAME = "listing-thumbs"
+OUTPUT_THUMBS_DIR = OUTPUT_DIR / THUMB_DIRNAME
+PUBLIC_THUMBS_DIR = PUBLIC_DIR / THUMB_DIRNAME
 STATE_PATH = DATA_DIR / "state.json"
 LAST_SCAN_PATH = DATA_DIR / "last_scan.json"
 DASHBOARD_PATH = OUTPUT_DIR / "dashboard.html"
@@ -1772,6 +1777,78 @@ def first_image_url(urls: list[str]) -> str:
     return ""
 
 
+def image_extension_from_url(url: str) -> str:
+    allowed = {".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif"}
+    extension = Path(urlparse(url).path).suffix.lower()
+    if extension in allowed:
+        return extension
+    return ".jpg"
+
+
+def image_extension_from_content_type(content_type: str, url: str) -> str:
+    normalized_type = content_type.split(";", 1)[0].strip().lower()
+    guessed = mimetypes.guess_extension(normalized_type) if normalized_type else None
+    if guessed == ".jpe":
+        guessed = ".jpg"
+    if guessed in {".jpg", ".jpeg", ".png", ".webp", ".avif", ".gif"}:
+        return guessed
+    return image_extension_from_url(url)
+
+
+def safe_listing_thumb_base_name(item: Listing) -> str:
+    listing_id = re.sub(r"[^a-zA-Z0-9_-]+", "-", item.source_listing_id or "").strip("-") or "listing"
+    digest = hashlib.sha1(item.image_url.encode("utf-8")).hexdigest()[:12]
+    return f"{item.source}-{listing_id}-{digest}"
+
+
+def fetch_image_bytes(url: str) -> tuple[bytes, str]:
+    with httpx.Client(
+        headers={
+            "user-agent": USER_AGENT,
+            "accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+        },
+        follow_redirects=True,
+        timeout=TIMEOUT,
+    ) as client:
+        response = client.get(url)
+        response.raise_for_status()
+        return response.content, response.headers.get("content-type", "")
+
+
+def localize_listing_thumbnails(listings: list[Listing]) -> None:
+    OUTPUT_THUMBS_DIR.mkdir(parents=True, exist_ok=True)
+    PUBLIC_THUMBS_DIR.mkdir(parents=True, exist_ok=True)
+
+    expected_files: set[str] = set()
+    for item in listings:
+        source_image_url = item.image_url.strip()
+        if not source_image_url.startswith("http"):
+            item.image_url = ""
+            continue
+
+        base_name = safe_listing_thumb_base_name(item)
+        try:
+            image_bytes, content_type = fetch_image_bytes(source_image_url)
+        except Exception:
+            item.image_url = ""
+            continue
+
+        extension = image_extension_from_content_type(content_type, source_image_url)
+        filename = f"{base_name}{extension}"
+        expected_files.add(filename)
+        output_path = OUTPUT_THUMBS_DIR / filename
+        public_path = PUBLIC_THUMBS_DIR / filename
+        output_path.write_bytes(image_bytes)
+        public_path.write_bytes(image_bytes)
+
+        item.image_url = f"{THUMB_DIRNAME}/{filename}"
+
+    for thumb_dir in [OUTPUT_THUMBS_DIR, PUBLIC_THUMBS_DIR]:
+        for file_path in thumb_dir.iterdir():
+            if file_path.is_file() and file_path.name not in expected_files:
+                file_path.unlink()
+
+
 def slug_to_title(url: str) -> str:
     tail = url.rstrip("/").split("/")[-1]
     tail = re.sub(r"-(ca|pn)\d+$", "", tail, flags=re.IGNORECASE)
@@ -2539,10 +2616,12 @@ def dispatch_notifications(notifiers: list[str], new_matches: list[Listing], boo
 def create_scan_snapshot(config: dict[str, Any], notifiers: list[str]) -> dict[str, Any]:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    PUBLIC_DIR.mkdir(parents=True, exist_ok=True)
 
     all_listings = scan_all(config)
     matches = [item for item in all_listings if listing_matches(item, config)]
     matches = sort_matches(matches)
+    localize_listing_thumbnails(matches)
 
     state = load_state()
     new_matches, bootstrapped = update_state(matches, state)
@@ -2934,6 +3013,15 @@ def make_server_handler(config: dict[str, Any]):
             self.end_headers()
             self.wfile.write(body)
 
+        def _send_file(self, path: Path, status: int = 200) -> None:
+            body = path.read_bytes()
+            content_type, _ = mimetypes.guess_type(path.name)
+            self.send_response(status)
+            self.send_header("Content-Type", content_type or "application/octet-stream")
+            self.send_header("Content-Length", str(len(body)))
+            self.end_headers()
+            self.wfile.write(body)
+
         def log_message(self, fmt: str, *args: Any) -> None:
             return
 
@@ -2958,6 +3046,11 @@ def make_server_handler(config: dict[str, Any]):
                     write_public_site(config, scan_data)
                 self._send_html(render_dashboard(config, scan_data, refresh_enabled=True))
                 return
+            if parsed.path.startswith(f"/{THUMB_DIRNAME}/"):
+                asset_path = OUTPUT_DIR / parsed.path.lstrip("/")
+                if asset_path.exists() and asset_path.is_file():
+                    self._send_file(asset_path)
+                    return
             self._send_html("Not found", status=404)
 
         def do_POST(self) -> None:
