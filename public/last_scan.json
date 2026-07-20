@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T18:37:57+00:00",
+  "generated_at": "2026-07-20T19:04:39+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -26,11 +26,12 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784554647,
+      "published_at_ts": 1784556251,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
       "surface_label": "50 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-bourgogne-ouest",
       "published_label": "Il y a 5 heures",
       "amenity_labels": [
@@ -62,11 +63,12 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784486247,
+      "published_at_ts": 1784487851,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
       "surface_label": "58 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
       "published_label": "Il y a un jour",
       "amenity_labels": [
@@ -98,11 +100,12 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784313447,
+      "published_at_ts": 1784315051,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
       "surface_label": "48 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-ferme-bretonne",
       "published_label": "Il y a 3 jours",
       "amenity_labels": [
@@ -135,11 +138,12 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784313447,
+      "published_at_ts": 1784315051,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
       "surface_label": "49 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-les-hopitaux",
       "published_label": "Il y a 3 jours",
       "amenity_labels": [
@@ -170,11 +174,12 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784313447,
+      "published_at_ts": 1784315051,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
       "surface_label": "50 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
       "published_label": "Il y a 3 jours",
       "amenity_labels": [
@@ -205,11 +210,12 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784227047,
+      "published_at_ts": 1784228651,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
       "surface_label": "34 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-liberte",
       "published_label": "Il y a 4 jours",
       "amenity_labels": [
@@ -243,11 +249,12 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784227047,
+      "published_at_ts": 1784228651,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
       "surface_label": "60 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
       "published_label": "Il y a 4 jours",
       "amenity_labels": [
@@ -280,11 +287,12 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784140647,
+      "published_at_ts": 1784142251,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
       "surface_label": "54 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
       "published_label": "Il y a 5 jours",
       "amenity_labels": [
@@ -315,11 +323,12 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783795047,
+      "published_at_ts": 1783796651,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
       "surface_label": "42 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-franceville",
       "published_label": "Il y a 9 jours",
       "amenity_labels": [
@@ -350,11 +359,12 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783622247,
+      "published_at_ts": 1783623851,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
       "surface_label": "56 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
       "published_label": "Il y a 11 jours",
       "amenity_labels": [
@@ -384,11 +394,12 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783535847,
+      "published_at_ts": 1783537451,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
       "surface_label": "59 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
       "published_label": "Il y a 12 jours",
       "amenity_labels": [
@@ -418,11 +429,12 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783535847,
+      "published_at_ts": 1783537451,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
       "surface_label": "60 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-beausejour",
       "published_label": "Il y a 12 jours",
       "amenity_labels": [
@@ -460,6 +472,7 @@
       "first_seen_at": "2026-07-10T09:01:43+00:00",
       "price_label": "851 000 DH",
       "surface_label": "37 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-maarif",
       "published_label": "",
       "amenity_labels": [
@@ -500,6 +513,7 @@
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "940 000 DH",
       "surface_label": "50 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-hermitage",
       "published_label": "",
       "amenity_labels": [
@@ -539,6 +553,7 @@
       "first_seen_at": "2026-07-10T09:01:43+00:00",
       "price_label": "950 000 DH",
       "surface_label": "39 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-riviera",
       "published_label": "",
       "amenity_labels": [
@@ -578,6 +593,7 @@
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "920 000 DH",
       "surface_label": "40 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-ferme-bretonne",
       "published_label": "",
       "amenity_labels": [
@@ -618,6 +634,7 @@
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "920 000 DH",
       "surface_label": "51 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-hermitage",
       "published_label": "",
       "amenity_labels": [
@@ -658,6 +675,7 @@
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "930 000 DH",
       "surface_label": "38 m2",
+      "source_label": "Agenz",
       "area_anchor": "area-val-fleurie",
       "published_label": "",
       "amenity_labels": [
