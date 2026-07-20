@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T19:32:19+00:00",
+  "generated_at": "2026-07-20T20:29:50+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 6 heures",
-      "summary": "Voir l'annonce Il y a 6 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
+      "age_label": "Il y a 7 heures",
+      "summary": "Voir l'annonce Il y a 7 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
       "rank_in_source": 1,
       "source_listing_id": "70435",
       "image_url": "listing-thumbs/agenz-70435-b5711722da72.avif",
@@ -26,14 +26,14 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784554317,
+      "published_at_ts": 1784554169,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
       "surface_label": "50 m2",
       "source_label": "Agenz",
       "area_anchor": "area-bourgogne-ouest",
-      "published_label": "Il y a 6 heures",
+      "published_label": "Il y a 7 heures",
       "amenity_labels": [
         "Ascenseur",
         "Parking",
@@ -62,7 +62,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784489517,
+      "published_at_ts": 1784492969,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -98,7 +98,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784316717,
+      "published_at_ts": 1784320169,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -135,7 +135,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784316717,
+      "published_at_ts": 1784320169,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -170,7 +170,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784316717,
+      "published_at_ts": 1784320169,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -205,7 +205,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784230317,
+      "published_at_ts": 1784233769,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -243,7 +243,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784230317,
+      "published_at_ts": 1784233769,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -280,7 +280,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784143917,
+      "published_at_ts": 1784147369,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -315,7 +315,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783798317,
+      "published_at_ts": 1783801769,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -350,7 +350,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783625517,
+      "published_at_ts": 1783628969,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -384,7 +384,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783539117,
+      "published_at_ts": 1783542569,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -418,7 +418,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783539117,
+      "published_at_ts": 1783542569,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -428,6 +428,42 @@
       "published_label": "Il y a 12 jours",
       "amenity_labels": [
         "Meuble"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2",
+      "title": "Bel appartement à vendre à Oulfa. Surface de 45 m²",
+      "price_mad": 585000,
+      "surface_m2": 45,
+      "location_text": "Oulfa, Casablanca",
+      "area_guess": "El Oulfa",
+      "rooms_label": "2",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "585 000 DH Bel appartement à vendre à Oulfa. Surface de 45 m² Oulfa, Casablanca 45 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3 Chambres , Duple...",
+      "rank_in_source": 3,
+      "source_listing_id": "8353719",
+      "image_url": "listing-thumbs/mubawab-8353719-1acdfba92126.avif",
+      "photo_count": 15,
+      "amenity_keys": [
+        "elevator",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "price_label": "585 000 DH",
+      "surface_label": "45 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Parking"
       ]
     },
     {
