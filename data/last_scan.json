@@ -1,6 +1,11 @@
 {
+<<<<<<< Updated upstream
   "generated_at": "2026-07-20T02:13:12+00:00",
   "all_listings_count": 655,
+=======
+  "generated_at": "2026-07-20T02:14:12+00:00",
+  "all_listings_count": 656,
+>>>>>>> Stashed changes
   "matches": [
     {
       "source": "agenz",
