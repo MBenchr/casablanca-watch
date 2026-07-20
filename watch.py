@@ -43,6 +43,12 @@ USER_AGENT = (
 TIMEOUT = 25.0
 DEFAULT_PORT = 8765
 SOURCE_ORDER = ["agenz", "mubawab", "marocannonces", "yakeey"]
+SOURCE_LABELS = {
+    "agenz": "Agenz",
+    "mubawab": "Mubawab",
+    "marocannonces": "MarocAnnonces",
+    "yakeey": "Yakeey",
+}
 
 AMENITY_PATTERNS = {
     "terrace": r"\bterrasse?s?\b",
@@ -330,6 +336,22 @@ DASHBOARD_TEMPLATE = Template(
     .badge.status-internal {
       background: rgba(15, 78, 123, 0.1);
       color: #0f4e7b;
+    }
+    .badge.source-site {
+      background: rgba(15, 78, 123, 0.12);
+      color: #0f4e7b;
+    }
+    .badge.source-mubawab {
+      background: rgba(157, 106, 29, 0.14);
+      color: #855312;
+    }
+    .badge.source-marocannonces {
+      background: rgba(24, 95, 86, 0.12);
+      color: #0f5d53;
+    }
+    .badge.source-yakeey {
+      background: rgba(211, 83, 61, 0.12);
+      color: var(--new);
     }
     .area-grid, .source-grid {
       display: grid;
@@ -738,7 +760,7 @@ DASHBOARD_TEMPLATE = Template(
                 <h4>{{ item.title }}</h4>
                 <div class="badge-row">
                   {% if item.is_new %}<span class="badge new">Nouveau</span>{% endif %}
-                  <span class="badge">{{ item.source_name }}</span>
+                  <span class="badge source-site source-{{ item.source }}">{{ item.source_label }}</span>
                   {% if item.age_label %}<span class="badge">{{ item.age_label }}</span>{% endif %}
                 </div>
                 <div class="kv">
@@ -751,7 +773,7 @@ DASHBOARD_TEMPLATE = Template(
                 <p class="small">{{ item.summary }}</p>
                 <div class="links">
                   <a href="{{ item.url }}" target="_blank" rel="noreferrer">Annonce</a>
-                  <a href="#source-{{ item.source }}">{{ item.source_name }}</a>
+                  <a href="#source-{{ item.source }}">{{ item.source_label }}</a>
                 </div>
               </article>
               {% endfor %}
@@ -954,6 +976,7 @@ DASHBOARD_TEMPLATE = Template(
       const amenityLabels = Array.isArray(item.amenity_labels) && item.amenity_labels.length
         ? item.amenity_labels
         : amenityKeys.map((key) => amenityLabelMap[key] || key);
+      const sourceLabel = item.source_label || sourceDisplayName(item.source, item.source_name);
       return {
         ...item,
         area_guess: item.area_guess || item.location_text || "",
@@ -965,7 +988,8 @@ DASHBOARD_TEMPLATE = Template(
         published_label: item.published_label || item.age_label || "",
         price_label: item.price_label || formatPrice(item.price_mad),
         surface_label: item.surface_label || formatSurface(item.surface_m2),
-        source_name: sourceDisplayName(item.source, item.source_name),
+        source_name: item.source_name || sourceLabel,
+        source_label: sourceLabel,
         image_url: item.image_url || "",
         summary: item.summary || "",
         amenity_keys: amenityKeys,
@@ -1156,6 +1180,9 @@ DASHBOARD_TEMPLATE = Template(
 
     function listingBadges(item) {
       const badges = [];
+      if (item.source_label) {
+        badges.push(`<span class="badge source-site source-${escapeHtml(item.source || "other")}">${escapeHtml(item.source_label)}</span>`);
+      }
       if (item.is_new) {
         badges.push('<span class="badge new">Nouveau</span>');
       }
@@ -1239,7 +1266,7 @@ DASHBOARD_TEMPLATE = Template(
                   <h3>${escapeHtml(item.title)}</h3>
                 </div>
                 <div class="listing-links">
-                  <div class="listing-source-note">Annonce sur ${escapeHtml(item.source_name)}</div>
+                  <div class="listing-source-note">Source : ${escapeHtml(item.source_label || item.source_name)}</div>
                   <a class="listing-cta" href="${escapeHtml(item.url)}" target="_blank" rel="noreferrer">Voir l'annonce</a>
                 </div>
               </div>
@@ -2399,10 +2426,15 @@ def sort_matches(listings: list[Listing]) -> list[Listing]:
     return sorted(listings, key=listing_sort_key)
 
 
+def source_label_from_id(source: str, fallback: str = "") -> str:
+    return SOURCE_LABELS.get(source, fallback or source.title() or "Source")
+
+
 def serialize_listing(item: Listing) -> dict[str, Any]:
     payload = asdict(item)
     payload["price_label"] = item.price_label
     payload["surface_label"] = item.surface_label
+    payload["source_label"] = source_label_from_id(item.source, item.source_name)
     payload["area_anchor"] = f"area-{slugify_fragment(item.area_guess)}" if item.area_guess else ""
     payload["published_label"] = item.age_label
     payload["amenity_labels"] = amenity_labels(item.amenity_keys)
@@ -2806,12 +2838,6 @@ def build_area_filter_options(config: dict[str, Any], matches: list[dict[str, An
 
 
 def build_source_filter_options(matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    labels = {
-        "agenz": "Agenz",
-        "mubawab": "Mubawab",
-        "marocannonces": "MarocAnnonces",
-        "yakeey": "Yakeey",
-    }
     counts = {}
     for item in matches:
         source = item.get("source") or ""
@@ -2819,11 +2845,11 @@ def build_source_filter_options(matches: list[dict[str, Any]]) -> list[dict[str,
     options = [
         {
             "id": source,
-            "label": labels.get(source, source.title()),
+            "label": SOURCE_LABELS.get(source, source.title()),
             "count": counts.get(source, 0),
         }
         for source in SOURCE_ORDER
-        if counts.get(source, 0) or source in labels
+        if counts.get(source, 0) or source in SOURCE_LABELS
     ]
     known_sources = {item["id"] for item in options}
     for source, count in counts.items():
@@ -2832,7 +2858,7 @@ def build_source_filter_options(matches: list[dict[str, Any]]) -> list[dict[str,
         options.append(
             {
                 "id": source,
-                "label": labels.get(source, source.title()),
+                "label": SOURCE_LABELS.get(source, source.title()),
                 "count": count,
             }
         )
