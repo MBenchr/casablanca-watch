@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-20T17:38:27+00:00",
+  "generated_at": "2026-07-20T17:50:35+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -26,7 +26,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784554675,
+      "published_at_ts": 1784555413,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -61,7 +61,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784482675,
+      "published_at_ts": 1784483413,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -96,7 +96,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784309875,
+      "published_at_ts": 1784310613,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -132,7 +132,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784309875,
+      "published_at_ts": 1784310613,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -166,7 +166,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784309875,
+      "published_at_ts": 1784310613,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -200,7 +200,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784223475,
+      "published_at_ts": 1784224213,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -237,7 +237,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784223475,
+      "published_at_ts": 1784224213,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -273,7 +273,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784137075,
+      "published_at_ts": 1784137813,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -307,7 +307,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783791476,
+      "published_at_ts": 1783792213,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -341,7 +341,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783618676,
+      "published_at_ts": 1783619413,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -374,7 +374,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783532276,
+      "published_at_ts": 1783533013,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -407,7 +407,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783532276,
+      "published_at_ts": 1783533013,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -433,7 +433,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "655 500 DH Superbe appartement à vendre à Oulfa. Superficie 57 m² Oulfa, Casablanca 57 m² 3 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Meublé Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3...",
-      "rank_in_source": 14,
+      "rank_in_source": 16,
       "source_listing_id": "8353724",
       "image_url": "listing-thumbs/mubawab-8353724-c0a88524792e.avif",
       "photo_count": 15,
