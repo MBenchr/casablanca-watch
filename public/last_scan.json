@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-20T14:15:25+00:00",
-  "all_listings_count": 654,
+  "generated_at": "2026-07-20T15:15:11+00:00",
+  "all_listings_count": 364,
   "matches": [
     {
       "source": "agenz",
@@ -783,29 +783,6 @@
       "price_label": "920 000 DH",
       "surface_label": "40 m2",
       "area_anchor": "area-ferme-bretonne"
-    },
-    {
-      "source": "yakeey",
-      "source_name": "Yakeey Californie",
-      "source_page": "https://yakeey.com/fr-ma/achat/appartement/casablanca/californie?sortBy=dateDesc",
-      "url": "https://yakeey.com/fr-ma/acheter-appartement-casablanca-californie-ca127516",
-      "title": "Acheter Appartement Casablanca Californie",
-      "price_mad": 540000,
-      "surface_m2": 57,
-      "location_text": "Plus de détails › 540 000 DH À partir de 3 106 DH/mois Californie , Casablanca 2 1 57 m² Appartement",
-      "area_guess": "Californie",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "",
-      "summary": "Plus de détails › 540 000 DH À partir de 3 106 DH/mois Californie , Casablanca 2 1 57 m² Appartement",
-      "rank_in_source": 5,
-      "source_listing_id": "ca127516",
-      "is_new": false,
-      "first_seen_at": "2026-07-10T08:47:23+00:00",
-      "price_label": "540 000 DH",
-      "surface_label": "57 m2",
-      "area_anchor": "area-californie"
     }
   ],
   "new_matches": [],
