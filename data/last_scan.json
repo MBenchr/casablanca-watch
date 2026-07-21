@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T15:34:32+00:00",
+  "generated_at": "2026-07-21T16:30:52+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784561582,
+      "published_at_ts": 1784565001,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -100,7 +100,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784475182,
+      "published_at_ts": 1784478601,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -157,7 +157,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784302382,
+      "published_at_ts": 1784305801,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -213,7 +213,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784302382,
+      "published_at_ts": 1784305801,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -274,7 +274,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784302382,
+      "published_at_ts": 1784305801,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -336,7 +336,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784215982,
+      "published_at_ts": 1784219401,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -403,7 +403,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784215982,
+      "published_at_ts": 1784219401,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -464,7 +464,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784129582,
+      "published_at_ts": 1784133001,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -519,7 +519,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783783982,
+      "published_at_ts": 1783787401,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -572,7 +572,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783611182,
+      "published_at_ts": 1783614601,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -627,7 +627,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783524782,
+      "published_at_ts": 1783528201,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -687,7 +687,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783524782,
+      "published_at_ts": 1783528201,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -697,6 +697,45 @@
       "published_label": "Il y a 13 jours",
       "amenity_labels": [
         "Meuble"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8386733/studio-35m%C2%B2-anfa-950-kdh",
+      "title": "Studio 35m² Anfa 950 Kdh",
+      "price_mad": 950000,
+      "surface_m2": 35,
+      "location_text": "Anfa, Casablanca",
+      "area_guess": "Anfa",
+      "rooms_label": "2",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "950 000 DH Studio 35m² Anfa 950 Kdh Anfa, Casablanca 35 m² 2 Pièces 1 Ch. 1 Salle de bain Ascenseur Concierge Façade extérieure Antenne parabolique Sécurité Cuisine équipée Four Vente Studio à Anfa, superficie 35m², a...",
+      "rank_in_source": 26,
+      "source_listing_id": "8386733",
+      "image_url": "listing-thumbs/mubawab-8386733-01-f6ad6bd35c4d.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8386733-01-f6ad6bd35c4d.avif"
+      ],
+      "photo_count": 1,
+      "amenity_keys": [
+        "elevator",
+        "concierge"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-07-21T16:30:52+00:00",
+      "price_label": "950 000 DH",
+      "surface_label": "35 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-anfa",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Concierge"
       ]
     },
     {
@@ -976,28 +1015,19 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 7 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes MAR IMMO 936 000 DH 1 CH 1 SDB 36 m² Studio à vendre Casablanca -Bd Abdelmou...",
       "rank_in_source": 19,
       "source_listing_id": "47891",
-      "image_url": "listing-thumbs/agenz-47891-01-7d99f001b022.jpg",
+      "image_url": "listing-thumbs/agenz-47891-01-d8a515108b8f.avif",
       "image_urls": [
-        "listing-thumbs/agenz-47891-01-7d99f001b022.jpg",
-        "listing-thumbs/agenz-47891-02-6623ab32c812.jpg",
-        "listing-thumbs/agenz-47891-03-b0db8fd66298.jpg",
-        "listing-thumbs/agenz-47891-04-00edaf110afe.jpg",
-        "listing-thumbs/agenz-47891-05-a1cf73596ef9.jpg",
-        "listing-thumbs/agenz-47891-06-4dfde51e1d2e.jpg",
-        "listing-thumbs/agenz-47891-07-08cadcfe7d94.jpg",
-        "listing-thumbs/agenz-47891-08-516b6e986702.jpg",
-        "listing-thumbs/agenz-47891-09-a1763b39c279.jpg",
-        "listing-thumbs/agenz-47891-10-d8a515108b8f.avif",
-        "listing-thumbs/agenz-47891-11-7f89b70a928c.avif",
-        "listing-thumbs/agenz-47891-12-b15c57bacb1d.avif",
-        "listing-thumbs/agenz-47891-13-0e528d21c3f0.avif",
-        "listing-thumbs/agenz-47891-14-b80d86e73b3e.avif",
-        "listing-thumbs/agenz-47891-15-0ccef3921c07.avif",
-        "listing-thumbs/agenz-47891-16-cf2ab3fd222a.avif",
-        "listing-thumbs/agenz-47891-17-9ec1efe923d4.avif",
-        "listing-thumbs/agenz-47891-18-ab127de3ac2c.avif"
+        "listing-thumbs/agenz-47891-01-d8a515108b8f.avif",
+        "listing-thumbs/agenz-47891-02-7f89b70a928c.avif",
+        "listing-thumbs/agenz-47891-03-b15c57bacb1d.avif",
+        "listing-thumbs/agenz-47891-04-0e528d21c3f0.avif",
+        "listing-thumbs/agenz-47891-05-b80d86e73b3e.avif",
+        "listing-thumbs/agenz-47891-06-0ccef3921c07.avif",
+        "listing-thumbs/agenz-47891-07-cf2ab3fd222a.avif",
+        "listing-thumbs/agenz-47891-08-9ec1efe923d4.avif",
+        "listing-thumbs/agenz-47891-09-ab127de3ac2c.avif"
       ],
-      "photo_count": 18,
+      "photo_count": 9,
       "amenity_keys": [
         "balcony",
         "elevator",
@@ -1020,6 +1050,46 @@
       ]
     }
   ],
-  "new_matches": [],
+  "new_matches": [
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8386733/studio-35m%C2%B2-anfa-950-kdh",
+      "title": "Studio 35m² Anfa 950 Kdh",
+      "price_mad": 950000,
+      "surface_m2": 35,
+      "location_text": "Anfa, Casablanca",
+      "area_guess": "Anfa",
+      "rooms_label": "2",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "950 000 DH Studio 35m² Anfa 950 Kdh Anfa, Casablanca 35 m² 2 Pièces 1 Ch. 1 Salle de bain Ascenseur Concierge Façade extérieure Antenne parabolique Sécurité Cuisine équipée Four Vente Studio à Anfa, superficie 35m², a...",
+      "rank_in_source": 26,
+      "source_listing_id": "8386733",
+      "image_url": "listing-thumbs/mubawab-8386733-01-f6ad6bd35c4d.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8386733-01-f6ad6bd35c4d.avif"
+      ],
+      "photo_count": 1,
+      "amenity_keys": [
+        "elevator",
+        "concierge"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-07-21T16:30:52+00:00",
+      "price_label": "950 000 DH",
+      "surface_label": "35 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-anfa",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Concierge"
+      ]
+    }
+  ],
   "bootstrapped": false
 }
