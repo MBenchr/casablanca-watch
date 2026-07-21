@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T11:15:47+00:00",
+  "generated_at": "2026-07-21T11:43:28+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784546076,
+      "published_at_ts": 1784547745,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -74,9 +74,9 @@
       "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visit...",
       "rank_in_source": 3,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -100,7 +100,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784459676,
+      "published_at_ts": 1784461345,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -157,7 +157,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784286876,
+      "published_at_ts": 1784288545,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -213,7 +213,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784286876,
+      "published_at_ts": 1784288545,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -274,7 +274,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784286876,
+      "published_at_ts": 1784288545,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -336,7 +336,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784200476,
+      "published_at_ts": 1784202145,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -403,7 +403,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784200476,
+      "published_at_ts": 1784202145,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -435,9 +435,9 @@
       "summary": "Voir l'annonce Il y a 5 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 15,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -464,7 +464,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784200476,
+      "published_at_ts": 1784202145,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -519,7 +519,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783768476,
+      "published_at_ts": 1783770145,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -572,7 +572,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783595676,
+      "published_at_ts": 1783597345,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -627,7 +627,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783509276,
+      "published_at_ts": 1783510945,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -687,7 +687,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783509276,
+      "published_at_ts": 1783510945,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -1043,7 +1043,7 @@
         "new_project"
       ],
       "published_at_ts": null,
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-07-21T11:15:47+00:00",
       "price_label": "936 000 DH",
       "surface_label": "36 m2",
@@ -1058,58 +1058,6 @@
       ]
     }
   ],
-  "new_matches": [
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/bd-abdelmoumen/47891",
-      "title": "Studio à vendre Casablanca -Bd Abdelmoumen",
-      "price_mad": 936000,
-      "surface_m2": 36,
-      "location_text": "Bd Abdelmoumen",
-      "area_guess": "Bd Abdelmoumen",
-      "rooms_label": "",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 7 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes MAR IMMO 936 000 DH 1 CH 1 SDB 36 m² Studio à vendre Casablanca -Bd Abdelmou...",
-      "rank_in_source": 17,
-      "source_listing_id": "47891",
-      "image_url": "listing-thumbs/agenz-47891-01-9bccb98776af.avif",
-      "image_urls": [
-        "listing-thumbs/agenz-47891-01-9bccb98776af.avif",
-        "listing-thumbs/agenz-47891-02-95766cee93bf.avif",
-        "listing-thumbs/agenz-47891-03-1fac5c5c7431.avif",
-        "listing-thumbs/agenz-47891-04-61e1454c245d.avif",
-        "listing-thumbs/agenz-47891-05-dbc7b9d329f4.avif",
-        "listing-thumbs/agenz-47891-06-a4d77166b1ec.avif",
-        "listing-thumbs/agenz-47891-07-dc641ed91a5b.avif",
-        "listing-thumbs/agenz-47891-08-4e7b57300019.avif",
-        "listing-thumbs/agenz-47891-09-a940698d690d.avif"
-      ],
-      "photo_count": 9,
-      "amenity_keys": [
-        "balcony",
-        "elevator",
-        "furnished",
-        "new_project"
-      ],
-      "published_at_ts": null,
-      "is_new": true,
-      "first_seen_at": "2026-07-21T11:15:47+00:00",
-      "price_label": "936 000 DH",
-      "surface_label": "36 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-bd-abdelmoumen",
-      "published_label": "",
-      "amenity_labels": [
-        "Balcon",
-        "Ascenseur",
-        "Meuble",
-        "Neuf"
-      ]
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
