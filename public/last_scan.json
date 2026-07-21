@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T00:21:30+00:00",
+  "generated_at": "2026-07-21T00:29:33+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784553577,
+      "published_at_ts": 1784554009,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -101,7 +101,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784506777,
+      "published_at_ts": 1784507209,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -159,7 +159,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784333977,
+      "published_at_ts": 1784334409,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -216,7 +216,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784333977,
+      "published_at_ts": 1784334409,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -278,7 +278,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784247577,
+      "published_at_ts": 1784248009,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -341,7 +341,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784247577,
+      "published_at_ts": 1784248009,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -409,7 +409,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784161177,
+      "published_at_ts": 1784161609,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -471,7 +471,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784161177,
+      "published_at_ts": 1784161609,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -527,7 +527,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783815577,
+      "published_at_ts": 1783816009,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -581,7 +581,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783642777,
+      "published_at_ts": 1783643209,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -637,7 +637,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783556377,
+      "published_at_ts": 1783556809,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -698,7 +698,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783556377,
+      "published_at_ts": 1783556809,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -893,13 +893,12 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...",
       "rank_in_source": 10,
       "source_listing_id": "193099",
-      "image_url": "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
+      "image_url": "listing-thumbs/agenz-193099-01-7c33af86b924.avif",
       "image_urls": [
-        "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
-        "listing-thumbs/agenz-193099-02-7c33af86b924.avif",
-        "listing-thumbs/agenz-193099-03-7d6df4a31bc9.avif"
+        "listing-thumbs/agenz-193099-01-7c33af86b924.avif",
+        "listing-thumbs/agenz-193099-02-7d6df4a31bc9.avif"
       ],
-      "photo_count": 3,
+      "photo_count": 2,
       "amenity_keys": [
         "balcony",
         "elevator",
