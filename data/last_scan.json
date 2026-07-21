@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T09:20:10+00:00",
+  "generated_at": "2026-07-21T10:18:55+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 20 heures",
-      "summary": "Voir l'annonce Il y a 20 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking No...",
+      "age_label": "Il y a 21 heures",
+      "summary": "Voir l'annonce Il y a 21 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking No...",
       "rank_in_source": 1,
       "source_listing_id": "70435",
       "image_url": "listing-thumbs/agenz-70435-01-bc7db3a40f04.jpg",
@@ -43,14 +43,14 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784553539,
+      "published_at_ts": 1784553429,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
       "surface_label": "50 m2",
       "source_label": "Agenz",
       "area_anchor": "area-bourgogne-ouest",
-      "published_label": "Il y a 20 heures",
+      "published_label": "Il y a 21 heures",
       "amenity_labels": [
         "Ascenseur",
         "Parking",
@@ -100,7 +100,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784452739,
+      "published_at_ts": 1784456229,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -157,7 +157,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784279939,
+      "published_at_ts": 1784283429,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -213,7 +213,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784279939,
+      "published_at_ts": 1784283429,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -274,7 +274,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784279939,
+      "published_at_ts": 1784283429,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -336,7 +336,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784193539,
+      "published_at_ts": 1784197029,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -403,7 +403,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784193539,
+      "published_at_ts": 1784197029,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -435,9 +435,9 @@
       "summary": "Voir l'annonce Il y a 5 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 15,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -464,7 +464,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784193539,
+      "published_at_ts": 1784197029,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -519,7 +519,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783847939,
+      "published_at_ts": 1783851429,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -572,7 +572,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783588739,
+      "published_at_ts": 1783592229,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -627,7 +627,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783502339,
+      "published_at_ts": 1783505829,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -687,7 +687,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783502339,
+      "published_at_ts": 1783505829,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -697,6 +697,45 @@
       "published_label": "Il y a 13 jours",
       "amenity_labels": [
         "Meuble"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8344370/studio-%C3%A0-vendre-%E2%80%93-beaulieu",
+      "title": "Studio à vendre – Beaulieu",
+      "price_mad": 817000,
+      "surface_m2": 43,
+      "location_text": "Franceville, Casablanca",
+      "area_guess": "Franceville",
+      "rooms_label": "1",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "817 000 DH Studio à vendre – Beaulieu Franceville, Casablanca 43 m² 1 Pièce 1 Ch. 1 Salle de bain Ascenseur Climatisation Sécurité Double vitrage Cuisine équipée Découvrez ce charmant studio d'une superficie de 43 m²,...",
+      "rank_in_source": 19,
+      "source_listing_id": "8344370",
+      "image_url": "listing-thumbs/mubawab-8344370-01-430764a7c217.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8344370-01-430764a7c217.avif",
+        "listing-thumbs/mubawab-8344370-02-02c3d5768fca.avif",
+        "listing-thumbs/mubawab-8344370-03-c0f6122918f5.avif"
+      ],
+      "photo_count": 3,
+      "amenity_keys": [
+        "elevator"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-20T16:48:15+00:00",
+      "price_label": "817 000 DH",
+      "surface_label": "43 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-franceville",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur"
       ]
     },
     {
