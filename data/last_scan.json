@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-21T05:03:22+00:00",
-  "all_listings_count": 69,
+  "generated_at": "2026-07-21T06:20:00+00:00",
+  "all_listings_count": 109,
   "matches": [
     {
       "source": "agenz",
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 16 heures",
-      "summary": "Voir l'annonce Il y a 16 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking No...",
+      "age_label": "Il y a 17 heures",
+      "summary": "Voir l'annonce Il y a 17 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking No...",
       "rank_in_source": 1,
       "source_listing_id": "70435",
       "image_url": "listing-thumbs/agenz-70435-01-bc7db3a40f04.jpg",
@@ -43,14 +43,14 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784552575,
+      "published_at_ts": 1784553542,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
       "surface_label": "50 m2",
       "source_label": "Agenz",
       "area_anchor": "area-bourgogne-ouest",
-      "published_label": "Il y a 16 heures",
+      "published_label": "Il y a 17 heures",
       "amenity_labels": [
         "Ascenseur",
         "Parking",
@@ -100,7 +100,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784437375,
+      "published_at_ts": 1784441942,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -157,7 +157,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784264575,
+      "published_at_ts": 1784269142,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -213,7 +213,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784264575,
+      "published_at_ts": 1784269142,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -274,7 +274,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784264575,
+      "published_at_ts": 1784269142,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -336,7 +336,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784178175,
+      "published_at_ts": 1784182742,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -403,7 +403,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784178175,
+      "published_at_ts": 1784182742,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -464,7 +464,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784178175,
+      "published_at_ts": 1784182742,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -519,7 +519,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783832575,
+      "published_at_ts": 1783837142,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -572,7 +572,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783573375,
+      "published_at_ts": 1783577942,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -627,7 +627,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783486975,
+      "published_at_ts": 1783491542,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -687,7 +687,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783486975,
+      "published_at_ts": 1783491542,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -878,13 +878,12 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...",
       "rank_in_source": 10,
       "source_listing_id": "193099",
-      "image_url": "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
+      "image_url": "listing-thumbs/agenz-193099-01-7c33af86b924.avif",
       "image_urls": [
-        "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
-        "listing-thumbs/agenz-193099-02-7c33af86b924.avif",
-        "listing-thumbs/agenz-193099-03-7d6df4a31bc9.avif"
+        "listing-thumbs/agenz-193099-01-7c33af86b924.avif",
+        "listing-thumbs/agenz-193099-02-7d6df4a31bc9.avif"
       ],
-      "photo_count": 3,
+      "photo_count": 2,
       "amenity_keys": [
         "balcony",
         "elevator",
