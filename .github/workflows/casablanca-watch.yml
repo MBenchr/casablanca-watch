@@ -50,7 +50,7 @@ jobs:
 
       - name: Commit updated state if needed
         run: |
-          if git diff --quiet -- data/state.json data/last_scan.json public/index.html public/last_scan.json public/.nojekyll; then
+          if [ -z "$(git status --porcelain -- data/state.json data/last_scan.json data/area_geocodes.json public)" ]; then
             echo "No state changes"
           else
             git config user.name "github-actions[bot]"
@@ -58,7 +58,10 @@ jobs:
             git stash push --include-untracked --message casablanca-watch-state
             git pull --rebase origin main
             git stash pop || true
-            git add data/state.json data/last_scan.json public/index.html public/last_scan.json public/.nojekyll
+            git add data/state.json data/last_scan.json public
+            if [ -f data/area_geocodes.json ]; then
+              git add data/area_geocodes.json
+            fi
             git commit -m "chore: update casablanca watch state"
             git push
           fi

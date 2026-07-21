@@ -10,6 +10,7 @@ import re
 import subprocess
 import sys
 import textwrap
+import time
 import webbrowser
 from dataclasses import asdict, dataclass, field
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
@@ -31,6 +32,7 @@ PUBLIC_DIR = ROOT / "public"
 THUMB_DIRNAME = "listing-thumbs"
 OUTPUT_THUMBS_DIR = OUTPUT_DIR / THUMB_DIRNAME
 PUBLIC_THUMBS_DIR = PUBLIC_DIR / THUMB_DIRNAME
+AREA_GEOCODES_PATH = DATA_DIR / "area_geocodes.json"
 STATE_PATH = DATA_DIR / "state.json"
 LAST_SCAN_PATH = DATA_DIR / "last_scan.json"
 DASHBOARD_PATH = OUTPUT_DIR / "dashboard.html"
@@ -43,6 +45,8 @@ USER_AGENT = (
 TIMEOUT = 25.0
 DEFAULT_PORT = 8765
 SOURCE_ORDER = ["agenz", "mubawab", "marocannonces", "yakeey"]
+DEFAULT_REFERENCE_AREA_LABEL = "Casablanca Finance City"
+NOMINATIM_SEARCH_URL = "https://nominatim.openstreetmap.org/search"
 SOURCE_LABELS = {
     "agenz": "Agenz",
     "mubawab": "Mubawab",
@@ -115,6 +119,7 @@ DASHBOARD_TEMPLATE = Template(
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Casablanca Watch</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
     :root {
       --bg: #f5f1e7;
@@ -511,6 +516,81 @@ DASHBOARD_TEMPLATE = Template(
       flex-wrap: wrap;
       gap: 10px;
     }
+    .map-shell {
+      margin-top: 16px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: white;
+      padding: 14px;
+    }
+    .map-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+    }
+    .map-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      gap: 8px;
+    }
+    .map-actions button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 999px;
+      padding: 9px 12px;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .map-actions button:hover {
+      background: #f0f6f9;
+    }
+    .area-map {
+      margin-top: 12px;
+      height: 340px;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: linear-gradient(135deg, #e5ecef, #dbe8df);
+    }
+    .map-status-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+    }
+    .map-stat {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffdfa;
+      padding: 12px;
+    }
+    .map-stat strong {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .map-inline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+    }
+    .map-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--soft);
+      color: #2d445b;
+      font-size: 12px;
+      font-weight: 700;
+    }
     .listings-grid {
       display: grid;
       gap: 14px;
@@ -527,6 +607,9 @@ DASHBOARD_TEMPLATE = Template(
     }
     .thumb {
       position: relative;
+      display: flex;
+      align-items: stretch;
+      justify-content: stretch;
       border-radius: 16px;
       overflow: hidden;
       min-height: 130px;
@@ -537,6 +620,62 @@ DASHBOARD_TEMPLATE = Template(
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    .thumb-stage {
+      position: relative;
+      width: 100%;
+      min-height: 130px;
+    }
+    .thumb-counter {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      z-index: 3;
+      padding: 4px 8px;
+      border-radius: 999px;
+      background: rgba(24, 44, 60, 0.8);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    .thumb-nav {
+      position: absolute;
+      top: 50%;
+      z-index: 3;
+      transform: translateY(-50%);
+      width: 34px;
+      height: 34px;
+      border: none;
+      border-radius: 999px;
+      background: rgba(24, 44, 60, 0.82);
+      color: white;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .thumb-nav.prev { left: 10px; }
+    .thumb-nav.next { right: 10px; }
+    .thumb-nav:hover { background: rgba(15, 78, 123, 0.92); }
+    .thumb-dots {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      z-index: 3;
+      display: flex;
+      gap: 4px;
+      align-items: center;
+    }
+    .thumb-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.42);
+    }
+    .thumb-dot.active {
+      background: white;
     }
     .thumb-fallback, .thumb-empty {
       display: grid;
@@ -645,6 +784,12 @@ DASHBOARD_TEMPLATE = Template(
       .listing-row {
         grid-template-columns: 1fr;
       }
+      .map-header {
+        flex-direction: column;
+      }
+      .map-actions {
+        justify-content: flex-start;
+      }
     }
   </style>
 </head>
@@ -678,6 +823,41 @@ DASHBOARD_TEMPLATE = Template(
           comme du neuf.
         </div>
         {% endif %}
+        <div class="map-shell">
+          <div class="map-header">
+            <div>
+              <h3 style="margin-top:0;">Carte quartier + distance</h3>
+              <p class="small">
+                Cliquez sur les quartiers pour activer le filtre. Le point de reference part de CFC, vous pouvez
+                ensuite le deplacer sur la carte ou utiliser votre position pour filtrer par distance.
+              </p>
+            </div>
+            <div class="map-actions">
+              <button type="button" onclick="resetReferencePoint()">Revenir sur CFC</button>
+              <button type="button" onclick="useCurrentLocation()">Ma position</button>
+              <button type="button" onclick="clearDistanceFilter()">Sans rayon</button>
+            </div>
+          </div>
+          <div id="areaMap" class="area-map"></div>
+          <div class="map-status-grid">
+            <label class="map-stat">
+              <strong>Rayon autour du point</strong>
+              <div class="map-inline">
+                <span id="radiusValue" class="map-chip">10 km</span>
+                <span class="small">0 km = pas de filtre distance</span>
+              </div>
+              <input id="distanceRadiusRange" type="range" min="0" max="20" step="1" value="10">
+            </label>
+            <div class="map-stat">
+              <strong>Point de reference</strong>
+              <div id="referencePointSummary" class="small">CFC</div>
+            </div>
+            <div class="map-stat">
+              <strong>Couverture carte</strong>
+              <div id="mapCoverageSummary" class="small">Chargement...</div>
+            </div>
+          </div>
+        </div>
         <div class="filter-shell">
           <h3>Filtres rapides</h3>
           <p class="small">
@@ -899,6 +1079,8 @@ DASHBOARD_TEMPLATE = Template(
     </div>
   </div>
 
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/@turf/turf@7.3.0/turf.min.js"></script>
   <script>
     function openMany(urls) {
       if (!Array.isArray(urls) || urls.length === 0) {
@@ -919,8 +1101,10 @@ DASHBOARD_TEMPLATE = Template(
     const INITIAL_MATCHES = {{ matches_json }};
     const INITIAL_NEW_MATCHES = {{ new_matches_json }};
     const INITIAL_AREA_OPTIONS = {{ area_filter_options_json }};
+    const INITIAL_AREA_MAP_FEATURES = {{ area_map_features_json }};
     const INITIAL_SOURCE_OPTIONS = {{ source_filter_options_json }};
     const INITIAL_AMENITY_OPTIONS = {{ amenity_filter_options_json }};
+    const DEFAULT_REFERENCE_POINT = {{ default_reference_point_json }};
 
     const amenityLabelMap = Object.fromEntries(
       INITIAL_AMENITY_OPTIONS.map((item) => [item.id, item.label])
@@ -933,7 +1117,17 @@ DASHBOARD_TEMPLATE = Template(
       maxPrice: DEFAULT_FILTERS.maxPrice,
       minSurface: DEFAULT_FILTERS.minSurface,
       maxSurface: DEFAULT_FILTERS.maxSurface,
-      sortMode: "latest"
+      sortMode: "latest",
+      distanceRadiusKm: 10,
+      referencePoint: DEFAULT_REFERENCE_POINT
+    };
+
+    let areaMapState = {
+      map: null,
+      tileLayer: null,
+      areaLayerGroup: null,
+      referenceMarker: null,
+      radiusCircle: null
     };
 
     let currentScanData = normalizeScanData({
@@ -971,6 +1165,115 @@ DASHBOARD_TEMPLATE = Template(
       return match?.label || fallback || source || "Source";
     }
 
+    function safeListingKey(item) {
+      return `${item.source || "source"}-${item.source_listing_id || item.default_sort_index || "listing"}`
+        .replace(/[^\\w-]+/g, "-");
+    }
+
+    function currentAreaMapFeatures() {
+      const countsByArea = {};
+      for (const item of currentScanData.matches) {
+        const label = item.area_guess || "";
+        if (!label) {
+          continue;
+        }
+        countsByArea[label] = (countsByArea[label] || 0) + 1;
+      }
+      return INITIAL_AREA_MAP_FEATURES.map((feature) => ({
+        ...feature,
+        count: countsByArea[feature.label] || 0
+      }));
+    }
+
+    function firstGeocodedMapFeature() {
+      return currentAreaMapFeatures().find((feature) => Number.isFinite(feature.lat) && Number.isFinite(feature.lon)) || null;
+    }
+
+    function currentReferencePoint() {
+      if (dashboardState.referencePoint && Number.isFinite(dashboardState.referencePoint.lat) && Number.isFinite(dashboardState.referencePoint.lon)) {
+        return dashboardState.referencePoint;
+      }
+      return DEFAULT_REFERENCE_POINT || firstGeocodedMapFeature();
+    }
+
+    function setReferencePoint(point) {
+      if (!point || !Number.isFinite(point.lat) || !Number.isFinite(point.lon)) {
+        return;
+      }
+      dashboardState.referencePoint = {
+        label: point.label || "Point manuel",
+        lat: point.lat,
+        lon: point.lon
+      };
+      renderDashboard();
+    }
+
+    function toggleAreaSelection(label) {
+      if (!label) {
+        return;
+      }
+      if (dashboardState.selectedAreas.has(label)) {
+        dashboardState.selectedAreas.delete(label);
+      } else {
+        dashboardState.selectedAreas.add(label);
+      }
+    }
+
+    function distanceBetweenPointsKm(from, to) {
+      if (!from || !to || !Number.isFinite(from.lat) || !Number.isFinite(from.lon) || !Number.isFinite(to.lat) || !Number.isFinite(to.lon)) {
+        return null;
+      }
+      if (window.turf?.distance && window.turf?.point) {
+        return window.turf.distance(
+          window.turf.point([from.lon, from.lat]),
+          window.turf.point([to.lon, to.lat]),
+          { units: "kilometers" }
+        );
+      }
+      const toRad = (value) => (value * Math.PI) / 180;
+      const earthRadiusKm = 6371;
+      const dLat = toRad(to.lat - from.lat);
+      const dLon = toRad(to.lon - from.lon);
+      const lat1 = toRad(from.lat);
+      const lat2 = toRad(to.lat);
+      const a = Math.sin(dLat / 2) * Math.sin(dLat / 2)
+        + Math.sin(dLon / 2) * Math.sin(dLon / 2) * Math.cos(lat1) * Math.cos(lat2);
+      const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+      return earthRadiusKm * c;
+    }
+
+    function areaFeatureForLabel(label) {
+      if (!label) {
+        return null;
+      }
+      return currentAreaMapFeatures().find((feature) => feature.label === label) || null;
+    }
+
+    function listingDistanceKm(item) {
+      const feature = areaFeatureForLabel(item.area_guess);
+      const referencePoint = currentReferencePoint();
+      if (!feature || !referencePoint) {
+        return null;
+      }
+      return distanceBetweenPointsKm(referencePoint, feature);
+    }
+
+    function areaWithinDistance(feature) {
+      const radiusKm = Number(dashboardState.distanceRadiusKm || 0);
+      if (!(radiusKm > 0)) {
+        return true;
+      }
+      const referencePoint = currentReferencePoint();
+      if (!referencePoint || !feature) {
+        return true;
+      }
+      const distanceKm = distanceBetweenPointsKm(referencePoint, feature);
+      if (distanceKm === null) {
+        return true;
+      }
+      return distanceKm <= radiusKm;
+    }
+
     function normalizeListing(item, index, newUrls) {
       const amenityKeys = Array.isArray(item.amenity_keys) ? item.amenity_keys : [];
       const amenityLabels = Array.isArray(item.amenity_labels) && item.amenity_labels.length
@@ -982,7 +1285,8 @@ DASHBOARD_TEMPLATE = Template(
         area_guess: item.area_guess || item.location_text || "",
         price_mad: Number.isFinite(item.price_mad) ? item.price_mad : null,
         surface_m2: Number.isFinite(item.surface_m2) ? item.surface_m2 : null,
-        photo_count: Number.isFinite(item.photo_count) ? item.photo_count : (item.image_url ? 1 : 0),
+        image_urls: Array.isArray(item.image_urls) ? item.image_urls.filter((url) => typeof url === "string" && url) : (item.image_url ? [item.image_url] : []),
+        photo_count: Number.isFinite(item.photo_count) ? item.photo_count : ((Array.isArray(item.image_urls) ? item.image_urls.length : 0) || (item.image_url ? 1 : 0)),
         default_sort_index: Number.isFinite(item.default_sort_index) ? item.default_sort_index : index,
         published_at_ts: Number.isFinite(item.published_at_ts) ? item.published_at_ts : null,
         published_label: item.published_label || item.age_label || "",
@@ -990,7 +1294,7 @@ DASHBOARD_TEMPLATE = Template(
         surface_label: item.surface_label || formatSurface(item.surface_m2),
         source_name: item.source_name || sourceLabel,
         source_label: sourceLabel,
-        image_url: item.image_url || "",
+        image_url: item.image_url || ((Array.isArray(item.image_urls) && item.image_urls.length) ? item.image_urls[0] : ""),
         summary: item.summary || "",
         amenity_keys: amenityKeys,
         amenity_labels: amenityLabels,
@@ -1069,8 +1373,13 @@ DASHBOARD_TEMPLATE = Template(
       if (dashboardState.selectedAmenities.size) {
         parts.push(`${dashboardState.selectedAmenities.size} equipement(s)`);
       }
+      if (Number(dashboardState.distanceRadiusKm || 0) > 0) {
+        const referencePoint = currentReferencePoint();
+        const referenceLabel = referencePoint?.label || "point manuel";
+        parts.push(`rayon ${dashboardState.distanceRadiusKm} km depuis ${referenceLabel}`);
+      }
       if (!parts.length) {
-        return "Aucun filtre quartier/equipement actif";
+        return "Aucun filtre quartier/equipement/distance actif";
       }
       return parts.join(" • ");
     }
@@ -1112,8 +1421,9 @@ DASHBOARD_TEMPLATE = Template(
       const maxSurfaceRange = document.getElementById("maxSurfaceRange");
       const maxSurfaceNumber = document.getElementById("maxSurfaceNumber");
       const sortModeSelect = document.getElementById("sortModeSelect");
+      const distanceRadiusRange = document.getElementById("distanceRadiusRange");
 
-      if (!minPriceRange || !minPriceNumber || !maxPriceRange || !maxPriceNumber || !minSurfaceRange || !minSurfaceNumber || !maxSurfaceRange || !maxSurfaceNumber || !sortModeSelect) {
+      if (!minPriceRange || !minPriceNumber || !maxPriceRange || !maxPriceNumber || !minSurfaceRange || !minSurfaceNumber || !maxSurfaceRange || !maxSurfaceNumber || !sortModeSelect || !distanceRadiusRange) {
         return;
       }
 
@@ -1126,10 +1436,15 @@ DASHBOARD_TEMPLATE = Template(
       maxSurfaceRange.value = String(dashboardState.maxSurface);
       maxSurfaceNumber.value = String(dashboardState.maxSurface);
       sortModeSelect.value = dashboardState.sortMode;
+      distanceRadiusRange.value = String(dashboardState.distanceRadiusKm);
     }
 
     function listingVisible(item) {
       if (dashboardState.selectedAreas.size && !dashboardState.selectedAreas.has(item.area_guess)) {
+        return false;
+      }
+      const areaFeature = areaFeatureForLabel(item.area_guess);
+      if (Number(dashboardState.distanceRadiusKm || 0) > 0 && areaFeature && !areaWithinDistance(areaFeature)) {
         return false;
       }
       if (dashboardState.selectedAmenities.size) {
@@ -1192,6 +1507,10 @@ DASHBOARD_TEMPLATE = Template(
       if (item.published_label) {
         badges.push(`<span class="badge">${escapeHtml(item.published_label)}</span>`);
       }
+      const distanceKm = listingDistanceKm(item);
+      if (distanceKm !== null) {
+        badges.push(`<span class="badge">${escapeHtml(distanceKm < 10 ? distanceKm.toFixed(1) : Math.round(distanceKm).toString())} km</span>`);
+      }
       if (item.photo_count) {
         badges.push(`<span class="badge">${item.photo_count} photo(s)</span>`);
       }
@@ -1232,6 +1551,92 @@ DASHBOARD_TEMPLATE = Template(
       `;
     }
 
+    function thumbImageError(imageElement) {
+      imageElement.style.display = "none";
+      const shell = imageElement.closest(".thumb-stage") || imageElement.parentElement;
+      const fallback = shell?.querySelector(".thumb-fallback");
+      if (fallback) {
+        fallback.style.display = "grid";
+      }
+    }
+
+    function showThumbSlide(listingKey, index) {
+      const stage = document.querySelector(`[data-thumb-key="${listingKey}"]`);
+      if (!stage) {
+        return;
+      }
+      const images = JSON.parse(stage.dataset.thumbImages || "[]");
+      if (!images.length) {
+        return;
+      }
+      const normalizedIndex = ((index % images.length) + images.length) % images.length;
+      stage.dataset.thumbIndex = String(normalizedIndex);
+      const img = stage.querySelector("img");
+      const counter = stage.querySelector("[data-thumb-counter]");
+      const dots = stage.querySelectorAll("[data-thumb-dot-index]");
+      if (img) {
+        img.src = images[normalizedIndex];
+        img.style.display = "block";
+      }
+      const fallback = stage.querySelector(".thumb-fallback");
+      if (fallback) {
+        fallback.style.display = "none";
+      }
+      if (counter) {
+        counter.textContent = `${normalizedIndex + 1} / ${images.length}`;
+      }
+      for (const dot of dots) {
+        const dotIndex = Number(dot.getAttribute("data-thumb-dot-index") || "0");
+        dot.classList.toggle("active", dotIndex === normalizedIndex);
+      }
+    }
+
+    function shiftThumbSlide(listingKey, delta) {
+      const stage = document.querySelector(`[data-thumb-key="${listingKey}"]`);
+      if (!stage) {
+        return;
+      }
+      const currentIndex = Number(stage.dataset.thumbIndex || "0");
+      showThumbSlide(listingKey, currentIndex + delta);
+    }
+
+    function thumbMarkup(item) {
+      const images = Array.isArray(item.image_urls) && item.image_urls.length
+        ? item.image_urls
+        : (item.image_url ? [item.image_url] : []);
+      if (!images.length) {
+        return thumbFallbackMarkup(item);
+      }
+      const listingKey = safeListingKey(item);
+      const controls = images.length > 1
+        ? `
+          <button class="thumb-nav prev" type="button" onclick="shiftThumbSlide('${listingKey}', -1)" aria-label="Image precedente">‹</button>
+          <button class="thumb-nav next" type="button" onclick="shiftThumbSlide('${listingKey}', 1)" aria-label="Image suivante">›</button>
+        `
+        : "";
+      const dots = images.length > 1
+        ? `
+          <div class="thumb-dots">
+            ${images.map((_, index) => `<span class="thumb-dot${index === 0 ? " active" : ""}" data-thumb-dot-index="${index}"></span>`).join("")}
+          </div>
+        `
+        : "";
+      return `
+        <div class="thumb-stage" data-thumb-key="${listingKey}" data-thumb-images='${escapeHtml(JSON.stringify(images))}' data-thumb-index="0">
+          <img
+            src="${escapeHtml(images[0])}"
+            alt="${escapeHtml(item.title)}"
+            loading="lazy"
+            onerror="thumbImageError(this)"
+          >
+          ${thumbFallbackMarkup(item)}
+          ${controls}
+          <div class="thumb-counter" data-thumb-counter="${listingKey}">1 / ${images.length}</div>
+          ${dots}
+        </div>
+      `;
+    }
+
     function renderRows(listings) {
       const container = document.getElementById("mixedRows");
       if (!container) {
@@ -1242,18 +1647,7 @@ DASHBOARD_TEMPLATE = Template(
         return;
       }
       container.innerHTML = listings.map((item) => {
-        const thumb = item.image_url
-          ? `
-            <img
-              src="${escapeHtml(item.image_url)}"
-              alt="${escapeHtml(item.title)}"
-              loading="lazy"
-              referrerpolicy="no-referrer"
-              onerror="this.style.display='none'; const fallback=this.parentElement.querySelector('.thumb-fallback'); if (fallback) fallback.style.display='grid';"
-            >
-            ${thumbFallbackMarkup(item)}
-          `
-          : thumbFallbackMarkup(item);
+        const thumb = thumbMarkup(item);
         const amenities = listingAmenityPills(item);
         const summary = item.summary ? `<p class="small">${escapeHtml(item.summary)}</p>` : "";
         return `
@@ -1281,6 +1675,155 @@ DASHBOARD_TEMPLATE = Template(
           </article>
         `;
       }).join("");
+    }
+
+    function updateMapSummary(features) {
+      const radiusValue = document.getElementById("radiusValue");
+      const referenceSummary = document.getElementById("referencePointSummary");
+      const coverageSummary = document.getElementById("mapCoverageSummary");
+      const geocodedCount = features.filter((feature) => Number.isFinite(feature.lat) && Number.isFinite(feature.lon)).length;
+      const withinRadiusCount = features.filter((feature) => feature.count > 0 && areaWithinDistance(feature)).length;
+      const referencePoint = currentReferencePoint();
+      if (radiusValue) {
+        radiusValue.textContent = `${dashboardState.distanceRadiusKm} km`;
+      }
+      if (referenceSummary) {
+        if (referencePoint) {
+          referenceSummary.textContent = `${referencePoint.label} • ${referencePoint.lat.toFixed(4)}, ${referencePoint.lon.toFixed(4)}`;
+        } else {
+          referenceSummary.textContent = "Aucun point de reference";
+        }
+      }
+      if (coverageSummary) {
+        coverageSummary.textContent = `${geocodedCount} quartier(s) geolocalise(s) sur ${features.length}. ${withinRadiusCount} quartier(s) avec annonces dans le rayon courant.`;
+      }
+    }
+
+    function ensureAreaMap() {
+      if (areaMapState.map || !window.L) {
+        return;
+      }
+      const mapElement = document.getElementById("areaMap");
+      if (!mapElement) {
+        return;
+      }
+      const map = window.L.map(mapElement, { zoomControl: true, scrollWheelZoom: true });
+      window.L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 18,
+        attribution: "&copy; OpenStreetMap contributors"
+      }).addTo(map);
+      areaMapState.map = map;
+      areaMapState.areaLayerGroup = window.L.layerGroup().addTo(map);
+      map.on("click", (event) => {
+        setReferencePoint({
+          label: "Point manuel",
+          lat: event.latlng.lat,
+          lon: event.latlng.lng
+        });
+      });
+    }
+
+    function refreshAreaMap() {
+      ensureAreaMap();
+      if (!areaMapState.map || !areaMapState.areaLayerGroup) {
+        return;
+      }
+      const map = areaMapState.map;
+      const features = currentAreaMapFeatures();
+      areaMapState.areaLayerGroup.clearLayers();
+      const bounds = [];
+      for (const feature of features) {
+        if (!Number.isFinite(feature.lat) || !Number.isFinite(feature.lon)) {
+          continue;
+        }
+        bounds.push([feature.lat, feature.lon]);
+        const selected = dashboardState.selectedAreas.has(feature.label);
+        const insideRadius = areaWithinDistance(feature);
+        const color = selected ? "#d3533d" : (insideRadius ? "#185f56" : "#7b8c99");
+        const marker = window.L.circleMarker([feature.lat, feature.lon], {
+          radius: Math.max(7, Math.min(14, 6 + feature.count)),
+          color,
+          weight: selected ? 3 : 2,
+          fillColor: color,
+          fillOpacity: selected ? 0.82 : 0.58
+        });
+        const distanceKm = currentReferencePoint() ? distanceBetweenPointsKm(currentReferencePoint(), feature) : null;
+        const popupParts = [
+          `<strong>${escapeHtml(feature.label)}</strong>`,
+          `${feature.count} annonce(s) exactes`
+        ];
+        if (distanceKm !== null) {
+          popupParts.push(`Distance: ${distanceKm < 10 ? distanceKm.toFixed(1) : Math.round(distanceKm)} km`);
+        }
+        marker.bindPopup(popupParts.join("<br>"));
+        marker.on("click", () => {
+          toggleAreaSelection(feature.label);
+          renderDashboard();
+        });
+        areaMapState.areaLayerGroup.addLayer(marker);
+      }
+
+      if (areaMapState.referenceMarker) {
+        map.removeLayer(areaMapState.referenceMarker);
+      }
+      if (areaMapState.radiusCircle) {
+        map.removeLayer(areaMapState.radiusCircle);
+      }
+
+      const referencePoint = currentReferencePoint();
+      if (referencePoint && Number.isFinite(referencePoint.lat) && Number.isFinite(referencePoint.lon)) {
+        areaMapState.referenceMarker = window.L.marker([referencePoint.lat, referencePoint.lon]).addTo(map);
+        areaMapState.referenceMarker.bindPopup(`<strong>${escapeHtml(referencePoint.label || "Point de reference")}</strong>`);
+        if (dashboardState.distanceRadiusKm > 0) {
+          areaMapState.radiusCircle = window.L.circle([referencePoint.lat, referencePoint.lon], {
+            radius: dashboardState.distanceRadiusKm * 1000,
+            color: "#0f4e7b",
+            weight: 2,
+            fillColor: "#0f4e7b",
+            fillOpacity: 0.06
+          }).addTo(map);
+        }
+      }
+
+      if (!map._casablancaWatchBoundsSet && bounds.length) {
+        map.fitBounds(bounds, { padding: [20, 20] });
+        map._casablancaWatchBoundsSet = true;
+      }
+      updateMapSummary(features);
+    }
+
+    function clearDistanceFilter() {
+      dashboardState.distanceRadiusKm = 0;
+      renderDashboard();
+    }
+
+    function resetReferencePoint() {
+      if (DEFAULT_REFERENCE_POINT) {
+        dashboardState.referencePoint = DEFAULT_REFERENCE_POINT;
+      } else {
+        dashboardState.referencePoint = firstGeocodedMapFeature();
+      }
+      renderDashboard();
+    }
+
+    function useCurrentLocation() {
+      if (!navigator.geolocation) {
+        alert("La geolocalisation n'est pas disponible dans ce navigateur.");
+        return;
+      }
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          setReferencePoint({
+            label: "Ma position",
+            lat: position.coords.latitude,
+            lon: position.coords.longitude
+          });
+        },
+        () => {
+          alert("Impossible de recuperer votre position actuelle.");
+        },
+        { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 }
+      );
     }
 
     function updateCounters(listings) {
@@ -1322,6 +1865,7 @@ DASHBOARD_TEMPLATE = Template(
       const listings = visibleListings();
       renderRows(listings);
       updateCounters(listings);
+      refreshAreaMap();
     }
 
     function readInteger(value, fallback) {
@@ -1339,6 +1883,7 @@ DASHBOARD_TEMPLATE = Template(
       const maxSurfaceRange = document.getElementById("maxSurfaceRange");
       const maxSurfaceNumber = document.getElementById("maxSurfaceNumber");
       const sortModeSelect = document.getElementById("sortModeSelect");
+      const distanceRadiusRange = document.getElementById("distanceRadiusRange");
 
       const setMinPrice = (value) => {
         dashboardState.minPrice = Math.max(0, readInteger(value, DEFAULT_FILTERS.minPrice));
@@ -1381,6 +1926,10 @@ DASHBOARD_TEMPLATE = Template(
         dashboardState.sortMode = event.target.value || "latest";
         renderDashboard();
       });
+      distanceRadiusRange?.addEventListener("input", (event) => {
+        dashboardState.distanceRadiusKm = Math.max(0, readInteger(event.target.value, 10));
+        renderDashboard();
+      });
     }
 
     function openNewListings() {
@@ -1399,7 +1948,9 @@ DASHBOARD_TEMPLATE = Template(
         maxPrice: DEFAULT_FILTERS.maxPrice,
         minSurface: DEFAULT_FILTERS.minSurface,
         maxSurface: DEFAULT_FILTERS.maxSurface,
-        sortMode: "latest"
+        sortMode: "latest",
+        distanceRadiusKm: 10,
+        referencePoint: DEFAULT_REFERENCE_POINT
       };
       renderDashboard();
     }
@@ -1482,6 +2033,7 @@ class Listing:
     rank_in_source: int
     source_listing_id: str
     image_url: str = ""
+    image_urls: list[str] = field(default_factory=list)
     photo_count: int = 0
     amenity_keys: list[str] = field(default_factory=list)
     published_at_ts: int | None = None
@@ -1593,6 +2145,12 @@ def save_json(path: Path, payload: Any) -> None:
 def save_text(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
+
+
+def allow_live_geocode_lookup() -> bool:
+    if os.environ.get("WATCH_ALLOW_GEOCODE_LOOKUPS", "").strip() == "1":
+        return True
+    return os.environ.get("GITHUB_ACTIONS", "").strip().lower() not in {"1", "true"}
 
 
 def now_iso() -> str:
@@ -1822,10 +2380,54 @@ def image_extension_from_content_type(content_type: str, url: str) -> str:
     return image_extension_from_url(url)
 
 
-def safe_listing_thumb_base_name(item: Listing) -> str:
+IMAGE_URL_PATTERN = re.compile(
+    r"https?://[^\s\"'<>]+?\.(?:avif|webp|jpe?g|png|gif)(?:\?[^\s\"'<>]*)?",
+    flags=re.IGNORECASE,
+)
+
+
+def canonical_image_url(url: str) -> str:
+    parsed = urlparse(url.strip())
+    return parsed._replace(query="", fragment="").geturl()
+
+
+def extract_direct_image_urls(
+    raw_html: str,
+    *,
+    allowed_hosts: tuple[str, ...] = (),
+    required_substrings: tuple[str, ...] = (),
+    blocked_substrings: tuple[str, ...] = (),
+) -> list[str]:
+    extracted: list[str] = []
+    for candidate in IMAGE_URL_PATTERN.findall(raw_html):
+        normalized = canonical_image_url(candidate)
+        parsed = urlparse(normalized)
+        host = parsed.netloc.lower()
+        lowered = normalized.lower()
+        if allowed_hosts and not any(host.endswith(item) for item in allowed_hosts):
+            continue
+        if required_substrings and not any(item in lowered for item in required_substrings):
+            continue
+        if blocked_substrings and any(item in lowered for item in blocked_substrings):
+            continue
+        extracted.append(normalized)
+    return unique_preserve(extracted)
+
+
+def extract_agenz_detail_image_urls(url: str) -> list[str]:
+    raw_html = fetch_html(url)
+    return extract_direct_image_urls(
+        raw_html,
+        allowed_hosts=("media.agenz.ma", "images.agenz.ma"),
+        required_substrings=("annonce-agenz", "/uploads/"),
+        blocked_substrings=("headers-agenz", "favicon", "logo", "/videos/"),
+    )
+
+
+def safe_listing_thumb_base_name(item: Listing, source_url: str, image_index: int) -> str:
     listing_id = re.sub(r"[^a-zA-Z0-9_-]+", "-", item.source_listing_id or "").strip("-") or "listing"
-    digest = hashlib.sha1(item.image_url.encode("utf-8")).hexdigest()[:12]
-    return f"{item.source}-{listing_id}-{digest}"
+    digest = hashlib.sha1(source_url.encode("utf-8")).hexdigest()[:12]
+    return f"{item.source}-{listing_id}-{image_index:02d}-{digest}"
 
 
 def fetch_image_bytes(url: str) -> tuple[bytes, str]:
@@ -1842,33 +2444,56 @@ def fetch_image_bytes(url: str) -> tuple[bytes, str]:
         return response.content, response.headers.get("content-type", "")
 
 
+def existing_localized_thumb_filename(base_name: str) -> str | None:
+    for extension in [".avif", ".webp", ".jpg", ".jpeg", ".png", ".gif"]:
+        filename = f"{base_name}{extension}"
+        if (OUTPUT_THUMBS_DIR / filename).exists() and (PUBLIC_THUMBS_DIR / filename).exists():
+            return filename
+    return None
+
+
+def localize_image_urls(item: Listing) -> list[str]:
+    localized_urls: list[str] = []
+    source_urls = unique_preserve(item.image_urls or ([item.image_url] if item.image_url else []))
+    for image_index, source_url in enumerate(source_urls, start=1):
+        if not source_url.startswith("http"):
+            continue
+        base_name = safe_listing_thumb_base_name(item, source_url, image_index)
+        existing_filename = existing_localized_thumb_filename(base_name)
+        if existing_filename:
+            localized_urls.append(f"{THUMB_DIRNAME}/{existing_filename}")
+            continue
+
+        try:
+            image_bytes, content_type = fetch_image_bytes(source_url)
+        except Exception:
+            continue
+
+        extension = image_extension_from_content_type(content_type, source_url)
+        filename = f"{base_name}{extension}"
+        output_path = OUTPUT_THUMBS_DIR / filename
+        public_path = PUBLIC_THUMBS_DIR / filename
+        output_path.write_bytes(image_bytes)
+        public_path.write_bytes(image_bytes)
+        localized_urls.append(f"{THUMB_DIRNAME}/{filename}")
+    return localized_urls
+
+
 def localize_listing_thumbnails(listings: list[Listing]) -> None:
     OUTPUT_THUMBS_DIR.mkdir(parents=True, exist_ok=True)
     PUBLIC_THUMBS_DIR.mkdir(parents=True, exist_ok=True)
 
     expected_files: set[str] = set()
     for item in listings:
-        source_image_url = item.image_url.strip()
-        if not source_image_url.startswith("http"):
+        localized_urls = localize_image_urls(item)
+        item.image_urls = localized_urls
+        item.image_url = localized_urls[0] if localized_urls else ""
+        item.photo_count = len(localized_urls)
+        if not localized_urls:
             item.image_url = ""
             continue
-
-        base_name = safe_listing_thumb_base_name(item)
-        try:
-            image_bytes, content_type = fetch_image_bytes(source_image_url)
-        except Exception:
-            item.image_url = ""
-            continue
-
-        extension = image_extension_from_content_type(content_type, source_image_url)
-        filename = f"{base_name}{extension}"
-        expected_files.add(filename)
-        output_path = OUTPUT_THUMBS_DIR / filename
-        public_path = PUBLIC_THUMBS_DIR / filename
-        output_path.write_bytes(image_bytes)
-        public_path.write_bytes(image_bytes)
-
-        item.image_url = f"{THUMB_DIRNAME}/{filename}"
+        for localized_url in localized_urls:
+            expected_files.add(localized_url.split("/", 1)[-1])
 
     for thumb_dir in [OUTPUT_THUMBS_DIR, PUBLIC_THUMBS_DIR]:
         for file_path in thumb_dir.iterdir():
@@ -1876,11 +2501,146 @@ def localize_listing_thumbnails(listings: list[Listing]) -> None:
                 file_path.unlink()
 
 
+def enrich_listing_galleries(listings: list[Listing]) -> None:
+    for item in listings:
+        if item.source != "agenz":
+            continue
+        try:
+            detail_images = extract_agenz_detail_image_urls(item.url)
+        except Exception:
+            continue
+        if not detail_images:
+            continue
+        item.image_urls = unique_preserve(detail_images + item.image_urls)
+        item.image_url = first_image_url(item.image_urls)
+        item.photo_count = len(item.image_urls)
+
+
 def slug_to_title(url: str) -> str:
     tail = url.rstrip("/").split("/")[-1]
     tail = re.sub(r"-(ca|pn)\d+$", "", tail, flags=re.IGNORECASE)
     tail = re.sub(r"^[a-z]{2}-ma-", "", tail)
     return tail.replace("-", " ").strip().title() or url
+
+
+def area_query_candidates(area: dict[str, Any]) -> list[str]:
+    raw_values = [area["label"], *area.get("aliases", [])]
+    candidates: list[str] = []
+    for raw_value in raw_values:
+        normalized = normalize_spaces(str(raw_value or "")).strip()
+        if not normalized:
+            continue
+        variants = [normalized]
+        if "/" in normalized:
+            variants.extend(part.strip() for part in normalized.split("/") if part.strip())
+        if normalized.lower().startswith("bd "):
+            variants.append("Boulevard " + normalized[3:])
+        simplified = normalize_spaces(
+            re.sub(r"\b(est|ouest|superieur|supérieur)\b", "", normalized, flags=re.IGNORECASE)
+        ).strip(" -/")
+        if simplified and simplified != normalized:
+            variants.append(simplified)
+        for variant in variants:
+            candidates.append(f"{variant}, Casablanca, Morocco")
+    return unique_preserve(candidates)
+
+
+def fetch_area_geocode(query: str) -> dict[str, Any] | None:
+    params = {
+        "format": "jsonv2",
+        "limit": 1,
+        "polygon_geojson": 1,
+        "countrycodes": "ma",
+        "q": query,
+    }
+    with httpx.Client(
+        headers={
+            "user-agent": "CasablancaWatch/1.0 (+https://github.com/MBenchr/casablanca-watch)",
+            "accept-language": "fr,en;q=0.8",
+        },
+        follow_redirects=True,
+        timeout=TIMEOUT,
+    ) as client:
+        response = client.get(NOMINATIM_SEARCH_URL, params=params)
+        response.raise_for_status()
+        payload = response.json()
+    if not payload:
+        return None
+    item = payload[0]
+    lat = float(item["lat"])
+    lon = float(item["lon"])
+    geometry = item.get("geojson") or {"type": "Point", "coordinates": [lon, lat]}
+    return {
+        "query": query,
+        "lat": lat,
+        "lon": lon,
+        "display_name": item.get("display_name", query),
+        "addresstype": item.get("addresstype") or item.get("type") or "",
+        "osm_type": item.get("osm_type", ""),
+        "geometry": geometry,
+    }
+
+
+def ensure_area_geocode_cache(
+    config: dict[str, Any],
+    required_labels: set[str] | None = None,
+) -> dict[str, Any]:
+    cache = load_json(AREA_GEOCODES_PATH, {"updated_at": "", "areas": {}})
+    areas_cache = cache.setdefault("areas", {})
+    allow_lookup = allow_live_geocode_lookup()
+    for area in config["areas"]:
+        label = area["label"]
+        if required_labels is not None and label not in required_labels:
+            continue
+        if label in areas_cache:
+            continue
+        queries = area_query_candidates(area)
+        if not allow_lookup:
+            continue
+        record = None
+        for query_index, query in enumerate(queries):
+            try:
+                record = fetch_area_geocode(query)
+            except Exception:
+                record = None
+            if record:
+                break
+            if query_index < len(queries) - 1:
+                time.sleep(1.1)
+        areas_cache[label] = record or {"missing": True, "attempted_queries": queries}
+        cache["updated_at"] = now_iso()
+        save_json(AREA_GEOCODES_PATH, cache)
+        time.sleep(1.1)
+    return cache
+
+
+def build_area_map_features(config: dict[str, Any], matches: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    counts_by_area: dict[str, int] = {}
+    for item in matches:
+        label = item.get("area_guess") or ""
+        if label:
+            counts_by_area[label] = counts_by_area.get(label, 0) + 1
+
+    required_labels = {DEFAULT_REFERENCE_AREA_LABEL}
+    required_labels.update(label for label, count in counts_by_area.items() if count > 0)
+    cache = ensure_area_geocode_cache(config, required_labels)
+    features: list[dict[str, Any]] = []
+    for area in config["areas"]:
+        label = area["label"]
+        record = cache.get("areas", {}).get(label, {})
+        features.append(
+            {
+                "label": label,
+                "aliases": area.get("aliases", []),
+                "count": counts_by_area.get(label, 0),
+                "lat": record.get("lat"),
+                "lon": record.get("lon"),
+                "display_name": record.get("display_name", ""),
+                "geometry_type": (record.get("geometry") or {}).get("type", ""),
+                "missing": bool(record.get("missing")),
+            }
+        )
+    return features
 
 
 def compile_area_alias_pattern(alias: str) -> re.Pattern[str]:
@@ -2112,6 +2872,7 @@ def scrape_agenz(page: dict[str, Any], config: dict[str, Any]) -> list[Listing]:
                 rank_in_source=rank,
                 source_listing_id=source_listing_id,
                 image_url=first_image_url(image_urls),
+                image_urls=image_urls,
                 photo_count=len(image_urls),
                 amenity_keys=extract_amenity_keys(text),
                 published_at_ts=derive_published_ts(published_label or parse_age_label(text)),
@@ -2160,6 +2921,7 @@ def scrape_mubawab(page: dict[str, Any], config: dict[str, Any]) -> list[Listing
                 rank_in_source=rank,
                 source_listing_id=source_listing_id,
                 image_url=first_image_url(image_urls),
+                image_urls=image_urls,
                 photo_count=len(image_urls),
                 amenity_keys=extract_amenity_keys(text),
             )
@@ -2286,6 +3048,7 @@ def scrape_marocannonces(page: dict[str, Any], config: dict[str, Any]) -> list[L
                 rank_in_source=rank,
                 source_listing_id=source_listing_id,
                 image_url=first_image_url(image_candidates),
+                image_urls=image_candidates,
                 photo_count=len(image_candidates),
                 amenity_keys=extract_amenity_keys(searchable_text),
                 published_at_ts=derive_published_ts(published_label),
@@ -2653,6 +3416,7 @@ def create_scan_snapshot(config: dict[str, Any], notifiers: list[str]) -> dict[s
     all_listings = scan_all(config)
     matches = [item for item in all_listings if listing_matches(item, config)]
     matches = sort_matches(matches)
+    enrich_listing_galleries(matches)
     localize_listing_thumbnails(matches)
 
     state = load_state()
@@ -2875,6 +3639,30 @@ def build_dashboard_payload(config: dict[str, Any], scan_data: dict[str, Any], r
     raw_groups = build_raw_search_groups(config)
     source_sections = group_items_by_source(matches)
     area_sections = group_items_by_area(config, matches)
+    area_map_features = build_area_map_features(config, matches)
+    default_reference_point = next(
+        (
+            {
+                "label": feature["label"],
+                "lat": feature["lat"],
+                "lon": feature["lon"],
+            }
+            for feature in area_map_features
+            if feature["label"] == DEFAULT_REFERENCE_AREA_LABEL and feature.get("lat") is not None and feature.get("lon") is not None
+        ),
+        next(
+            (
+                {
+                    "label": feature["label"],
+                    "lat": feature["lat"],
+                    "lon": feature["lon"],
+                }
+                for feature in area_map_features
+                if feature.get("lat") is not None and feature.get("lon") is not None
+            ),
+            None,
+        ),
+    )
     server = config.get("server", {})
     host = server.get("host", "127.0.0.1")
     port = server.get("port", DEFAULT_PORT)
@@ -2899,6 +3687,8 @@ def build_dashboard_payload(config: dict[str, Any], scan_data: dict[str, Any], r
         "source_sections": source_sections,
         "area_sections": area_sections,
         "area_cards": build_area_cards(config, matches),
+        "area_map_features_json": json.dumps(area_map_features, ensure_ascii=False),
+        "default_reference_point_json": json.dumps(default_reference_point, ensure_ascii=False),
         "source_cards": build_source_cards(source_sections),
         "refresh_enabled": refresh_enabled,
         "refresh_mode": refresh_mode,
