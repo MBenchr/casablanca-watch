@@ -118,6 +118,7 @@ DASHBOARD_TEMPLATE = Template(
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
   <title>Casablanca Watch</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
   <style>
@@ -591,6 +592,48 @@ DASHBOARD_TEMPLATE = Template(
       font-size: 12px;
       font-weight: 700;
     }
+    .map-feedback {
+      margin-top: 12px;
+      padding: 11px 12px;
+      border-radius: 14px;
+      border: 1px solid #d7e3ea;
+      background: #f7fbfd;
+      color: #27465e;
+    }
+    .map-feedback.warning {
+      border-color: #e8d4ab;
+      background: #fff7e8;
+      color: #7a5413;
+    }
+    .map-feedback.success {
+      border-color: #c9dfcf;
+      background: #f2faf3;
+      color: #1f5e38;
+    }
+    .map-area-selection {
+      margin-top: 12px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fffdfa;
+      padding: 12px;
+    }
+    .map-area-selection strong {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .area-name-tooltip {
+      background: rgba(12, 37, 54, 0.84);
+      border: none;
+      color: white;
+      border-radius: 999px;
+      box-shadow: none;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 8px;
+    }
+    .area-name-tooltip::before {
+      display: none;
+    }
     .listings-grid {
       display: grid;
       gap: 14px;
@@ -828,13 +871,15 @@ DASHBOARD_TEMPLATE = Template(
             <div>
               <h3 style="margin-top:0;">Carte quartier + distance</h3>
               <p class="small">
-                Cliquez sur les quartiers pour activer le filtre. Le point de reference part de CFC, vous pouvez
-                ensuite le deplacer sur la carte ou utiliser votre position pour filtrer par distance.
+                Cliquez directement sur un quartier pour le filtrer. Cliquez sur la carte pour poser un point
+                manuel, puis agrandissez le rayon pour voir et selectionner automatiquement les quartiers proches.
               </p>
             </div>
             <div class="map-actions">
               <button type="button" onclick="resetReferencePoint()">Revenir sur CFC</button>
               <button type="button" onclick="useCurrentLocation()">Ma position</button>
+              <button type="button" onclick="selectAreasWithinRadius()">Quartiers du rayon</button>
+              <button type="button" onclick="clearAreaSelection()">Effacer quartiers</button>
               <button type="button" onclick="clearDistanceFilter()">Sans rayon</button>
             </div>
           </div>
@@ -856,6 +901,13 @@ DASHBOARD_TEMPLATE = Template(
               <strong>Couverture carte</strong>
               <div id="mapCoverageSummary" class="small">Chargement...</div>
             </div>
+          </div>
+          <div id="mapActionFeedback" class="map-feedback small">
+            Cliquez sur la carte pour poser un point manuel. Si la geolocalisation echoue, ce mode reste la solution la plus fiable.
+          </div>
+          <div class="map-area-selection">
+            <strong>Quartiers actuellement dans le rayon</strong>
+            <div id="radiusAreaFilters" class="chip-list"></div>
           </div>
         </div>
         <div class="filter-shell">
@@ -1186,7 +1238,13 @@ DASHBOARD_TEMPLATE = Template(
     }
 
     function firstGeocodedMapFeature() {
-      return currentAreaMapFeatures().find((feature) => Number.isFinite(feature.lat) && Number.isFinite(feature.lon)) || null;
+      for (const feature of currentAreaMapFeatures()) {
+        const center = featureCenterPoint(feature);
+        if (center) {
+          return center;
+        }
+      }
+      return null;
     }
 
     function currentReferencePoint() {
@@ -1205,6 +1263,8 @@ DASHBOARD_TEMPLATE = Template(
         lat: point.lat,
         lon: point.lon
       };
+      const label = point.label || "Point manuel";
+      setMapFeedback(`Point de reference defini sur ${label}. Ajustez le rayon ou selectionnez les quartiers proches.`, "success");
       renderDashboard();
     }
 
@@ -1242,6 +1302,93 @@ DASHBOARD_TEMPLATE = Template(
       return earthRadiusKm * c;
     }
 
+    function geometryType(feature) {
+      return feature?.geometry?.type || feature?.geometry_type || "";
+    }
+
+    function geometryCoordinates(geometry) {
+      if (!geometry || !Array.isArray(geometry.coordinates)) {
+        return [];
+      }
+      const flattened = [];
+      const visit = (node) => {
+        if (!Array.isArray(node)) {
+          return;
+        }
+        if (node.length >= 2 && typeof node[0] === "number" && typeof node[1] === "number") {
+          flattened.push({ lon: node[0], lat: node[1] });
+          return;
+        }
+        for (const child of node) {
+          visit(child);
+        }
+      };
+      visit(geometry.coordinates);
+      return flattened;
+    }
+
+    function featureCenterPoint(feature) {
+      if (!feature) {
+        return null;
+      }
+      if (Number.isFinite(feature.lat) && Number.isFinite(feature.lon)) {
+        return {
+          label: feature.label || "Quartier",
+          lat: feature.lat,
+          lon: feature.lon
+        };
+      }
+      const coordinates = geometryCoordinates(feature.geometry);
+      if (!coordinates.length) {
+        return null;
+      }
+      const total = coordinates.reduce((acc, point) => {
+        acc.lat += point.lat;
+        acc.lon += point.lon;
+        return acc;
+      }, { lat: 0, lon: 0 });
+      return {
+        label: feature.label || "Quartier",
+        lat: total.lat / coordinates.length,
+        lon: total.lon / coordinates.length
+      };
+    }
+
+    function featureToTurfFeature(feature) {
+      if (!feature || !window.turf?.feature || !window.turf?.point) {
+        return null;
+      }
+      if (feature.geometry?.type && feature.geometry?.coordinates) {
+        try {
+          return window.turf.feature(feature.geometry, { label: feature.label || "" });
+        } catch (error) {
+          console.warn("Invalid feature geometry", feature.label, error);
+        }
+      }
+      const center = featureCenterPoint(feature);
+      if (!center) {
+        return null;
+      }
+      return window.turf.point([center.lon, center.lat], { label: center.label || "" });
+    }
+
+    function currentRadiusFeature() {
+      const radiusKm = Number(dashboardState.distanceRadiusKm || 0);
+      const referencePoint = currentReferencePoint();
+      if (!(radiusKm > 0) || !referencePoint || !window.turf?.circle) {
+        return null;
+      }
+      try {
+        return window.turf.circle([referencePoint.lon, referencePoint.lat], radiusKm, {
+          units: "kilometers",
+          steps: 48
+        });
+      } catch (error) {
+        console.warn("Unable to build radius feature", error);
+        return null;
+      }
+    }
+
     function areaFeatureForLabel(label) {
       if (!label) {
         return null;
@@ -1255,7 +1402,7 @@ DASHBOARD_TEMPLATE = Template(
       if (!feature || !referencePoint) {
         return null;
       }
-      return distanceBetweenPointsKm(referencePoint, feature);
+      return distanceBetweenPointsKm(referencePoint, featureCenterPoint(feature));
     }
 
     function areaWithinDistance(feature) {
@@ -1267,11 +1414,17 @@ DASHBOARD_TEMPLATE = Template(
       if (!referencePoint || !feature) {
         return true;
       }
-      const distanceKm = distanceBetweenPointsKm(referencePoint, feature);
-      if (distanceKm === null) {
-        return true;
+      const radiusFeature = currentRadiusFeature();
+      const candidateFeature = featureToTurfFeature(feature);
+      if (radiusFeature && candidateFeature && window.turf?.booleanIntersects) {
+        try {
+          return window.turf.booleanIntersects(radiusFeature, candidateFeature);
+        } catch (error) {
+          console.warn("Radius intersection fallback", feature.label, error);
+        }
       }
-      return distanceKm <= radiusKm;
+      const distanceKm = distanceBetweenPointsKm(referencePoint, featureCenterPoint(feature));
+      return distanceKm === null ? true : distanceKm <= radiusKm;
     }
 
     function normalizeListing(item, index, newUrls) {
@@ -1677,13 +1830,64 @@ DASHBOARD_TEMPLATE = Template(
       }).join("");
     }
 
+    function setMapFeedback(message, tone = "info") {
+      const node = document.getElementById("mapActionFeedback");
+      if (!node) {
+        return;
+      }
+      node.textContent = message;
+      node.className = `map-feedback small${tone && tone !== "info" ? ` ${tone}` : ""}`;
+    }
+
+    function renderRadiusAreaFilters(features) {
+      const container = document.getElementById("radiusAreaFilters");
+      if (!container) {
+        return;
+      }
+      const radiusActive = Number(dashboardState.distanceRadiusKm || 0) > 0;
+      const radiusAreas = features
+        .filter((feature) => featureCenterPoint(feature))
+        .filter((feature) => !radiusActive || areaWithinDistance(feature))
+        .sort((left, right) => {
+          if (right.count !== left.count) {
+            return right.count - left.count;
+          }
+          return left.label.localeCompare(right.label, "fr");
+        });
+
+      if (!radiusAreas.length) {
+        container.innerHTML = '<span class="small">Aucun quartier geolocalise dans ce rayon.</span>';
+        return;
+      }
+
+      container.innerHTML = radiusAreas.map((feature) => {
+        const active = dashboardState.selectedAreas.has(feature.label) ? " active" : "";
+        const countLabel = feature.count ? ` (${feature.count})` : "";
+        return `
+          <button class="chip${active}" type="button" data-radius-area="${escapeHtml(feature.label)}">
+            ${escapeHtml(feature.label)}${countLabel}
+          </button>
+        `;
+      }).join("");
+
+      for (const button of container.querySelectorAll("[data-radius-area]")) {
+        button.addEventListener("click", () => {
+          const label = button.getAttribute("data-radius-area") || "";
+          toggleAreaSelection(label);
+          renderDashboard();
+        });
+      }
+    }
+
     function updateMapSummary(features) {
       const radiusValue = document.getElementById("radiusValue");
       const referenceSummary = document.getElementById("referencePointSummary");
       const coverageSummary = document.getElementById("mapCoverageSummary");
-      const geocodedCount = features.filter((feature) => Number.isFinite(feature.lat) && Number.isFinite(feature.lon)).length;
+      const geocodedCount = features.filter((feature) => featureCenterPoint(feature)).length;
+      const boundaryCount = features.filter((feature) => ["Polygon", "MultiPolygon", "LineString", "MultiLineString"].includes(geometryType(feature))).length;
       const withinRadiusCount = features.filter((feature) => feature.count > 0 && areaWithinDistance(feature)).length;
       const referencePoint = currentReferencePoint();
+
       if (radiusValue) {
         radiusValue.textContent = `${dashboardState.distanceRadiusKm} km`;
       }
@@ -1695,8 +1899,10 @@ DASHBOARD_TEMPLATE = Template(
         }
       }
       if (coverageSummary) {
-        coverageSummary.textContent = `${geocodedCount} quartier(s) geolocalise(s) sur ${features.length}. ${withinRadiusCount} quartier(s) avec annonces dans le rayon courant.`;
+        coverageSummary.textContent = `${geocodedCount} quartier(s) localise(s) sur ${features.length}, dont ${boundaryCount} avec limites GeoJSON. ${withinRadiusCount} quartier(s) avec annonces dans le rayon courant.`;
       }
+
+      renderRadiusAreaFilters(features);
     }
 
     function ensureAreaMap() {
@@ -1712,6 +1918,12 @@ DASHBOARD_TEMPLATE = Template(
         maxZoom: 18,
         attribution: "&copy; OpenStreetMap contributors"
       }).addTo(map);
+      const initialPoint = DEFAULT_REFERENCE_POINT || firstGeocodedMapFeature();
+      if (initialPoint) {
+        map.setView([initialPoint.lat, initialPoint.lon], 12);
+      } else {
+        map.setView([33.5731, -7.5898], 11);
+      }
       areaMapState.map = map;
       areaMapState.areaLayerGroup = window.L.layerGroup().addTo(map);
       map.on("click", (event) => {
@@ -1721,6 +1933,90 @@ DASHBOARD_TEMPLATE = Template(
           lon: event.latlng.lng
         });
       });
+    }
+
+    function featureColor(feature, selected, insideRadius) {
+      if (selected) {
+        return "#d3533d";
+      }
+      if (insideRadius) {
+        return feature.count > 0 ? "#185f56" : "#3d7b73";
+      }
+      return "#7b8c99";
+    }
+
+    function attachAreaLayerInteractions(layer, feature, selected, insideRadius) {
+      const center = featureCenterPoint(feature);
+      const distanceKm = currentReferencePoint() && center ? distanceBetweenPointsKm(currentReferencePoint(), center) : null;
+      const popupParts = [
+        `<strong>${escapeHtml(feature.label)}</strong>`,
+        `${feature.count} annonce(s) exacte(s)`
+      ];
+      if (distanceKm !== null) {
+        popupParts.push(`Distance: ${distanceKm < 10 ? distanceKm.toFixed(1) : Math.round(distanceKm)} km`);
+      }
+      const typeLabel = geometryType(feature);
+      if (typeLabel) {
+        popupParts.push(`Geometrie: ${escapeHtml(typeLabel)}`);
+      }
+      if (typeof layer.bindPopup === "function") {
+        layer.bindPopup(popupParts.join("<br>"));
+      }
+      if (typeof layer.bindTooltip === "function") {
+        layer.bindTooltip(feature.label, {
+          permanent: Boolean(feature.count || selected),
+          sticky: true,
+          direction: ["Polygon", "MultiPolygon"].includes(geometryType(feature)) ? "center" : "top",
+          className: "area-name-tooltip",
+          opacity: insideRadius ? 0.94 : 0.78
+        });
+      }
+      layer.on("click", () => {
+        toggleAreaSelection(feature.label);
+        renderDashboard();
+      });
+    }
+
+    function createAreaLayer(feature, selected, insideRadius) {
+      const color = featureColor(feature, selected, insideRadius);
+      const center = featureCenterPoint(feature);
+      const featureGeometry = feature.geometry;
+      const geoType = geometryType(feature);
+
+      if (featureGeometry?.type && featureGeometry?.coordinates && window.L?.geoJSON) {
+        const polygonStyle = {
+          color,
+          weight: selected ? 3 : 2,
+          fillColor: color,
+          fillOpacity: ["Polygon", "MultiPolygon"].includes(geoType) ? (selected ? 0.22 : (insideRadius ? 0.12 : 0.05)) : 0,
+          dashArray: ["LineString", "MultiLineString"].includes(geoType) ? "6 4" : undefined
+        };
+        const geoLayer = window.L.geoJSON(featureGeometry, {
+          style: () => polygonStyle,
+          pointToLayer: (_, latlng) => window.L.circleMarker(latlng, {
+            radius: Math.max(7, Math.min(14, 6 + feature.count)),
+            color,
+            weight: selected ? 3 : 2,
+            fillColor: color,
+            fillOpacity: selected ? 0.82 : 0.58
+          })
+        });
+        geoLayer.eachLayer((layer) => attachAreaLayerInteractions(layer, feature, selected, insideRadius));
+        return geoLayer;
+      }
+
+      if (!center) {
+        return null;
+      }
+      const marker = window.L.circleMarker([center.lat, center.lon], {
+        radius: Math.max(7, Math.min(14, 6 + feature.count)),
+        color,
+        weight: selected ? 3 : 2,
+        fillColor: color,
+        fillOpacity: selected ? 0.82 : 0.58
+      });
+      attachAreaLayerInteractions(marker, feature, selected, insideRadius);
+      return marker;
     }
 
     function refreshAreaMap() {
@@ -1733,34 +2029,22 @@ DASHBOARD_TEMPLATE = Template(
       areaMapState.areaLayerGroup.clearLayers();
       const bounds = [];
       for (const feature of features) {
-        if (!Number.isFinite(feature.lat) || !Number.isFinite(feature.lon)) {
+        const center = featureCenterPoint(feature);
+        if (!center) {
           continue;
         }
-        bounds.push([feature.lat, feature.lon]);
+        bounds.push([center.lat, center.lon]);
         const selected = dashboardState.selectedAreas.has(feature.label);
         const insideRadius = areaWithinDistance(feature);
-        const color = selected ? "#d3533d" : (insideRadius ? "#185f56" : "#7b8c99");
-        const marker = window.L.circleMarker([feature.lat, feature.lon], {
-          radius: Math.max(7, Math.min(14, 6 + feature.count)),
-          color,
-          weight: selected ? 3 : 2,
-          fillColor: color,
-          fillOpacity: selected ? 0.82 : 0.58
-        });
-        const distanceKm = currentReferencePoint() ? distanceBetweenPointsKm(currentReferencePoint(), feature) : null;
-        const popupParts = [
-          `<strong>${escapeHtml(feature.label)}</strong>`,
-          `${feature.count} annonce(s) exactes`
-        ];
-        if (distanceKm !== null) {
-          popupParts.push(`Distance: ${distanceKm < 10 ? distanceKm.toFixed(1) : Math.round(distanceKm)} km`);
+        const layer = createAreaLayer(feature, selected, insideRadius);
+        if (layer) {
+          areaMapState.areaLayerGroup.addLayer(layer);
         }
-        marker.bindPopup(popupParts.join("<br>"));
-        marker.on("click", () => {
-          toggleAreaSelection(feature.label);
-          renderDashboard();
-        });
-        areaMapState.areaLayerGroup.addLayer(marker);
+      }
+
+      if (!map._casablancaWatchBoundsSet && bounds.length) {
+        map.fitBounds(bounds, { padding: [20, 20] });
+        map._casablancaWatchBoundsSet = true;
       }
 
       if (areaMapState.referenceMarker) {
@@ -1784,16 +2068,33 @@ DASHBOARD_TEMPLATE = Template(
           }).addTo(map);
         }
       }
-
-      if (!map._casablancaWatchBoundsSet && bounds.length) {
-        map.fitBounds(bounds, { padding: [20, 20] });
-        map._casablancaWatchBoundsSet = true;
-      }
       updateMapSummary(features);
     }
 
     function clearDistanceFilter() {
       dashboardState.distanceRadiusKm = 0;
+      setMapFeedback("Filtre rayon desactive. Les quartiers restent cliquables directement sur la carte.", "info");
+      renderDashboard();
+    }
+
+    function clearAreaSelection() {
+      dashboardState.selectedAreas.clear();
+      setMapFeedback("Selection de quartiers videe.", "info");
+      renderDashboard();
+    }
+
+    function selectAreasWithinRadius() {
+      const radiusActive = Number(dashboardState.distanceRadiusKm || 0) > 0;
+      if (!radiusActive) {
+        setMapFeedback("Activez d'abord un rayon superieur a 0 km pour selectionner automatiquement les quartiers proches.", "warning");
+        return;
+      }
+      const labels = currentAreaMapFeatures()
+        .filter((feature) => featureCenterPoint(feature))
+        .filter((feature) => areaWithinDistance(feature))
+        .map((feature) => feature.label);
+      dashboardState.selectedAreas = new Set(labels);
+      setMapFeedback(`${labels.length} quartier(s) selectionne(s) automatiquement dans le rayon courant.`, "success");
       renderDashboard();
     }
 
@@ -1803,12 +2104,13 @@ DASHBOARD_TEMPLATE = Template(
       } else {
         dashboardState.referencePoint = firstGeocodedMapFeature();
       }
+      setMapFeedback("Point de reference replace sur CFC. Vous pouvez cliquer sur la carte pour choisir un autre centre.", "info");
       renderDashboard();
     }
 
     function useCurrentLocation() {
       if (!navigator.geolocation) {
-        alert("La geolocalisation n'est pas disponible dans ce navigateur.");
+        setMapFeedback("La geolocalisation n'est pas disponible dans ce navigateur. Cliquez directement sur la carte pour poser votre point.", "warning");
         return;
       }
       navigator.geolocation.getCurrentPosition(
@@ -1818,9 +2120,15 @@ DASHBOARD_TEMPLATE = Template(
             lat: position.coords.latitude,
             lon: position.coords.longitude
           });
+          setMapFeedback("Position detectee. Ajustez maintenant le rayon pour inclure automatiquement les quartiers proches.", "success");
         },
-        () => {
-          alert("Impossible de recuperer votre position actuelle.");
+        (error) => {
+          const messageByCode = {
+            1: "La geolocalisation a ete refusee par le navigateur. Cliquez sur la carte pour poser manuellement votre point.",
+            2: "La position n'a pas pu etre determinee. Essayez a nouveau ou posez le point manuellement sur la carte.",
+            3: "La geolocalisation a expire. Reessayez ou posez le point manuellement sur la carte."
+          };
+          setMapFeedback(messageByCode[error?.code] || "Impossible de recuperer votre position actuelle. Cliquez sur la carte pour definir le point manuellement.", "warning");
         },
         { enableHighAccuracy: true, timeout: 10000, maximumAge: 300000 }
       );
@@ -1865,7 +2173,12 @@ DASHBOARD_TEMPLATE = Template(
       const listings = visibleListings();
       renderRows(listings);
       updateCounters(listings);
-      refreshAreaMap();
+      try {
+        refreshAreaMap();
+      } catch (error) {
+        console.error(error);
+        setMapFeedback("La carte a rencontre une erreur d'affichage, mais la liste reste fonctionnelle. Rechargez la page si besoin.", "warning");
+      }
     }
 
     function readInteger(value, fallback) {
@@ -2535,6 +2848,8 @@ def area_query_candidates(area: dict[str, Any]) -> list[str]:
             variants.extend(part.strip() for part in normalized.split("/") if part.strip())
         if normalized.lower().startswith("bd "):
             variants.append("Boulevard " + normalized[3:])
+        if re.search(r"\bfleurie\b", normalized, flags=re.IGNORECASE):
+            variants.append(re.sub(r"\bfleurie\b", "Fleuri", normalized, flags=re.IGNORECASE))
         simplified = normalize_spaces(
             re.sub(r"\b(est|ouest|superieur|supérieur)\b", "", normalized, flags=re.IGNORECASE)
         ).strip(" -/")
@@ -2545,10 +2860,80 @@ def area_query_candidates(area: dict[str, Any]) -> list[str]:
     return unique_preserve(candidates)
 
 
+def geometry_center(
+    geometry: dict[str, Any] | None,
+    fallback_lat: float | None = None,
+    fallback_lon: float | None = None,
+) -> tuple[float | None, float | None]:
+    if geometry:
+        geometry_type = geometry.get("type")
+        coordinates = geometry.get("coordinates")
+        if geometry_type == "Point" and isinstance(coordinates, list) and len(coordinates) >= 2:
+            try:
+                return float(coordinates[1]), float(coordinates[0])
+            except (TypeError, ValueError):
+                pass
+
+        flattened: list[tuple[float, float]] = []
+
+        def visit(node: Any) -> None:
+            if not isinstance(node, list):
+                return
+            if len(node) >= 2 and isinstance(node[0], (int, float)) and isinstance(node[1], (int, float)):
+                flattened.append((float(node[0]), float(node[1])))
+                return
+            for child in node:
+                visit(child)
+
+        visit(coordinates)
+        if flattened:
+            avg_lon = sum(point[0] for point in flattened) / len(flattened)
+            avg_lat = sum(point[1] for point in flattened) / len(flattened)
+            return avg_lat, avg_lon
+
+    return fallback_lat, fallback_lon
+
+
+def pick_best_geocode_result(payload: list[dict[str, Any]], query: str) -> dict[str, Any] | None:
+    if not payload:
+        return None
+
+    preferred_addresstypes = {
+        "neighbourhood",
+        "suburb",
+        "quarter",
+        "city_district",
+        "district",
+        "residential",
+    }
+    discouraged_types = {"railway", "road", "highway", "amenity", "park"}
+    query_folded = ascii_fold(query).lower()
+
+    def score(item: dict[str, Any]) -> tuple[int, int, int, int]:
+        geometry_type = ((item.get("geojson") or {}).get("type") or "").lower()
+        addresstype = str(item.get("addresstype") or item.get("type") or "").lower()
+        osm_type = str(item.get("osm_type") or "").lower()
+        display_name = ascii_fold(str(item.get("display_name") or "")).lower()
+
+        geometry_score = {
+            "multipolygon": 4,
+            "polygon": 4,
+            "multilinestring": 2,
+            "linestring": 2,
+            "point": 1,
+        }.get(geometry_type, 0)
+        semantic_score = 3 if addresstype in preferred_addresstypes else (0 if addresstype in discouraged_types else 1)
+        osm_score = 1 if osm_type == "relation" else 0
+        query_score = 1 if query_folded.split(",")[0].strip() and query_folded.split(",")[0].strip() in display_name else 0
+        return (semantic_score, geometry_score, osm_score, query_score)
+
+    return max(payload, key=score)
+
+
 def fetch_area_geocode(query: str) -> dict[str, Any] | None:
     params = {
         "format": "jsonv2",
-        "limit": 1,
+        "limit": 6,
         "polygon_geojson": 1,
         "countrycodes": "ma",
         "q": query,
@@ -2566,14 +2951,17 @@ def fetch_area_geocode(query: str) -> dict[str, Any] | None:
         payload = response.json()
     if not payload:
         return None
-    item = payload[0]
+    item = pick_best_geocode_result(payload, query)
+    if not item:
+        return None
     lat = float(item["lat"])
     lon = float(item["lon"])
     geometry = item.get("geojson") or {"type": "Point", "coordinates": [lon, lat]}
+    center_lat, center_lon = geometry_center(geometry, lat, lon)
     return {
         "query": query,
-        "lat": lat,
-        "lon": lon,
+        "lat": center_lat,
+        "lon": center_lon,
         "display_name": item.get("display_name", query),
         "addresstype": item.get("addresstype") or item.get("type") or "",
         "osm_type": item.get("osm_type", ""),
@@ -2592,7 +2980,8 @@ def ensure_area_geocode_cache(
         label = area["label"]
         if required_labels is not None and label not in required_labels:
             continue
-        if label in areas_cache:
+        existing_record = areas_cache.get(label)
+        if existing_record and not existing_record.get("missing"):
             continue
         queries = area_query_candidates(area)
         if not allow_lookup:
@@ -2621,21 +3010,25 @@ def build_area_map_features(config: dict[str, Any], matches: list[dict[str, Any]
         if label:
             counts_by_area[label] = counts_by_area.get(label, 0) + 1
 
-    required_labels = {DEFAULT_REFERENCE_AREA_LABEL}
-    required_labels.update(label for label, count in counts_by_area.items() if count > 0)
-    cache = ensure_area_geocode_cache(config, required_labels)
+    cache = ensure_area_geocode_cache(config)
     features: list[dict[str, Any]] = []
     for area in config["areas"]:
         label = area["label"]
         record = cache.get("areas", {}).get(label, {})
+        center_lat, center_lon = geometry_center(
+            record.get("geometry"),
+            record.get("lat"),
+            record.get("lon"),
+        )
         features.append(
             {
                 "label": label,
                 "aliases": area.get("aliases", []),
                 "count": counts_by_area.get(label, 0),
-                "lat": record.get("lat"),
-                "lon": record.get("lon"),
+                "lat": center_lat,
+                "lon": center_lon,
                 "display_name": record.get("display_name", ""),
+                "geometry": record.get("geometry"),
                 "geometry_type": (record.get("geometry") or {}).get("type", ""),
                 "missing": bool(record.get("missing")),
             }
