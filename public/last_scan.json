@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-21T22:19:18+00:00",
+  "generated_at": "2026-07-21T22:49:59+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784585911,
+      "published_at_ts": 1784587684,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -101,7 +101,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784499511,
+      "published_at_ts": 1784501284,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -159,7 +159,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784326711,
+      "published_at_ts": 1784328484,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -216,7 +216,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784326711,
+      "published_at_ts": 1784328484,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -243,8 +243,8 @@
       "rooms_label": "",
       "bedrooms_label": "3",
       "bathrooms_label": "1",
-      "age_label": "Il y a 4 jours",
-      "summary": "Voir l'annonce Il y a 4 jours Déjà Vu 345 000 DH 3 CH 1 SDB 50 m² Appartement à vendre Casablanca -Oulfa 4ème étage Non meublé Appeler Whatsapp",
+      "age_label": "Il y a 5 jours",
+      "summary": "Voir l'annonce Il y a 5 jours Déjà Vu 345 000 DH 3 CH 1 SDB 50 m² Appartement à vendre Casablanca -Oulfa 4ème étage Non meublé Appeler Whatsapp",
       "rank_in_source": 14,
       "source_listing_id": "610971",
       "image_url": "listing-thumbs/agenz-610971-01-64af631cae92.jpg",
@@ -278,14 +278,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784326711,
+      "published_at_ts": 1784242084,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
       "surface_label": "50 m2",
       "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a 4 jours",
+      "published_label": "Il y a 5 jours",
       "amenity_labels": [
         "Meuble"
       ],
@@ -341,7 +341,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784240311,
+      "published_at_ts": 1784242084,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -409,7 +409,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784240311,
+      "published_at_ts": 1784242084,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -471,7 +471,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784153911,
+      "published_at_ts": 1784155684,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -527,7 +527,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783808311,
+      "published_at_ts": 1783810084,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -581,7 +581,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783635511,
+      "published_at_ts": 1783637284,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -637,7 +637,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783549111,
+      "published_at_ts": 1783550884,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -698,7 +698,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783549111,
+      "published_at_ts": 1783550884,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
