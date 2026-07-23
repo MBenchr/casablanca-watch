@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T10:17:11+00:00",
+  "generated_at": "2026-07-23T11:15:57+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784542586,
+      "published_at_ts": 1784546076,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -101,7 +101,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784456186,
+      "published_at_ts": 1784459676,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -159,7 +159,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784283386,
+      "published_at_ts": 1784286876,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -216,7 +216,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784283386,
+      "published_at_ts": 1784286876,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -278,7 +278,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784283386,
+      "published_at_ts": 1784286876,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -341,7 +341,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784196986,
+      "published_at_ts": 1784200476,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -409,7 +409,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784196986,
+      "published_at_ts": 1784200476,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -442,9 +442,9 @@
       "summary": "Voir l'annonce Il y a 7 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 18,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -471,7 +471,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784196986,
+      "published_at_ts": 1784200476,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -497,8 +497,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 11 jours",
-      "summary": "Voir l'annonce Il y a 11 jours Déjà Vu Agence partenaire 950 000 DH 1 CH 1 SDB 42 m² Studio à vendre Casablanca -Franceville Ascenseur 1er étage Meublé Créer une visite Appeler Whatsapp",
+      "age_label": "Il y a 12 jours",
+      "summary": "Voir l'annonce Il y a 12 jours Déjà Vu Agence partenaire 950 000 DH 1 CH 1 SDB 42 m² Studio à vendre Casablanca -Franceville Ascenseur 1er étage Meublé Créer une visite Appeler Whatsapp",
       "rank_in_source": 26,
       "source_listing_id": "467725",
       "image_url": "listing-thumbs/agenz-467725-01-116ccc6f3d02.jpg",
@@ -527,14 +527,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783851386,
+      "published_at_ts": 1783768476,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
       "surface_label": "42 m2",
       "source_label": "Agenz",
       "area_anchor": "area-franceville",
-      "published_label": "Il y a 11 jours",
+      "published_label": "Il y a 12 jours",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
@@ -581,7 +581,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783592186,
+      "published_at_ts": 1783595676,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -637,7 +637,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783505786,
+      "published_at_ts": 1783509276,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -698,7 +698,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783505786,
+      "published_at_ts": 1783509276,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
