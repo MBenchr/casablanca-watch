@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-23T16:31:48+00:00",
+  "generated_at": "2026-07-23T17:31:26+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784565058,
+      "published_at_ts": 1784568607,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -100,7 +100,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784478658,
+      "published_at_ts": 1784482207,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -157,7 +157,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784305858,
+      "published_at_ts": 1784309407,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -213,7 +213,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784305858,
+      "published_at_ts": 1784309407,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -274,7 +274,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784305858,
+      "published_at_ts": 1784309407,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -336,7 +336,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784219458,
+      "published_at_ts": 1784223007,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -403,7 +403,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784219458,
+      "published_at_ts": 1784223007,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -464,7 +464,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784133058,
+      "published_at_ts": 1784136607,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -519,7 +519,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783787458,
+      "published_at_ts": 1783791007,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -572,7 +572,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783614658,
+      "published_at_ts": 1783618207,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -627,7 +627,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783528258,
+      "published_at_ts": 1783531807,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -654,7 +654,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "817 000 DH Studio à vendre – Beaulieu Franceville, Casablanca 43 m² 1 Pièce 1 Ch. 1 Salle de bain Ascenseur Climatisation Sécurité Double vitrage Cuisine équipée Découvrez ce charmant studio d'une superficie de 43 m²,...",
-      "rank_in_source": 22,
+      "rank_in_source": 24,
       "source_listing_id": "8344370",
       "image_url": "listing-thumbs/mubawab-8344370-01-430764a7c217.avif",
       "image_urls": [
