@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T07:02:53+00:00",
+  "generated_at": "2026-07-24T08:17:44+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784530925,
+      "published_at_ts": 1784535403,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -74,9 +74,9 @@
       "summary": "Voir l'annonce Il y a 5 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visit...",
       "rank_in_source": 10,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -100,7 +100,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784444525,
+      "published_at_ts": 1784449003,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -157,7 +157,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784271725,
+      "published_at_ts": 1784276203,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -213,7 +213,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784271725,
+      "published_at_ts": 1784276203,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -274,7 +274,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784271725,
+      "published_at_ts": 1784276203,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -336,7 +336,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784185325,
+      "published_at_ts": 1784189803,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -403,7 +403,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784185325,
+      "published_at_ts": 1784189803,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -464,7 +464,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784185325,
+      "published_at_ts": 1784189803,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -519,7 +519,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783839725,
+      "published_at_ts": 1783844203,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -572,7 +572,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783580525,
+      "published_at_ts": 1783585003,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -627,7 +627,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783494125,
+      "published_at_ts": 1783498603,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -654,7 +654,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "900 000 DH Studio premium à saisir Anfa, Casablanca 42 m² 1 Pièce 1 Ch. 1 Salle de bain Terrasse Garage Ascenseur Meublé Salon européen Antenne parabolique Climatisation Chauffage central Sécurité Double vitrage Cuisi...",
-      "rank_in_source": 12,
+      "rank_in_source": 22,
       "source_listing_id": "8139805",
       "image_url": "listing-thumbs/mubawab-8139805-01-a53932e294ea.avif",
       "image_urls": [
