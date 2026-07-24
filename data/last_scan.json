@@ -1,7 +1,67 @@
 {
-  "generated_at": "2026-07-24T13:39:50+00:00",
-  "all_listings_count": 109,
+  "generated_at": "2026-07-24T14:35:21+00:00",
+  "all_listings_count": 76,
   "matches": [
+    {
+      "source": "agenz",
+      "source_name": "Agenz Casablanca",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/beausejour/917306",
+      "title": "Appartement à vendre Casablanca -Beauséjour",
+      "price_mad": 750000,
+      "surface_m2": 60,
+      "location_text": "Beauséjour",
+      "area_guess": "Beausejour",
+      "rooms_label": "",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "Il y a une heure",
+      "summary": "Voir l'annonce Il y a une heure Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer un...",
+      "rank_in_source": 1,
+      "source_listing_id": "917306",
+      "image_url": "listing-thumbs/agenz-917306-01-f6442e35a7da.jpg",
+      "image_urls": [
+        "listing-thumbs/agenz-917306-01-f6442e35a7da.jpg",
+        "listing-thumbs/agenz-917306-02-f11cb7d9cb8e.jpg",
+        "listing-thumbs/agenz-917306-03-44fe80186165.jpg",
+        "listing-thumbs/agenz-917306-04-228f7bbfb2e7.jpg",
+        "listing-thumbs/agenz-917306-05-26d830af6161.jpg",
+        "listing-thumbs/agenz-917306-06-bac3b3497435.jpg",
+        "listing-thumbs/agenz-917306-07-201a04ba42d5.jpg",
+        "listing-thumbs/agenz-917306-08-6a65953d31d3.jpg",
+        "listing-thumbs/agenz-917306-09-512405627284.jpg",
+        "listing-thumbs/agenz-917306-10-9813bb9955ce.jpg",
+        "listing-thumbs/agenz-917306-11-03739da4f59a.jpg",
+        "listing-thumbs/agenz-917306-12-0c2df53edf94.jpg",
+        "listing-thumbs/agenz-917306-13-0171352aa738.jpg",
+        "listing-thumbs/agenz-917306-14-4acf9c1aea2e.jpg",
+        "listing-thumbs/agenz-917306-15-44fef6bd93ea.jpg",
+        "listing-thumbs/agenz-917306-16-b76659432fc8.avif",
+        "listing-thumbs/agenz-917306-17-282e0612f981.avif",
+        "listing-thumbs/agenz-917306-18-41e576ac3ed5.avif",
+        "listing-thumbs/agenz-917306-19-5ebeffadadf4.avif",
+        "listing-thumbs/agenz-917306-20-65c26532dbda.avif",
+        "listing-thumbs/agenz-917306-21-3dd70e2287df.avif",
+        "listing-thumbs/agenz-917306-22-266f8cec6f28.avif",
+        "listing-thumbs/agenz-917306-23-758f4fc6c3a3.avif",
+        "listing-thumbs/agenz-917306-24-731a1c245383.avif"
+      ],
+      "photo_count": 24,
+      "amenity_keys": [
+        "furnished"
+      ],
+      "published_at_ts": 1784900045,
+      "is_new": false,
+      "first_seen_at": "2026-07-14T11:02:48+00:00",
+      "price_label": "750 000 DH",
+      "surface_label": "60 m2",
+      "source_label": "Agenz",
+      "area_anchor": "area-beausejour",
+      "published_label": "Il y a une heure",
+      "amenity_labels": [
+        "Meuble"
+      ]
+    },
     {
       "source": "agenz",
       "source_name": "Agenz Casablanca",
@@ -43,7 +103,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784554696,
+      "published_at_ts": 1784558045,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -100,7 +160,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784468296,
+      "published_at_ts": 1784471645,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -157,7 +217,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784295496,
+      "published_at_ts": 1784298845,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -213,7 +273,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784295496,
+      "published_at_ts": 1784298845,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -274,7 +334,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784295496,
+      "published_at_ts": 1784298845,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -336,7 +396,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784209096,
+      "published_at_ts": 1784212445,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -403,7 +463,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784209096,
+      "published_at_ts": 1784212445,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -435,9 +495,9 @@
       "summary": "Voir l'annonce Il y a 8 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 25,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -464,7 +524,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784209096,
+      "published_at_ts": 1784212445,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -519,7 +579,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783777096,
+      "published_at_ts": 1783780445,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -572,7 +632,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783604296,
+      "published_at_ts": 1783607645,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -638,66 +698,6 @@
         "Ascenseur",
         "Meuble",
         "Neuf"
-      ]
-    },
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/beausejour/917306",
-      "title": "Appartement à vendre Casablanca -Beauséjour",
-      "price_mad": 750000,
-      "surface_m2": 60,
-      "location_text": "Beauséjour",
-      "area_guess": "Beausejour",
-      "rooms_label": "",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "Il y a 14 minutes",
-      "summary": "Voir l'annonce Il y a 14 minutes Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer u...",
-      "rank_in_source": 1,
-      "source_listing_id": "917306",
-      "image_url": "listing-thumbs/agenz-917306-01-f6442e35a7da.jpg",
-      "image_urls": [
-        "listing-thumbs/agenz-917306-01-f6442e35a7da.jpg",
-        "listing-thumbs/agenz-917306-02-f11cb7d9cb8e.jpg",
-        "listing-thumbs/agenz-917306-03-44fe80186165.jpg",
-        "listing-thumbs/agenz-917306-04-228f7bbfb2e7.jpg",
-        "listing-thumbs/agenz-917306-05-26d830af6161.jpg",
-        "listing-thumbs/agenz-917306-06-bac3b3497435.jpg",
-        "listing-thumbs/agenz-917306-07-201a04ba42d5.jpg",
-        "listing-thumbs/agenz-917306-08-6a65953d31d3.jpg",
-        "listing-thumbs/agenz-917306-09-512405627284.jpg",
-        "listing-thumbs/agenz-917306-10-9813bb9955ce.jpg",
-        "listing-thumbs/agenz-917306-11-03739da4f59a.jpg",
-        "listing-thumbs/agenz-917306-12-0c2df53edf94.jpg",
-        "listing-thumbs/agenz-917306-13-0171352aa738.jpg",
-        "listing-thumbs/agenz-917306-14-4acf9c1aea2e.jpg",
-        "listing-thumbs/agenz-917306-15-44fef6bd93ea.jpg",
-        "listing-thumbs/agenz-917306-16-b76659432fc8.avif",
-        "listing-thumbs/agenz-917306-17-282e0612f981.avif",
-        "listing-thumbs/agenz-917306-18-41e576ac3ed5.avif",
-        "listing-thumbs/agenz-917306-19-5ebeffadadf4.avif",
-        "listing-thumbs/agenz-917306-20-65c26532dbda.avif",
-        "listing-thumbs/agenz-917306-21-3dd70e2287df.avif",
-        "listing-thumbs/agenz-917306-22-266f8cec6f28.avif",
-        "listing-thumbs/agenz-917306-23-758f4fc6c3a3.avif",
-        "listing-thumbs/agenz-917306-24-731a1c245383.avif"
-      ],
-      "photo_count": 24,
-      "amenity_keys": [
-        "furnished"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-14T11:02:48+00:00",
-      "price_label": "750 000 DH",
-      "surface_label": "60 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-beausejour",
-      "published_label": "Il y a 14 minutes",
-      "amenity_labels": [
-        "Meuble"
       ]
     },
     {
