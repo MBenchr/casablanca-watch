@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T00:25:35+00:00",
+  "generated_at": "2026-07-24T00:59:48+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784593485,
+      "published_at_ts": 1784595529,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -101,7 +101,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784507085,
+      "published_at_ts": 1784509129,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -159,7 +159,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784334285,
+      "published_at_ts": 1784336329,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -216,7 +216,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784334285,
+      "published_at_ts": 1784336329,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -278,7 +278,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784247885,
+      "published_at_ts": 1784249929,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -341,7 +341,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784247885,
+      "published_at_ts": 1784249929,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -409,7 +409,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784161485,
+      "published_at_ts": 1784163529,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -471,7 +471,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784161485,
+      "published_at_ts": 1784163529,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -527,7 +527,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783815885,
+      "published_at_ts": 1783817929,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -581,7 +581,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783643085,
+      "published_at_ts": 1783645129,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -637,7 +637,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783556685,
+      "published_at_ts": 1783558729,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -665,7 +665,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "900 000 DH Studio premium à saisir Anfa, Casablanca 42 m² 1 Pièce 1 Ch. 1 Salle de bain Terrasse Garage Ascenseur Meublé Salon européen Antenne parabolique Climatisation Chauffage central Sécurité Double vitrage Cuisi...",
-      "rank_in_source": 11,
+      "rank_in_source": 12,
       "source_listing_id": "8139805",
       "image_url": "listing-thumbs/mubawab-8139805-01-a53932e294ea.avif",
       "image_urls": [
