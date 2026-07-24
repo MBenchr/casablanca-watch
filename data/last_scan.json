@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T20:51:46+00:00",
+  "generated_at": "2026-07-24T21:24:17+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 5 heures",
-      "summary": "Voir l'annonce Il y a 5 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer u...",
+      "age_label": "Il y a 6 heures",
+      "summary": "Voir l'annonce Il y a 6 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer u...",
       "rank_in_source": 1,
       "source_listing_id": "525140",
       "image_url": "listing-thumbs/agenz-525140-01-ad26dcde6623.jpg",
@@ -45,14 +45,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784908256,
+      "published_at_ts": 1784906603,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
       "surface_label": "59 m2",
       "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
-      "published_label": "Il y a 5 heures",
+      "published_label": "Il y a 6 heures",
       "amenity_labels": [
         "Meuble"
       ]
@@ -70,8 +70,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 7 heures",
-      "summary": "Voir l'annonce Il y a 7 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer une...",
+      "age_label": "Il y a 8 heures",
+      "summary": "Voir l'annonce Il y a 8 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer une...",
       "rank_in_source": 3,
       "source_listing_id": "917306",
       "image_url": "listing-thumbs/agenz-917306-01-f6442e35a7da.jpg",
@@ -105,14 +105,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784901056,
+      "published_at_ts": 1784899403,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-beausejour",
-      "published_label": "Il y a 7 heures",
+      "published_label": "Il y a 8 heures",
       "amenity_labels": [
         "Meuble"
       ]
@@ -158,7 +158,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784580656,
+      "published_at_ts": 1784582603,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -215,7 +215,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784494256,
+      "published_at_ts": 1784496203,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -272,7 +272,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784321456,
+      "published_at_ts": 1784323403,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -328,7 +328,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784321456,
+      "published_at_ts": 1784323403,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -389,7 +389,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784321456,
+      "published_at_ts": 1784323403,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -451,7 +451,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784235056,
+      "published_at_ts": 1784237003,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -518,7 +518,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784235056,
+      "published_at_ts": 1784237003,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -579,7 +579,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784148656,
+      "published_at_ts": 1784150603,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -634,7 +634,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783803056,
+      "published_at_ts": 1783805003,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -645,6 +645,59 @@
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2",
+      "title": "Bel appartement à vendre à Oulfa. Surface de 45 m²",
+      "price_mad": 585000,
+      "surface_m2": 45,
+      "location_text": "Oulfa, Casablanca",
+      "area_guess": "El Oulfa",
+      "rooms_label": "2",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "585 000 DH Bel appartement à vendre à Oulfa. Surface de 45 m² Oulfa, Casablanca 45 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3 Chambres , Duple...",
+      "rank_in_source": 3,
+      "source_listing_id": "8353719",
+      "image_url": "listing-thumbs/mubawab-8353719-01-1acdfba92126.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8353719-01-1acdfba92126.avif",
+        "listing-thumbs/mubawab-8353719-02-56765baf0043.avif",
+        "listing-thumbs/mubawab-8353719-03-16918809b642.avif",
+        "listing-thumbs/mubawab-8353719-04-adb314151468.avif",
+        "listing-thumbs/mubawab-8353719-05-1f7532a8608c.avif",
+        "listing-thumbs/mubawab-8353719-06-c4b5710b5159.avif",
+        "listing-thumbs/mubawab-8353719-07-559bab5c8bc4.avif",
+        "listing-thumbs/mubawab-8353719-08-4828de9e99b5.avif",
+        "listing-thumbs/mubawab-8353719-09-27a7747bdb62.avif",
+        "listing-thumbs/mubawab-8353719-10-241acee4ee83.avif",
+        "listing-thumbs/mubawab-8353719-11-e881482f50d3.avif",
+        "listing-thumbs/mubawab-8353719-12-61fb95805c2b.avif",
+        "listing-thumbs/mubawab-8353719-13-7fed42e2f6f4.avif",
+        "listing-thumbs/mubawab-8353719-14-bb52f3e07160.avif",
+        "listing-thumbs/mubawab-8353719-15-eb7d18b5b921.avif"
+      ],
+      "photo_count": 15,
+      "amenity_keys": [
+        "elevator",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "price_label": "585 000 DH",
+      "surface_label": "45 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Parking"
       ]
     },
     {
@@ -662,7 +715,7 @@
       "bathrooms_label": "2",
       "age_label": "",
       "summary": "800 000 DH Studios Haut Standing à Quartier des Hôpitaux Possibilité de... Les Hôpitaux, Casablanca 30 m² 6 Pièces 1 Ch. 2 Salles de bains Jardin Terrasse Garage Ascenseur Concierge Chambre rangement Meublé Façade ext...",
-      "rank_in_source": 20,
+      "rank_in_source": 21,
       "source_listing_id": "8105051",
       "image_url": "listing-thumbs/mubawab-8105051-01-a23c7b540aca.avif",
       "image_urls": [
@@ -684,7 +737,7 @@
         "furnished"
       ],
       "published_at_ts": null,
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-07-24T20:51:46+00:00",
       "price_label": "800 000 DH",
       "surface_label": "30 m2",
@@ -1017,59 +1070,6 @@
       ]
     }
   ],
-  "new_matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8105051/studios-haut-standing-%C3%A0-quartier-des-h%C3%B4pitaux-possibilit%C3%A9-de-profiter-de-l%E2%80%99aide-au-logement-%E2%80%93-casablanca",
-      "title": "Studios Haut Standing à Quartier des Hôpitaux Possibilité de...",
-      "price_mad": 800000,
-      "surface_m2": 30,
-      "location_text": "Les Hôpitaux, Casablanca",
-      "area_guess": "Les Hôpitaux",
-      "rooms_label": "6",
-      "bedrooms_label": "1",
-      "bathrooms_label": "2",
-      "age_label": "",
-      "summary": "800 000 DH Studios Haut Standing à Quartier des Hôpitaux Possibilité de... Les Hôpitaux, Casablanca 30 m² 6 Pièces 1 Ch. 2 Salles de bains Jardin Terrasse Garage Ascenseur Concierge Chambre rangement Meublé Façade ext...",
-      "rank_in_source": 20,
-      "source_listing_id": "8105051",
-      "image_url": "listing-thumbs/mubawab-8105051-01-a23c7b540aca.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8105051-01-a23c7b540aca.avif",
-        "listing-thumbs/mubawab-8105051-02-86cd0e6ed347.avif",
-        "listing-thumbs/mubawab-8105051-03-3f9911a5dbd7.avif",
-        "listing-thumbs/mubawab-8105051-04-b1fec2eb0847.avif",
-        "listing-thumbs/mubawab-8105051-05-bc1d2ae107ee.avif",
-        "listing-thumbs/mubawab-8105051-06-a7fba2131926.avif",
-        "listing-thumbs/mubawab-8105051-07-271960d285b4.avif",
-        "listing-thumbs/mubawab-8105051-08-c4def5866a50.avif"
-      ],
-      "photo_count": 8,
-      "amenity_keys": [
-        "terrace",
-        "elevator",
-        "parking",
-        "concierge",
-        "furnished"
-      ],
-      "published_at_ts": null,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T20:51:46+00:00",
-      "price_label": "800 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-les-hopitaux",
-      "published_label": "",
-      "amenity_labels": [
-        "Terrasse",
-        "Ascenseur",
-        "Parking",
-        "Concierge",
-        "Meuble"
-      ]
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
