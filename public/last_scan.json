@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T10:16:23+00:00",
+  "generated_at": "2026-07-24T11:10:18+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -43,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784542533,
+      "published_at_ts": 1784545776,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -101,7 +101,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784456133,
+      "published_at_ts": 1784459376,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -159,7 +159,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784283333,
+      "published_at_ts": 1784286576,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -216,7 +216,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784283333,
+      "published_at_ts": 1784286576,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -278,7 +278,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784283333,
+      "published_at_ts": 1784286576,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -341,7 +341,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784196933,
+      "published_at_ts": 1784200176,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -409,7 +409,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784196933,
+      "published_at_ts": 1784200176,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -471,7 +471,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784196933,
+      "published_at_ts": 1784200176,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -497,8 +497,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 12 jours",
-      "summary": "Voir l'annonce Il y a 12 jours Déjà Vu Agence partenaire 950 000 DH 1 CH 1 SDB 42 m² Studio à vendre Casablanca -Franceville Ascenseur 1er étage Meublé Créer une visite Appeler Whatsapp",
+      "age_label": "Il y a 13 jours",
+      "summary": "Voir l'annonce Il y a 13 jours Déjà Vu Agence partenaire 950 000 DH 1 CH 1 SDB 42 m² Studio à vendre Casablanca -Franceville Ascenseur 1er étage Meublé Créer une visite Appeler Whatsapp",
       "rank_in_source": 30,
       "source_listing_id": "467725",
       "image_url": "listing-thumbs/agenz-467725-01-116ccc6f3d02.jpg",
@@ -527,14 +527,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783851333,
+      "published_at_ts": 1783768176,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
       "surface_label": "42 m2",
       "source_label": "Agenz",
       "area_anchor": "area-franceville",
-      "published_label": "Il y a 12 jours",
+      "published_label": "Il y a 13 jours",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
@@ -581,7 +581,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783592133,
+      "published_at_ts": 1783595376,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -637,7 +637,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783505733,
+      "published_at_ts": 1783508976,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -665,7 +665,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "900 000 DH Studio premium à saisir Anfa, Casablanca 42 m² 1 Pièce 1 Ch. 1 Salle de bain Terrasse Garage Ascenseur Meublé Salon européen Antenne parabolique Climatisation Chauffage central Sécurité Double vitrage Cuisi...",
-      "rank_in_source": 23,
+      "rank_in_source": 25,
       "source_listing_id": "8139805",
       "image_url": "listing-thumbs/mubawab-8139805-01-a53932e294ea.avif",
       "image_urls": [
