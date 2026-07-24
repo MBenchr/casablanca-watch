@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-24T18:39:31+00:00",
+  "generated_at": "2026-07-24T19:30:46+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 3 heures",
-      "summary": "Voir l'annonce Il y a 3 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer u...",
+      "age_label": "Il y a 4 heures",
+      "summary": "Voir l'annonce Il y a 4 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer u...",
       "rank_in_source": 1,
       "source_listing_id": "525140",
       "image_url": "listing-thumbs/agenz-525140-01-ad26dcde6623.jpg",
@@ -45,14 +45,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784907528,
+      "published_at_ts": 1784906996,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
       "surface_label": "59 m2",
       "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
-      "published_label": "Il y a 3 heures",
+      "published_label": "Il y a 4 heures",
       "amenity_labels": [
         "Meuble"
       ],
@@ -71,8 +71,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 5 heures",
-      "summary": "Voir l'annonce Il y a 5 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer une...",
+      "age_label": "Il y a 6 heures",
+      "summary": "Voir l'annonce Il y a 6 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Beauséjour 3ème étage Non meublé Créer une...",
       "rank_in_source": 3,
       "source_listing_id": "917306",
       "image_url": "listing-thumbs/agenz-917306-01-f6442e35a7da.jpg",
@@ -106,14 +106,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784900328,
+      "published_at_ts": 1784899796,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-beausejour",
-      "published_label": "Il y a 5 heures",
+      "published_label": "Il y a 6 heures",
       "amenity_labels": [
         "Meuble"
       ],
@@ -160,7 +160,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784572728,
+      "published_at_ts": 1784575796,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -218,7 +218,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784486328,
+      "published_at_ts": 1784489396,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -276,7 +276,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784313528,
+      "published_at_ts": 1784316596,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -333,7 +333,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784313528,
+      "published_at_ts": 1784316596,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -395,7 +395,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784313528,
+      "published_at_ts": 1784316596,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -458,7 +458,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784227128,
+      "published_at_ts": 1784230196,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -526,7 +526,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784227128,
+      "published_at_ts": 1784230196,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -588,7 +588,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784140728,
+      "published_at_ts": 1784143796,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -644,7 +644,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783795128,
+      "published_at_ts": 1783798196,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
