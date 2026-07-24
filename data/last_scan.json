@@ -1,118 +1,7 @@
 {
-  "generated_at": "2026-07-24T12:02:04+00:00",
+  "generated_at": "2026-07-24T13:01:10+00:00",
   "all_listings_count": 109,
   "matches": [
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10421892/Appartement-bien-entretenu.html",
-      "title": "Appartement bien entretenu",
-      "price_mad": 600000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "Hier 21:26",
-      "summary": "600 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 6,
-      "source_listing_id": "10421892",
-      "image_url": "listing-thumbs/marocannonces-10421892-01-927e696c2d74.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10421892-01-927e696c2d74.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784841960,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "600 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "Hier 21:26",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10421871/Appartement-a-vendre-a-zoubir.html",
-      "title": "Appartement a vendre a zoubir",
-      "price_mad": 310000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "Hier 19:40",
-      "summary": "310 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 7,
-      "source_listing_id": "10421871",
-      "image_url": "listing-thumbs/marocannonces-10421871-01-064c9b345103.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10421871-01-064c9b345103.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784835600,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "310 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "Hier 19:40",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10419960/Appartement-à-vendre-69-m²-à-sidi-maarouf.html",
-      "title": "Appartement à vendre 69 m² à sidi maarouf",
-      "price_mad": 750000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Sidi Maarouf",
-      "area_guess": "Sidi Maarouf",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "21 Jul 2026 10:26",
-      "summary": "750 000 DH Casablanca / Sidi Maarouf Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Bo...",
-      "rank_in_source": 13,
-      "source_listing_id": "10419960",
-      "image_url": "listing-thumbs/marocannonces-10419960-01-61fb9361f969.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10419960-01-61fb9361f969.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784592000,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "750 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-sidi-maarouf",
-      "published_label": "21 Jul 2026 10:26",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
     {
       "source": "agenz",
       "source_name": "Agenz Casablanca",
@@ -154,7 +43,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784548849,
+      "published_at_ts": 1784552394,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -185,9 +74,9 @@
       "summary": "Voir l'annonce Il y a 5 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visit...",
       "rank_in_source": 12,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -211,7 +100,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784462449,
+      "published_at_ts": 1784465994,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -221,43 +110,6 @@
       "published_label": "Il y a 5 jours",
       "amenity_labels": [
         "Meuble"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10418419/Appartement-à-vendre-à-côté-du-bd-Oum-Abii.html",
-      "title": "Appartement à vendre à côté du bd Oum Abii",
-      "price_mad": 490000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "18 Jul 2026 21:40",
-      "summary": "490 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 17,
-      "source_listing_id": "10418419",
-      "image_url": "listing-thumbs/marocannonces-10418419-01-4980ad5576b1.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10418419-01-4980ad5576b1.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784332800,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "490 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "18 Jul 2026 21:40",
-      "amenity_labels": [
-        "Parking"
       ]
     },
     {
@@ -305,7 +157,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784289649,
+      "published_at_ts": 1784293194,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -361,7 +213,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784289649,
+      "published_at_ts": 1784293194,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -422,7 +274,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784289649,
+      "published_at_ts": 1784293194,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -432,43 +284,6 @@
       "published_label": "Il y a 7 jours",
       "amenity_labels": [
         "Meuble"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 2",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=2",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10417952/Appartement-a-vendre.html",
-      "title": "Appartement a vendre",
-      "price_mad": 800000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Sidi Maarouf",
-      "area_guess": "Sidi Maarouf",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "17 Jul 2026 15:08",
-      "summary": "800 000 DH Casablanca / Sidi Maarouf Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Bo...",
-      "rank_in_source": 3,
-      "source_listing_id": "10417952",
-      "image_url": "listing-thumbs/marocannonces-10417952-01-064c9b345103.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10417952-01-064c9b345103.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784246400,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "800 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-sidi-maarouf",
-      "published_label": "17 Jul 2026 15:08",
-      "amenity_labels": [
-        "Parking"
       ]
     },
     {
@@ -521,7 +336,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784203249,
+      "published_at_ts": 1784206794,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -588,7 +403,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784203249,
+      "published_at_ts": 1784206794,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -620,9 +435,9 @@
       "summary": "Voir l'annonce Il y a 8 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 24,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -649,7 +464,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784203249,
+      "published_at_ts": 1784206794,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -659,43 +474,6 @@
       "published_label": "Il y a 8 jours",
       "amenity_labels": [
         "Meuble"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 2",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=2",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10415859/Appartement-a-vendre.html",
-      "title": "Appartement a vendre",
-      "price_mad": 280000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Sidi Maarouf",
-      "area_guess": "Sidi Maarouf",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "14 Jul 2026 16:30",
-      "summary": "280 000 DH Casablanca / Sidi Maarouf Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Bo...",
-      "rank_in_source": 11,
-      "source_listing_id": "10415859",
-      "image_url": "listing-thumbs/marocannonces-10415859-01-064c9b345103.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10415859-01-064c9b345103.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1783987200,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "280 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-sidi-maarouf",
-      "published_label": "14 Jul 2026 16:30",
-      "amenity_labels": [
-        "Parking"
       ]
     },
     {
@@ -741,7 +519,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1783771249,
+      "published_at_ts": 1783774794,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "950 000 DH",
@@ -752,43 +530,6 @@
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 2",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=2",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10414070/Appartement-à-vendre-Casablanca-Oulfa.html",
-      "title": "Appartement à vendre Casablanca Oulfa",
-      "price_mad": 490000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "11 Jul 2026 19:13",
-      "summary": "490 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 18,
-      "source_listing_id": "10414070",
-      "image_url": "listing-thumbs/marocannonces-10414070-01-ffbf17d57685.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10414070-01-ffbf17d57685.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1783728000,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "490 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "11 Jul 2026 19:13",
-      "amenity_labels": [
-        "Parking"
       ]
     },
     {
@@ -831,7 +572,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1783598449,
+      "published_at_ts": 1783601994,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -1134,28 +875,19 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 7 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes DAR ESSALAM 936 000 DH 1 CH 1 SDB 36 m² Studio à vendre Casablanca -Bd Abdel...",
       "rank_in_source": 26,
       "source_listing_id": "47891",
-      "image_url": "listing-thumbs/agenz-47891-01-7d99f001b022.jpg",
+      "image_url": "listing-thumbs/agenz-47891-01-ba422719f70a.avif",
       "image_urls": [
-        "listing-thumbs/agenz-47891-01-7d99f001b022.jpg",
-        "listing-thumbs/agenz-47891-02-6623ab32c812.jpg",
-        "listing-thumbs/agenz-47891-03-b0db8fd66298.jpg",
-        "listing-thumbs/agenz-47891-04-00edaf110afe.jpg",
-        "listing-thumbs/agenz-47891-05-a1cf73596ef9.jpg",
-        "listing-thumbs/agenz-47891-06-4dfde51e1d2e.jpg",
-        "listing-thumbs/agenz-47891-07-08cadcfe7d94.jpg",
-        "listing-thumbs/agenz-47891-08-516b6e986702.jpg",
-        "listing-thumbs/agenz-47891-09-a1763b39c279.jpg",
-        "listing-thumbs/agenz-47891-10-ba422719f70a.avif",
-        "listing-thumbs/agenz-47891-11-7bdb8376fab5.avif",
-        "listing-thumbs/agenz-47891-12-de832b88d3a2.avif",
-        "listing-thumbs/agenz-47891-13-947e14de43ac.avif",
-        "listing-thumbs/agenz-47891-14-889907d87088.avif",
-        "listing-thumbs/agenz-47891-15-0285b23b7389.avif",
-        "listing-thumbs/agenz-47891-16-a3c2fb5f2cff.avif",
-        "listing-thumbs/agenz-47891-17-aeac74f292f3.avif",
-        "listing-thumbs/agenz-47891-18-1532311e248b.avif"
+        "listing-thumbs/agenz-47891-01-ba422719f70a.avif",
+        "listing-thumbs/agenz-47891-02-7bdb8376fab5.avif",
+        "listing-thumbs/agenz-47891-03-de832b88d3a2.avif",
+        "listing-thumbs/agenz-47891-04-947e14de43ac.avif",
+        "listing-thumbs/agenz-47891-05-889907d87088.avif",
+        "listing-thumbs/agenz-47891-06-0285b23b7389.avif",
+        "listing-thumbs/agenz-47891-07-a3c2fb5f2cff.avif",
+        "listing-thumbs/agenz-47891-08-aeac74f292f3.avif",
+        "listing-thumbs/agenz-47891-09-1532311e248b.avif"
       ],
-      "photo_count": 18,
+      "photo_count": 9,
       "amenity_keys": [
         "balcony",
         "elevator",
@@ -1178,266 +910,6 @@
       ]
     }
   ],
-  "new_matches": [
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10421892/Appartement-bien-entretenu.html",
-      "title": "Appartement bien entretenu",
-      "price_mad": 600000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "Hier 21:26",
-      "summary": "600 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 6,
-      "source_listing_id": "10421892",
-      "image_url": "listing-thumbs/marocannonces-10421892-01-927e696c2d74.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10421892-01-927e696c2d74.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784841960,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "600 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "Hier 21:26",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10421871/Appartement-a-vendre-a-zoubir.html",
-      "title": "Appartement a vendre a zoubir",
-      "price_mad": 310000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "Hier 19:40",
-      "summary": "310 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 7,
-      "source_listing_id": "10421871",
-      "image_url": "listing-thumbs/marocannonces-10421871-01-064c9b345103.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10421871-01-064c9b345103.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784835600,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "310 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "Hier 19:40",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10419960/Appartement-à-vendre-69-m²-à-sidi-maarouf.html",
-      "title": "Appartement à vendre 69 m² à sidi maarouf",
-      "price_mad": 750000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Sidi Maarouf",
-      "area_guess": "Sidi Maarouf",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "21 Jul 2026 10:26",
-      "summary": "750 000 DH Casablanca / Sidi Maarouf Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Bo...",
-      "rank_in_source": 13,
-      "source_listing_id": "10419960",
-      "image_url": "listing-thumbs/marocannonces-10419960-01-61fb9361f969.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10419960-01-61fb9361f969.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784592000,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "750 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-sidi-maarouf",
-      "published_label": "21 Jul 2026 10:26",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10418419/Appartement-à-vendre-à-côté-du-bd-Oum-Abii.html",
-      "title": "Appartement à vendre à côté du bd Oum Abii",
-      "price_mad": 490000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "18 Jul 2026 21:40",
-      "summary": "490 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 17,
-      "source_listing_id": "10418419",
-      "image_url": "listing-thumbs/marocannonces-10418419-01-4980ad5576b1.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10418419-01-4980ad5576b1.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784332800,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "490 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "18 Jul 2026 21:40",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 2",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=2",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10417952/Appartement-a-vendre.html",
-      "title": "Appartement a vendre",
-      "price_mad": 800000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Sidi Maarouf",
-      "area_guess": "Sidi Maarouf",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "17 Jul 2026 15:08",
-      "summary": "800 000 DH Casablanca / Sidi Maarouf Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Bo...",
-      "rank_in_source": 3,
-      "source_listing_id": "10417952",
-      "image_url": "listing-thumbs/marocannonces-10417952-01-064c9b345103.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10417952-01-064c9b345103.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1784246400,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "800 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-sidi-maarouf",
-      "published_label": "17 Jul 2026 15:08",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 2",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=2",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10415859/Appartement-a-vendre.html",
-      "title": "Appartement a vendre",
-      "price_mad": 280000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Sidi Maarouf",
-      "area_guess": "Sidi Maarouf",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "14 Jul 2026 16:30",
-      "summary": "280 000 DH Casablanca / Sidi Maarouf Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Bo...",
-      "rank_in_source": 11,
-      "source_listing_id": "10415859",
-      "image_url": "listing-thumbs/marocannonces-10415859-01-064c9b345103.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10415859-01-064c9b345103.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1783987200,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "280 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-sidi-maarouf",
-      "published_label": "14 Jul 2026 16:30",
-      "amenity_labels": [
-        "Parking"
-      ]
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 2",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=2",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10414070/Appartement-à-vendre-Casablanca-Oulfa.html",
-      "title": "Appartement à vendre Casablanca Oulfa",
-      "price_mad": 490000,
-      "surface_m2": 30,
-      "location_text": "Casablanca / Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "11 Jul 2026 19:13",
-      "summary": "490 000 DH Casablanca / Oulfa Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques...",
-      "rank_in_source": 18,
-      "source_listing_id": "10414070",
-      "image_url": "listing-thumbs/marocannonces-10414070-01-ffbf17d57685.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10414070-01-ffbf17d57685.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [
-        "parking"
-      ],
-      "published_at_ts": 1783728000,
-      "is_new": true,
-      "first_seen_at": "2026-07-24T12:02:04+00:00",
-      "price_label": "490 000 DH",
-      "surface_label": "30 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "11 Jul 2026 19:13",
-      "amenity_labels": [
-        "Parking"
-      ]
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
