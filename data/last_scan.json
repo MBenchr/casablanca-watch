@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-25T12:50:30+00:00",
-  "all_listings_count": 109,
+  "generated_at": "2026-07-25T13:31:07+00:00",
+  "all_listings_count": 69,
   "matches": [
     {
       "source": "agenz",
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 21 heures",
-      "summary": "Voir l'annonce Il y a 21 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer...",
+      "age_label": "Il y a un jour",
+      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer un...",
       "rank_in_source": 2,
       "source_listing_id": "525140",
       "image_url": "listing-thumbs/agenz-525140-01-ad26dcde6623.jpg",
@@ -45,14 +45,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784908170,
+      "published_at_ts": 1784899818,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
       "surface_label": "59 m2",
       "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
-      "published_label": "Il y a 21 heures",
+      "published_label": "Il y a un jour",
       "amenity_labels": [
         "Meuble"
       ]
@@ -105,7 +105,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784897370,
+      "published_at_ts": 1784899818,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -158,7 +158,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784551770,
+      "published_at_ts": 1784554218,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -189,9 +189,9 @@
       "summary": "Voir l'annonce Il y a 6 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visit...",
       "rank_in_source": 18,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -215,7 +215,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784465370,
+      "published_at_ts": 1784467818,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -272,7 +272,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784292570,
+      "published_at_ts": 1784295018,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -328,7 +328,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784292570,
+      "published_at_ts": 1784295018,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -389,7 +389,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784292570,
+      "published_at_ts": 1784295018,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -451,7 +451,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784206170,
+      "published_at_ts": 1784208618,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -518,7 +518,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784206170,
+      "published_at_ts": 1784208618,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -579,7 +579,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784206170,
+      "published_at_ts": 1784208618,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -893,27 +893,19 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 920 000 DH 1 CH 1 SDB 51 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
       "rank_in_source": 5,
       "source_listing_id": "147588",
-      "image_url": "listing-thumbs/agenz-147588-01-dac5f7032438.jpg",
+      "image_url": "listing-thumbs/agenz-147588-01-e85e2565d18f.avif",
       "image_urls": [
-        "listing-thumbs/agenz-147588-01-dac5f7032438.jpg",
-        "listing-thumbs/agenz-147588-02-e917826b055b.jpg",
-        "listing-thumbs/agenz-147588-03-0e7494754b38.jpg",
-        "listing-thumbs/agenz-147588-04-ea071e86d612.jpg",
-        "listing-thumbs/agenz-147588-05-a41f19a78d33.jpg",
-        "listing-thumbs/agenz-147588-06-0d1d8c230331.jpg",
-        "listing-thumbs/agenz-147588-07-b5dcb78f2efb.jpg",
-        "listing-thumbs/agenz-147588-08-9d3e21724636.jpg",
-        "listing-thumbs/agenz-147588-09-e85e2565d18f.avif",
-        "listing-thumbs/agenz-147588-10-27b7e31b5789.avif",
-        "listing-thumbs/agenz-147588-11-b772a944176b.avif",
-        "listing-thumbs/agenz-147588-12-b79c1e33de2b.avif",
-        "listing-thumbs/agenz-147588-13-48a8863d01d5.avif",
-        "listing-thumbs/agenz-147588-14-d2a4fdc47e1a.avif",
-        "listing-thumbs/agenz-147588-15-125b60b7e08b.avif",
-        "listing-thumbs/agenz-147588-16-62d3ef0ffa5f.avif",
-        "listing-thumbs/agenz-147588-17-a13966bd5d20.avif"
+        "listing-thumbs/agenz-147588-01-e85e2565d18f.avif",
+        "listing-thumbs/agenz-147588-02-27b7e31b5789.avif",
+        "listing-thumbs/agenz-147588-03-b772a944176b.avif",
+        "listing-thumbs/agenz-147588-04-b79c1e33de2b.avif",
+        "listing-thumbs/agenz-147588-05-48a8863d01d5.avif",
+        "listing-thumbs/agenz-147588-06-d2a4fdc47e1a.avif",
+        "listing-thumbs/agenz-147588-07-125b60b7e08b.avif",
+        "listing-thumbs/agenz-147588-08-62d3ef0ffa5f.avif",
+        "listing-thumbs/agenz-147588-09-a13966bd5d20.avif"
       ],
-      "photo_count": 17,
+      "photo_count": 9,
       "amenity_keys": [
         "terrace",
         "elevator",
