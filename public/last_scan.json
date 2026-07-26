@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T18:48:48+00:00",
+  "generated_at": "2026-07-26T19:28:16+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -42,7 +42,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785005274,
+      "published_at_ts": 1785007617,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -98,7 +98,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784918874,
+      "published_at_ts": 1784921217,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -159,7 +159,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784918874,
+      "published_at_ts": 1784921217,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -213,7 +213,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784573274,
+      "published_at_ts": 1784575617,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -271,7 +271,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784486874,
+      "published_at_ts": 1784489217,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -329,7 +329,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784314074,
+      "published_at_ts": 1784316417,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -386,7 +386,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784314074,
+      "published_at_ts": 1784316417,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -448,7 +448,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784314074,
+      "published_at_ts": 1784316417,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -511,7 +511,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784227674,
+      "published_at_ts": 1784230017,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -579,7 +579,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784227674,
+      "published_at_ts": 1784230017,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -641,7 +641,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784141274,
+      "published_at_ts": 1784143617,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -915,12 +915,13 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...",
       "rank_in_source": 28,
       "source_listing_id": "193099",
-      "image_url": "listing-thumbs/agenz-193099-01-ade541787e9b.avif",
+      "image_url": "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
       "image_urls": [
-        "listing-thumbs/agenz-193099-01-ade541787e9b.avif",
-        "listing-thumbs/agenz-193099-02-d35c2cc21492.avif"
+        "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
+        "listing-thumbs/agenz-193099-02-ade541787e9b.avif",
+        "listing-thumbs/agenz-193099-03-d35c2cc21492.avif"
       ],
-      "photo_count": 2,
+      "photo_count": 3,
       "amenity_keys": [
         "balcony",
         "elevator",
@@ -960,19 +961,27 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 920 000 DH 1 CH 1 SDB 51 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
       "rank_in_source": 8,
       "source_listing_id": "147588",
-      "image_url": "listing-thumbs/agenz-147588-01-e85e2565d18f.avif",
+      "image_url": "listing-thumbs/agenz-147588-01-dac5f7032438.jpg",
       "image_urls": [
-        "listing-thumbs/agenz-147588-01-e85e2565d18f.avif",
-        "listing-thumbs/agenz-147588-02-27b7e31b5789.avif",
-        "listing-thumbs/agenz-147588-03-b772a944176b.avif",
-        "listing-thumbs/agenz-147588-04-b79c1e33de2b.avif",
-        "listing-thumbs/agenz-147588-05-48a8863d01d5.avif",
-        "listing-thumbs/agenz-147588-06-d2a4fdc47e1a.avif",
-        "listing-thumbs/agenz-147588-07-125b60b7e08b.avif",
-        "listing-thumbs/agenz-147588-08-62d3ef0ffa5f.avif",
-        "listing-thumbs/agenz-147588-09-a13966bd5d20.avif"
+        "listing-thumbs/agenz-147588-01-dac5f7032438.jpg",
+        "listing-thumbs/agenz-147588-02-e917826b055b.jpg",
+        "listing-thumbs/agenz-147588-03-0e7494754b38.jpg",
+        "listing-thumbs/agenz-147588-04-ea071e86d612.jpg",
+        "listing-thumbs/agenz-147588-05-a41f19a78d33.jpg",
+        "listing-thumbs/agenz-147588-06-0d1d8c230331.jpg",
+        "listing-thumbs/agenz-147588-07-b5dcb78f2efb.jpg",
+        "listing-thumbs/agenz-147588-08-9d3e21724636.jpg",
+        "listing-thumbs/agenz-147588-09-e85e2565d18f.avif",
+        "listing-thumbs/agenz-147588-10-27b7e31b5789.avif",
+        "listing-thumbs/agenz-147588-11-b772a944176b.avif",
+        "listing-thumbs/agenz-147588-12-b79c1e33de2b.avif",
+        "listing-thumbs/agenz-147588-13-48a8863d01d5.avif",
+        "listing-thumbs/agenz-147588-14-d2a4fdc47e1a.avif",
+        "listing-thumbs/agenz-147588-15-125b60b7e08b.avif",
+        "listing-thumbs/agenz-147588-16-62d3ef0ffa5f.avif",
+        "listing-thumbs/agenz-147588-17-a13966bd5d20.avif"
       ],
-      "photo_count": 9,
+      "photo_count": 17,
       "amenity_keys": [
         "terrace",
         "elevator",
