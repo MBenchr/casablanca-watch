@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-26T03:45:17+00:00",
-  "all_listings_count": 109,
+  "generated_at": "2026-07-26T05:07:30+00:00",
+  "all_listings_count": 69,
   "matches": [
     {
       "source": "agenz",
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 13 heures",
-      "summary": "Voir l'annonce Il y a 13 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 380 000 DH 2 CH 1 SDB 56 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite App...",
+      "age_label": "Il y a 15 heures",
+      "summary": "Voir l'annonce Il y a 15 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 380 000 DH 2 CH 1 SDB 56 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite App...",
       "rank_in_source": 1,
       "source_listing_id": "25198",
       "image_url": "listing-thumbs/agenz-25198-01-b92397987127.jpg",
@@ -42,14 +42,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784990652,
+      "published_at_ts": 1784988424,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
       "surface_label": "56 m2",
       "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a 13 heures",
+      "published_label": "Il y a 15 heures",
       "amenity_labels": [
         "Meuble"
       ]
@@ -97,7 +97,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784864652,
+      "published_at_ts": 1784869624,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -157,7 +157,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784864652,
+      "published_at_ts": 1784869624,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -210,7 +210,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784519052,
+      "published_at_ts": 1784524024,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -267,7 +267,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784432652,
+      "published_at_ts": 1784437624,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -324,7 +324,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784259852,
+      "published_at_ts": 1784264824,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -380,7 +380,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784259852,
+      "published_at_ts": 1784264824,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -441,7 +441,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784259852,
+      "published_at_ts": 1784264824,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -466,8 +466,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 9 jours",
-      "summary": "Voir l'annonce Il y a 9 jours Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visit...",
+      "age_label": "Il y a 10 jours",
+      "summary": "Voir l'annonce Il y a 10 jours Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
       "rank_in_source": 31,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
@@ -503,14 +503,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784259852,
+      "published_at_ts": 1784178424,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
       "surface_label": "34 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a 9 jours",
+      "published_label": "Il y a 10 jours",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
@@ -570,7 +570,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784173452,
+      "published_at_ts": 1784178424,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -631,7 +631,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784173452,
+      "published_at_ts": 1784178424,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
