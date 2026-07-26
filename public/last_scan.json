@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T20:21:42+00:00",
+  "generated_at": "2026-07-26T20:47:45+00:00",
   "all_listings_count": 69,
   "matches": [
     {
@@ -42,7 +42,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785010852,
+      "published_at_ts": 1785012420,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -98,7 +98,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784924452,
+      "published_at_ts": 1784926020,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -159,7 +159,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784924452,
+      "published_at_ts": 1784926020,
       "is_new": false,
       "first_seen_at": "2026-07-14T11:02:48+00:00",
       "price_label": "750 000 DH",
@@ -213,7 +213,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784578852,
+      "published_at_ts": 1784580420,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -271,7 +271,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784492452,
+      "published_at_ts": 1784494020,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -329,7 +329,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784319652,
+      "published_at_ts": 1784321221,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -386,7 +386,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784319652,
+      "published_at_ts": 1784321221,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -448,7 +448,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784319652,
+      "published_at_ts": 1784321221,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -511,7 +511,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784233252,
+      "published_at_ts": 1784234821,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -579,7 +579,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784233252,
+      "published_at_ts": 1784234821,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -612,9 +612,9 @@
       "summary": "Voir l'annonce Il y a 11 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Cré...",
       "rank_in_source": 33,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -641,7 +641,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784146852,
+      "published_at_ts": 1784148421,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -915,13 +915,12 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...",
       "rank_in_source": 28,
       "source_listing_id": "193099",
-      "image_url": "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
+      "image_url": "listing-thumbs/agenz-193099-01-ade541787e9b.avif",
       "image_urls": [
-        "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
-        "listing-thumbs/agenz-193099-02-ade541787e9b.avif",
-        "listing-thumbs/agenz-193099-03-d35c2cc21492.avif"
+        "listing-thumbs/agenz-193099-01-ade541787e9b.avif",
+        "listing-thumbs/agenz-193099-02-d35c2cc21492.avif"
       ],
-      "photo_count": 3,
+      "photo_count": 2,
       "amenity_keys": [
         "balcony",
         "elevator",
