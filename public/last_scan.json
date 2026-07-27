@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-27T17:33:46+00:00",
-  "all_listings_count": 109,
+  "generated_at": "2026-07-27T18:32:09+00:00",
+  "all_listings_count": 69,
   "matches": [
     {
       "source": "agenz",
@@ -42,7 +42,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785000765,
+      "published_at_ts": 1785004282,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -98,7 +98,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784914365,
+      "published_at_ts": 1784917882,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -152,7 +152,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784568765,
+      "published_at_ts": 1784572282,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -210,7 +210,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784482365,
+      "published_at_ts": 1784485882,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -268,7 +268,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784309565,
+      "published_at_ts": 1784313082,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -325,7 +325,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784309565,
+      "published_at_ts": 1784313082,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -387,7 +387,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784309565,
+      "published_at_ts": 1784313082,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -450,7 +450,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784223165,
+      "published_at_ts": 1784226682,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -518,7 +518,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784223165,
+      "published_at_ts": 1784226682,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -580,7 +580,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784136765,
+      "published_at_ts": 1784140282,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -592,6 +592,51 @@
         "Meuble"
       ],
       "default_sort_index": 9
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8297133/appartement-%C3%A0-vendre-58-m%C2%B2-2-chambres-oulfa-casablanca",
+      "title": "Appartement à vendre 58 m², 2 chambres Oulfa Casablanca",
+      "price_mad": 640000,
+      "surface_m2": 58,
+      "location_text": "Oulfa, Casablanca",
+      "area_guess": "El Oulfa",
+      "rooms_label": "",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "640 000 DH Appartement à vendre 58 m², 2 chambres Oulfa Casablanca Oulfa, Casablanca 58 m² 2 Chambres 1 Salle de bain Découvrez cet appartement charmant de 58 m², idéalement situé dans le quartier prisé d'Oulfa à Casa...",
+      "rank_in_source": 27,
+      "source_listing_id": "8297133",
+      "image_url": "listing-thumbs/mubawab-8297133-01-64493bd734e0.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8297133-01-64493bd734e0.avif",
+        "listing-thumbs/mubawab-8297133-02-1ddb1b2eb946.avif",
+        "listing-thumbs/mubawab-8297133-03-0034fe16906f.avif",
+        "listing-thumbs/mubawab-8297133-04-69a6a77b2719.avif",
+        "listing-thumbs/mubawab-8297133-05-3a23118623f4.avif",
+        "listing-thumbs/mubawab-8297133-06-41cab076f0b9.avif",
+        "listing-thumbs/mubawab-8297133-07-e604d51aa4db.avif",
+        "listing-thumbs/mubawab-8297133-08-7dbc4d999ebb.avif",
+        "listing-thumbs/mubawab-8297133-09-5465b7c8ea02.avif",
+        "listing-thumbs/mubawab-8297133-10-3428567092b1.avif",
+        "listing-thumbs/mubawab-8297133-11-bf1b10a92a05.avif",
+        "listing-thumbs/mubawab-8297133-12-4def4119b0a2.avif"
+      ],
+      "photo_count": 12,
+      "amenity_keys": [],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-07-27T18:32:09+00:00",
+      "price_label": "640 000 DH",
+      "surface_label": "58 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "",
+      "amenity_labels": [],
+      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -648,7 +693,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 10
+      "default_sort_index": 11
     },
     {
       "source": "agenz",
@@ -715,7 +760,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 11
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -773,7 +818,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 12
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -835,7 +880,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 13
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -881,7 +926,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -933,7 +978,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 16
     },
     {
       "source": "agenz",
@@ -985,9 +1030,54 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 17
     }
   ],
-  "new_matches": [],
+  "new_matches": [
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8297133/appartement-%C3%A0-vendre-58-m%C2%B2-2-chambres-oulfa-casablanca",
+      "title": "Appartement à vendre 58 m², 2 chambres Oulfa Casablanca",
+      "price_mad": 640000,
+      "surface_m2": 58,
+      "location_text": "Oulfa, Casablanca",
+      "area_guess": "El Oulfa",
+      "rooms_label": "",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "640 000 DH Appartement à vendre 58 m², 2 chambres Oulfa Casablanca Oulfa, Casablanca 58 m² 2 Chambres 1 Salle de bain Découvrez cet appartement charmant de 58 m², idéalement situé dans le quartier prisé d'Oulfa à Casa...",
+      "rank_in_source": 27,
+      "source_listing_id": "8297133",
+      "image_url": "listing-thumbs/mubawab-8297133-01-64493bd734e0.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8297133-01-64493bd734e0.avif",
+        "listing-thumbs/mubawab-8297133-02-1ddb1b2eb946.avif",
+        "listing-thumbs/mubawab-8297133-03-0034fe16906f.avif",
+        "listing-thumbs/mubawab-8297133-04-69a6a77b2719.avif",
+        "listing-thumbs/mubawab-8297133-05-3a23118623f4.avif",
+        "listing-thumbs/mubawab-8297133-06-41cab076f0b9.avif",
+        "listing-thumbs/mubawab-8297133-07-e604d51aa4db.avif",
+        "listing-thumbs/mubawab-8297133-08-7dbc4d999ebb.avif",
+        "listing-thumbs/mubawab-8297133-09-5465b7c8ea02.avif",
+        "listing-thumbs/mubawab-8297133-10-3428567092b1.avif",
+        "listing-thumbs/mubawab-8297133-11-bf1b10a92a05.avif",
+        "listing-thumbs/mubawab-8297133-12-4def4119b0a2.avif"
+      ],
+      "photo_count": 12,
+      "amenity_keys": [],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-07-27T18:32:09+00:00",
+      "price_label": "640 000 DH",
+      "surface_label": "58 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "",
+      "amenity_labels": []
+    }
+  ],
   "bootstrapped": false
 }
