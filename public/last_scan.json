@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T23:23:20+00:00",
+  "generated_at": "2026-07-27T23:51:09+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -42,7 +42,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785021744,
+      "published_at_ts": 1785023377,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -98,7 +98,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784935344,
+      "published_at_ts": 1784936977,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -152,7 +152,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784589744,
+      "published_at_ts": 1784591377,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -210,7 +210,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784503344,
+      "published_at_ts": 1784504977,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -268,7 +268,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784330544,
+      "published_at_ts": 1784332177,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -325,7 +325,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784330544,
+      "published_at_ts": 1784332177,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -387,7 +387,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784244144,
+      "published_at_ts": 1784245777,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -450,7 +450,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784244144,
+      "published_at_ts": 1784245777,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -477,8 +477,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 11 jours",
-      "summary": "Voir l'annonce Il y a 11 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...",
+      "age_label": "Il y a 12 jours",
+      "summary": "Voir l'annonce Il y a 12 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...",
       "rank_in_source": 31,
       "source_listing_id": "600374",
       "image_url": "listing-thumbs/agenz-600374-01-4ab2ebc8b15b.jpg",
@@ -518,14 +518,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784244144,
+      "published_at_ts": 1784159377,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
-      "published_label": "Il y a 11 jours",
+      "published_label": "Il y a 12 jours",
       "amenity_labels": [
         "Terrasse",
         "Balcon",
@@ -580,7 +580,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784157744,
+      "published_at_ts": 1784159377,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -592,51 +592,6 @@
         "Meuble"
       ],
       "default_sort_index": 9
-    },
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8389954/appartement-%C3%A0-oulfa-r%C3%A9s-jawharate-el-oulfa-moyens",
-      "title": "Appartement à Oulfa, Rés Jawharate El Oulfa MoyenS",
-      "price_mad": 650000,
-      "surface_m2": 58,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "5",
-      "bedrooms_label": "3",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "650 000 DH Appartement à Oulfa, Rés Jawharate El Oulfa MoyenS Oulfa, Casablanca 58 m² 5 Pièces 3 Chambres 1 Salle de bain Jardin Terrasse Garage Ascenseur Concierge Chambre rangement Antenne parabolique Climatisation...",
-      "rank_in_source": 32,
-      "source_listing_id": "8389954",
-      "image_url": "listing-thumbs/mubawab-8389954-01-b4acc1fd96da.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8389954-01-b4acc1fd96da.avif",
-        "listing-thumbs/mubawab-8389954-02-fd20fb8195bc.avif"
-      ],
-      "photo_count": 2,
-      "amenity_keys": [
-        "terrace",
-        "elevator",
-        "parking",
-        "concierge"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-27T21:52:50+00:00",
-      "price_label": "650 000 DH",
-      "surface_label": "58 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "",
-      "amenity_labels": [
-        "Terrasse",
-        "Ascenseur",
-        "Parking",
-        "Concierge"
-      ],
-      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -693,7 +648,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 11
+      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -760,7 +715,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 12
+      "default_sort_index": 11
     },
     {
       "source": "agenz",
@@ -818,7 +773,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 13
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -880,7 +835,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -926,7 +881,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -978,7 +933,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -1030,7 +985,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 17
+      "default_sort_index": 16
     }
   ],
   "new_matches": [],
