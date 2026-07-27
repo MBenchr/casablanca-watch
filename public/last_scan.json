@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-27T16:44:00+00:00",
+  "generated_at": "2026-07-27T17:33:46+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -42,7 +42,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784997789,
+      "published_at_ts": 1785000765,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -98,7 +98,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784911389,
+      "published_at_ts": 1784914365,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -152,7 +152,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784565789,
+      "published_at_ts": 1784568765,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -210,7 +210,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784479389,
+      "published_at_ts": 1784482365,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -268,7 +268,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784306589,
+      "published_at_ts": 1784309565,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -325,7 +325,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784306589,
+      "published_at_ts": 1784309565,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -387,7 +387,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784306589,
+      "published_at_ts": 1784309565,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -450,7 +450,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784220189,
+      "published_at_ts": 1784223165,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -518,7 +518,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784220189,
+      "published_at_ts": 1784223165,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -580,7 +580,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784133789,
+      "published_at_ts": 1784136765,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -592,55 +592,6 @@
         "Meuble"
       ],
       "default_sort_index": 9
-    },
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8376789/studio-%C3%A0-vendre-%E2%80%93-anoual-casablanca",
-      "title": "Studio à vendre – anoual casablanca",
-      "price_mad": 880000,
-      "surface_m2": 40,
-      "location_text": "Hermitage, Casablanca",
-      "area_guess": "Anoual",
-      "rooms_label": "1",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "880 000 DH Studio à vendre – anoual casablanca Hermitage, Casablanca 45 m² 1 Pièce 1 Ch. 1 Salle de bain Terrasse Garage Ascenseur Concierge Salon européen Antenne parabolique Climatisation Sécurité Cuisine équipée St...",
-      "rank_in_source": 24,
-      "source_listing_id": "8376789",
-      "image_url": "listing-thumbs/mubawab-8376789-01-a6657de21d3f.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8376789-01-a6657de21d3f.avif",
-        "listing-thumbs/mubawab-8376789-02-45e65bd9e7be.avif",
-        "listing-thumbs/mubawab-8376789-03-a57b3b1571c0.avif",
-        "listing-thumbs/mubawab-8376789-04-3ab5d7988251.avif",
-        "listing-thumbs/mubawab-8376789-05-a7bfcf148e3d.avif",
-        "listing-thumbs/mubawab-8376789-06-fd80a41f298b.avif"
-      ],
-      "photo_count": 6,
-      "amenity_keys": [
-        "terrace",
-        "elevator",
-        "parking",
-        "concierge"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-21T17:02:42+00:00",
-      "price_label": "880 000 DH",
-      "surface_label": "40 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-anoual",
-      "published_label": "",
-      "amenity_labels": [
-        "Terrasse",
-        "Ascenseur",
-        "Parking",
-        "Concierge"
-      ],
-      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -697,7 +648,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 11
+      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -764,7 +715,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 12
+      "default_sort_index": 11
     },
     {
       "source": "agenz",
@@ -822,7 +773,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 13
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -884,7 +835,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -930,7 +881,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -982,7 +933,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -1034,7 +985,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 17
+      "default_sort_index": 16
     }
   ],
   "new_matches": [],
