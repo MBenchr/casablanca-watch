@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-29T10:22:07+00:00",
+  "generated_at": "2026-07-29T11:17:45+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 11 heures",
-      "summary": "Voir l'annonce Il y a 11 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 440 000 DH 2 CH 1 SDB 45 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite App...",
+      "age_label": "Il y a 12 heures",
+      "summary": "Voir l'annonce Il y a 12 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 440 000 DH 2 CH 1 SDB 45 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite App...",
       "rank_in_source": 1,
       "source_listing_id": "44802",
       "image_url": "listing-thumbs/agenz-44802-01-c88e3f9b1af4.jpg",
@@ -44,14 +44,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785280845,
-      "is_new": true,
+      "published_at_ts": 1785280605,
+      "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
       "surface_label": "45 m2",
       "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a 11 heures",
+      "published_label": "Il y a 12 heures",
       "amenity_labels": [
         "Meuble"
       ]
@@ -96,7 +96,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784974845,
+      "published_at_ts": 1784978205,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -151,7 +151,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784888445,
+      "published_at_ts": 1784891805,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -204,7 +204,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784542845,
+      "published_at_ts": 1784546205,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -235,9 +235,9 @@
       "summary": "Voir l'annonce Il y a 10 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visi...",
       "rank_in_source": 25,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -261,7 +261,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784456445,
+      "published_at_ts": 1784459805,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -318,7 +318,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784283645,
+      "published_at_ts": 1784287005,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -374,7 +374,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784283645,
+      "published_at_ts": 1784287005,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -435,7 +435,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784283645,
+      "published_at_ts": 1784287005,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -497,7 +497,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784197245,
+      "published_at_ts": 1784200605,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -564,7 +564,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784197245,
+      "published_at_ts": 1784200605,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -972,61 +972,6 @@
       ]
     }
   ],
-  "new_matches": [
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/oulfa/44802",
-      "title": "Appartement à vendre Casablanca -Oulfa",
-      "price_mad": 440000,
-      "surface_m2": 45,
-      "location_text": "Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "Il y a 11 heures",
-      "summary": "Voir l'annonce Il y a 11 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 440 000 DH 2 CH 1 SDB 45 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite App...",
-      "rank_in_source": 1,
-      "source_listing_id": "44802",
-      "image_url": "listing-thumbs/agenz-44802-01-c88e3f9b1af4.jpg",
-      "image_urls": [
-        "listing-thumbs/agenz-44802-01-c88e3f9b1af4.jpg",
-        "listing-thumbs/agenz-44802-02-b942b128e90f.jpg",
-        "listing-thumbs/agenz-44802-03-88943603d31e.jpg",
-        "listing-thumbs/agenz-44802-04-5048f61e662c.jpg",
-        "listing-thumbs/agenz-44802-05-86a70c653006.jpg",
-        "listing-thumbs/agenz-44802-06-29b956f0e1fe.jpg",
-        "listing-thumbs/agenz-44802-07-99323c0c1c63.jpg",
-        "listing-thumbs/agenz-44802-08-2f5419073375.jpg",
-        "listing-thumbs/agenz-44802-09-2f2284107df9.jpg",
-        "listing-thumbs/agenz-44802-10-2de4a9580b5c.avif",
-        "listing-thumbs/agenz-44802-11-8e76b186bce6.avif",
-        "listing-thumbs/agenz-44802-12-f23bf13202cb.avif",
-        "listing-thumbs/agenz-44802-13-a3680f5fec00.avif",
-        "listing-thumbs/agenz-44802-14-3e758a2e004e.avif",
-        "listing-thumbs/agenz-44802-15-00dc00eb0afc.avif",
-        "listing-thumbs/agenz-44802-16-5d8c81bee686.avif",
-        "listing-thumbs/agenz-44802-17-e56bf3e5a63d.avif",
-        "listing-thumbs/agenz-44802-18-b75633c57a47.avif"
-      ],
-      "photo_count": 18,
-      "amenity_keys": [
-        "furnished"
-      ],
-      "published_at_ts": 1785280845,
-      "is_new": true,
-      "first_seen_at": "2026-07-29T10:22:07+00:00",
-      "price_label": "440 000 DH",
-      "surface_label": "45 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a 11 heures",
-      "amenity_labels": [
-        "Meuble"
-      ]
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
