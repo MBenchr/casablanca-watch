@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T19:35:26+00:00",
+  "generated_at": "2026-07-31T20:31:40+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -44,7 +44,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785267270,
+      "published_at_ts": 1785270648,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -96,7 +96,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785008070,
+      "published_at_ts": 1785011448,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -151,7 +151,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784921670,
+      "published_at_ts": 1784925048,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -204,7 +204,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784576070,
+      "published_at_ts": 1784579448,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -261,7 +261,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784489670,
+      "published_at_ts": 1784493048,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -318,7 +318,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784316870,
+      "published_at_ts": 1784320248,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -374,7 +374,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784316870,
+      "published_at_ts": 1784320248,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -435,7 +435,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784316870,
+      "published_at_ts": 1784320248,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -497,7 +497,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784230470,
+      "published_at_ts": 1784233848,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -508,6 +508,59 @@
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2",
+      "title": "Bel appartement à vendre à Oulfa. Surface de 45 m²",
+      "price_mad": 585000,
+      "surface_m2": 45,
+      "location_text": "Oulfa, Casablanca",
+      "area_guess": "El Oulfa",
+      "rooms_label": "2",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "585 000 DH Bel appartement à vendre à Oulfa. Surface de 45 m² Oulfa, Casablanca 45 m² 2 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3 Chambres , Duple...",
+      "rank_in_source": 1,
+      "source_listing_id": "8353719",
+      "image_url": "listing-thumbs/mubawab-8353719-01-1acdfba92126.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8353719-01-1acdfba92126.avif",
+        "listing-thumbs/mubawab-8353719-02-56765baf0043.avif",
+        "listing-thumbs/mubawab-8353719-03-16918809b642.avif",
+        "listing-thumbs/mubawab-8353719-04-adb314151468.avif",
+        "listing-thumbs/mubawab-8353719-05-1f7532a8608c.avif",
+        "listing-thumbs/mubawab-8353719-06-c4b5710b5159.avif",
+        "listing-thumbs/mubawab-8353719-07-559bab5c8bc4.avif",
+        "listing-thumbs/mubawab-8353719-08-4828de9e99b5.avif",
+        "listing-thumbs/mubawab-8353719-09-27a7747bdb62.avif",
+        "listing-thumbs/mubawab-8353719-10-241acee4ee83.avif",
+        "listing-thumbs/mubawab-8353719-11-e881482f50d3.avif",
+        "listing-thumbs/mubawab-8353719-12-61fb95805c2b.avif",
+        "listing-thumbs/mubawab-8353719-13-7fed42e2f6f4.avif",
+        "listing-thumbs/mubawab-8353719-14-bb52f3e07160.avif",
+        "listing-thumbs/mubawab-8353719-15-eb7d18b5b921.avif"
+      ],
+      "photo_count": 15,
+      "amenity_keys": [
+        "elevator",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "price_label": "585 000 DH",
+      "surface_label": "45 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Parking"
       ]
     },
     {
@@ -869,27 +922,19 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 920 000 DH 1 CH 1 SDB 51 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
       "rank_in_source": 13,
       "source_listing_id": "147588",
-      "image_url": "listing-thumbs/agenz-147588-01-dac5f7032438.jpg",
+      "image_url": "listing-thumbs/agenz-147588-01-5d22362c3827.avif",
       "image_urls": [
-        "listing-thumbs/agenz-147588-01-dac5f7032438.jpg",
-        "listing-thumbs/agenz-147588-02-e917826b055b.jpg",
-        "listing-thumbs/agenz-147588-03-0e7494754b38.jpg",
-        "listing-thumbs/agenz-147588-04-ea071e86d612.jpg",
-        "listing-thumbs/agenz-147588-05-a41f19a78d33.jpg",
-        "listing-thumbs/agenz-147588-06-0d1d8c230331.jpg",
-        "listing-thumbs/agenz-147588-07-b5dcb78f2efb.jpg",
-        "listing-thumbs/agenz-147588-08-9d3e21724636.jpg",
-        "listing-thumbs/agenz-147588-09-5d22362c3827.avif",
-        "listing-thumbs/agenz-147588-10-27731170c28c.avif",
-        "listing-thumbs/agenz-147588-11-07170439650d.avif",
-        "listing-thumbs/agenz-147588-12-18239a984f59.avif",
-        "listing-thumbs/agenz-147588-13-ad72a8b30255.avif",
-        "listing-thumbs/agenz-147588-14-cd72cdf05f0a.avif",
-        "listing-thumbs/agenz-147588-15-ce98ee3ab6ab.avif",
-        "listing-thumbs/agenz-147588-16-faa7d731f380.avif",
-        "listing-thumbs/agenz-147588-17-84c61cf990c2.avif"
+        "listing-thumbs/agenz-147588-01-5d22362c3827.avif",
+        "listing-thumbs/agenz-147588-02-27731170c28c.avif",
+        "listing-thumbs/agenz-147588-03-07170439650d.avif",
+        "listing-thumbs/agenz-147588-04-18239a984f59.avif",
+        "listing-thumbs/agenz-147588-05-ad72a8b30255.avif",
+        "listing-thumbs/agenz-147588-06-cd72cdf05f0a.avif",
+        "listing-thumbs/agenz-147588-07-ce98ee3ab6ab.avif",
+        "listing-thumbs/agenz-147588-08-faa7d731f380.avif",
+        "listing-thumbs/agenz-147588-09-84c61cf990c2.avif"
       ],
-      "photo_count": 17,
+      "photo_count": 9,
       "amenity_keys": [
         "terrace",
         "elevator",
