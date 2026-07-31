@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-07-31T12:11:42+00:00",
-  "all_listings_count": 69,
+  "generated_at": "2026-07-31T13:07:59+00:00",
+  "all_listings_count": 109,
   "matches": [
     {
       "source": "agenz",
@@ -44,7 +44,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785240658,
+      "published_at_ts": 1785244021,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -96,7 +96,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784981458,
+      "published_at_ts": 1784984821,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -151,7 +151,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784895058,
+      "published_at_ts": 1784898421,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -204,7 +204,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784549458,
+      "published_at_ts": 1784552821,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -261,7 +261,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784463058,
+      "published_at_ts": 1784466421,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -318,7 +318,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784290258,
+      "published_at_ts": 1784293621,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -374,7 +374,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784290258,
+      "published_at_ts": 1784293621,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -435,7 +435,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784290258,
+      "published_at_ts": 1784293621,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -497,7 +497,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784203858,
+      "published_at_ts": 1784207221,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
