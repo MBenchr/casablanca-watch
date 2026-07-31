@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-31T01:05:40+00:00",
+  "generated_at": "2026-07-31T02:17:30+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -44,7 +44,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785287090,
+      "published_at_ts": 1785291398,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -96,7 +96,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785027890,
+      "published_at_ts": 1785032198,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -151,7 +151,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784941490,
+      "published_at_ts": 1784945798,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -176,8 +176,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 10 jours",
-      "summary": "Voir l'annonce Il y a 10 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
+      "age_label": "Il y a 11 jours",
+      "summary": "Voir l'annonce Il y a 11 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 670 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 1er étage Parking Non...",
       "rank_in_source": 22,
       "source_listing_id": "70435",
       "image_url": "listing-thumbs/agenz-70435-01-bc7db3a40f04.jpg",
@@ -204,14 +204,14 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784595890,
+      "published_at_ts": 1784513798,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
       "surface_label": "50 m2",
       "source_label": "Agenz",
       "area_anchor": "area-bourgogne-ouest",
-      "published_label": "Il y a 10 jours",
+      "published_label": "Il y a 11 jours",
       "amenity_labels": [
         "Ascenseur",
         "Parking",
@@ -261,7 +261,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784509490,
+      "published_at_ts": 1784513798,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -318,7 +318,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784336690,
+      "published_at_ts": 1784340998,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -374,7 +374,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784336690,
+      "published_at_ts": 1784340998,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -435,7 +435,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784250290,
+      "published_at_ts": 1784254598,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -497,7 +497,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784250290,
+      "published_at_ts": 1784254598,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -564,7 +564,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784163890,
+      "published_at_ts": 1784168198,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -625,7 +625,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784163890,
+      "published_at_ts": 1784168198,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -890,19 +890,31 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 8 % Commission à 0% En construction Visualisez ce bien meublé et décoré en quelques secondes RÉSIDENCE CARTHAGE 713 000 DH 1 CH 1 SDB 31 m² Studio à vendre Cas...",
       "rank_in_source": 14,
       "source_listing_id": "319322",
-      "image_url": "listing-thumbs/agenz-319322-01-1234e0ba1c00.avif",
+      "image_url": "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
       "image_urls": [
-        "listing-thumbs/agenz-319322-01-1234e0ba1c00.avif",
-        "listing-thumbs/agenz-319322-02-41a38ec7cd44.avif",
-        "listing-thumbs/agenz-319322-03-5e1e069e77a9.avif",
-        "listing-thumbs/agenz-319322-04-b765696638f3.avif",
-        "listing-thumbs/agenz-319322-05-3dda78ecad2c.avif",
-        "listing-thumbs/agenz-319322-06-523a8c196959.avif",
-        "listing-thumbs/agenz-319322-07-50e9c905f433.avif",
-        "listing-thumbs/agenz-319322-08-8285bf3d292a.avif",
-        "listing-thumbs/agenz-319322-09-6423db07cae3.avif"
+        "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
+        "listing-thumbs/agenz-319322-02-cc63d8a0d154.jpg",
+        "listing-thumbs/agenz-319322-03-516c5ac903ca.jpg",
+        "listing-thumbs/agenz-319322-04-5631a5cea4e0.jpg",
+        "listing-thumbs/agenz-319322-05-6cea02db445d.jpg",
+        "listing-thumbs/agenz-319322-06-ea0554f3fa91.jpg",
+        "listing-thumbs/agenz-319322-07-ca33147174e3.jpg",
+        "listing-thumbs/agenz-319322-08-e51d9982150e.jpg",
+        "listing-thumbs/agenz-319322-09-063d6d089fae.jpg",
+        "listing-thumbs/agenz-319322-10-8417ce6ea638.jpg",
+        "listing-thumbs/agenz-319322-11-3b678a8fdaad.jpg",
+        "listing-thumbs/agenz-319322-12-43a14b45b112.jpg",
+        "listing-thumbs/agenz-319322-13-1234e0ba1c00.avif",
+        "listing-thumbs/agenz-319322-14-41a38ec7cd44.avif",
+        "listing-thumbs/agenz-319322-15-5e1e069e77a9.avif",
+        "listing-thumbs/agenz-319322-16-b765696638f3.avif",
+        "listing-thumbs/agenz-319322-17-3dda78ecad2c.avif",
+        "listing-thumbs/agenz-319322-18-523a8c196959.avif",
+        "listing-thumbs/agenz-319322-19-50e9c905f433.avif",
+        "listing-thumbs/agenz-319322-20-8285bf3d292a.avif",
+        "listing-thumbs/agenz-319322-21-6423db07cae3.avif"
       ],
-      "photo_count": 9,
+      "photo_count": 21,
       "amenity_keys": [
         "elevator",
         "furnished",
