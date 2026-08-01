@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-01T12:48:06+00:00",
-  "all_listings_count": 69,
+  "generated_at": "2026-08-01T13:31:06+00:00",
+  "all_listings_count": 109,
   "matches": [
     {
       "source": "agenz",
@@ -44,7 +44,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785242862,
+      "published_at_ts": 1785245409,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -97,7 +97,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784983662,
+      "published_at_ts": 1784986209,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -153,7 +153,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784897262,
+      "published_at_ts": 1784899809,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -207,7 +207,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784551662,
+      "published_at_ts": 1784554209,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -239,9 +239,9 @@
       "summary": "Voir l'annonce Il y a 13 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visi...",
       "rank_in_source": 27,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -265,7 +265,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784465262,
+      "published_at_ts": 1784467809,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -323,7 +323,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784292462,
+      "published_at_ts": 1784295009,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -380,7 +380,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784292462,
+      "published_at_ts": 1784295009,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -442,7 +442,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784292462,
+      "published_at_ts": 1784295009,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
