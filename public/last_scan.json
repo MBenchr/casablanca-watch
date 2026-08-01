@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T20:19:36+00:00",
+  "generated_at": "2026-08-01T20:46:43+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -44,7 +44,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785269932,
+      "published_at_ts": 1785271563,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -97,7 +97,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785010732,
+      "published_at_ts": 1785012363,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -153,7 +153,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784924332,
+      "published_at_ts": 1784925963,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -207,7 +207,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784578732,
+      "published_at_ts": 1784580363,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -265,7 +265,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784492332,
+      "published_at_ts": 1784493963,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -277,6 +277,122 @@
         "Meuble"
       ],
       "default_sort_index": 4
+    },
+    {
+      "source": "agenz",
+      "source_name": "Agenz Casablanca",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/701874",
+      "title": "Studio à vendre Casablanca -Ferme Bretonne",
+      "price_mad": 950000,
+      "surface_m2": 48,
+      "location_text": "Ferme Bretonne",
+      "area_guess": "Ferme Bretonne",
+      "rooms_label": "",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "Il y a 15 jours",
+      "summary": "Voir l'annonce Il y a 15 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 950 000 DH 1 CH 1 SDB 48 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Terrasse Accessibl...",
+      "rank_in_source": 32,
+      "source_listing_id": "701874",
+      "image_url": "listing-thumbs/agenz-701874-01-1fbe77bff12d.jpg",
+      "image_urls": [
+        "listing-thumbs/agenz-701874-01-1fbe77bff12d.jpg",
+        "listing-thumbs/agenz-701874-02-98cdbb18a96c.jpg",
+        "listing-thumbs/agenz-701874-03-57e0985be2eb.jpg",
+        "listing-thumbs/agenz-701874-04-6b6590121036.jpg",
+        "listing-thumbs/agenz-701874-05-d5b96afcf993.jpg",
+        "listing-thumbs/agenz-701874-06-70c0f47fe59a.jpg",
+        "listing-thumbs/agenz-701874-07-d3d10894412c.jpg",
+        "listing-thumbs/agenz-701874-08-f791dc5102bb.jpg",
+        "listing-thumbs/agenz-701874-09-e9df001a64af.jpg",
+        "listing-thumbs/agenz-701874-10-447f95be409c.jpg",
+        "listing-thumbs/agenz-701874-11-1d36df33e38e.avif",
+        "listing-thumbs/agenz-701874-12-48b8bf52103c.avif",
+        "listing-thumbs/agenz-701874-13-8724a665a66c.avif",
+        "listing-thumbs/agenz-701874-14-c35f57733043.avif",
+        "listing-thumbs/agenz-701874-15-1bbb156d77c4.avif",
+        "listing-thumbs/agenz-701874-16-c786149fee93.avif",
+        "listing-thumbs/agenz-701874-17-1c58197464ef.avif",
+        "listing-thumbs/agenz-701874-18-d94e49eed2cd.avif",
+        "listing-thumbs/agenz-701874-19-ff7222e76806.avif"
+      ],
+      "photo_count": 19,
+      "amenity_keys": [
+        "terrace",
+        "elevator",
+        "furnished"
+      ],
+      "published_at_ts": 1784321163,
+      "is_new": false,
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "price_label": "950 000 DH",
+      "surface_label": "48 m2",
+      "source_label": "Agenz",
+      "area_anchor": "area-ferme-bretonne",
+      "published_label": "Il y a 15 jours",
+      "amenity_labels": [
+        "Terrasse",
+        "Ascenseur",
+        "Meuble"
+      ],
+      "default_sort_index": 5
+    },
+    {
+      "source": "agenz",
+      "source_name": "Agenz Casablanca",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/les-hopitaux/22512",
+      "title": "Studio à vendre Casablanca -Les Hôpitaux",
+      "price_mad": 850000,
+      "surface_m2": 49,
+      "location_text": "Les Hôpitaux",
+      "area_guess": "Les Hôpitaux",
+      "rooms_label": "",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "Il y a 15 jours",
+      "summary": "Voir l'annonce Il y a 15 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 850 000 DH 1 CH 1 SDB 49 m² Studio à vendre Casablanca -Les Hôpitaux 1er étage Balcons Non meublé Créer...",
+      "rank_in_source": 33,
+      "source_listing_id": "22512",
+      "image_url": "listing-thumbs/agenz-22512-01-73f01b24dbc3.jpg",
+      "image_urls": [
+        "listing-thumbs/agenz-22512-01-73f01b24dbc3.jpg",
+        "listing-thumbs/agenz-22512-02-2bedfd5bb4f3.jpg",
+        "listing-thumbs/agenz-22512-03-083605fe93af.jpg",
+        "listing-thumbs/agenz-22512-04-62918f0071a0.jpg",
+        "listing-thumbs/agenz-22512-05-615eb0233331.jpg",
+        "listing-thumbs/agenz-22512-06-786283ea52fb.jpg",
+        "listing-thumbs/agenz-22512-07-c7833a07d4ef.jpg",
+        "listing-thumbs/agenz-22512-08-7f49fa77fc27.jpg",
+        "listing-thumbs/agenz-22512-09-1c4b9c1bccec.avif",
+        "listing-thumbs/agenz-22512-10-6939eb66bf2d.avif",
+        "listing-thumbs/agenz-22512-11-92f041e3c0ac.avif",
+        "listing-thumbs/agenz-22512-12-9b65ffdfd22c.avif",
+        "listing-thumbs/agenz-22512-13-f94643bbab71.avif",
+        "listing-thumbs/agenz-22512-14-1d9694b87c0d.avif",
+        "listing-thumbs/agenz-22512-15-f3fd28593f96.avif",
+        "listing-thumbs/agenz-22512-16-2974bd4029af.avif",
+        "listing-thumbs/agenz-22512-17-26f443e58e85.avif"
+      ],
+      "photo_count": 17,
+      "amenity_keys": [
+        "balcony",
+        "furnished"
+      ],
+      "published_at_ts": 1784321163,
+      "is_new": false,
+      "first_seen_at": "2026-07-20T16:48:15+00:00",
+      "price_label": "850 000 DH",
+      "surface_label": "49 m2",
+      "source_label": "Agenz",
+      "area_anchor": "area-les-hopitaux",
+      "published_label": "Il y a 15 jours",
+      "amenity_labels": [
+        "Balcon",
+        "Meuble"
+      ],
+      "default_sort_index": 6
     },
     {
       "source": "agenz",
@@ -326,7 +442,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784319533,
+      "published_at_ts": 1784321163,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -335,122 +451,6 @@
       "area_anchor": "area-el-oulfa",
       "published_label": "Il y a 15 jours",
       "amenity_labels": [
-        "Meuble"
-      ],
-      "default_sort_index": 5
-    },
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/ferme-bretonne/701874",
-      "title": "Studio à vendre Casablanca -Ferme Bretonne",
-      "price_mad": 950000,
-      "surface_m2": 48,
-      "location_text": "Ferme Bretonne",
-      "area_guess": "Ferme Bretonne",
-      "rooms_label": "",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "Il y a 15 jours",
-      "summary": "Voir l'annonce Il y a 15 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 950 000 DH 1 CH 1 SDB 48 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Terrasse Accessibl...",
-      "rank_in_source": 32,
-      "source_listing_id": "701874",
-      "image_url": "listing-thumbs/agenz-701874-01-1fbe77bff12d.jpg",
-      "image_urls": [
-        "listing-thumbs/agenz-701874-01-1fbe77bff12d.jpg",
-        "listing-thumbs/agenz-701874-02-98cdbb18a96c.jpg",
-        "listing-thumbs/agenz-701874-03-57e0985be2eb.jpg",
-        "listing-thumbs/agenz-701874-04-6b6590121036.jpg",
-        "listing-thumbs/agenz-701874-05-d5b96afcf993.jpg",
-        "listing-thumbs/agenz-701874-06-70c0f47fe59a.jpg",
-        "listing-thumbs/agenz-701874-07-d3d10894412c.jpg",
-        "listing-thumbs/agenz-701874-08-f791dc5102bb.jpg",
-        "listing-thumbs/agenz-701874-09-e9df001a64af.jpg",
-        "listing-thumbs/agenz-701874-10-447f95be409c.jpg",
-        "listing-thumbs/agenz-701874-11-1d36df33e38e.avif",
-        "listing-thumbs/agenz-701874-12-48b8bf52103c.avif",
-        "listing-thumbs/agenz-701874-13-8724a665a66c.avif",
-        "listing-thumbs/agenz-701874-14-c35f57733043.avif",
-        "listing-thumbs/agenz-701874-15-1bbb156d77c4.avif",
-        "listing-thumbs/agenz-701874-16-c786149fee93.avif",
-        "listing-thumbs/agenz-701874-17-1c58197464ef.avif",
-        "listing-thumbs/agenz-701874-18-d94e49eed2cd.avif",
-        "listing-thumbs/agenz-701874-19-ff7222e76806.avif"
-      ],
-      "photo_count": 19,
-      "amenity_keys": [
-        "terrace",
-        "elevator",
-        "furnished"
-      ],
-      "published_at_ts": 1784319532,
-      "is_new": false,
-      "first_seen_at": "2026-07-10T08:47:23+00:00",
-      "price_label": "950 000 DH",
-      "surface_label": "48 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-ferme-bretonne",
-      "published_label": "Il y a 15 jours",
-      "amenity_labels": [
-        "Terrasse",
-        "Ascenseur",
-        "Meuble"
-      ],
-      "default_sort_index": 6
-    },
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/les-hopitaux/22512",
-      "title": "Studio à vendre Casablanca -Les Hôpitaux",
-      "price_mad": 850000,
-      "surface_m2": 49,
-      "location_text": "Les Hôpitaux",
-      "area_guess": "Les Hôpitaux",
-      "rooms_label": "",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "Il y a 15 jours",
-      "summary": "Voir l'annonce Il y a 15 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 850 000 DH 1 CH 1 SDB 49 m² Studio à vendre Casablanca -Les Hôpitaux 1er étage Balcons Non meublé Créer...",
-      "rank_in_source": 33,
-      "source_listing_id": "22512",
-      "image_url": "listing-thumbs/agenz-22512-01-73f01b24dbc3.jpg",
-      "image_urls": [
-        "listing-thumbs/agenz-22512-01-73f01b24dbc3.jpg",
-        "listing-thumbs/agenz-22512-02-2bedfd5bb4f3.jpg",
-        "listing-thumbs/agenz-22512-03-083605fe93af.jpg",
-        "listing-thumbs/agenz-22512-04-62918f0071a0.jpg",
-        "listing-thumbs/agenz-22512-05-615eb0233331.jpg",
-        "listing-thumbs/agenz-22512-06-786283ea52fb.jpg",
-        "listing-thumbs/agenz-22512-07-c7833a07d4ef.jpg",
-        "listing-thumbs/agenz-22512-08-7f49fa77fc27.jpg",
-        "listing-thumbs/agenz-22512-09-1c4b9c1bccec.avif",
-        "listing-thumbs/agenz-22512-10-6939eb66bf2d.avif",
-        "listing-thumbs/agenz-22512-11-92f041e3c0ac.avif",
-        "listing-thumbs/agenz-22512-12-9b65ffdfd22c.avif",
-        "listing-thumbs/agenz-22512-13-f94643bbab71.avif",
-        "listing-thumbs/agenz-22512-14-1d9694b87c0d.avif",
-        "listing-thumbs/agenz-22512-15-f3fd28593f96.avif",
-        "listing-thumbs/agenz-22512-16-2974bd4029af.avif",
-        "listing-thumbs/agenz-22512-17-26f443e58e85.avif"
-      ],
-      "photo_count": 17,
-      "amenity_keys": [
-        "balcony",
-        "furnished"
-      ],
-      "published_at_ts": 1784319532,
-      "is_new": false,
-      "first_seen_at": "2026-07-20T16:48:15+00:00",
-      "price_label": "850 000 DH",
-      "surface_label": "49 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-les-hopitaux",
-      "published_label": "Il y a 15 jours",
-      "amenity_labels": [
-        "Balcon",
         "Meuble"
       ],
       "default_sort_index": 7
