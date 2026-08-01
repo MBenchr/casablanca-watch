@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-01T03:43:56+00:00",
+  "generated_at": "2026-08-01T05:06:16+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -44,7 +44,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785296580,
+      "published_at_ts": 1785301430,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -97,7 +97,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784950980,
+      "published_at_ts": 1784955830,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -153,7 +153,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784864580,
+      "published_at_ts": 1784869430,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -207,7 +207,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784518980,
+      "published_at_ts": 1784523830,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -265,7 +265,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784432580,
+      "published_at_ts": 1784437430,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -323,7 +323,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784259780,
+      "published_at_ts": 1784264630,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -380,7 +380,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1784259780,
+      "published_at_ts": 1784264630,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -442,7 +442,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784259780,
+      "published_at_ts": 1784264630,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "345 000 DH",
@@ -468,8 +468,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 15 jours",
-      "summary": "Voir l'annonce Il y a 15 jours Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
+      "age_label": "Il y a 16 jours",
+      "summary": "Voir l'annonce Il y a 16 jours Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
       "rank_in_source": 36,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
@@ -505,14 +505,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784259780,
+      "published_at_ts": 1784178230,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
       "surface_label": "34 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a 15 jours",
+      "published_label": "Il y a 16 jours",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
