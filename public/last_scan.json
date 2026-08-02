@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T20:46:48+00:00",
-  "all_listings_count": 69,
+  "generated_at": "2026-08-02T21:18:19+00:00",
+  "all_listings_count": 109,
   "matches": [
     {
       "source": "agenz",
@@ -56,7 +56,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785678379,
+      "published_at_ts": 1785680249,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -118,7 +118,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785667579,
+      "published_at_ts": 1785669449,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -173,7 +173,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785271579,
+      "published_at_ts": 1785273449,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -226,7 +226,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785012379,
+      "published_at_ts": 1785014249,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -282,7 +282,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784925979,
+      "published_at_ts": 1784927849,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -336,7 +336,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784580379,
+      "published_at_ts": 1784582249,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -394,7 +394,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784493979,
+      "published_at_ts": 1784495849,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -452,7 +452,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784321179,
+      "published_at_ts": 1784323049,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
