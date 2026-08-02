@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-02T22:47:33+00:00",
-  "all_listings_count": 109,
+  "generated_at": "2026-08-02T23:19:27+00:00",
+  "all_listings_count": 69,
   "matches": [
     {
       "source": "agenz",
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 9 heures",
-      "summary": "Voir l'annonce Il y a 9 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...",
+      "age_label": "Il y a 10 heures",
+      "summary": "Voir l'annonce Il y a 10 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...",
       "rank_in_source": 1,
       "source_listing_id": "600374",
       "image_url": "listing-thumbs/agenz-600374-01-4ab2ebc8b15b.jpg",
@@ -56,14 +56,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785678411,
+      "published_at_ts": 1785676739,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
-      "published_label": "Il y a 9 heures",
+      "published_label": "Il y a 10 heures",
       "amenity_labels": [
         "Terrasse",
         "Balcon",
@@ -118,7 +118,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785667611,
+      "published_at_ts": 1785669539,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -173,7 +173,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785278811,
+      "published_at_ts": 1785280739,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -226,7 +226,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785019611,
+      "published_at_ts": 1785021539,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -282,7 +282,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784933211,
+      "published_at_ts": 1784935139,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -336,7 +336,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784587611,
+      "published_at_ts": 1784589539,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -394,7 +394,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784501211,
+      "published_at_ts": 1784503139,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -452,7 +452,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784328411,
+      "published_at_ts": 1784330339,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
