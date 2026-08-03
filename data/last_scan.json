@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-03T03:44:47+00:00",
-  "all_listings_count": 69,
+  "generated_at": "2026-08-03T05:13:58+00:00",
+  "all_listings_count": 109,
   "matches": [
     {
       "source": "agenz",
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 14 heures",
-      "summary": "Voir l'annonce Il y a 14 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...",
+      "age_label": "Il y a 15 heures",
+      "summary": "Voir l'annonce Il y a 15 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...",
       "rank_in_source": 1,
       "source_listing_id": "600374",
       "image_url": "listing-thumbs/agenz-600374-01-4ab2ebc8b15b.jpg",
@@ -56,14 +56,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785678251,
+      "published_at_ts": 1785679996,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
-      "published_label": "Il y a 14 heures",
+      "published_label": "Il y a 15 heures",
       "amenity_labels": [
         "Terrasse",
         "Balcon",
@@ -84,8 +84,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 17 heures",
-      "summary": "Voir l'annonce Il y a 17 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Cr...",
+      "age_label": "Il y a 18 heures",
+      "summary": "Voir l'annonce Il y a 18 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Cr...",
       "rank_in_source": 2,
       "source_listing_id": "17333",
       "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
@@ -117,14 +117,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785667451,
+      "published_at_ts": 1785669196,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
       "surface_label": "54 m2",
       "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a 17 heures",
+      "published_label": "Il y a 18 heures",
       "amenity_labels": [
         "Meuble"
       ]
@@ -171,7 +171,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785296651,
+      "published_at_ts": 1785301996,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -223,7 +223,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784951051,
+      "published_at_ts": 1784956396,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -278,7 +278,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784864651,
+      "published_at_ts": 1784869996,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -331,7 +331,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784519051,
+      "published_at_ts": 1784524396,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -388,7 +388,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784432651,
+      "published_at_ts": 1784437996,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -445,7 +445,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784259851,
+      "published_at_ts": 1784265196,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
