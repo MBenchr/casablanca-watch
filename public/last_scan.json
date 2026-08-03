@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T22:48:54+00:00",
+  "generated_at": "2026-08-03T23:23:08+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -52,7 +52,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785750474,
+      "published_at_ts": 1785752546,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -114,7 +114,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1785746874,
+      "published_at_ts": 1785748946,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "850 000 DH",
@@ -174,7 +174,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785710874,
+      "published_at_ts": 1785712946,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "650 000 DH",
@@ -242,7 +242,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785710874,
+      "published_at_ts": 1785712946,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -271,8 +271,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a un jour",
-      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
+      "age_label": "Il y a 2 jours",
+      "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 7,
       "source_listing_id": "17333",
       "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
@@ -304,14 +304,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785710874,
+      "published_at_ts": 1785626546,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
       "surface_label": "54 m2",
       "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a un jour",
+      "published_label": "Il y a 2 jours",
       "amenity_labels": [
         "Meuble"
       ],
@@ -359,7 +359,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785278874,
+      "published_at_ts": 1785280946,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -412,7 +412,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785019674,
+      "published_at_ts": 1785021746,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -468,7 +468,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784933274,
+      "published_at_ts": 1784935346,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -522,7 +522,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784587674,
+      "published_at_ts": 1784589746,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -580,7 +580,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784501274,
+      "published_at_ts": 1784503346,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
