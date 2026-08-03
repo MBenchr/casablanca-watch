@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T17:15:36+00:00",
+  "generated_at": "2026-08-03T18:08:12+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 7 heures",
-      "summary": "Voir l'annonce Il y a 7 heures Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
+      "age_label": "Il y a 8 heures",
+      "summary": "Voir l'annonce Il y a 8 heures Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
       "rank_in_source": 3,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
@@ -52,14 +52,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785752053,
+      "published_at_ts": 1785751632,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
       "surface_label": "34 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a 7 heures",
+      "published_label": "Il y a 8 heures",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
@@ -79,8 +79,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 8 heures",
-      "summary": "Voir l'annonce Il y a 8 heures Déjà Vu Agence partenaire 850 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Liberté Ascenseur 7ème étage Parking Balcons Meublé Créer une visite Appeler Whatsapp",
+      "age_label": "Il y a 9 heures",
+      "summary": "Voir l'annonce Il y a 9 heures Déjà Vu Agence partenaire 850 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Liberté Ascenseur 7ème étage Parking Balcons Meublé Créer une visite Appeler Whatsapp",
       "rank_in_source": 4,
       "source_listing_id": "731068",
       "image_url": "listing-thumbs/agenz-731068-01-b30d5aec9267.jpg",
@@ -114,14 +114,14 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1785748453,
-      "is_new": true,
+      "published_at_ts": 1785748032,
+      "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "850 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a 8 heures",
+      "published_label": "Il y a 9 heures",
       "amenity_labels": [
         "Balcon",
         "Ascenseur",
@@ -174,8 +174,8 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785690853,
-      "is_new": true,
+      "published_at_ts": 1785694032,
+      "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "650 000 DH",
       "surface_label": "60 m2",
@@ -242,7 +242,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785690853,
+      "published_at_ts": 1785694032,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -304,7 +304,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785690853,
+      "published_at_ts": 1785694032,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -359,7 +359,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785258853,
+      "published_at_ts": 1785262032,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -412,7 +412,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784999653,
+      "published_at_ts": 1785002832,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -468,7 +468,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784913253,
+      "published_at_ts": 1784916432,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -522,7 +522,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784567653,
+      "published_at_ts": 1784570832,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -554,9 +554,9 @@
       "summary": "Voir l'annonce Il y a 15 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visi...",
       "rank_in_source": 36,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -580,7 +580,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784481253,
+      "published_at_ts": 1784484432,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -1045,127 +1045,6 @@
       "default_sort_index": 17
     }
   ],
-  "new_matches": [
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/liberte/731068",
-      "title": "Appartement à vendre Casablanca -Liberté",
-      "price_mad": 850000,
-      "surface_m2": 60,
-      "location_text": "Liberté",
-      "area_guess": "Liberté",
-      "rooms_label": "",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "Il y a 8 heures",
-      "summary": "Voir l'annonce Il y a 8 heures Déjà Vu Agence partenaire 850 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Liberté Ascenseur 7ème étage Parking Balcons Meublé Créer une visite Appeler Whatsapp",
-      "rank_in_source": 4,
-      "source_listing_id": "731068",
-      "image_url": "listing-thumbs/agenz-731068-01-b30d5aec9267.jpg",
-      "image_urls": [
-        "listing-thumbs/agenz-731068-01-b30d5aec9267.jpg",
-        "listing-thumbs/agenz-731068-02-208b436e2c1c.jpg",
-        "listing-thumbs/agenz-731068-03-f8b43b1db896.jpg",
-        "listing-thumbs/agenz-731068-04-c4db5f796462.jpg",
-        "listing-thumbs/agenz-731068-05-22c7cd3aa9b5.jpg",
-        "listing-thumbs/agenz-731068-06-a8e2057b1292.jpg",
-        "listing-thumbs/agenz-731068-07-0e6f21bce673.jpg",
-        "listing-thumbs/agenz-731068-08-8adf8d968b51.jpg",
-        "listing-thumbs/agenz-731068-09-63572977a8d1.jpg",
-        "listing-thumbs/agenz-731068-10-889901d565ea.jpg",
-        "listing-thumbs/agenz-731068-11-d1dd2cd60e39.jpg",
-        "listing-thumbs/agenz-731068-12-56b6fec1825f.jpg",
-        "listing-thumbs/agenz-731068-13-694f64bc9fad.avif",
-        "listing-thumbs/agenz-731068-14-d96307dc9c37.avif",
-        "listing-thumbs/agenz-731068-15-512111b8e58e.avif",
-        "listing-thumbs/agenz-731068-16-f0d0a26ddc40.avif",
-        "listing-thumbs/agenz-731068-17-a6b7bbd633d7.avif",
-        "listing-thumbs/agenz-731068-18-a5da44bcf431.avif",
-        "listing-thumbs/agenz-731068-19-25862129af40.avif",
-        "listing-thumbs/agenz-731068-20-36ca29767a84.avif",
-        "listing-thumbs/agenz-731068-21-3027017acadb.avif"
-      ],
-      "photo_count": 21,
-      "amenity_keys": [
-        "balcony",
-        "elevator",
-        "parking",
-        "furnished"
-      ],
-      "published_at_ts": 1785748453,
-      "is_new": true,
-      "first_seen_at": "2026-08-03T17:15:36+00:00",
-      "price_label": "850 000 DH",
-      "surface_label": "60 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-liberte",
-      "published_label": "Il y a 8 heures",
-      "amenity_labels": [
-        "Balcon",
-        "Ascenseur",
-        "Parking",
-        "Meuble"
-      ]
-    },
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/oulfa/881531",
-      "title": "Appartement à vendre Casablanca -Oulfa",
-      "price_mad": 650000,
-      "surface_m2": 60,
-      "location_text": "Oulfa",
-      "area_guess": "El Oulfa",
-      "rooms_label": "",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "Il y a un jour",
-      "summary": "Voir l'annonce Il y a un jour Déjà Vu Agence partenaire 650 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Oulfa Ascenseur 2ème étage Non meublé Créer une visite Appeler Whatsapp",
-      "rank_in_source": 5,
-      "source_listing_id": "881531",
-      "image_url": "listing-thumbs/agenz-881531-01-45a2d1044045.jpg",
-      "image_urls": [
-        "listing-thumbs/agenz-881531-01-45a2d1044045.jpg",
-        "listing-thumbs/agenz-881531-02-edf87b7b3fd1.jpg",
-        "listing-thumbs/agenz-881531-03-d671a78bf86c.jpg",
-        "listing-thumbs/agenz-881531-04-2d1b81756d37.jpg",
-        "listing-thumbs/agenz-881531-05-c688874f68d2.jpg",
-        "listing-thumbs/agenz-881531-06-33276cde75f4.jpg",
-        "listing-thumbs/agenz-881531-07-fd68ce7b304e.jpg",
-        "listing-thumbs/agenz-881531-08-d0470c58edee.jpg",
-        "listing-thumbs/agenz-881531-09-0bad33285f0f.jpg",
-        "listing-thumbs/agenz-881531-10-f4e051db6184.jpg",
-        "listing-thumbs/agenz-881531-11-e41a92791d41.avif",
-        "listing-thumbs/agenz-881531-12-4b5b1ef0a6ec.avif",
-        "listing-thumbs/agenz-881531-13-295cfef8af00.avif",
-        "listing-thumbs/agenz-881531-14-66ff197d324d.avif",
-        "listing-thumbs/agenz-881531-15-ce580bd9e96d.avif",
-        "listing-thumbs/agenz-881531-16-282cd7030a07.avif",
-        "listing-thumbs/agenz-881531-17-6192f6b8bc5a.avif",
-        "listing-thumbs/agenz-881531-18-b2630a117326.avif",
-        "listing-thumbs/agenz-881531-19-b219b6edafb4.avif"
-      ],
-      "photo_count": 19,
-      "amenity_keys": [
-        "elevator",
-        "furnished"
-      ],
-      "published_at_ts": 1785690853,
-      "is_new": true,
-      "first_seen_at": "2026-08-03T17:15:36+00:00",
-      "price_label": "650 000 DH",
-      "surface_label": "60 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a un jour",
-      "amenity_labels": [
-        "Ascenseur",
-        "Meuble"
-      ]
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
