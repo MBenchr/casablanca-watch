@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T12:38:12+00:00",
+  "generated_at": "2026-08-03T13:52:49+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 2 heures",
-      "summary": "Voir l'annonce Il y a 2 heures Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
+      "age_label": "Il y a 4 heures",
+      "summary": "Voir l'annonce Il y a 4 heures Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
       "rank_in_source": 1,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
@@ -52,14 +52,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785753425,
+      "published_at_ts": 1785750705,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
       "surface_label": "34 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a 2 heures",
+      "published_label": "Il y a 4 heures",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
@@ -119,7 +119,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785674225,
+      "published_at_ts": 1785678705,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -151,9 +151,9 @@
       "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 3,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -180,7 +180,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785674225,
+      "published_at_ts": 1785678705,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -234,7 +234,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785242225,
+      "published_at_ts": 1785246705,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -286,7 +286,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784983025,
+      "published_at_ts": 1784987505,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -341,7 +341,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784896625,
+      "published_at_ts": 1784901105,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -394,7 +394,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784551025,
+      "published_at_ts": 1784555505,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -451,7 +451,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784464625,
+      "published_at_ts": 1784469105,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
