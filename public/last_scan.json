@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T11:04:37+00:00",
+  "generated_at": "2026-08-03T12:38:12+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a une heure",
-      "summary": "Voir l'annonce Il y a une heure Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une vis...",
+      "age_label": "Il y a 2 heures",
+      "summary": "Voir l'annonce Il y a 2 heures Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visi...",
       "rank_in_source": 1,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
@@ -52,14 +52,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785751409,
+      "published_at_ts": 1785753425,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
       "surface_label": "34 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a une heure",
+      "published_label": "Il y a 2 heures",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
@@ -79,8 +79,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 21 heures",
-      "summary": "Voir l'annonce Il y a 21 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons...",
+      "age_label": "Il y a un jour",
+      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons T...",
       "rank_in_source": 2,
       "source_listing_id": "600374",
       "image_url": "listing-thumbs/agenz-600374-01-4ab2ebc8b15b.jpg",
@@ -120,14 +120,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785679409,
+      "published_at_ts": 1785674225,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-sidi-maarouf",
-      "published_label": "Il y a 21 heures",
+      "published_label": "Il y a un jour",
       "amenity_labels": [
         "Terrasse",
         "Balcon",
@@ -153,9 +153,9 @@
       "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 3,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -182,7 +182,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785668609,
+      "published_at_ts": 1785674225,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -208,8 +208,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 5 jours",
-      "summary": "Voir l'annonce Il y a 5 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 440 000 DH 2 CH 1 SDB 45 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appel...",
+      "age_label": "Il y a 6 jours",
+      "summary": "Voir l'annonce Il y a 6 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 440 000 DH 2 CH 1 SDB 45 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appel...",
       "rank_in_source": 10,
       "source_listing_id": "44802",
       "image_url": "listing-thumbs/agenz-44802-01-c88e3f9b1af4.jpg",
@@ -237,14 +237,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785323009,
+      "published_at_ts": 1785242225,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
       "surface_label": "45 m2",
       "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a 5 jours",
+      "published_label": "Il y a 6 jours",
       "amenity_labels": [
         "Meuble"
       ],
@@ -290,7 +290,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784977409,
+      "published_at_ts": 1784983025,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -346,7 +346,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784891009,
+      "published_at_ts": 1784896625,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -400,7 +400,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784545409,
+      "published_at_ts": 1784551025,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -432,9 +432,9 @@
       "summary": "Voir l'annonce Il y a 15 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 640 000 DH 2 CH 1 SDB 58 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Créer une visi...",
       "rank_in_source": 32,
       "source_listing_id": "618922",
-      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
+      "image_url": "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
       "image_urls": [
-        "listing-thumbs/agenz-618922-01-03084b6a22b9.png",
+        "listing-thumbs/agenz-618922-01-03084b6a22b9.webp",
         "listing-thumbs/agenz-618922-02-670965ad277f.jpg",
         "listing-thumbs/agenz-618922-03-e97935c9b2ec.jpg",
         "listing-thumbs/agenz-618922-04-faf61f267201.jpg",
@@ -458,7 +458,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784459009,
+      "published_at_ts": 1784464625,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
