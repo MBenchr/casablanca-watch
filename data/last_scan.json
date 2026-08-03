@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-03T00:29:22+00:00",
+  "generated_at": "2026-08-03T01:06:25+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -56,7 +56,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785677297,
+      "published_at_ts": 1785679537,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -88,9 +88,9 @@
       "summary": "Voir l'annonce Il y a 14 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Cr...",
       "rank_in_source": 2,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -117,7 +117,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785666497,
+      "published_at_ts": 1785668737,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -171,7 +171,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785284897,
+      "published_at_ts": 1785287137,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -223,7 +223,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785025697,
+      "published_at_ts": 1785027937,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -278,7 +278,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784939297,
+      "published_at_ts": 1784941537,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -331,7 +331,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784593697,
+      "published_at_ts": 1784595937,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -388,7 +388,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784507297,
+      "published_at_ts": 1784509537,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -445,7 +445,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1784334497,
+      "published_at_ts": 1784336737,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
