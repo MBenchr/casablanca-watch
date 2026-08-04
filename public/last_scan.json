@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T07:24:13+00:00",
+  "generated_at": "2026-08-04T08:19:06+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,8 +15,8 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 21 heures",
-      "summary": "Voir l'annonce Il y a 21 heures Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une vis...",
+      "age_label": "Il y a un jour",
+      "summary": "Voir l'annonce Il y a un jour Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visit...",
       "rank_in_source": 3,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
@@ -52,14 +52,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785752600,
+      "published_at_ts": 1785745067,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
       "surface_label": "34 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a 21 heures",
+      "published_label": "Il y a un jour",
       "amenity_labels": [
         "Ascenseur",
         "Meuble"
@@ -114,7 +114,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1785741800,
+      "published_at_ts": 1785745067,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "850 000 DH",
@@ -174,7 +174,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785655400,
+      "published_at_ts": 1785658667,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "650 000 DH",
@@ -242,7 +242,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785655400,
+      "published_at_ts": 1785658667,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -275,9 +275,9 @@
       "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 7,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -304,7 +304,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785655400,
+      "published_at_ts": 1785658667,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -359,7 +359,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785309800,
+      "published_at_ts": 1785313067,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -412,7 +412,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784964200,
+      "published_at_ts": 1784967467,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -468,7 +468,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784877800,
+      "published_at_ts": 1784881067,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -522,7 +522,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1784532200,
+      "published_at_ts": 1784535467,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "670 000 DH",
@@ -580,7 +580,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784445800,
+      "published_at_ts": 1784449067,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "640 000 DH",
@@ -592,53 +592,6 @@
         "Meuble"
       ],
       "default_sort_index": 9
-    },
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/pa/8191757/bel-appartement-%C3%A0-vendre-%C3%A0-californie-surface-de-43-m%C2%B2",
-      "title": "Bel appartement à vendre à Californie. Surface de 43 m²",
-      "price_mad": 893500,
-      "surface_m2": 43,
-      "location_text": "Californie, Casablanca",
-      "area_guess": "Californie",
-      "rooms_label": "",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "893 500 DH Bel appartement à vendre à Californie. Surface de 43 m² Californie, Casablanca 43 m² 1 Ch. 1 Salle de bain Jardin Piscine EVERGREEN - Quand la nature s'invite chez vous Une résidence d'exception au cœur de...",
-      "rank_in_source": 3,
-      "source_listing_id": "8191757",
-      "image_url": "listing-thumbs/mubawab-8191757-01-ae09ddf65e30.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8191757-01-ae09ddf65e30.avif",
-        "listing-thumbs/mubawab-8191757-02-e648e7b857ea.avif",
-        "listing-thumbs/mubawab-8191757-03-56befc86ed21.avif",
-        "listing-thumbs/mubawab-8191757-04-83dc322207ee.avif",
-        "listing-thumbs/mubawab-8191757-05-69e6e7d87274.avif",
-        "listing-thumbs/mubawab-8191757-06-d066d58ca7ef.avif",
-        "listing-thumbs/mubawab-8191757-07-951ec9e9dac6.avif",
-        "listing-thumbs/mubawab-8191757-08-879f034cd286.avif",
-        "listing-thumbs/mubawab-8191757-09-2f8db8caceb1.avif",
-        "listing-thumbs/mubawab-8191757-10-d45b0e59e263.avif",
-        "listing-thumbs/mubawab-8191757-11-22627a061f7d.avif",
-        "listing-thumbs/mubawab-8191757-12-87a3c1dca60b.avif",
-        "listing-thumbs/mubawab-8191757-13-623872797a83.avif",
-        "listing-thumbs/mubawab-8191757-14-e21c3afc017f.avif"
-      ],
-      "photo_count": 14,
-      "amenity_keys": [],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-10T08:47:23+00:00",
-      "price_label": "893 500 DH",
-      "surface_label": "43 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-californie",
-      "published_label": "",
-      "amenity_labels": [],
-      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -695,7 +648,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 11
+      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -762,7 +715,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 12
+      "default_sort_index": 11
     },
     {
       "source": "agenz",
@@ -820,7 +773,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 13
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -878,7 +831,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -940,7 +893,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -985,7 +938,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -1037,7 +990,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 17
+      "default_sort_index": 16
     },
     {
       "source": "agenz",
@@ -1089,7 +1042,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 18
+      "default_sort_index": 17
     }
   ],
   "new_matches": [],
