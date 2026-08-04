@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-04T15:19:11+00:00",
+  "generated_at": "2026-08-04T16:16:42+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -15,9 +15,9 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 5 heures",
-      "summary": "Voir l'annonce Il y a 5 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 950 000 DH 1 CH 1 SDB 48 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Terrasse Accessibl...",
-      "rank_in_source": 2,
+      "age_label": "Il y a 6 heures",
+      "summary": "Voir l'annonce Il y a 6 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 950 000 DH 1 CH 1 SDB 48 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Terrasse Accessibl...",
+      "rank_in_source": 4,
       "source_listing_id": "701874",
       "image_url": "listing-thumbs/agenz-701874-01-1fbe77bff12d.jpg",
       "image_urls": [
@@ -47,14 +47,14 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785838685,
+      "published_at_ts": 1785838559,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
       "surface_label": "48 m2",
       "source_label": "Agenz",
       "area_anchor": "area-ferme-bretonne",
-      "published_label": "Il y a 5 heures",
+      "published_label": "Il y a 6 heures",
       "amenity_labels": [
         "Terrasse",
         "Ascenseur",
@@ -74,9 +74,9 @@
       "rooms_label": "",
       "bedrooms_label": "1",
       "bathrooms_label": "1",
-      "age_label": "Il y a 5 heures",
-      "summary": "Voir l'annonce Il y a 5 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 850 000 DH 1 CH 1 SDB 49 m² Studio à vendre Casablanca -Les Hôpitaux 1er étage Balcons Non meublé Créer...",
-      "rank_in_source": 3,
+      "age_label": "Il y a 6 heures",
+      "summary": "Voir l'annonce Il y a 6 heures Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 850 000 DH 1 CH 1 SDB 49 m² Studio à vendre Casablanca -Les Hôpitaux 1er étage Balcons Non meublé Créer...",
+      "rank_in_source": 5,
       "source_listing_id": "22512",
       "image_url": "listing-thumbs/agenz-22512-01-73f01b24dbc3.jpg",
       "image_urls": [
@@ -103,14 +103,14 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1785838685,
+      "published_at_ts": 1785838559,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
       "surface_label": "49 m2",
       "source_label": "Agenz",
       "area_anchor": "area-les-hopitaux",
-      "published_label": "Il y a 5 heures",
+      "published_label": "Il y a 6 heures",
       "amenity_labels": [
         "Balcon",
         "Meuble"
@@ -131,7 +131,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a un jour",
       "summary": "Voir l'annonce Il y a un jour Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visit...",
-      "rank_in_source": 7,
+      "rank_in_source": 9,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
       "image_urls": [
@@ -166,7 +166,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785770285,
+      "published_at_ts": 1785773759,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -194,7 +194,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a un jour",
       "summary": "Voir l'annonce Il y a un jour Déjà Vu Agence partenaire 850 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Liberté Ascenseur 7ème étage Parking Balcons Meublé Créer une visite Appeler Whatsapp",
-      "rank_in_source": 8,
+      "rank_in_source": 10,
       "source_listing_id": "731068",
       "image_url": "listing-thumbs/agenz-731068-01-b30d5aec9267.jpg",
       "image_urls": [
@@ -227,7 +227,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1785770285,
+      "published_at_ts": 1785773759,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "850 000 DH",
@@ -257,7 +257,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 2 jours",
       "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Agence partenaire 650 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Oulfa Ascenseur 2ème étage Non meublé Créer une visite Appeler Whatsapp",
-      "rank_in_source": 10,
+      "rank_in_source": 12,
       "source_listing_id": "881531",
       "image_url": "listing-thumbs/agenz-881531-01-45a2d1044045.jpg",
       "image_urls": [
@@ -286,7 +286,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785683885,
+      "published_at_ts": 1785687359,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "650 000 DH",
@@ -314,7 +314,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 2 jours",
       "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons T...",
-      "rank_in_source": 11,
+      "rank_in_source": 13,
       "source_listing_id": "600374",
       "image_url": "listing-thumbs/agenz-600374-01-4ab2ebc8b15b.jpg",
       "image_urls": [
@@ -353,7 +353,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785683885,
+      "published_at_ts": 1785687359,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -383,7 +383,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 2 jours",
       "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
-      "rank_in_source": 12,
+      "rank_in_source": 14,
       "source_listing_id": "17333",
       "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
       "image_urls": [
@@ -414,7 +414,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785683885,
+      "published_at_ts": 1785687359,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -441,7 +441,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 7 jours",
       "summary": "Voir l'annonce Il y a 7 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 440 000 DH 2 CH 1 SDB 45 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appel...",
-      "rank_in_source": 19,
+      "rank_in_source": 21,
       "source_listing_id": "44802",
       "image_url": "listing-thumbs/agenz-44802-01-c88e3f9b1af4.jpg",
       "image_urls": [
@@ -468,7 +468,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785251885,
+      "published_at_ts": 1785255359,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -495,7 +495,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 10 jours",
       "summary": "Voir l'annonce Il y a 10 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 380 000 DH 2 CH 1 SDB 56 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appe...",
-      "rank_in_source": 23,
+      "rank_in_source": 25,
       "source_listing_id": "25198",
       "image_url": "listing-thumbs/agenz-25198-01-b92397987127.jpg",
       "image_urls": [
@@ -520,7 +520,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784992685,
+      "published_at_ts": 1784996159,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -547,7 +547,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 11 jours",
       "summary": "Voir l'annonce Il y a 11 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer u...",
-      "rank_in_source": 26,
+      "rank_in_source": 28,
       "source_listing_id": "525140",
       "image_url": "listing-thumbs/agenz-525140-01-ad26dcde6623.jpg",
       "image_urls": [
@@ -575,7 +575,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784906285,
+      "published_at_ts": 1784909759,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -602,7 +602,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 6.3 % Commission à 0% Livré LUXE HOUSING 950 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 2ème étage Non meublé Créer une visi...",
-      "rank_in_source": 33,
+      "rank_in_source": 35,
       "source_listing_id": "997855",
       "image_url": "listing-thumbs/agenz-997855-01-0a7124d61c0a.jpg",
       "image_urls": [
@@ -658,7 +658,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 5 % Commission à 0% En construction Visualisez ce bien meublé et décoré en quelques secondes RÉSIDENCE CARTHAGE 828 000 DH 1 CH 1 SDB 36 m² Studio à vendre Cas...",
-      "rank_in_source": 30,
+      "rank_in_source": 32,
       "source_listing_id": "970271",
       "image_url": "listing-thumbs/agenz-970271-01-ff138586df81.jpg",
       "image_urls": [
@@ -724,7 +724,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 940 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
-      "rank_in_source": 29,
+      "rank_in_source": 31,
       "source_listing_id": "517250",
       "image_url": "listing-thumbs/agenz-517250-01-48f0014623ec.jpg",
       "image_urls": [
@@ -781,7 +781,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 6 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VILLA VILLON 950 000 DH 1 SDB 39 m² Studio à vendre Casablanca -Riviera Asce...",
-      "rank_in_source": 22,
+      "rank_in_source": 24,
       "source_listing_id": "369042",
       "image_url": "listing-thumbs/agenz-369042-01-dacdfb85e7d7.jpg",
       "image_urls": [
@@ -838,7 +838,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 8 % Commission à 0% En construction Visualisez ce bien meublé et décoré en quelques secondes RÉSIDENCE CARTHAGE 713 000 DH 1 CH 1 SDB 31 m² Studio à vendre Cas...",
-      "rank_in_source": 31,
+      "rank_in_source": 33,
       "source_listing_id": "319322",
       "image_url": "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
       "image_urls": [
@@ -899,7 +899,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...",
-      "rank_in_source": 5,
+      "rank_in_source": 7,
       "source_listing_id": "193099",
       "image_url": "listing-thumbs/agenz-193099-01-dfb92b46995e.avif",
       "image_urls": [
@@ -943,7 +943,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 920 000 DH 1 CH 1 SDB 51 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
-      "rank_in_source": 28,
+      "rank_in_source": 30,
       "source_listing_id": "147588",
       "image_url": "listing-thumbs/agenz-147588-01-99af81b2336c.avif",
       "image_urls": [
@@ -994,7 +994,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 7 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes DAR ESSALAM 930 000 DH 1 CH 1 SDB 36 m² Studio à vendre Casablanca -Bd Abdel...",
-      "rank_in_source": 14,
+      "rank_in_source": 16,
       "source_listing_id": "47891",
       "image_url": "listing-thumbs/agenz-47891-01-476be30a5d53.avif",
       "image_urls": [
