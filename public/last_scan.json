@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-05T20:06:46+00:00",
+  "generated_at": "2026-08-05T21:43:37+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -46,7 +46,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785873867,
+      "published_at_ts": 1785879760,
       "is_new": false,
       "first_seen_at": "2026-08-05T18:05:34+00:00",
       "price_label": "350 000 DH",
@@ -104,7 +104,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785873867,
+      "published_at_ts": 1785879760,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -161,7 +161,7 @@
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1785873867,
+      "published_at_ts": 1785879760,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -188,8 +188,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a un jour",
-      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 310 000 DH 2 CH 1 SDB 52 m² Appartement à vendre Casablanca -Oulfa 4ème étage Non meublé Créer une visit...",
+      "age_label": "Il y a 2 jours",
+      "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 310 000 DH 2 CH 1 SDB 52 m² Appartement à vendre Casablanca -Oulfa 4ème étage Non meublé Créer une visit...",
       "rank_in_source": 8,
       "source_listing_id": "657827",
       "image_url": "listing-thumbs/agenz-657827-01-c6d0d8ce5eb0.jpg",
@@ -201,7 +201,7 @@
         "listing-thumbs/agenz-657827-05-9a607e2c7718.jpg",
         "listing-thumbs/agenz-657827-06-3b9e76edb0d2.jpg",
         "listing-thumbs/agenz-657827-07-8fac60164fe5.jpg",
-        "listing-thumbs/agenz-657827-08-cf66699f90a6.avif",
+        "listing-thumbs/agenz-657827-08-cf66699f90a6.webp",
         "listing-thumbs/agenz-657827-09-9b54dab4cb56.avif",
         "listing-thumbs/agenz-657827-10-c15ca7623f16.avif",
         "listing-thumbs/agenz-657827-11-35f37345b577.avif",
@@ -215,14 +215,14 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785873867,
+      "published_at_ts": 1785793360,
       "is_new": false,
       "first_seen_at": "2026-08-05T18:05:34+00:00",
       "price_label": "310 000 DH",
       "surface_label": "52 m2",
       "source_label": "Agenz",
       "area_anchor": "area-el-oulfa",
-      "published_label": "Il y a un jour",
+      "published_label": "Il y a 2 jours",
       "amenity_labels": [
         "Meuble"
       ],
@@ -278,7 +278,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785787467,
+      "published_at_ts": 1785793360,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -305,8 +305,8 @@
       "rooms_label": "",
       "bedrooms_label": "2",
       "bathrooms_label": "1",
-      "age_label": "Il y a 2 jours",
-      "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Agence partenaire 850 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Liberté Ascenseur 7ème étage Parking Balcons Meublé Créer une visite Appeler Whatsapp",
+      "age_label": "Il y a 3 jours",
+      "summary": "Voir l'annonce Il y a 3 jours Déjà Vu Agence partenaire 850 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Liberté Ascenseur 7ème étage Parking Balcons Meublé Créer une visite Appeler Whatsapp",
       "rank_in_source": 13,
       "source_listing_id": "731068",
       "image_url": "listing-thumbs/agenz-731068-01-b30d5aec9267.jpg",
@@ -340,14 +340,14 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1785787467,
+      "published_at_ts": 1785706960,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "850 000 DH",
       "surface_label": "60 m2",
       "source_label": "Agenz",
       "area_anchor": "area-liberte",
-      "published_label": "Il y a 2 jours",
+      "published_label": "Il y a 3 jours",
       "amenity_labels": [
         "Balcon",
         "Ascenseur",
@@ -400,7 +400,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785701067,
+      "published_at_ts": 1785706960,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "650 000 DH",
@@ -468,7 +468,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785701067,
+      "published_at_ts": 1785706960,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -530,7 +530,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785701067,
+      "published_at_ts": 1785706960,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -585,7 +585,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785269067,
+      "published_at_ts": 1785274960,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -638,7 +638,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785009867,
+      "published_at_ts": 1785015760,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -694,7 +694,7 @@
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784923467,
+      "published_at_ts": 1784929360,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -907,31 +907,19 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 8 % Commission à 0% En construction Visualisez ce bien meublé et décoré en quelques secondes RÉSIDENCE CARTHAGE 713 000 DH 1 CH 1 SDB 31 m² Studio à vendre Cas...",
       "rank_in_source": 36,
       "source_listing_id": "319322",
-      "image_url": "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
+      "image_url": "listing-thumbs/agenz-319322-01-8e5ec84618fe.avif",
       "image_urls": [
-        "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
-        "listing-thumbs/agenz-319322-02-cc63d8a0d154.jpg",
-        "listing-thumbs/agenz-319322-03-516c5ac903ca.jpg",
-        "listing-thumbs/agenz-319322-04-5631a5cea4e0.jpg",
-        "listing-thumbs/agenz-319322-05-6cea02db445d.jpg",
-        "listing-thumbs/agenz-319322-06-ea0554f3fa91.jpg",
-        "listing-thumbs/agenz-319322-07-ca33147174e3.jpg",
-        "listing-thumbs/agenz-319322-08-e51d9982150e.jpg",
-        "listing-thumbs/agenz-319322-09-063d6d089fae.jpg",
-        "listing-thumbs/agenz-319322-10-8417ce6ea638.jpg",
-        "listing-thumbs/agenz-319322-11-3b678a8fdaad.jpg",
-        "listing-thumbs/agenz-319322-12-43a14b45b112.jpg",
-        "listing-thumbs/agenz-319322-13-8e5ec84618fe.avif",
-        "listing-thumbs/agenz-319322-14-8898076a6b0d.avif",
-        "listing-thumbs/agenz-319322-15-2df6c039b06d.avif",
-        "listing-thumbs/agenz-319322-16-8b575cde7dc6.avif",
-        "listing-thumbs/agenz-319322-17-9966f68f5842.avif",
-        "listing-thumbs/agenz-319322-18-34244aa18107.avif",
-        "listing-thumbs/agenz-319322-19-c01d5782c7ef.avif",
-        "listing-thumbs/agenz-319322-20-076c10acc088.avif",
-        "listing-thumbs/agenz-319322-21-4c16b8164eee.avif"
+        "listing-thumbs/agenz-319322-01-8e5ec84618fe.avif",
+        "listing-thumbs/agenz-319322-02-8898076a6b0d.avif",
+        "listing-thumbs/agenz-319322-03-2df6c039b06d.avif",
+        "listing-thumbs/agenz-319322-04-8b575cde7dc6.avif",
+        "listing-thumbs/agenz-319322-05-9966f68f5842.avif",
+        "listing-thumbs/agenz-319322-06-34244aa18107.avif",
+        "listing-thumbs/agenz-319322-07-c01d5782c7ef.avif",
+        "listing-thumbs/agenz-319322-08-076c10acc088.avif",
+        "listing-thumbs/agenz-319322-09-4c16b8164eee.avif"
       ],
-      "photo_count": 21,
+      "photo_count": 9,
       "amenity_keys": [
         "elevator",
         "furnished",
