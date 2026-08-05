@@ -1,7 +1,64 @@
 {
-  "generated_at": "2026-08-05T16:28:51+00:00",
+  "generated_at": "2026-08-05T18:05:34+00:00",
   "all_listings_count": 109,
   "matches": [
+    {
+      "source": "agenz",
+      "source_name": "Agenz Casablanca",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/oulfa/750764",
+      "title": "Studio à vendre Casablanca -Oulfa",
+      "price_mad": 350000,
+      "surface_m2": 41,
+      "location_text": "Oulfa",
+      "area_guess": "El Oulfa",
+      "rooms_label": "",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "Il y a un jour",
+      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 350 000 DH 1 CH 1 SDB 41 m² Studio à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appeler Wh...",
+      "rank_in_source": 2,
+      "source_listing_id": "750764",
+      "image_url": "listing-thumbs/agenz-750764-01-0736185228f9.jpg",
+      "image_urls": [
+        "listing-thumbs/agenz-750764-01-0736185228f9.jpg",
+        "listing-thumbs/agenz-750764-02-5c5ae5be7cef.jpg",
+        "listing-thumbs/agenz-750764-03-9720a2c088fc.jpg",
+        "listing-thumbs/agenz-750764-04-460c4ec15cf8.jpg",
+        "listing-thumbs/agenz-750764-05-ca59dca4a265.jpg",
+        "listing-thumbs/agenz-750764-06-7a8ea4404fe2.jpg",
+        "listing-thumbs/agenz-750764-07-fe5e6380d14e.jpg",
+        "listing-thumbs/agenz-750764-08-3bab5399027d.jpg",
+        "listing-thumbs/agenz-750764-09-7f2809afe170.jpg",
+        "listing-thumbs/agenz-750764-10-e5899067b008.jpg",
+        "listing-thumbs/agenz-750764-11-dd8aca2c7212.jpg",
+        "listing-thumbs/agenz-750764-12-ba0853f94d21.avif",
+        "listing-thumbs/agenz-750764-13-08d320826b12.avif",
+        "listing-thumbs/agenz-750764-14-31f127865fc1.avif",
+        "listing-thumbs/agenz-750764-15-84b36418c0c7.avif",
+        "listing-thumbs/agenz-750764-16-ba183f1ddc30.avif",
+        "listing-thumbs/agenz-750764-17-0454edcf73cb.avif",
+        "listing-thumbs/agenz-750764-18-4668c386ec6f.avif",
+        "listing-thumbs/agenz-750764-19-b97daf73011b.avif",
+        "listing-thumbs/agenz-750764-20-c2e3a0d56212.avif"
+      ],
+      "photo_count": 20,
+      "amenity_keys": [
+        "furnished"
+      ],
+      "published_at_ts": 1785866622,
+      "is_new": true,
+      "first_seen_at": "2026-08-05T18:05:34+00:00",
+      "price_label": "350 000 DH",
+      "surface_label": "41 m2",
+      "source_label": "Agenz",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "Il y a un jour",
+      "amenity_labels": [
+        "Meuble"
+      ],
+      "default_sort_index": 0
+    },
     {
       "source": "agenz",
       "source_name": "Agenz Casablanca",
@@ -17,7 +74,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a un jour",
       "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 950 000 DH 1 CH 1 SDB 48 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur RDC Terrasse Accessible...",
-      "rank_in_source": 5,
+      "rank_in_source": 6,
       "source_listing_id": "701874",
       "image_url": "listing-thumbs/agenz-701874-01-1fbe77bff12d.jpg",
       "image_urls": [
@@ -31,15 +88,15 @@
         "listing-thumbs/agenz-701874-08-f791dc5102bb.jpg",
         "listing-thumbs/agenz-701874-09-e9df001a64af.jpg",
         "listing-thumbs/agenz-701874-10-447f95be409c.jpg",
-        "listing-thumbs/agenz-701874-11-2737252acd08.avif",
-        "listing-thumbs/agenz-701874-12-06699d9a854b.avif",
-        "listing-thumbs/agenz-701874-13-f43ba9c88477.avif",
-        "listing-thumbs/agenz-701874-14-ff7000b26b85.avif",
-        "listing-thumbs/agenz-701874-15-eb52a279654d.avif",
-        "listing-thumbs/agenz-701874-16-4841fe68e146.avif",
-        "listing-thumbs/agenz-701874-17-ca5f87726bd8.avif",
-        "listing-thumbs/agenz-701874-18-9ea73eafdc2c.avif",
-        "listing-thumbs/agenz-701874-19-ca6df922cc5f.avif"
+        "listing-thumbs/agenz-701874-11-1816821dad1e.avif",
+        "listing-thumbs/agenz-701874-12-395e365694af.avif",
+        "listing-thumbs/agenz-701874-13-c458ea78ecaa.avif",
+        "listing-thumbs/agenz-701874-14-7e68d1bc01c3.avif",
+        "listing-thumbs/agenz-701874-15-433b01849260.avif",
+        "listing-thumbs/agenz-701874-16-91808c9ac5c5.avif",
+        "listing-thumbs/agenz-701874-17-cb651850239a.avif",
+        "listing-thumbs/agenz-701874-18-f7294eaf6c6f.avif",
+        "listing-thumbs/agenz-701874-19-52b84a8ba4b0.avif"
       ],
       "photo_count": 19,
       "amenity_keys": [
@@ -47,7 +104,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785860864,
+      "published_at_ts": 1785866622,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -60,7 +117,7 @@
         "Ascenseur",
         "Meuble"
       ],
-      "default_sort_index": 0
+      "default_sort_index": 1
     },
     {
       "source": "agenz",
@@ -77,7 +134,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a un jour",
       "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 850 000 DH 1 CH 1 SDB 49 m² Studio à vendre Casablanca -Les Hôpitaux 1er étage Balcons Non meublé Créer...",
-      "rank_in_source": 6,
+      "rank_in_source": 7,
       "source_listing_id": "22512",
       "image_url": "listing-thumbs/agenz-22512-01-73f01b24dbc3.jpg",
       "image_urls": [
@@ -89,22 +146,22 @@
         "listing-thumbs/agenz-22512-06-786283ea52fb.jpg",
         "listing-thumbs/agenz-22512-07-c7833a07d4ef.jpg",
         "listing-thumbs/agenz-22512-08-7f49fa77fc27.jpg",
-        "listing-thumbs/agenz-22512-09-d84c7903269c.avif",
-        "listing-thumbs/agenz-22512-10-949128f2b642.avif",
-        "listing-thumbs/agenz-22512-11-35c50e800bd7.avif",
-        "listing-thumbs/agenz-22512-12-3f516eda7b45.avif",
-        "listing-thumbs/agenz-22512-13-37fc138b3bc0.avif",
-        "listing-thumbs/agenz-22512-14-3699644ef8b7.avif",
-        "listing-thumbs/agenz-22512-15-3f1466850ff4.avif",
-        "listing-thumbs/agenz-22512-16-9c834e3bcd0c.avif",
-        "listing-thumbs/agenz-22512-17-ca4fa7da8610.avif"
+        "listing-thumbs/agenz-22512-09-0ca596232854.avif",
+        "listing-thumbs/agenz-22512-10-6838f21fd616.avif",
+        "listing-thumbs/agenz-22512-11-fb92e8542f5b.avif",
+        "listing-thumbs/agenz-22512-12-9ac6edd0b3ab.avif",
+        "listing-thumbs/agenz-22512-13-5bc43ef5728a.avif",
+        "listing-thumbs/agenz-22512-14-fe770e78e9a7.avif",
+        "listing-thumbs/agenz-22512-15-227acdde3ed4.avif",
+        "listing-thumbs/agenz-22512-16-9dc3875299ee.avif",
+        "listing-thumbs/agenz-22512-17-e68f5d184a11.avif"
       ],
       "photo_count": 17,
       "amenity_keys": [
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1785860864,
+      "published_at_ts": 1785866622,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -116,7 +173,60 @@
         "Balcon",
         "Meuble"
       ],
-      "default_sort_index": 1
+      "default_sort_index": 2
+    },
+    {
+      "source": "agenz",
+      "source_name": "Agenz Casablanca",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/oulfa/657827",
+      "title": "Appartement à vendre Casablanca -Oulfa",
+      "price_mad": 310000,
+      "surface_m2": 52,
+      "location_text": "Oulfa",
+      "area_guess": "El Oulfa",
+      "rooms_label": "",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "Il y a un jour",
+      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 310 000 DH 2 CH 1 SDB 52 m² Appartement à vendre Casablanca -Oulfa 4ème étage Non meublé Créer une visit...",
+      "rank_in_source": 8,
+      "source_listing_id": "657827",
+      "image_url": "listing-thumbs/agenz-657827-01-c6d0d8ce5eb0.jpg",
+      "image_urls": [
+        "listing-thumbs/agenz-657827-01-c6d0d8ce5eb0.jpg",
+        "listing-thumbs/agenz-657827-02-84fcbb03b781.jpg",
+        "listing-thumbs/agenz-657827-03-a13ae9cdc181.jpg",
+        "listing-thumbs/agenz-657827-04-fe98ba6c2daf.jpg",
+        "listing-thumbs/agenz-657827-05-9a607e2c7718.jpg",
+        "listing-thumbs/agenz-657827-06-3b9e76edb0d2.jpg",
+        "listing-thumbs/agenz-657827-07-8fac60164fe5.jpg",
+        "listing-thumbs/agenz-657827-08-cf66699f90a6.webp",
+        "listing-thumbs/agenz-657827-09-9b54dab4cb56.avif",
+        "listing-thumbs/agenz-657827-10-c15ca7623f16.avif",
+        "listing-thumbs/agenz-657827-11-35f37345b577.avif",
+        "listing-thumbs/agenz-657827-12-9f55bc366a4e.avif",
+        "listing-thumbs/agenz-657827-13-02ece128f206.avif",
+        "listing-thumbs/agenz-657827-14-4f0eb36e8c7a.avif",
+        "listing-thumbs/agenz-657827-15-43848e49eaf3.avif",
+        "listing-thumbs/agenz-657827-16-6a099e0802f1.avif"
+      ],
+      "photo_count": 16,
+      "amenity_keys": [
+        "furnished"
+      ],
+      "published_at_ts": 1785866622,
+      "is_new": true,
+      "first_seen_at": "2026-08-05T18:05:34+00:00",
+      "price_label": "310 000 DH",
+      "surface_label": "52 m2",
+      "source_label": "Agenz",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "Il y a un jour",
+      "amenity_labels": [
+        "Meuble"
+      ],
+      "default_sort_index": 3
     },
     {
       "source": "agenz",
@@ -133,7 +243,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 2 jours",
       "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Exclu agenz Visualisez ce bien meublé et décoré en quelques secondes 550 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Liberté Ascenseur 1er étage Non meublé Créer une visit...",
-      "rank_in_source": 10,
+      "rank_in_source": 12,
       "source_listing_id": "485238",
       "image_url": "listing-thumbs/agenz-485238-01-68e39c33be63.jpg",
       "image_urls": [
@@ -153,22 +263,22 @@
         "listing-thumbs/agenz-485238-14-fa3eb248eb83.jpg",
         "listing-thumbs/agenz-485238-15-7aa45e09dd43.jpg",
         "listing-thumbs/agenz-485238-16-7a5be147b00b.jpg",
-        "listing-thumbs/agenz-485238-17-f4a9f9e36ac1.avif",
-        "listing-thumbs/agenz-485238-18-e60f7b68cf4e.avif",
-        "listing-thumbs/agenz-485238-19-f409d395efa9.avif",
-        "listing-thumbs/agenz-485238-20-ca7a395a5b13.avif",
-        "listing-thumbs/agenz-485238-21-5d489f3248ea.avif",
-        "listing-thumbs/agenz-485238-22-0514998f768e.avif",
-        "listing-thumbs/agenz-485238-23-0539dc260b85.avif",
-        "listing-thumbs/agenz-485238-24-ce15eb3e32a4.avif",
-        "listing-thumbs/agenz-485238-25-72783233783e.avif"
+        "listing-thumbs/agenz-485238-17-9ac0ab91defa.avif",
+        "listing-thumbs/agenz-485238-18-719840db6671.avif",
+        "listing-thumbs/agenz-485238-19-b207446ae6a9.avif",
+        "listing-thumbs/agenz-485238-20-1290a1c5a93f.avif",
+        "listing-thumbs/agenz-485238-21-757209fb9eda.avif",
+        "listing-thumbs/agenz-485238-22-a8aa7a5c4712.avif",
+        "listing-thumbs/agenz-485238-23-87437fb2c3f6.avif",
+        "listing-thumbs/agenz-485238-24-7c62a3af17ef.avif",
+        "listing-thumbs/agenz-485238-25-2ed73f0c7c88.avif"
       ],
       "photo_count": 25,
       "amenity_keys": [
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785774464,
+      "published_at_ts": 1785780222,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -180,7 +290,7 @@
         "Ascenseur",
         "Meuble"
       ],
-      "default_sort_index": 2
+      "default_sort_index": 4
     },
     {
       "source": "agenz",
@@ -197,7 +307,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 2 jours",
       "summary": "Voir l'annonce Il y a 2 jours Déjà Vu Agence partenaire 850 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Liberté Ascenseur 7ème étage Parking Balcons Meublé Créer une visite Appeler Whatsapp",
-      "rank_in_source": 11,
+      "rank_in_source": 13,
       "source_listing_id": "731068",
       "image_url": "listing-thumbs/agenz-731068-01-b30d5aec9267.jpg",
       "image_urls": [
@@ -213,15 +323,15 @@
         "listing-thumbs/agenz-731068-10-889901d565ea.jpg",
         "listing-thumbs/agenz-731068-11-d1dd2cd60e39.jpg",
         "listing-thumbs/agenz-731068-12-56b6fec1825f.jpg",
-        "listing-thumbs/agenz-731068-13-be5f384aecb8.avif",
-        "listing-thumbs/agenz-731068-14-cd762eaf81b1.avif",
-        "listing-thumbs/agenz-731068-15-de561159a753.avif",
-        "listing-thumbs/agenz-731068-16-6a45cd75eb39.avif",
-        "listing-thumbs/agenz-731068-17-9a6f24a8c00a.avif",
-        "listing-thumbs/agenz-731068-18-a68ce9c48c02.avif",
-        "listing-thumbs/agenz-731068-19-0f6edfa062ab.avif",
-        "listing-thumbs/agenz-731068-20-abdbd89de93e.avif",
-        "listing-thumbs/agenz-731068-21-bcea4e025080.avif"
+        "listing-thumbs/agenz-731068-13-ed180a6bb9b6.avif",
+        "listing-thumbs/agenz-731068-14-db6b582b93c9.avif",
+        "listing-thumbs/agenz-731068-15-0fceb1f5e00e.avif",
+        "listing-thumbs/agenz-731068-16-601e97718fd6.avif",
+        "listing-thumbs/agenz-731068-17-4fd20120d15a.avif",
+        "listing-thumbs/agenz-731068-18-ce7128586abc.avif",
+        "listing-thumbs/agenz-731068-19-945468ba3648.avif",
+        "listing-thumbs/agenz-731068-20-9b117e566bf3.avif",
+        "listing-thumbs/agenz-731068-21-e7c78087ec9e.avif"
       ],
       "photo_count": 21,
       "amenity_keys": [
@@ -230,7 +340,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1785774464,
+      "published_at_ts": 1785780222,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "850 000 DH",
@@ -244,7 +354,7 @@
         "Parking",
         "Meuble"
       ],
-      "default_sort_index": 3
+      "default_sort_index": 5
     },
     {
       "source": "agenz",
@@ -261,7 +371,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 3 jours",
       "summary": "Voir l'annonce Il y a 3 jours Déjà Vu Agence partenaire 650 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Oulfa Ascenseur 2ème étage Non meublé Créer une visite Appeler Whatsapp",
-      "rank_in_source": 13,
+      "rank_in_source": 15,
       "source_listing_id": "881531",
       "image_url": "listing-thumbs/agenz-881531-01-45a2d1044045.jpg",
       "image_urls": [
@@ -275,22 +385,22 @@
         "listing-thumbs/agenz-881531-08-d0470c58edee.jpg",
         "listing-thumbs/agenz-881531-09-0bad33285f0f.jpg",
         "listing-thumbs/agenz-881531-10-f4e051db6184.jpg",
-        "listing-thumbs/agenz-881531-11-440e2e321741.avif",
-        "listing-thumbs/agenz-881531-12-f62fecd0d3ea.avif",
-        "listing-thumbs/agenz-881531-13-a955bb48376f.avif",
-        "listing-thumbs/agenz-881531-14-91f8f8e1d75d.avif",
-        "listing-thumbs/agenz-881531-15-baae0cb5c9df.avif",
-        "listing-thumbs/agenz-881531-16-237053995ce8.avif",
-        "listing-thumbs/agenz-881531-17-8c66bbbaee6e.avif",
-        "listing-thumbs/agenz-881531-18-736bcff3432f.avif",
-        "listing-thumbs/agenz-881531-19-e9fa4da8dd7f.avif"
+        "listing-thumbs/agenz-881531-11-f4590016641a.avif",
+        "listing-thumbs/agenz-881531-12-80ed0e930d14.avif",
+        "listing-thumbs/agenz-881531-13-f5d4eadfd3d1.avif",
+        "listing-thumbs/agenz-881531-14-2986a3dc7850.avif",
+        "listing-thumbs/agenz-881531-15-b143ecd0cdb6.avif",
+        "listing-thumbs/agenz-881531-16-ef2f161e021b.avif",
+        "listing-thumbs/agenz-881531-17-e310cac516f0.avif",
+        "listing-thumbs/agenz-881531-18-28c2ec38f137.avif",
+        "listing-thumbs/agenz-881531-19-05cd65f44802.avif"
       ],
       "photo_count": 19,
       "amenity_keys": [
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785688064,
+      "published_at_ts": 1785693822,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "650 000 DH",
@@ -302,7 +412,7 @@
         "Ascenseur",
         "Meuble"
       ],
-      "default_sort_index": 4
+      "default_sort_index": 6
     },
     {
       "source": "agenz",
@@ -319,7 +429,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 3 jours",
       "summary": "Voir l'annonce Il y a 3 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 720 000 DH 2 CH 1 SDB 60 m² Appartement à vendre Casablanca -Sidi Maarouf Ascenseur 4ème étage Balcons T...",
-      "rank_in_source": 14,
+      "rank_in_source": 16,
       "source_listing_id": "600374",
       "image_url": "listing-thumbs/agenz-600374-01-4ab2ebc8b15b.jpg",
       "image_urls": [
@@ -341,15 +451,15 @@
         "listing-thumbs/agenz-600374-16-3b40eb28a38e.jpg",
         "listing-thumbs/agenz-600374-17-a28b1df0431e.jpg",
         "listing-thumbs/agenz-600374-18-992f7fa5b8a7.jpg",
-        "listing-thumbs/agenz-600374-19-1c0a4b052e7b.avif",
-        "listing-thumbs/agenz-600374-20-419f802552e9.avif",
-        "listing-thumbs/agenz-600374-21-842b0f135a52.avif",
-        "listing-thumbs/agenz-600374-22-24b5e0c433ae.avif",
-        "listing-thumbs/agenz-600374-23-ff86f488b56b.avif",
-        "listing-thumbs/agenz-600374-24-d01018b67364.avif",
-        "listing-thumbs/agenz-600374-25-0e061f06a5a7.avif",
-        "listing-thumbs/agenz-600374-26-ed52ac079156.avif",
-        "listing-thumbs/agenz-600374-27-af248922ebd4.avif"
+        "listing-thumbs/agenz-600374-19-4f23f64d8314.avif",
+        "listing-thumbs/agenz-600374-20-53b886272047.avif",
+        "listing-thumbs/agenz-600374-21-82f667fa42f0.avif",
+        "listing-thumbs/agenz-600374-22-b4bf76551834.avif",
+        "listing-thumbs/agenz-600374-23-c2ea2ba7ceae.avif",
+        "listing-thumbs/agenz-600374-24-fe4b35f6dbbc.avif",
+        "listing-thumbs/agenz-600374-25-bc474d53db1a.avif",
+        "listing-thumbs/agenz-600374-26-0ac55b3966ed.avif",
+        "listing-thumbs/agenz-600374-27-6a28d891ff11.avif"
       ],
       "photo_count": 27,
       "amenity_keys": [
@@ -358,7 +468,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785688064,
+      "published_at_ts": 1785693822,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -372,7 +482,7 @@
         "Ascenseur",
         "Meuble"
       ],
-      "default_sort_index": 5
+      "default_sort_index": 7
     },
     {
       "source": "agenz",
@@ -389,7 +499,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 3 jours",
       "summary": "Voir l'annonce Il y a 3 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
-      "rank_in_source": 15,
+      "rank_in_source": 17,
       "source_listing_id": "17333",
       "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
       "image_urls": [
@@ -406,21 +516,21 @@
         "listing-thumbs/agenz-17333-11-f1acd89cdcd9.jpg",
         "listing-thumbs/agenz-17333-12-e1090944d0f0.jpg",
         "listing-thumbs/agenz-17333-13-7058ab27615e.jpg",
-        "listing-thumbs/agenz-17333-14-1eae0bf5b9be.avif",
-        "listing-thumbs/agenz-17333-15-3f5c4b01e519.avif",
-        "listing-thumbs/agenz-17333-16-0f0fca144377.avif",
-        "listing-thumbs/agenz-17333-17-49d60749ce95.avif",
-        "listing-thumbs/agenz-17333-18-b6d52c8528b2.avif",
-        "listing-thumbs/agenz-17333-19-f4ca2df26253.avif",
-        "listing-thumbs/agenz-17333-20-e631b4779115.avif",
-        "listing-thumbs/agenz-17333-21-fa43d86190a6.avif",
-        "listing-thumbs/agenz-17333-22-4a92d9938007.avif"
+        "listing-thumbs/agenz-17333-14-77c1625243df.avif",
+        "listing-thumbs/agenz-17333-15-4f25449ea658.avif",
+        "listing-thumbs/agenz-17333-16-ca3623c9461b.avif",
+        "listing-thumbs/agenz-17333-17-a2697b4c1ae5.avif",
+        "listing-thumbs/agenz-17333-18-cfefd08d6b9c.avif",
+        "listing-thumbs/agenz-17333-19-a92dc3e5ed83.avif",
+        "listing-thumbs/agenz-17333-20-e20d2a114c82.avif",
+        "listing-thumbs/agenz-17333-21-2113d3fe2f3e.avif",
+        "listing-thumbs/agenz-17333-22-0a81dc6db64f.avif"
       ],
       "photo_count": 22,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785688064,
+      "published_at_ts": 1785693822,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -431,7 +541,7 @@
       "amenity_labels": [
         "Meuble"
       ],
-      "default_sort_index": 6
+      "default_sort_index": 8
     },
     {
       "source": "agenz",
@@ -448,7 +558,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 8 jours",
       "summary": "Voir l'annonce Il y a 8 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 440 000 DH 2 CH 1 SDB 45 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appel...",
-      "rank_in_source": 22,
+      "rank_in_source": 24,
       "source_listing_id": "44802",
       "image_url": "listing-thumbs/agenz-44802-01-c88e3f9b1af4.jpg",
       "image_urls": [
@@ -461,21 +571,21 @@
         "listing-thumbs/agenz-44802-07-99323c0c1c63.jpg",
         "listing-thumbs/agenz-44802-08-2f5419073375.jpg",
         "listing-thumbs/agenz-44802-09-2f2284107df9.jpg",
-        "listing-thumbs/agenz-44802-10-9f08271e01b1.avif",
-        "listing-thumbs/agenz-44802-11-95c06d60f1db.avif",
-        "listing-thumbs/agenz-44802-12-0f8ca27b798d.avif",
-        "listing-thumbs/agenz-44802-13-546995988baa.avif",
-        "listing-thumbs/agenz-44802-14-b8800628870f.avif",
-        "listing-thumbs/agenz-44802-15-4f32cf4c05a9.avif",
-        "listing-thumbs/agenz-44802-16-dcc7677dc0ed.avif",
-        "listing-thumbs/agenz-44802-17-890e81bc5a47.avif",
-        "listing-thumbs/agenz-44802-18-874a762da85a.avif"
+        "listing-thumbs/agenz-44802-10-1fe8ecbb9065.avif",
+        "listing-thumbs/agenz-44802-11-9dc45f313cb5.avif",
+        "listing-thumbs/agenz-44802-12-414b7778d5d1.avif",
+        "listing-thumbs/agenz-44802-13-b60a89039ac8.avif",
+        "listing-thumbs/agenz-44802-14-2442d465581c.avif",
+        "listing-thumbs/agenz-44802-15-b4b94157072e.avif",
+        "listing-thumbs/agenz-44802-16-3b3b05769456.avif",
+        "listing-thumbs/agenz-44802-17-db46bc95ada5.avif",
+        "listing-thumbs/agenz-44802-18-851ead0c694f.avif"
       ],
       "photo_count": 18,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785256064,
+      "published_at_ts": 1785261822,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -486,7 +596,7 @@
       "amenity_labels": [
         "Meuble"
       ],
-      "default_sort_index": 7
+      "default_sort_index": 9
     },
     {
       "source": "agenz",
@@ -503,7 +613,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 11 jours",
       "summary": "Voir l'annonce Il y a 11 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 380 000 DH 2 CH 1 SDB 56 m² Appartement à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appe...",
-      "rank_in_source": 26,
+      "rank_in_source": 28,
       "source_listing_id": "25198",
       "image_url": "listing-thumbs/agenz-25198-01-b92397987127.jpg",
       "image_urls": [
@@ -514,21 +624,21 @@
         "listing-thumbs/agenz-25198-05-f4e6d83832b3.jpg",
         "listing-thumbs/agenz-25198-06-4e90626e63ac.jpg",
         "listing-thumbs/agenz-25198-07-5c1234955177.jpg",
-        "listing-thumbs/agenz-25198-08-04c45e7c59ed.avif",
-        "listing-thumbs/agenz-25198-09-8072b46409ad.avif",
-        "listing-thumbs/agenz-25198-10-23c01075f2be.avif",
-        "listing-thumbs/agenz-25198-11-81d112a3bc1a.avif",
-        "listing-thumbs/agenz-25198-12-bc3631266296.avif",
-        "listing-thumbs/agenz-25198-13-f2736fb880d6.avif",
-        "listing-thumbs/agenz-25198-14-4081595ac9a8.avif",
-        "listing-thumbs/agenz-25198-15-89baedfff3a9.avif",
-        "listing-thumbs/agenz-25198-16-24efb0085a10.avif"
+        "listing-thumbs/agenz-25198-08-22b3ac117ab6.avif",
+        "listing-thumbs/agenz-25198-09-6ea194cb5003.avif",
+        "listing-thumbs/agenz-25198-10-be5c12e846b6.avif",
+        "listing-thumbs/agenz-25198-11-1a9610e2d930.avif",
+        "listing-thumbs/agenz-25198-12-f728ba113ec6.avif",
+        "listing-thumbs/agenz-25198-13-a407f60ae503.avif",
+        "listing-thumbs/agenz-25198-14-ac9e74b3e37c.avif",
+        "listing-thumbs/agenz-25198-15-0219d3acee00.avif",
+        "listing-thumbs/agenz-25198-16-0a9da0a01d75.avif"
       ],
       "photo_count": 16,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784996864,
+      "published_at_ts": 1785002622,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -539,7 +649,7 @@
       "amenity_labels": [
         "Meuble"
       ],
-      "default_sort_index": 8
+      "default_sort_index": 10
     },
     {
       "source": "agenz",
@@ -556,7 +666,7 @@
       "bathrooms_label": "1",
       "age_label": "Il y a 12 jours",
       "summary": "Voir l'annonce Il y a 12 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 750 000 DH 2 CH 1 SDB 59 m² Appartement à vendre Casablanca -Sidi Maarouf 2ème étage Non meublé Créer u...",
-      "rank_in_source": 29,
+      "rank_in_source": 31,
       "source_listing_id": "525140",
       "image_url": "listing-thumbs/agenz-525140-01-ad26dcde6623.jpg",
       "image_urls": [
@@ -570,21 +680,21 @@
         "listing-thumbs/agenz-525140-08-c2ef02beda88.jpg",
         "listing-thumbs/agenz-525140-09-4fddb19b3d3b.jpg",
         "listing-thumbs/agenz-525140-10-c1c91715b692.jpg",
-        "listing-thumbs/agenz-525140-11-5089c85ad9fc.avif",
-        "listing-thumbs/agenz-525140-12-c5d31521d408.avif",
-        "listing-thumbs/agenz-525140-13-0974e03aeac1.avif",
-        "listing-thumbs/agenz-525140-14-29d69c55e59a.avif",
-        "listing-thumbs/agenz-525140-15-6533ae402a89.avif",
-        "listing-thumbs/agenz-525140-16-6773e231fb47.avif",
-        "listing-thumbs/agenz-525140-17-6e71fe37d7d7.avif",
-        "listing-thumbs/agenz-525140-18-0d71fb2f4fa2.avif",
-        "listing-thumbs/agenz-525140-19-ef4894f42a52.avif"
+        "listing-thumbs/agenz-525140-11-3526794e6245.avif",
+        "listing-thumbs/agenz-525140-12-3352b5a0b433.avif",
+        "listing-thumbs/agenz-525140-13-7c7cea6eb775.avif",
+        "listing-thumbs/agenz-525140-14-bfe4df15c707.avif",
+        "listing-thumbs/agenz-525140-15-06d00d306505.avif",
+        "listing-thumbs/agenz-525140-16-630f63e9559f.avif",
+        "listing-thumbs/agenz-525140-17-a798a87a85d8.avif",
+        "listing-thumbs/agenz-525140-18-fbff87e27da2.avif",
+        "listing-thumbs/agenz-525140-19-d0eec6280594.avif"
       ],
       "photo_count": 19,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784910464,
+      "published_at_ts": 1784916222,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -595,64 +705,7 @@
       "amenity_labels": [
         "Meuble"
       ],
-      "default_sort_index": 9
-    },
-    {
-      "source": "agenz",
-      "source_name": "Agenz Casablanca",
-      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
-      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/bourgogne-ouest/997855",
-      "title": "Studio à vendre Casablanca -Bourgogne Ouest",
-      "price_mad": 950000,
-      "surface_m2": 34,
-      "location_text": "Bourgogne Ouest",
-      "area_guess": "Bourgogne Ouest",
-      "rooms_label": "",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 6.3 % Commission à 0% Livré LUXE HOUSING 950 000 DH 1 CH 1 SDB 34 m² Studio à vendre Casablanca -Bourgogne Ouest Ascenseur 2ème étage Non meublé Créer une visi...",
-      "rank_in_source": 36,
-      "source_listing_id": "997855",
-      "image_url": "listing-thumbs/agenz-997855-01-0a7124d61c0a.jpg",
-      "image_urls": [
-        "listing-thumbs/agenz-997855-01-0a7124d61c0a.jpg",
-        "listing-thumbs/agenz-997855-02-884008b22afa.jpg",
-        "listing-thumbs/agenz-997855-03-187b0831066a.jpg",
-        "listing-thumbs/agenz-997855-04-f33596a8db66.jpg",
-        "listing-thumbs/agenz-997855-05-86bf8d215ee5.jpg",
-        "listing-thumbs/agenz-997855-06-b4a2532913e1.jpg",
-        "listing-thumbs/agenz-997855-07-20c0b3876ee4.jpg",
-        "listing-thumbs/agenz-997855-08-ea0ee77f8680.avif",
-        "listing-thumbs/agenz-997855-09-824a26076763.avif",
-        "listing-thumbs/agenz-997855-10-b321c77dc7da.avif",
-        "listing-thumbs/agenz-997855-11-9fd4b6a2441f.avif",
-        "listing-thumbs/agenz-997855-12-04282c14629e.avif",
-        "listing-thumbs/agenz-997855-13-e62b398998c7.avif",
-        "listing-thumbs/agenz-997855-14-20198654a134.avif",
-        "listing-thumbs/agenz-997855-15-207e08c4cae5.avif",
-        "listing-thumbs/agenz-997855-16-045d409f7c8d.avif"
-      ],
-      "photo_count": 16,
-      "amenity_keys": [
-        "elevator",
-        "furnished",
-        "new_project"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-07-20T16:48:15+00:00",
-      "price_label": "950 000 DH",
-      "surface_label": "34 m2",
-      "source_label": "Agenz",
-      "area_anchor": "area-bourgogne-ouest",
-      "published_label": "",
-      "amenity_labels": [
-        "Ascenseur",
-        "Meuble",
-        "Neuf"
-      ],
-      "default_sort_index": 10
+      "default_sort_index": 11
     },
     {
       "source": "agenz",
@@ -669,7 +722,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 5 % Commission à 0% En construction Visualisez ce bien meublé et décoré en quelques secondes RÉSIDENCE CARTHAGE 828 000 DH 1 CH 1 SDB 36 m² Studio à vendre Cas...",
-      "rank_in_source": 33,
+      "rank_in_source": 35,
       "source_listing_id": "970271",
       "image_url": "listing-thumbs/agenz-970271-01-ff138586df81.jpg",
       "image_urls": [
@@ -688,15 +741,15 @@
         "listing-thumbs/agenz-970271-13-9f2a1098e946.jpg",
         "listing-thumbs/agenz-970271-14-a2f9f8950dd3.jpg",
         "listing-thumbs/agenz-970271-15-60944e72c68e.jpg",
-        "listing-thumbs/agenz-970271-16-7b90ae8cb5f8.avif",
-        "listing-thumbs/agenz-970271-17-05877893ad73.avif",
-        "listing-thumbs/agenz-970271-18-5b9009159f26.avif",
-        "listing-thumbs/agenz-970271-19-9ca3af6373a2.avif",
-        "listing-thumbs/agenz-970271-20-845932c2952d.avif",
-        "listing-thumbs/agenz-970271-21-208cc3784ce5.avif",
-        "listing-thumbs/agenz-970271-22-9b2957fd121a.avif",
-        "listing-thumbs/agenz-970271-23-27023c0311ac.avif",
-        "listing-thumbs/agenz-970271-24-f743e8663ffe.avif"
+        "listing-thumbs/agenz-970271-16-0ac81208e6e6.avif",
+        "listing-thumbs/agenz-970271-17-8ad8af9edbb1.avif",
+        "listing-thumbs/agenz-970271-18-dcea592e0406.avif",
+        "listing-thumbs/agenz-970271-19-03bebf930ef8.avif",
+        "listing-thumbs/agenz-970271-20-ad373b671403.avif",
+        "listing-thumbs/agenz-970271-21-3b00fd94fc60.avif",
+        "listing-thumbs/agenz-970271-22-d43365e2178c.avif",
+        "listing-thumbs/agenz-970271-23-eed55a7f3341.avif",
+        "listing-thumbs/agenz-970271-24-3b98e1af4bd8.avif"
       ],
       "photo_count": 24,
       "amenity_keys": [
@@ -719,7 +772,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 11
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -736,7 +789,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 940 000 DH 1 CH 1 SDB 50 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
-      "rank_in_source": 32,
+      "rank_in_source": 34,
       "source_listing_id": "517250",
       "image_url": "listing-thumbs/agenz-517250-01-48f0014623ec.jpg",
       "image_urls": [
@@ -746,15 +799,15 @@
         "listing-thumbs/agenz-517250-04-718a70dd77f6.jpg",
         "listing-thumbs/agenz-517250-05-d6fc0fb98e75.jpg",
         "listing-thumbs/agenz-517250-06-74ef3a90aafd.jpg",
-        "listing-thumbs/agenz-517250-07-406b386aeaf5.avif",
-        "listing-thumbs/agenz-517250-08-abdf94078f30.avif",
-        "listing-thumbs/agenz-517250-09-dca9c9ded907.avif",
-        "listing-thumbs/agenz-517250-10-0a3cc09ea9b5.avif",
-        "listing-thumbs/agenz-517250-11-808ac7a56ebf.avif",
-        "listing-thumbs/agenz-517250-12-37e603ce33f4.avif",
-        "listing-thumbs/agenz-517250-13-6256a368fab0.avif",
-        "listing-thumbs/agenz-517250-14-ad6c30a94f74.avif",
-        "listing-thumbs/agenz-517250-15-0fbead5ce145.avif"
+        "listing-thumbs/agenz-517250-07-d5aadff6d6d8.avif",
+        "listing-thumbs/agenz-517250-08-7adfa50df399.avif",
+        "listing-thumbs/agenz-517250-09-26bfecaad694.avif",
+        "listing-thumbs/agenz-517250-10-76714ba2c0dd.avif",
+        "listing-thumbs/agenz-517250-11-eafdb60af9ac.avif",
+        "listing-thumbs/agenz-517250-12-f03e0834cbad.avif",
+        "listing-thumbs/agenz-517250-13-3a2e2eb81b8b.avif",
+        "listing-thumbs/agenz-517250-14-fb5c298a9458.avif",
+        "listing-thumbs/agenz-517250-15-d5a2b2b3b975.avif"
       ],
       "photo_count": 15,
       "amenity_keys": [
@@ -777,7 +830,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 12
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -794,7 +847,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 6 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VILLA VILLON 950 000 DH 1 SDB 39 m² Studio à vendre Casablanca -Riviera Asce...",
-      "rank_in_source": 25,
+      "rank_in_source": 27,
       "source_listing_id": "369042",
       "image_url": "listing-thumbs/agenz-369042-01-dacdfb85e7d7.jpg",
       "image_urls": [
@@ -806,15 +859,15 @@
         "listing-thumbs/agenz-369042-06-33eab3f6d7d4.jpg",
         "listing-thumbs/agenz-369042-07-a13f98e716dc.jpg",
         "listing-thumbs/agenz-369042-08-a27cbfbe1294.jpg",
-        "listing-thumbs/agenz-369042-09-55d190840620.avif",
-        "listing-thumbs/agenz-369042-10-8ee0af9f27f4.avif",
-        "listing-thumbs/agenz-369042-11-07648ff36c39.avif",
-        "listing-thumbs/agenz-369042-12-57bc4e9de180.avif",
-        "listing-thumbs/agenz-369042-13-35bf95ae7196.avif",
-        "listing-thumbs/agenz-369042-14-e13e9348e268.avif",
-        "listing-thumbs/agenz-369042-15-c82f729854bb.avif",
-        "listing-thumbs/agenz-369042-16-3c7530b880be.avif",
-        "listing-thumbs/agenz-369042-17-7163ae871a51.avif"
+        "listing-thumbs/agenz-369042-09-000094a21ee0.avif",
+        "listing-thumbs/agenz-369042-10-356316737d45.avif",
+        "listing-thumbs/agenz-369042-11-b2cb4882562a.avif",
+        "listing-thumbs/agenz-369042-12-595a01634ee8.avif",
+        "listing-thumbs/agenz-369042-13-4e0576e4a9de.avif",
+        "listing-thumbs/agenz-369042-14-390f45c6849a.avif",
+        "listing-thumbs/agenz-369042-15-4bd419e41e0a.avif",
+        "listing-thumbs/agenz-369042-16-eb4c12a6ae3b.avif",
+        "listing-thumbs/agenz-369042-17-eed835727150.avif"
       ],
       "photo_count": 17,
       "amenity_keys": [
@@ -835,7 +888,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 13
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -852,33 +905,21 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 8 % Commission à 0% En construction Visualisez ce bien meublé et décoré en quelques secondes RÉSIDENCE CARTHAGE 713 000 DH 1 CH 1 SDB 31 m² Studio à vendre Cas...",
-      "rank_in_source": 34,
+      "rank_in_source": 36,
       "source_listing_id": "319322",
-      "image_url": "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
+      "image_url": "listing-thumbs/agenz-319322-01-8e5ec84618fe.avif",
       "image_urls": [
-        "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
-        "listing-thumbs/agenz-319322-02-cc63d8a0d154.jpg",
-        "listing-thumbs/agenz-319322-03-516c5ac903ca.jpg",
-        "listing-thumbs/agenz-319322-04-5631a5cea4e0.jpg",
-        "listing-thumbs/agenz-319322-05-6cea02db445d.jpg",
-        "listing-thumbs/agenz-319322-06-ea0554f3fa91.jpg",
-        "listing-thumbs/agenz-319322-07-ca33147174e3.jpg",
-        "listing-thumbs/agenz-319322-08-e51d9982150e.jpg",
-        "listing-thumbs/agenz-319322-09-063d6d089fae.jpg",
-        "listing-thumbs/agenz-319322-10-8417ce6ea638.jpg",
-        "listing-thumbs/agenz-319322-11-3b678a8fdaad.jpg",
-        "listing-thumbs/agenz-319322-12-43a14b45b112.jpg",
-        "listing-thumbs/agenz-319322-13-ed51761fb726.avif",
-        "listing-thumbs/agenz-319322-14-33a4a24dc16c.avif",
-        "listing-thumbs/agenz-319322-15-643fc8c09d0d.avif",
-        "listing-thumbs/agenz-319322-16-b1cef909bbdc.avif",
-        "listing-thumbs/agenz-319322-17-b9a1b0c8aa2b.avif",
-        "listing-thumbs/agenz-319322-18-13e3c42a0203.avif",
-        "listing-thumbs/agenz-319322-19-29d4c837e63d.avif",
-        "listing-thumbs/agenz-319322-20-0b0abaaf92a6.avif",
-        "listing-thumbs/agenz-319322-21-c277b783aac3.avif"
+        "listing-thumbs/agenz-319322-01-8e5ec84618fe.avif",
+        "listing-thumbs/agenz-319322-02-8898076a6b0d.avif",
+        "listing-thumbs/agenz-319322-03-2df6c039b06d.avif",
+        "listing-thumbs/agenz-319322-04-8b575cde7dc6.avif",
+        "listing-thumbs/agenz-319322-05-9966f68f5842.avif",
+        "listing-thumbs/agenz-319322-06-34244aa18107.avif",
+        "listing-thumbs/agenz-319322-07-c01d5782c7ef.avif",
+        "listing-thumbs/agenz-319322-08-076c10acc088.avif",
+        "listing-thumbs/agenz-319322-09-4c16b8164eee.avif"
       ],
-      "photo_count": 21,
+      "photo_count": 9,
       "amenity_keys": [
         "elevator",
         "furnished",
@@ -897,7 +938,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -914,12 +955,12 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...",
-      "rank_in_source": 8,
+      "rank_in_source": 10,
       "source_listing_id": "193099",
-      "image_url": "listing-thumbs/agenz-193099-01-a0610f741fe2.avif",
+      "image_url": "listing-thumbs/agenz-193099-01-1ce5fe6307d9.avif",
       "image_urls": [
-        "listing-thumbs/agenz-193099-01-a0610f741fe2.avif",
-        "listing-thumbs/agenz-193099-02-9f6aba23d800.avif"
+        "listing-thumbs/agenz-193099-01-1ce5fe6307d9.avif",
+        "listing-thumbs/agenz-193099-02-87435f011374.avif"
       ],
       "photo_count": 2,
       "amenity_keys": [
@@ -942,7 +983,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 16
     },
     {
       "source": "agenz",
@@ -959,19 +1000,19 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 920 000 DH 1 CH 1 SDB 51 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
-      "rank_in_source": 31,
+      "rank_in_source": 33,
       "source_listing_id": "147588",
-      "image_url": "listing-thumbs/agenz-147588-01-43cffebd5ff4.avif",
+      "image_url": "listing-thumbs/agenz-147588-01-690b48bc95a7.avif",
       "image_urls": [
-        "listing-thumbs/agenz-147588-01-43cffebd5ff4.avif",
-        "listing-thumbs/agenz-147588-02-00e67413c8bc.avif",
-        "listing-thumbs/agenz-147588-03-0c5e2664c723.avif",
-        "listing-thumbs/agenz-147588-04-1122d312c3e3.avif",
-        "listing-thumbs/agenz-147588-05-4fbb208731c1.avif",
-        "listing-thumbs/agenz-147588-06-59379c1a108b.avif",
-        "listing-thumbs/agenz-147588-07-2687344faebf.avif",
-        "listing-thumbs/agenz-147588-08-de24ebf31f4c.avif",
-        "listing-thumbs/agenz-147588-09-9c01585be694.avif"
+        "listing-thumbs/agenz-147588-01-690b48bc95a7.avif",
+        "listing-thumbs/agenz-147588-02-237485ebffeb.avif",
+        "listing-thumbs/agenz-147588-03-ab1de4b3bee2.avif",
+        "listing-thumbs/agenz-147588-04-b73b21407e84.avif",
+        "listing-thumbs/agenz-147588-05-e02e3ec237db.avif",
+        "listing-thumbs/agenz-147588-06-c38e3c229411.avif",
+        "listing-thumbs/agenz-147588-07-163b4b68426a.avif",
+        "listing-thumbs/agenz-147588-08-0a9354f3276b.avif",
+        "listing-thumbs/agenz-147588-09-ee2bd528cdfc.avif"
       ],
       "photo_count": 9,
       "amenity_keys": [
@@ -994,7 +1035,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 17
     },
     {
       "source": "agenz",
@@ -1011,19 +1052,19 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 7 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes DAR ESSALAM 930 000 DH 1 CH 1 SDB 36 m² Studio à vendre Casablanca -Bd Abdel...",
-      "rank_in_source": 17,
+      "rank_in_source": 19,
       "source_listing_id": "47891",
-      "image_url": "listing-thumbs/agenz-47891-01-c1cd3b15de8a.avif",
+      "image_url": "listing-thumbs/agenz-47891-01-40b4c245b52c.avif",
       "image_urls": [
-        "listing-thumbs/agenz-47891-01-c1cd3b15de8a.avif",
-        "listing-thumbs/agenz-47891-02-309060351db5.avif",
-        "listing-thumbs/agenz-47891-03-b2ba427bdcf4.avif",
-        "listing-thumbs/agenz-47891-04-3aefa1d040eb.avif",
-        "listing-thumbs/agenz-47891-05-6177a1ee22dd.avif",
-        "listing-thumbs/agenz-47891-06-14b26a78ed08.avif",
-        "listing-thumbs/agenz-47891-07-5bb8382366af.avif",
-        "listing-thumbs/agenz-47891-08-891bc6304ed2.avif",
-        "listing-thumbs/agenz-47891-09-d3000b11a5ca.avif"
+        "listing-thumbs/agenz-47891-01-40b4c245b52c.avif",
+        "listing-thumbs/agenz-47891-02-0399eed8e44f.avif",
+        "listing-thumbs/agenz-47891-03-84ebeb81c7e8.avif",
+        "listing-thumbs/agenz-47891-04-ba30d76ac0ae.avif",
+        "listing-thumbs/agenz-47891-05-f056a2b0c7e9.avif",
+        "listing-thumbs/agenz-47891-06-c5a12fa2e19c.avif",
+        "listing-thumbs/agenz-47891-07-2bad052da93e.avif",
+        "listing-thumbs/agenz-47891-08-494e41036220.avif",
+        "listing-thumbs/agenz-47891-09-0f113f78faf9.avif"
       ],
       "photo_count": 9,
       "amenity_keys": [
@@ -1046,9 +1087,118 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 17
+      "default_sort_index": 18
     }
   ],
-  "new_matches": [],
+  "new_matches": [
+    {
+      "source": "agenz",
+      "source_name": "Agenz Casablanca",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/oulfa/750764",
+      "title": "Studio à vendre Casablanca -Oulfa",
+      "price_mad": 350000,
+      "surface_m2": 41,
+      "location_text": "Oulfa",
+      "area_guess": "El Oulfa",
+      "rooms_label": "",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "Il y a un jour",
+      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 350 000 DH 1 CH 1 SDB 41 m² Studio à vendre Casablanca -Oulfa RDC Non meublé Créer une visite Appeler Wh...",
+      "rank_in_source": 2,
+      "source_listing_id": "750764",
+      "image_url": "listing-thumbs/agenz-750764-01-0736185228f9.jpg",
+      "image_urls": [
+        "listing-thumbs/agenz-750764-01-0736185228f9.jpg",
+        "listing-thumbs/agenz-750764-02-5c5ae5be7cef.jpg",
+        "listing-thumbs/agenz-750764-03-9720a2c088fc.jpg",
+        "listing-thumbs/agenz-750764-04-460c4ec15cf8.jpg",
+        "listing-thumbs/agenz-750764-05-ca59dca4a265.jpg",
+        "listing-thumbs/agenz-750764-06-7a8ea4404fe2.jpg",
+        "listing-thumbs/agenz-750764-07-fe5e6380d14e.jpg",
+        "listing-thumbs/agenz-750764-08-3bab5399027d.jpg",
+        "listing-thumbs/agenz-750764-09-7f2809afe170.jpg",
+        "listing-thumbs/agenz-750764-10-e5899067b008.jpg",
+        "listing-thumbs/agenz-750764-11-dd8aca2c7212.jpg",
+        "listing-thumbs/agenz-750764-12-ba0853f94d21.avif",
+        "listing-thumbs/agenz-750764-13-08d320826b12.avif",
+        "listing-thumbs/agenz-750764-14-31f127865fc1.avif",
+        "listing-thumbs/agenz-750764-15-84b36418c0c7.avif",
+        "listing-thumbs/agenz-750764-16-ba183f1ddc30.avif",
+        "listing-thumbs/agenz-750764-17-0454edcf73cb.avif",
+        "listing-thumbs/agenz-750764-18-4668c386ec6f.avif",
+        "listing-thumbs/agenz-750764-19-b97daf73011b.avif",
+        "listing-thumbs/agenz-750764-20-c2e3a0d56212.avif"
+      ],
+      "photo_count": 20,
+      "amenity_keys": [
+        "furnished"
+      ],
+      "published_at_ts": 1785866622,
+      "is_new": true,
+      "first_seen_at": "2026-08-05T18:05:34+00:00",
+      "price_label": "350 000 DH",
+      "surface_label": "41 m2",
+      "source_label": "Agenz",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "Il y a un jour",
+      "amenity_labels": [
+        "Meuble"
+      ]
+    },
+    {
+      "source": "agenz",
+      "source_name": "Agenz Casablanca",
+      "source_page": "https://agenz.ma/fr/acheter/immo-casablanca/vente-appartements?prixmax=950000&surfacemin=30&surfacemax=60&sort=date_desc",
+      "url": "https://agenz.ma/fr/annonces/immo-casablanca/vente-appartements/oulfa/657827",
+      "title": "Appartement à vendre Casablanca -Oulfa",
+      "price_mad": 310000,
+      "surface_m2": 52,
+      "location_text": "Oulfa",
+      "area_guess": "El Oulfa",
+      "rooms_label": "",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "Il y a un jour",
+      "summary": "Voir l'annonce Il y a un jour Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 310 000 DH 2 CH 1 SDB 52 m² Appartement à vendre Casablanca -Oulfa 4ème étage Non meublé Créer une visit...",
+      "rank_in_source": 8,
+      "source_listing_id": "657827",
+      "image_url": "listing-thumbs/agenz-657827-01-c6d0d8ce5eb0.jpg",
+      "image_urls": [
+        "listing-thumbs/agenz-657827-01-c6d0d8ce5eb0.jpg",
+        "listing-thumbs/agenz-657827-02-84fcbb03b781.jpg",
+        "listing-thumbs/agenz-657827-03-a13ae9cdc181.jpg",
+        "listing-thumbs/agenz-657827-04-fe98ba6c2daf.jpg",
+        "listing-thumbs/agenz-657827-05-9a607e2c7718.jpg",
+        "listing-thumbs/agenz-657827-06-3b9e76edb0d2.jpg",
+        "listing-thumbs/agenz-657827-07-8fac60164fe5.jpg",
+        "listing-thumbs/agenz-657827-08-cf66699f90a6.webp",
+        "listing-thumbs/agenz-657827-09-9b54dab4cb56.avif",
+        "listing-thumbs/agenz-657827-10-c15ca7623f16.avif",
+        "listing-thumbs/agenz-657827-11-35f37345b577.avif",
+        "listing-thumbs/agenz-657827-12-9f55bc366a4e.avif",
+        "listing-thumbs/agenz-657827-13-02ece128f206.avif",
+        "listing-thumbs/agenz-657827-14-4f0eb36e8c7a.avif",
+        "listing-thumbs/agenz-657827-15-43848e49eaf3.avif",
+        "listing-thumbs/agenz-657827-16-6a099e0802f1.avif"
+      ],
+      "photo_count": 16,
+      "amenity_keys": [
+        "furnished"
+      ],
+      "published_at_ts": 1785866622,
+      "is_new": true,
+      "first_seen_at": "2026-08-05T18:05:34+00:00",
+      "price_label": "310 000 DH",
+      "surface_label": "52 m2",
+      "source_label": "Agenz",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "Il y a un jour",
+      "amenity_labels": [
+        "Meuble"
+      ]
+    }
+  ],
   "bootstrapped": false
 }
