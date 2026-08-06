@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-06T05:11:46+00:00",
+  "generated_at": "2026-08-06T08:00:34+00:00",
   "all_listings_count": 109,
   "matches": [
     {
@@ -32,21 +32,21 @@
         "listing-thumbs/agenz-750764-09-7f2809afe170.jpg",
         "listing-thumbs/agenz-750764-10-e5899067b008.jpg",
         "listing-thumbs/agenz-750764-11-dd8aca2c7212.jpg",
-        "listing-thumbs/agenz-750764-12-ba0853f94d21.avif",
-        "listing-thumbs/agenz-750764-13-08d320826b12.avif",
-        "listing-thumbs/agenz-750764-14-31f127865fc1.avif",
-        "listing-thumbs/agenz-750764-15-84b36418c0c7.avif",
-        "listing-thumbs/agenz-750764-16-ba183f1ddc30.avif",
-        "listing-thumbs/agenz-750764-17-0454edcf73cb.avif",
-        "listing-thumbs/agenz-750764-18-4668c386ec6f.avif",
-        "listing-thumbs/agenz-750764-19-b97daf73011b.avif",
-        "listing-thumbs/agenz-750764-20-c2e3a0d56212.avif"
+        "listing-thumbs/agenz-750764-12-d95f61008694.avif",
+        "listing-thumbs/agenz-750764-13-0441dba71695.avif",
+        "listing-thumbs/agenz-750764-14-5ef3dae1f4ae.avif",
+        "listing-thumbs/agenz-750764-15-0637a7b3488a.avif",
+        "listing-thumbs/agenz-750764-16-d5d20aa5c26e.avif",
+        "listing-thumbs/agenz-750764-17-47080e311935.avif",
+        "listing-thumbs/agenz-750764-18-aed30e45e41e.avif",
+        "listing-thumbs/agenz-750764-19-6a7a635c4e0e.avif",
+        "listing-thumbs/agenz-750764-20-1341290300f2.avif"
       ],
       "photo_count": 20,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785820195,
+      "published_at_ts": 1785830345,
       "is_new": false,
       "first_seen_at": "2026-08-05T18:05:34+00:00",
       "price_label": "350 000 DH",
@@ -88,15 +88,15 @@
         "listing-thumbs/agenz-701874-08-f791dc5102bb.jpg",
         "listing-thumbs/agenz-701874-09-e9df001a64af.jpg",
         "listing-thumbs/agenz-701874-10-447f95be409c.jpg",
-        "listing-thumbs/agenz-701874-11-1816821dad1e.avif",
-        "listing-thumbs/agenz-701874-12-395e365694af.avif",
-        "listing-thumbs/agenz-701874-13-c458ea78ecaa.avif",
-        "listing-thumbs/agenz-701874-14-7e68d1bc01c3.avif",
-        "listing-thumbs/agenz-701874-15-433b01849260.avif",
-        "listing-thumbs/agenz-701874-16-91808c9ac5c5.avif",
-        "listing-thumbs/agenz-701874-17-cb651850239a.avif",
-        "listing-thumbs/agenz-701874-18-f7294eaf6c6f.avif",
-        "listing-thumbs/agenz-701874-19-52b84a8ba4b0.avif"
+        "listing-thumbs/agenz-701874-11-0ae715953fdc.avif",
+        "listing-thumbs/agenz-701874-12-a82a2e47b486.avif",
+        "listing-thumbs/agenz-701874-13-17ffa8d92a79.avif",
+        "listing-thumbs/agenz-701874-14-daf638e26284.avif",
+        "listing-thumbs/agenz-701874-15-63135633318b.avif",
+        "listing-thumbs/agenz-701874-16-c2c4f94fc2a4.avif",
+        "listing-thumbs/agenz-701874-17-5541f1b0c0bc.avif",
+        "listing-thumbs/agenz-701874-18-7681fbb92952.avif",
+        "listing-thumbs/agenz-701874-19-96d22df19bad.avif"
       ],
       "photo_count": 19,
       "amenity_keys": [
@@ -104,7 +104,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785820195,
+      "published_at_ts": 1785830345,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "950 000 DH",
@@ -146,22 +146,22 @@
         "listing-thumbs/agenz-22512-06-786283ea52fb.jpg",
         "listing-thumbs/agenz-22512-07-c7833a07d4ef.jpg",
         "listing-thumbs/agenz-22512-08-7f49fa77fc27.jpg",
-        "listing-thumbs/agenz-22512-09-0ca596232854.avif",
-        "listing-thumbs/agenz-22512-10-6838f21fd616.avif",
-        "listing-thumbs/agenz-22512-11-fb92e8542f5b.avif",
-        "listing-thumbs/agenz-22512-12-9ac6edd0b3ab.avif",
-        "listing-thumbs/agenz-22512-13-5bc43ef5728a.avif",
-        "listing-thumbs/agenz-22512-14-fe770e78e9a7.avif",
-        "listing-thumbs/agenz-22512-15-227acdde3ed4.avif",
-        "listing-thumbs/agenz-22512-16-9dc3875299ee.avif",
-        "listing-thumbs/agenz-22512-17-e68f5d184a11.avif"
+        "listing-thumbs/agenz-22512-09-c0c5e454c8df.avif",
+        "listing-thumbs/agenz-22512-10-5b9b05e7ec60.avif",
+        "listing-thumbs/agenz-22512-11-6a081895a785.avif",
+        "listing-thumbs/agenz-22512-12-6630713de479.avif",
+        "listing-thumbs/agenz-22512-13-658dcb5eb22a.avif",
+        "listing-thumbs/agenz-22512-14-312a67791903.avif",
+        "listing-thumbs/agenz-22512-15-d2a1c7c3be64.avif",
+        "listing-thumbs/agenz-22512-16-b4038013bba5.avif",
+        "listing-thumbs/agenz-22512-17-ecec2e907098.avif"
       ],
       "photo_count": 17,
       "amenity_keys": [
         "balcony",
         "furnished"
       ],
-      "published_at_ts": 1785820195,
+      "published_at_ts": 1785830345,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "850 000 DH",
@@ -201,21 +201,21 @@
         "listing-thumbs/agenz-657827-05-9a607e2c7718.jpg",
         "listing-thumbs/agenz-657827-06-3b9e76edb0d2.jpg",
         "listing-thumbs/agenz-657827-07-8fac60164fe5.jpg",
-        "listing-thumbs/agenz-657827-08-cf66699f90a6.avif",
-        "listing-thumbs/agenz-657827-09-9b54dab4cb56.avif",
-        "listing-thumbs/agenz-657827-10-c15ca7623f16.avif",
-        "listing-thumbs/agenz-657827-11-35f37345b577.avif",
-        "listing-thumbs/agenz-657827-12-9f55bc366a4e.avif",
-        "listing-thumbs/agenz-657827-13-02ece128f206.avif",
-        "listing-thumbs/agenz-657827-14-4f0eb36e8c7a.avif",
-        "listing-thumbs/agenz-657827-15-43848e49eaf3.avif",
-        "listing-thumbs/agenz-657827-16-6a099e0802f1.avif"
+        "listing-thumbs/agenz-657827-08-e92913db59cc.avif",
+        "listing-thumbs/agenz-657827-09-92dae9270fa0.avif",
+        "listing-thumbs/agenz-657827-10-effc4ad74ced.avif",
+        "listing-thumbs/agenz-657827-11-c1bdf36d093f.avif",
+        "listing-thumbs/agenz-657827-12-e6536feca0d3.avif",
+        "listing-thumbs/agenz-657827-13-2a4e1aeb531f.avif",
+        "listing-thumbs/agenz-657827-14-9bb940274ace.avif",
+        "listing-thumbs/agenz-657827-15-0615ad26842f.avif",
+        "listing-thumbs/agenz-657827-16-377037a19c3a.avif"
       ],
       "photo_count": 16,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785820195,
+      "published_at_ts": 1785830345,
       "is_new": false,
       "first_seen_at": "2026-08-05T18:05:34+00:00",
       "price_label": "310 000 DH",
@@ -263,22 +263,22 @@
         "listing-thumbs/agenz-485238-14-fa3eb248eb83.jpg",
         "listing-thumbs/agenz-485238-15-7aa45e09dd43.jpg",
         "listing-thumbs/agenz-485238-16-7a5be147b00b.jpg",
-        "listing-thumbs/agenz-485238-17-9ac0ab91defa.avif",
-        "listing-thumbs/agenz-485238-18-719840db6671.avif",
-        "listing-thumbs/agenz-485238-19-b207446ae6a9.avif",
-        "listing-thumbs/agenz-485238-20-1290a1c5a93f.avif",
-        "listing-thumbs/agenz-485238-21-757209fb9eda.avif",
-        "listing-thumbs/agenz-485238-22-a8aa7a5c4712.avif",
-        "listing-thumbs/agenz-485238-23-87437fb2c3f6.avif",
-        "listing-thumbs/agenz-485238-24-7c62a3af17ef.avif",
-        "listing-thumbs/agenz-485238-25-2ed73f0c7c88.avif"
+        "listing-thumbs/agenz-485238-17-c3584b66af39.avif",
+        "listing-thumbs/agenz-485238-18-09c3b0774e34.avif",
+        "listing-thumbs/agenz-485238-19-b6798d256472.avif",
+        "listing-thumbs/agenz-485238-20-8efeb24947b9.avif",
+        "listing-thumbs/agenz-485238-21-810346d99970.avif",
+        "listing-thumbs/agenz-485238-22-e590fcadc11c.avif",
+        "listing-thumbs/agenz-485238-23-28a755c42d57.avif",
+        "listing-thumbs/agenz-485238-24-e3ae399ca742.avif",
+        "listing-thumbs/agenz-485238-25-96490ef4a8c0.avif"
       ],
       "photo_count": 25,
       "amenity_keys": [
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785733795,
+      "published_at_ts": 1785743945,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "550 000 DH",
@@ -323,15 +323,15 @@
         "listing-thumbs/agenz-731068-10-889901d565ea.jpg",
         "listing-thumbs/agenz-731068-11-d1dd2cd60e39.jpg",
         "listing-thumbs/agenz-731068-12-56b6fec1825f.jpg",
-        "listing-thumbs/agenz-731068-13-ed180a6bb9b6.avif",
-        "listing-thumbs/agenz-731068-14-db6b582b93c9.avif",
-        "listing-thumbs/agenz-731068-15-0fceb1f5e00e.avif",
-        "listing-thumbs/agenz-731068-16-601e97718fd6.avif",
-        "listing-thumbs/agenz-731068-17-4fd20120d15a.avif",
-        "listing-thumbs/agenz-731068-18-ce7128586abc.avif",
-        "listing-thumbs/agenz-731068-19-945468ba3648.avif",
-        "listing-thumbs/agenz-731068-20-9b117e566bf3.avif",
-        "listing-thumbs/agenz-731068-21-e7c78087ec9e.avif"
+        "listing-thumbs/agenz-731068-13-2bae32d81e91.avif",
+        "listing-thumbs/agenz-731068-14-a5d4966fe2e8.avif",
+        "listing-thumbs/agenz-731068-15-6af6ed982455.avif",
+        "listing-thumbs/agenz-731068-16-0dc132351b1f.avif",
+        "listing-thumbs/agenz-731068-17-46f70b72a2f3.avif",
+        "listing-thumbs/agenz-731068-18-91f30a90633e.avif",
+        "listing-thumbs/agenz-731068-19-241e4914a9e6.avif",
+        "listing-thumbs/agenz-731068-20-d6b09a79ee21.avif",
+        "listing-thumbs/agenz-731068-21-94db1c859279.avif"
       ],
       "photo_count": 21,
       "amenity_keys": [
@@ -340,7 +340,7 @@
         "parking",
         "furnished"
       ],
-      "published_at_ts": 1785733795,
+      "published_at_ts": 1785743945,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "850 000 DH",
@@ -385,22 +385,22 @@
         "listing-thumbs/agenz-881531-08-d0470c58edee.jpg",
         "listing-thumbs/agenz-881531-09-0bad33285f0f.jpg",
         "listing-thumbs/agenz-881531-10-f4e051db6184.jpg",
-        "listing-thumbs/agenz-881531-11-f4590016641a.avif",
-        "listing-thumbs/agenz-881531-12-80ed0e930d14.avif",
-        "listing-thumbs/agenz-881531-13-f5d4eadfd3d1.avif",
-        "listing-thumbs/agenz-881531-14-2986a3dc7850.avif",
-        "listing-thumbs/agenz-881531-15-b143ecd0cdb6.avif",
-        "listing-thumbs/agenz-881531-16-ef2f161e021b.avif",
-        "listing-thumbs/agenz-881531-17-e310cac516f0.avif",
-        "listing-thumbs/agenz-881531-18-28c2ec38f137.avif",
-        "listing-thumbs/agenz-881531-19-05cd65f44802.avif"
+        "listing-thumbs/agenz-881531-11-a66e712099b2.avif",
+        "listing-thumbs/agenz-881531-12-7918ceae7a1c.avif",
+        "listing-thumbs/agenz-881531-13-ebeaa2598757.avif",
+        "listing-thumbs/agenz-881531-14-0c0ad9db209f.avif",
+        "listing-thumbs/agenz-881531-15-8afdebf017cf.avif",
+        "listing-thumbs/agenz-881531-16-68b34986d501.avif",
+        "listing-thumbs/agenz-881531-17-eae92c067d49.avif",
+        "listing-thumbs/agenz-881531-18-914ebea3557f.avif",
+        "listing-thumbs/agenz-881531-19-c7cfeb86b124.avif"
       ],
       "photo_count": 19,
       "amenity_keys": [
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785647395,
+      "published_at_ts": 1785657545,
       "is_new": false,
       "first_seen_at": "2026-08-03T17:15:36+00:00",
       "price_label": "650 000 DH",
@@ -451,15 +451,15 @@
         "listing-thumbs/agenz-600374-16-3b40eb28a38e.jpg",
         "listing-thumbs/agenz-600374-17-a28b1df0431e.jpg",
         "listing-thumbs/agenz-600374-18-992f7fa5b8a7.jpg",
-        "listing-thumbs/agenz-600374-19-4f23f64d8314.avif",
-        "listing-thumbs/agenz-600374-20-53b886272047.avif",
-        "listing-thumbs/agenz-600374-21-82f667fa42f0.avif",
-        "listing-thumbs/agenz-600374-22-b4bf76551834.avif",
-        "listing-thumbs/agenz-600374-23-c2ea2ba7ceae.avif",
-        "listing-thumbs/agenz-600374-24-fe4b35f6dbbc.avif",
-        "listing-thumbs/agenz-600374-25-bc474d53db1a.avif",
-        "listing-thumbs/agenz-600374-26-0ac55b3966ed.avif",
-        "listing-thumbs/agenz-600374-27-6a28d891ff11.avif"
+        "listing-thumbs/agenz-600374-19-a3466b5ea1b8.avif",
+        "listing-thumbs/agenz-600374-20-f83fa82f6904.avif",
+        "listing-thumbs/agenz-600374-21-ae034a1c7e73.avif",
+        "listing-thumbs/agenz-600374-22-dda54d6f4b37.avif",
+        "listing-thumbs/agenz-600374-23-09a66c65129e.avif",
+        "listing-thumbs/agenz-600374-24-8e6c02ea2c63.avif",
+        "listing-thumbs/agenz-600374-25-4bdb75bcec52.avif",
+        "listing-thumbs/agenz-600374-26-fa1a927f972e.avif",
+        "listing-thumbs/agenz-600374-27-26f80004034c.avif"
       ],
       "photo_count": 27,
       "amenity_keys": [
@@ -468,7 +468,7 @@
         "elevator",
         "furnished"
       ],
-      "published_at_ts": 1785647395,
+      "published_at_ts": 1785657545,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "720 000 DH",
@@ -501,9 +501,9 @@
       "summary": "Voir l'annonce Il y a 4 jours Déjà Vu Vérifié par agenz Visualisez ce bien meublé et décoré en quelques secondes 490 000 DH 570 000 DH 2 CH 1 SDB 54 m² Appartement à vendre Casablanca -Oulfa 3ème étage Non meublé Crée...",
       "rank_in_source": 17,
       "source_listing_id": "17333",
-      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+      "image_url": "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
       "image_urls": [
-        "listing-thumbs/agenz-17333-01-9d495ec6560d.png",
+        "listing-thumbs/agenz-17333-01-9d495ec6560d.webp",
         "listing-thumbs/agenz-17333-02-1cb208658201.jpg",
         "listing-thumbs/agenz-17333-03-41e018267322.jpg",
         "listing-thumbs/agenz-17333-04-9a6f700c00c2.jpg",
@@ -516,21 +516,21 @@
         "listing-thumbs/agenz-17333-11-f1acd89cdcd9.jpg",
         "listing-thumbs/agenz-17333-12-e1090944d0f0.jpg",
         "listing-thumbs/agenz-17333-13-7058ab27615e.jpg",
-        "listing-thumbs/agenz-17333-14-77c1625243df.avif",
-        "listing-thumbs/agenz-17333-15-4f25449ea658.avif",
-        "listing-thumbs/agenz-17333-16-ca3623c9461b.avif",
-        "listing-thumbs/agenz-17333-17-a2697b4c1ae5.avif",
-        "listing-thumbs/agenz-17333-18-cfefd08d6b9c.avif",
-        "listing-thumbs/agenz-17333-19-a92dc3e5ed83.avif",
-        "listing-thumbs/agenz-17333-20-e20d2a114c82.avif",
-        "listing-thumbs/agenz-17333-21-2113d3fe2f3e.avif",
-        "listing-thumbs/agenz-17333-22-0a81dc6db64f.avif"
+        "listing-thumbs/agenz-17333-14-b9ce316b0f3a.avif",
+        "listing-thumbs/agenz-17333-15-8c2835ddd78b.avif",
+        "listing-thumbs/agenz-17333-16-613e8c0d3603.avif",
+        "listing-thumbs/agenz-17333-17-f07e2c27cac2.avif",
+        "listing-thumbs/agenz-17333-18-5ab934ea91f9.avif",
+        "listing-thumbs/agenz-17333-19-7ce0b16b14c7.avif",
+        "listing-thumbs/agenz-17333-20-3abe77e60be8.avif",
+        "listing-thumbs/agenz-17333-21-c08d8765d137.avif",
+        "listing-thumbs/agenz-17333-22-5e42455ed53b.avif"
       ],
       "photo_count": 22,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785647395,
+      "published_at_ts": 1785657545,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "570 000 DH",
@@ -571,21 +571,21 @@
         "listing-thumbs/agenz-44802-07-99323c0c1c63.jpg",
         "listing-thumbs/agenz-44802-08-2f5419073375.jpg",
         "listing-thumbs/agenz-44802-09-2f2284107df9.jpg",
-        "listing-thumbs/agenz-44802-10-1fe8ecbb9065.avif",
-        "listing-thumbs/agenz-44802-11-9dc45f313cb5.avif",
-        "listing-thumbs/agenz-44802-12-414b7778d5d1.avif",
-        "listing-thumbs/agenz-44802-13-b60a89039ac8.avif",
-        "listing-thumbs/agenz-44802-14-2442d465581c.avif",
-        "listing-thumbs/agenz-44802-15-b4b94157072e.avif",
-        "listing-thumbs/agenz-44802-16-3b3b05769456.avif",
-        "listing-thumbs/agenz-44802-17-db46bc95ada5.avif",
-        "listing-thumbs/agenz-44802-18-851ead0c694f.avif"
+        "listing-thumbs/agenz-44802-10-581f8b4d6cf5.avif",
+        "listing-thumbs/agenz-44802-11-6cafddb3a59e.avif",
+        "listing-thumbs/agenz-44802-12-0f20eeea0a2c.avif",
+        "listing-thumbs/agenz-44802-13-8e7b791dd144.avif",
+        "listing-thumbs/agenz-44802-14-ada1c5f3d29e.avif",
+        "listing-thumbs/agenz-44802-15-398e9fd09308.avif",
+        "listing-thumbs/agenz-44802-16-ef2f99e327b8.avif",
+        "listing-thumbs/agenz-44802-17-27598a9c03ff.avif",
+        "listing-thumbs/agenz-44802-18-7ec883b6b444.avif"
       ],
       "photo_count": 18,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1785301795,
+      "published_at_ts": 1785311945,
       "is_new": false,
       "first_seen_at": "2026-07-29T10:22:07+00:00",
       "price_label": "440 000 DH",
@@ -624,21 +624,21 @@
         "listing-thumbs/agenz-25198-05-f4e6d83832b3.jpg",
         "listing-thumbs/agenz-25198-06-4e90626e63ac.jpg",
         "listing-thumbs/agenz-25198-07-5c1234955177.jpg",
-        "listing-thumbs/agenz-25198-08-22b3ac117ab6.avif",
-        "listing-thumbs/agenz-25198-09-6ea194cb5003.avif",
-        "listing-thumbs/agenz-25198-10-be5c12e846b6.avif",
-        "listing-thumbs/agenz-25198-11-1a9610e2d930.avif",
-        "listing-thumbs/agenz-25198-12-f728ba113ec6.avif",
-        "listing-thumbs/agenz-25198-13-a407f60ae503.avif",
-        "listing-thumbs/agenz-25198-14-ac9e74b3e37c.avif",
-        "listing-thumbs/agenz-25198-15-0219d3acee00.avif",
-        "listing-thumbs/agenz-25198-16-0a9da0a01d75.avif"
+        "listing-thumbs/agenz-25198-08-38089f630b29.avif",
+        "listing-thumbs/agenz-25198-09-a1580f713528.avif",
+        "listing-thumbs/agenz-25198-10-724bc4fb07b0.avif",
+        "listing-thumbs/agenz-25198-11-e58b06cf7457.avif",
+        "listing-thumbs/agenz-25198-12-e42c90d17a6c.avif",
+        "listing-thumbs/agenz-25198-13-9dfb20a83e74.avif",
+        "listing-thumbs/agenz-25198-14-b1d175da884c.avif",
+        "listing-thumbs/agenz-25198-15-40e12cf0c695.avif",
+        "listing-thumbs/agenz-25198-16-02266bdaa59d.avif"
       ],
       "photo_count": 16,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784956195,
+      "published_at_ts": 1784966345,
       "is_new": false,
       "first_seen_at": "2026-07-20T16:48:15+00:00",
       "price_label": "380 000 DH",
@@ -680,21 +680,21 @@
         "listing-thumbs/agenz-525140-08-c2ef02beda88.jpg",
         "listing-thumbs/agenz-525140-09-4fddb19b3d3b.jpg",
         "listing-thumbs/agenz-525140-10-c1c91715b692.jpg",
-        "listing-thumbs/agenz-525140-11-3526794e6245.avif",
-        "listing-thumbs/agenz-525140-12-3352b5a0b433.avif",
-        "listing-thumbs/agenz-525140-13-7c7cea6eb775.avif",
-        "listing-thumbs/agenz-525140-14-bfe4df15c707.avif",
-        "listing-thumbs/agenz-525140-15-06d00d306505.avif",
-        "listing-thumbs/agenz-525140-16-630f63e9559f.avif",
-        "listing-thumbs/agenz-525140-17-a798a87a85d8.avif",
-        "listing-thumbs/agenz-525140-18-fbff87e27da2.avif",
-        "listing-thumbs/agenz-525140-19-d0eec6280594.avif"
+        "listing-thumbs/agenz-525140-11-2709de0b512e.avif",
+        "listing-thumbs/agenz-525140-12-bb12328c0cfa.avif",
+        "listing-thumbs/agenz-525140-13-3e52783850a5.avif",
+        "listing-thumbs/agenz-525140-14-470081369d6c.avif",
+        "listing-thumbs/agenz-525140-15-625a17ec4878.avif",
+        "listing-thumbs/agenz-525140-16-2b34e87cca88.avif",
+        "listing-thumbs/agenz-525140-17-e5bd42dcb1c6.avif",
+        "listing-thumbs/agenz-525140-18-f7962cedbe83.avif",
+        "listing-thumbs/agenz-525140-19-73c7f775b285.avif"
       ],
       "photo_count": 19,
       "amenity_keys": [
         "furnished"
       ],
-      "published_at_ts": 1784869795,
+      "published_at_ts": 1784879945,
       "is_new": false,
       "first_seen_at": "2026-07-10T08:47:23+00:00",
       "price_label": "750 000 DH",
@@ -706,6 +706,53 @@
         "Meuble"
       ],
       "default_sort_index": 11
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/pa/8191757/bel-appartement-%C3%A0-vendre-%C3%A0-californie-surface-de-43-m%C2%B2",
+      "title": "Bel appartement à vendre à Californie. Surface de 43 m²",
+      "price_mad": 893500,
+      "surface_m2": 43,
+      "location_text": "Californie, Casablanca",
+      "area_guess": "Californie",
+      "rooms_label": "",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "893 500 DH Bel appartement à vendre à Californie. Surface de 43 m² Californie, Casablanca 43 m² 1 Ch. 1 Salle de bain Jardin Piscine EVERGREEN - Quand la nature s'invite chez vous Une résidence d'exception au cœur de...",
+      "rank_in_source": 2,
+      "source_listing_id": "8191757",
+      "image_url": "listing-thumbs/mubawab-8191757-01-ae09ddf65e30.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8191757-01-ae09ddf65e30.avif",
+        "listing-thumbs/mubawab-8191757-02-e648e7b857ea.avif",
+        "listing-thumbs/mubawab-8191757-03-56befc86ed21.avif",
+        "listing-thumbs/mubawab-8191757-04-83dc322207ee.avif",
+        "listing-thumbs/mubawab-8191757-05-69e6e7d87274.avif",
+        "listing-thumbs/mubawab-8191757-06-d066d58ca7ef.avif",
+        "listing-thumbs/mubawab-8191757-07-951ec9e9dac6.avif",
+        "listing-thumbs/mubawab-8191757-08-879f034cd286.avif",
+        "listing-thumbs/mubawab-8191757-09-2f8db8caceb1.avif",
+        "listing-thumbs/mubawab-8191757-10-d45b0e59e263.avif",
+        "listing-thumbs/mubawab-8191757-11-22627a061f7d.avif",
+        "listing-thumbs/mubawab-8191757-12-87a3c1dca60b.avif",
+        "listing-thumbs/mubawab-8191757-13-623872797a83.avif",
+        "listing-thumbs/mubawab-8191757-14-e21c3afc017f.avif"
+      ],
+      "photo_count": 14,
+      "amenity_keys": [],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "price_label": "893 500 DH",
+      "surface_label": "43 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-californie",
+      "published_label": "",
+      "amenity_labels": [],
+      "default_sort_index": 12
     },
     {
       "source": "agenz",
@@ -741,15 +788,15 @@
         "listing-thumbs/agenz-970271-13-9f2a1098e946.jpg",
         "listing-thumbs/agenz-970271-14-a2f9f8950dd3.jpg",
         "listing-thumbs/agenz-970271-15-60944e72c68e.jpg",
-        "listing-thumbs/agenz-970271-16-0ac81208e6e6.avif",
-        "listing-thumbs/agenz-970271-17-8ad8af9edbb1.avif",
-        "listing-thumbs/agenz-970271-18-dcea592e0406.avif",
-        "listing-thumbs/agenz-970271-19-03bebf930ef8.avif",
-        "listing-thumbs/agenz-970271-20-ad373b671403.avif",
-        "listing-thumbs/agenz-970271-21-3b00fd94fc60.avif",
-        "listing-thumbs/agenz-970271-22-d43365e2178c.avif",
-        "listing-thumbs/agenz-970271-23-eed55a7f3341.avif",
-        "listing-thumbs/agenz-970271-24-3b98e1af4bd8.avif"
+        "listing-thumbs/agenz-970271-16-9b980a741b25.avif",
+        "listing-thumbs/agenz-970271-17-875107b1a134.avif",
+        "listing-thumbs/agenz-970271-18-24c2f5655060.avif",
+        "listing-thumbs/agenz-970271-19-273b3c63dde6.avif",
+        "listing-thumbs/agenz-970271-20-b2aa73bdd4a2.avif",
+        "listing-thumbs/agenz-970271-21-a3dda2d425e7.avif",
+        "listing-thumbs/agenz-970271-22-7e24106b80a8.avif",
+        "listing-thumbs/agenz-970271-23-c6516e674787.avif",
+        "listing-thumbs/agenz-970271-24-8e9fdcddbca2.avif"
       ],
       "photo_count": 24,
       "amenity_keys": [
@@ -772,7 +819,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 12
+      "default_sort_index": 13
     },
     {
       "source": "agenz",
@@ -799,15 +846,15 @@
         "listing-thumbs/agenz-517250-04-718a70dd77f6.jpg",
         "listing-thumbs/agenz-517250-05-d6fc0fb98e75.jpg",
         "listing-thumbs/agenz-517250-06-74ef3a90aafd.jpg",
-        "listing-thumbs/agenz-517250-07-d5aadff6d6d8.avif",
-        "listing-thumbs/agenz-517250-08-7adfa50df399.avif",
-        "listing-thumbs/agenz-517250-09-26bfecaad694.avif",
-        "listing-thumbs/agenz-517250-10-76714ba2c0dd.avif",
-        "listing-thumbs/agenz-517250-11-eafdb60af9ac.avif",
-        "listing-thumbs/agenz-517250-12-f03e0834cbad.avif",
-        "listing-thumbs/agenz-517250-13-3a2e2eb81b8b.avif",
-        "listing-thumbs/agenz-517250-14-fb5c298a9458.avif",
-        "listing-thumbs/agenz-517250-15-d5a2b2b3b975.avif"
+        "listing-thumbs/agenz-517250-07-08d232cd2ca6.avif",
+        "listing-thumbs/agenz-517250-08-e71d34d158e5.avif",
+        "listing-thumbs/agenz-517250-09-688c7d039c33.avif",
+        "listing-thumbs/agenz-517250-10-29d4c70508ec.avif",
+        "listing-thumbs/agenz-517250-11-b01efb49b930.avif",
+        "listing-thumbs/agenz-517250-12-bffbc7dcb8d4.avif",
+        "listing-thumbs/agenz-517250-13-8ae21381214e.avif",
+        "listing-thumbs/agenz-517250-14-dd3abcd0b87d.avif",
+        "listing-thumbs/agenz-517250-15-dc4dfd34b0cd.avif"
       ],
       "photo_count": 15,
       "amenity_keys": [
@@ -830,7 +877,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 13
+      "default_sort_index": 14
     },
     {
       "source": "agenz",
@@ -859,15 +906,15 @@
         "listing-thumbs/agenz-369042-06-33eab3f6d7d4.jpg",
         "listing-thumbs/agenz-369042-07-a13f98e716dc.jpg",
         "listing-thumbs/agenz-369042-08-a27cbfbe1294.jpg",
-        "listing-thumbs/agenz-369042-09-000094a21ee0.avif",
-        "listing-thumbs/agenz-369042-10-356316737d45.avif",
-        "listing-thumbs/agenz-369042-11-b2cb4882562a.avif",
-        "listing-thumbs/agenz-369042-12-595a01634ee8.avif",
-        "listing-thumbs/agenz-369042-13-4e0576e4a9de.avif",
-        "listing-thumbs/agenz-369042-14-390f45c6849a.avif",
-        "listing-thumbs/agenz-369042-15-4bd419e41e0a.avif",
-        "listing-thumbs/agenz-369042-16-eb4c12a6ae3b.avif",
-        "listing-thumbs/agenz-369042-17-eed835727150.avif"
+        "listing-thumbs/agenz-369042-09-8d38cbef4524.avif",
+        "listing-thumbs/agenz-369042-10-2ca9f81d129b.avif",
+        "listing-thumbs/agenz-369042-11-30cc16ba2360.avif",
+        "listing-thumbs/agenz-369042-12-ca1c97f05942.avif",
+        "listing-thumbs/agenz-369042-13-1219b0bb3105.avif",
+        "listing-thumbs/agenz-369042-14-8c92d42b561e.avif",
+        "listing-thumbs/agenz-369042-15-fe2e1e5ee0e0.avif",
+        "listing-thumbs/agenz-369042-16-86c936571021.avif",
+        "listing-thumbs/agenz-369042-17-111b9d0b4da2.avif"
       ],
       "photo_count": 17,
       "amenity_keys": [
@@ -888,7 +935,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 14
+      "default_sort_index": 15
     },
     {
       "source": "agenz",
@@ -907,19 +954,31 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 8 % Commission à 0% En construction Visualisez ce bien meublé et décoré en quelques secondes RÉSIDENCE CARTHAGE 713 000 DH 1 CH 1 SDB 31 m² Studio à vendre Cas...",
       "rank_in_source": 36,
       "source_listing_id": "319322",
-      "image_url": "listing-thumbs/agenz-319322-01-8e5ec84618fe.avif",
+      "image_url": "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
       "image_urls": [
-        "listing-thumbs/agenz-319322-01-8e5ec84618fe.avif",
-        "listing-thumbs/agenz-319322-02-8898076a6b0d.avif",
-        "listing-thumbs/agenz-319322-03-2df6c039b06d.avif",
-        "listing-thumbs/agenz-319322-04-8b575cde7dc6.avif",
-        "listing-thumbs/agenz-319322-05-9966f68f5842.avif",
-        "listing-thumbs/agenz-319322-06-34244aa18107.avif",
-        "listing-thumbs/agenz-319322-07-c01d5782c7ef.avif",
-        "listing-thumbs/agenz-319322-08-076c10acc088.avif",
-        "listing-thumbs/agenz-319322-09-4c16b8164eee.avif"
+        "listing-thumbs/agenz-319322-01-65000397a5d5.jpg",
+        "listing-thumbs/agenz-319322-02-cc63d8a0d154.jpg",
+        "listing-thumbs/agenz-319322-03-516c5ac903ca.jpg",
+        "listing-thumbs/agenz-319322-04-5631a5cea4e0.jpg",
+        "listing-thumbs/agenz-319322-05-6cea02db445d.jpg",
+        "listing-thumbs/agenz-319322-06-ea0554f3fa91.jpg",
+        "listing-thumbs/agenz-319322-07-ca33147174e3.jpg",
+        "listing-thumbs/agenz-319322-08-e51d9982150e.jpg",
+        "listing-thumbs/agenz-319322-09-063d6d089fae.jpg",
+        "listing-thumbs/agenz-319322-10-8417ce6ea638.jpg",
+        "listing-thumbs/agenz-319322-11-3b678a8fdaad.jpg",
+        "listing-thumbs/agenz-319322-12-43a14b45b112.jpg",
+        "listing-thumbs/agenz-319322-13-0f46ca49d89c.avif",
+        "listing-thumbs/agenz-319322-14-a012d3d00913.avif",
+        "listing-thumbs/agenz-319322-15-4268f2643243.avif",
+        "listing-thumbs/agenz-319322-16-22303be65d72.avif",
+        "listing-thumbs/agenz-319322-17-5b6551fd6fef.avif",
+        "listing-thumbs/agenz-319322-18-f2a2b52d962a.avif",
+        "listing-thumbs/agenz-319322-19-fd7e38dcd354.avif",
+        "listing-thumbs/agenz-319322-20-4d4a177d86fb.avif",
+        "listing-thumbs/agenz-319322-21-cdecce368124.avif"
       ],
-      "photo_count": 9,
+      "photo_count": 21,
       "amenity_keys": [
         "elevator",
         "furnished",
@@ -938,7 +997,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 15
+      "default_sort_index": 16
     },
     {
       "source": "agenz",
@@ -957,12 +1016,13 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% En construction LUXAVIA CFC - RAMA SAKANE 920 000 DH 1 CH 1 SDB 40 m² Studio à vendre Casablanca -Ferme Bretonne Ascenseur 4ème étage Balcons Non meublé Cr...",
       "rank_in_source": 10,
       "source_listing_id": "193099",
-      "image_url": "listing-thumbs/agenz-193099-01-1ce5fe6307d9.avif",
+      "image_url": "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
       "image_urls": [
-        "listing-thumbs/agenz-193099-01-1ce5fe6307d9.avif",
-        "listing-thumbs/agenz-193099-02-87435f011374.avif"
+        "listing-thumbs/agenz-193099-01-2cdda86000fc.webp",
+        "listing-thumbs/agenz-193099-02-6f719c08ebdc.avif",
+        "listing-thumbs/agenz-193099-03-854bfb72276f.avif"
       ],
-      "photo_count": 2,
+      "photo_count": 3,
       "amenity_keys": [
         "balcony",
         "elevator",
@@ -983,7 +1043,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 16
+      "default_sort_index": 17
     },
     {
       "source": "agenz",
@@ -1002,17 +1062,17 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes VERLIA LIVING 920 000 DH 1 CH 1 SDB 51 m² Studio à vendre Casablanca -Hermitage Ascenseur RD...",
       "rank_in_source": 33,
       "source_listing_id": "147588",
-      "image_url": "listing-thumbs/agenz-147588-01-690b48bc95a7.avif",
+      "image_url": "listing-thumbs/agenz-147588-01-1b3e2f06cb43.avif",
       "image_urls": [
-        "listing-thumbs/agenz-147588-01-690b48bc95a7.avif",
-        "listing-thumbs/agenz-147588-02-237485ebffeb.avif",
-        "listing-thumbs/agenz-147588-03-ab1de4b3bee2.avif",
-        "listing-thumbs/agenz-147588-04-b73b21407e84.avif",
-        "listing-thumbs/agenz-147588-05-e02e3ec237db.avif",
-        "listing-thumbs/agenz-147588-06-c38e3c229411.avif",
-        "listing-thumbs/agenz-147588-07-163b4b68426a.avif",
-        "listing-thumbs/agenz-147588-08-0a9354f3276b.avif",
-        "listing-thumbs/agenz-147588-09-ee2bd528cdfc.avif"
+        "listing-thumbs/agenz-147588-01-1b3e2f06cb43.avif",
+        "listing-thumbs/agenz-147588-02-4d4c025d5328.avif",
+        "listing-thumbs/agenz-147588-03-9d56ebaa38a6.avif",
+        "listing-thumbs/agenz-147588-04-5f99b1198a8a.avif",
+        "listing-thumbs/agenz-147588-05-15b150db38a5.avif",
+        "listing-thumbs/agenz-147588-06-3908947b055f.avif",
+        "listing-thumbs/agenz-147588-07-3805fa3cc3ee.avif",
+        "listing-thumbs/agenz-147588-08-6070812fe65e.avif",
+        "listing-thumbs/agenz-147588-09-494507e408d6.avif"
       ],
       "photo_count": 9,
       "amenity_keys": [
@@ -1035,7 +1095,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 17
+      "default_sort_index": 18
     },
     {
       "source": "agenz",
@@ -1054,17 +1114,17 @@
       "summary": "Voir l'annonce Déjà Vu Vérifié par agenz Neuf Rentabilité 7 % Commission à 0% Livré Visualisez ce bien meublé et décoré en quelques secondes DAR ESSALAM 930 000 DH 1 CH 1 SDB 36 m² Studio à vendre Casablanca -Bd Abdel...",
       "rank_in_source": 19,
       "source_listing_id": "47891",
-      "image_url": "listing-thumbs/agenz-47891-01-40b4c245b52c.avif",
+      "image_url": "listing-thumbs/agenz-47891-01-595b60734277.avif",
       "image_urls": [
-        "listing-thumbs/agenz-47891-01-40b4c245b52c.avif",
-        "listing-thumbs/agenz-47891-02-0399eed8e44f.avif",
-        "listing-thumbs/agenz-47891-03-84ebeb81c7e8.avif",
-        "listing-thumbs/agenz-47891-04-ba30d76ac0ae.avif",
-        "listing-thumbs/agenz-47891-05-f056a2b0c7e9.avif",
-        "listing-thumbs/agenz-47891-06-c5a12fa2e19c.avif",
-        "listing-thumbs/agenz-47891-07-2bad052da93e.avif",
-        "listing-thumbs/agenz-47891-08-494e41036220.avif",
-        "listing-thumbs/agenz-47891-09-0f113f78faf9.avif"
+        "listing-thumbs/agenz-47891-01-595b60734277.avif",
+        "listing-thumbs/agenz-47891-02-81f0723d5cc5.avif",
+        "listing-thumbs/agenz-47891-03-3cfc29711bde.avif",
+        "listing-thumbs/agenz-47891-04-2c72c2d03100.avif",
+        "listing-thumbs/agenz-47891-05-c0b78f9d059d.avif",
+        "listing-thumbs/agenz-47891-06-e402622ba3e6.avif",
+        "listing-thumbs/agenz-47891-07-c420c2ca672c.avif",
+        "listing-thumbs/agenz-47891-08-c8de733501c1.avif",
+        "listing-thumbs/agenz-47891-09-373522eb56ad.avif"
       ],
       "photo_count": 9,
       "amenity_keys": [
@@ -1087,7 +1147,7 @@
         "Meuble",
         "Neuf"
       ],
-      "default_sort_index": 18
+      "default_sort_index": 19
     }
   ],
   "new_matches": [],
