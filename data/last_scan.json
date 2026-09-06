@@ -1,73 +1,7 @@
 {
-  "generated_at": "2026-09-06T04:56:35+00:00",
+  "generated_at": "2026-09-06T09:07:19+00:00",
   "all_listings_count": 73,
   "matches": [
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10446299/Appartement-à-vendre-sur-Maarif.html",
-      "title": "Appartement à vendre sur Maarif",
-      "price_mad": 420000,
-      "surface_m2": 59,
-      "location_text": "Casablanca / Maarif",
-      "area_guess": "Maarif",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "04 Sep 2026 18:23",
-      "summary": "Casablanca / Maarif Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques Recruteur...",
-      "rank_in_source": 3,
-      "source_listing_id": "10446299",
-      "image_url": "listing-thumbs/marocannonces-10446299-01-0cbcb8bbae4b.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10446299-01-0cbcb8bbae4b.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [],
-      "published_at_ts": 1788480000,
-      "is_new": false,
-      "first_seen_at": "2026-09-05T22:32:23+00:00",
-      "price_label": "420 000 DH",
-      "surface_label": "59 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-maarif",
-      "published_label": "04 Sep 2026 18:23",
-      "amenity_labels": []
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10445997/Appartement-125-m²-à-vendre-sur-Maarif.html",
-      "title": "Appartement 125 m² à vendre sur Maarif",
-      "price_mad": 420000,
-      "surface_m2": 59,
-      "location_text": "Casablanca / Maarif",
-      "area_guess": "Maarif",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "04 Sep 2026 12:23",
-      "summary": "Casablanca / Maarif Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques Recruteur...",
-      "rank_in_source": 4,
-      "source_listing_id": "10445997",
-      "image_url": "listing-thumbs/marocannonces-10445997-01-afe094a8410a.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10445997-01-afe094a8410a.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [],
-      "published_at_ts": 1788480000,
-      "is_new": false,
-      "first_seen_at": "2026-09-05T22:32:23+00:00",
-      "price_label": "420 000 DH",
-      "surface_label": "59 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-maarif",
-      "published_label": "04 Sep 2026 12:23",
-      "amenity_labels": []
-    },
     {
       "source": "marocannonces",
       "source_name": "MarocAnnonces Casablanca page 1",
@@ -75,7 +9,7 @@
       "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10443973/A-vendre-Appartement.html",
       "title": "A vendre Appartement",
       "price_mad": 230000,
-      "surface_m2": 59,
+      "surface_m2": 55,
       "location_text": "Casablanca / Oulfa",
       "area_guess": "El Oulfa",
       "rooms_label": "",
@@ -90,115 +24,20 @@
         "listing-thumbs/marocannonces-10443973-01-064c9b345103.jpg"
       ],
       "photo_count": 1,
-      "amenity_keys": [],
+      "amenity_keys": [
+        "furnished"
+      ],
       "published_at_ts": 1788220800,
       "is_new": false,
       "first_seen_at": "2026-09-05T22:32:23+00:00",
       "price_label": "230 000 DH",
-      "surface_label": "59 m2",
+      "surface_label": "55 m2",
       "source_label": "MarocAnnonces",
       "area_anchor": "area-el-oulfa",
       "published_label": "01 Sep 2026 22:39",
-      "amenity_labels": []
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10443063/Appartement-à-vendre-sur-Maarif.html",
-      "title": "Appartement à vendre sur Maarif",
-      "price_mad": 420000,
-      "surface_m2": 59,
-      "location_text": "Casablanca / Maarif",
-      "area_guess": "Maarif",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "31 Aoû 2026 19:32",
-      "summary": "Casablanca / Maarif Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques Recruteur...",
-      "rank_in_source": 14,
-      "source_listing_id": "10443063",
-      "image_url": "listing-thumbs/marocannonces-10443063-01-d1673eaa4491.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10443063-01-d1673eaa4491.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [],
-      "published_at_ts": 1788134400,
-      "is_new": false,
-      "first_seen_at": "2026-09-05T22:32:23+00:00",
-      "price_label": "420 000 DH",
-      "surface_label": "59 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-maarif",
-      "published_label": "31 Aoû 2026 19:32",
-      "amenity_labels": []
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 1",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=1",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10397483/Appartement-a-vendre-sur-palmier.html",
-      "title": "Appartement a vendre sur palmier",
-      "price_mad": 420000,
-      "surface_m2": 59,
-      "location_text": "Casablanca / Palmier",
-      "area_guess": "Palmier",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "30 Aoû 2026 20:07",
-      "summary": "Casablanca / Palmier Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques Recruteu...",
-      "rank_in_source": 15,
-      "source_listing_id": "10397483",
-      "image_url": "listing-thumbs/marocannonces-10397483-01-c41f54ed9715.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10397483-01-c41f54ed9715.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [],
-      "published_at_ts": 1788048000,
-      "is_new": false,
-      "first_seen_at": "2026-07-28T21:50:30+00:00",
-      "price_label": "420 000 DH",
-      "surface_label": "59 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-palmier",
-      "published_label": "30 Aoû 2026 20:07",
-      "amenity_labels": []
-    },
-    {
-      "source": "marocannonces",
-      "source_name": "MarocAnnonces Casablanca page 2",
-      "source_page": "https://www.marocannonces.com/maroc/vente-appartements-casablanca-b315-t563.html?pge=2",
-      "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10440783/Appartement-a-ne-pas-rater.html",
-      "title": "Appartement a ne pas rater",
-      "price_mad": 420000,
-      "surface_m2": 59,
-      "location_text": "Casablanca / Hay Hassani",
-      "area_guess": "Hay Hassani",
-      "rooms_label": "",
-      "bedrooms_label": "",
-      "bathrooms_label": "",
-      "age_label": "27 Aoû 2026 17:09",
-      "summary": "Casablanca / Hay Hassani Annonces Maroc | MarocAnnonces.com Mes Favoris Connexion Inscription FAQ Contact Maroc Annonces.com Accueil Emploi Auto-moto Immobilier Multi services Ventes diverses Multimédia Boutiques Recr...",
-      "rank_in_source": 5,
-      "source_listing_id": "10440783",
-      "image_url": "listing-thumbs/marocannonces-10440783-01-3f12b10fd6a1.jpg",
-      "image_urls": [
-        "listing-thumbs/marocannonces-10440783-01-3f12b10fd6a1.jpg"
-      ],
-      "photo_count": 1,
-      "amenity_keys": [],
-      "published_at_ts": 1787788800,
-      "is_new": false,
-      "first_seen_at": "2026-09-05T22:32:23+00:00",
-      "price_label": "420 000 DH",
-      "surface_label": "59 m2",
-      "source_label": "MarocAnnonces",
-      "area_anchor": "area-hay-hassani",
-      "published_label": "27 Aoû 2026 17:09",
-      "amenity_labels": []
+      "amenity_labels": [
+        "Meuble"
+      ]
     },
     {
       "source": "marocannonces",
@@ -207,7 +46,7 @@
       "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10429418/APPT-BD-LA-RESISTANCE.html",
       "title": "APPT BD LA RESISTANCE",
       "price_mad": 120000,
-      "surface_m2": 59,
+      "surface_m2": 55,
       "location_text": "Casablanca / Anfa",
       "area_guess": "Anfa",
       "rooms_label": "",
@@ -222,16 +61,20 @@
         "listing-thumbs/marocannonces-10429418-01-064c9b345103.jpg"
       ],
       "photo_count": 1,
-      "amenity_keys": [],
+      "amenity_keys": [
+        "furnished"
+      ],
       "published_at_ts": 1787443200,
       "is_new": false,
       "first_seen_at": "2026-09-05T22:32:23+00:00",
       "price_label": "120 000 DH",
-      "surface_label": "59 m2",
+      "surface_label": "55 m2",
       "source_label": "MarocAnnonces",
       "area_anchor": "area-anfa",
       "published_label": "23 Aoû 2026 23:00",
-      "amenity_labels": []
+      "amenity_labels": [
+        "Meuble"
+      ]
     },
     {
       "source": "marocannonces",
@@ -240,7 +83,7 @@
       "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10438228/Appartement-a-vendre.html",
       "title": "Appartement a vendre",
       "price_mad": 340000,
-      "surface_m2": 59,
+      "surface_m2": 55,
       "location_text": "Casablanca / Oulfa",
       "area_guess": "El Oulfa",
       "rooms_label": "",
@@ -255,16 +98,20 @@
         "listing-thumbs/marocannonces-10438228-01-064c9b345103.jpg"
       ],
       "photo_count": 1,
-      "amenity_keys": [],
+      "amenity_keys": [
+        "furnished"
+      ],
       "published_at_ts": 1787356800,
       "is_new": false,
       "first_seen_at": "2026-09-05T22:32:23+00:00",
       "price_label": "340 000 DH",
-      "surface_label": "59 m2",
+      "surface_label": "55 m2",
       "source_label": "MarocAnnonces",
       "area_anchor": "area-el-oulfa",
       "published_label": "22 Aoû 2026 16:18",
-      "amenity_labels": []
+      "amenity_labels": [
+        "Meuble"
+      ]
     },
     {
       "source": "marocannonces",
@@ -273,7 +120,7 @@
       "url": "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10437544/appartement-Farah-essalam-Acharaf.html",
       "title": "Appartement Farah essalam Acharaf",
       "price_mad": 380000,
-      "surface_m2": 59,
+      "surface_m2": 55,
       "location_text": "Casablanca / Oulfa",
       "area_guess": "El Oulfa",
       "rooms_label": "",
@@ -288,16 +135,20 @@
         "listing-thumbs/marocannonces-10437544-01-b3c8dc8d391a.jpg"
       ],
       "photo_count": 1,
-      "amenity_keys": [],
+      "amenity_keys": [
+        "furnished"
+      ],
       "published_at_ts": 1787184000,
       "is_new": false,
       "first_seen_at": "2026-09-05T22:32:23+00:00",
       "price_label": "380 000 DH",
-      "surface_label": "59 m2",
+      "surface_label": "55 m2",
       "source_label": "MarocAnnonces",
       "area_anchor": "area-el-oulfa",
       "published_label": "20 Aoû 2026 21:15",
-      "amenity_labels": []
+      "amenity_labels": [
+        "Meuble"
+      ]
     }
   ],
   "new_matches": [],
