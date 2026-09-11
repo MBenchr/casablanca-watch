@@ -1,56 +1,7 @@
 {
-  "generated_at": "2026-09-11T07:23:34+00:00",
+  "generated_at": "2026-09-11T12:17:11+00:00",
   "all_listings_count": 73,
-  "matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8413579/studio-%C3%A0-vendre-%E2%80%94-gauthier",
-      "title": "Studio à vendre — gauthier",
-      "price_mad": 950000,
-      "surface_m2": 35,
-      "location_text": "Gauthier, Casablanca",
-      "area_guess": "Gauthier",
-      "rooms_label": "3",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "950 000 DH Studio à vendre — gauthier Gauthier, Casablanca 35m² 3 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Concierge Façade extérieure Climatisation Sécurité Cuisine équipée Réfrigérateur STUDIO À VENDRE — GAUTHI...",
-      "rank_in_source": 15,
-      "source_listing_id": "8413579",
-      "image_url": "listing-thumbs/mubawab-8413579-01-acf74da638ca.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8413579-01-acf74da638ca.avif",
-        "listing-thumbs/mubawab-8413579-02-5ed3333d8732.avif",
-        "listing-thumbs/mubawab-8413579-03-7c07f75d8c70.avif",
-        "listing-thumbs/mubawab-8413579-04-6254cb59f973.avif",
-        "listing-thumbs/mubawab-8413579-05-e3a0f345ad53.avif",
-        "listing-thumbs/mubawab-8413579-06-29533e10b57e.avif",
-        "listing-thumbs/mubawab-8413579-07-66fae5c1dade.avif",
-        "listing-thumbs/mubawab-8413579-08-e439f79fc93c.avif"
-      ],
-      "photo_count": 8,
-      "amenity_keys": [
-        "elevator",
-        "parking",
-        "concierge"
-      ],
-      "published_at_ts": null,
-      "is_new": false,
-      "first_seen_at": "2026-09-10T16:34:48+00:00",
-      "price_label": "950 000 DH",
-      "surface_label": "35 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-gauthier",
-      "published_label": "",
-      "amenity_labels": [
-        "Ascenseur",
-        "Parking",
-        "Concierge"
-      ]
-    }
-  ],
+  "matches": [],
   "new_matches": [],
   "bootstrapped": false
 }
