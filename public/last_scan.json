@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T14:06:20+00:00",
+  "generated_at": "2026-09-18T17:45:38+00:00",
   "all_listings_count": 73,
   "matches": [
     {
@@ -17,7 +17,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "320 000 DH Appartement 46 m² à vendre – Riyad Oulfa Oulfa, Casablanca 46m² 5 Pièces 2 Chambres 1 Salle de bain Porte blindée Riyad Oulfa – Casablanca À vendre, appartement d'une superficie de 46 m², situé au 4ᵉ étage,...",
-      "rank_in_source": 26,
+      "rank_in_source": 27,
       "source_listing_id": "8415808",
       "image_url": "listing-thumbs/mubawab-8415808-01-5da4331e1c55.avif",
       "image_urls": [
@@ -48,8 +48,130 @@
       "published_label": "",
       "amenity_labels": [],
       "default_sort_index": 0
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8262025/appartement-%C3%A0-vendre-60-m%C2%B2-2-chambres-sidi-maarouf-casablanca",
+      "title": "Appartement à vendre 60 m², 2 chambres Sidi Maarouf Casablan...",
+      "price_mad": 720000,
+      "surface_m2": 60,
+      "location_text": "Sidi Maarouf, Casablanca",
+      "area_guess": "Sidi Maarouf",
+      "rooms_label": "",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "720 000 DH Appartement à vendre 60 m², 2 chambres Sidi Maarouf Casablan... Sidi Maarouf, Casablanca 60m² 2 Chambres 1 Salle de bain Terrasse Garage Ascenseur Découvrez cet appartement traversant de 60 m², dont 5 m² de...",
+      "rank_in_source": 22,
+      "source_listing_id": "8262025",
+      "image_url": "listing-thumbs/mubawab-8262025-01-9658a739ab14.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8262025-01-9658a739ab14.avif",
+        "listing-thumbs/mubawab-8262025-02-0f20d13ca9c1.avif",
+        "listing-thumbs/mubawab-8262025-03-608c4f8adaf9.avif",
+        "listing-thumbs/mubawab-8262025-04-7f303b9af070.avif",
+        "listing-thumbs/mubawab-8262025-05-ddea6db51b6b.avif",
+        "listing-thumbs/mubawab-8262025-06-836d0d1a26d4.avif",
+        "listing-thumbs/mubawab-8262025-07-5f7fd131a228.avif",
+        "listing-thumbs/mubawab-8262025-08-b419aec69c66.avif",
+        "listing-thumbs/mubawab-8262025-09-596289558b7c.avif",
+        "listing-thumbs/mubawab-8262025-10-90ddeb280074.avif",
+        "listing-thumbs/mubawab-8262025-11-f626a2864a74.avif",
+        "listing-thumbs/mubawab-8262025-12-22ecd8cd9d35.avif",
+        "listing-thumbs/mubawab-8262025-13-5f675772b45c.avif",
+        "listing-thumbs/mubawab-8262025-14-bbe00996bbe3.avif",
+        "listing-thumbs/mubawab-8262025-15-08f869d9b815.avif",
+        "listing-thumbs/mubawab-8262025-16-bc493049f98a.avif",
+        "listing-thumbs/mubawab-8262025-17-7a75fe9b676d.avif",
+        "listing-thumbs/mubawab-8262025-18-8b5bbf71a036.avif",
+        "listing-thumbs/mubawab-8262025-19-34d99679f11f.avif",
+        "listing-thumbs/mubawab-8262025-20-f84268bc9d09.avif"
+      ],
+      "photo_count": 20,
+      "amenity_keys": [
+        "terrace",
+        "elevator",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-09-18T17:45:38+00:00",
+      "price_label": "720 000 DH",
+      "surface_label": "60 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-sidi-maarouf",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Ascenseur",
+        "Parking"
+      ],
+      "default_sort_index": 1
     }
   ],
-  "new_matches": [],
+  "new_matches": [
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8262025/appartement-%C3%A0-vendre-60-m%C2%B2-2-chambres-sidi-maarouf-casablanca",
+      "title": "Appartement à vendre 60 m², 2 chambres Sidi Maarouf Casablan...",
+      "price_mad": 720000,
+      "surface_m2": 60,
+      "location_text": "Sidi Maarouf, Casablanca",
+      "area_guess": "Sidi Maarouf",
+      "rooms_label": "",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "720 000 DH Appartement à vendre 60 m², 2 chambres Sidi Maarouf Casablan... Sidi Maarouf, Casablanca 60m² 2 Chambres 1 Salle de bain Terrasse Garage Ascenseur Découvrez cet appartement traversant de 60 m², dont 5 m² de...",
+      "rank_in_source": 22,
+      "source_listing_id": "8262025",
+      "image_url": "listing-thumbs/mubawab-8262025-01-9658a739ab14.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8262025-01-9658a739ab14.avif",
+        "listing-thumbs/mubawab-8262025-02-0f20d13ca9c1.avif",
+        "listing-thumbs/mubawab-8262025-03-608c4f8adaf9.avif",
+        "listing-thumbs/mubawab-8262025-04-7f303b9af070.avif",
+        "listing-thumbs/mubawab-8262025-05-ddea6db51b6b.avif",
+        "listing-thumbs/mubawab-8262025-06-836d0d1a26d4.avif",
+        "listing-thumbs/mubawab-8262025-07-5f7fd131a228.avif",
+        "listing-thumbs/mubawab-8262025-08-b419aec69c66.avif",
+        "listing-thumbs/mubawab-8262025-09-596289558b7c.avif",
+        "listing-thumbs/mubawab-8262025-10-90ddeb280074.avif",
+        "listing-thumbs/mubawab-8262025-11-f626a2864a74.avif",
+        "listing-thumbs/mubawab-8262025-12-22ecd8cd9d35.avif",
+        "listing-thumbs/mubawab-8262025-13-5f675772b45c.avif",
+        "listing-thumbs/mubawab-8262025-14-bbe00996bbe3.avif",
+        "listing-thumbs/mubawab-8262025-15-08f869d9b815.avif",
+        "listing-thumbs/mubawab-8262025-16-bc493049f98a.avif",
+        "listing-thumbs/mubawab-8262025-17-7a75fe9b676d.avif",
+        "listing-thumbs/mubawab-8262025-18-8b5bbf71a036.avif",
+        "listing-thumbs/mubawab-8262025-19-34d99679f11f.avif",
+        "listing-thumbs/mubawab-8262025-20-f84268bc9d09.avif"
+      ],
+      "photo_count": 20,
+      "amenity_keys": [
+        "terrace",
+        "elevator",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-09-18T17:45:38+00:00",
+      "price_label": "720 000 DH",
+      "surface_label": "60 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-sidi-maarouf",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Ascenseur",
+        "Parking"
+      ]
+    }
+  ],
   "bootstrapped": false
 }
