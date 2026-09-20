@@ -1,50 +1,7 @@
 {
-  "generated_at": "2026-09-20T16:54:51+00:00",
+  "generated_at": "2026-09-20T19:12:49+00:00",
   "all_listings_count": 73,
   "matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8419599/appartement-%C3%A0-vendre-%C3%A0-ri-oulfa-2-belles-chambres",
-      "title": "Appartement à vendre à Ri Oulfa. 2 belles chambres",
-      "price_mad": 360000,
-      "surface_m2": 50,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "1",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "360 000 DH Appartement à vendre à Ri Oulfa. 2 belles chambres Oulfa, Casablanca 50m² 1 Pièce 2 Chambres 1 Salle de bain Jardin Située dans le quartier dynamique de RIAD cette propriété se distingue par un style modern...",
-      "rank_in_source": 26,
-      "source_listing_id": "8419599",
-      "image_url": "listing-thumbs/mubawab-8419599-01-eb6c88799798.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8419599-01-eb6c88799798.avif",
-        "listing-thumbs/mubawab-8419599-02-615a0d5740fd.avif",
-        "listing-thumbs/mubawab-8419599-03-410d5dfa58bf.avif",
-        "listing-thumbs/mubawab-8419599-04-8451a53d0753.avif",
-        "listing-thumbs/mubawab-8419599-05-e5cacfbf2792.avif",
-        "listing-thumbs/mubawab-8419599-06-298f4715bed1.avif",
-        "listing-thumbs/mubawab-8419599-07-3863db25cf3e.avif",
-        "listing-thumbs/mubawab-8419599-08-70f3a3aae4b1.avif",
-        "listing-thumbs/mubawab-8419599-09-2b068b2cb359.avif",
-        "listing-thumbs/mubawab-8419599-10-955122369be4.avif"
-      ],
-      "photo_count": 10,
-      "amenity_keys": [],
-      "published_at_ts": null,
-      "is_new": true,
-      "first_seen_at": "2026-09-20T16:54:51+00:00",
-      "price_label": "360 000 DH",
-      "surface_label": "50 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "",
-      "amenity_labels": [],
-      "default_sort_index": 0
-    },
     {
       "source": "mubawab",
       "source_name": "Mubawab Casablanca",
@@ -60,7 +17,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "320 000 DH Appartement 46 m² à vendre – Riyad Oulfa Oulfa, Casablanca 46m² 5 Pièces 2 Chambres 1 Salle de bain Porte blindée Riyad Oulfa – Casablanca À vendre, appartement d'une superficie de 46 m², situé au 4ᵉ étage,...",
-      "rank_in_source": 29,
+      "rank_in_source": 28,
       "source_listing_id": "8415808",
       "image_url": "listing-thumbs/mubawab-8415808-01-5da4331e1c55.avif",
       "image_urls": [
@@ -90,7 +47,7 @@
       "area_anchor": "area-el-oulfa",
       "published_label": "",
       "amenity_labels": [],
-      "default_sort_index": 1
+      "default_sort_index": 0
     },
     {
       "source": "mubawab",
@@ -107,7 +64,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "940 000 DH Studio quartier Anfa Anfa, Casablanca 40m² 1 Pièce 1 Ch. 1 Salle de bain Terrasse Garage Salon Marocain Salon européen Antenne parabolique Cheminée Climatisation Chauffage central Sécurité Double vitrage Po...",
-      "rank_in_source": 17,
+      "rank_in_source": 19,
       "source_listing_id": "8391238",
       "image_url": "listing-thumbs/mubawab-8391238-01-2d3191a9af0f.avif",
       "image_urls": [
@@ -139,52 +96,9 @@
         "Terrasse",
         "Parking"
       ],
-      "default_sort_index": 2
+      "default_sort_index": 1
     }
   ],
-  "new_matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8419599/appartement-%C3%A0-vendre-%C3%A0-ri-oulfa-2-belles-chambres",
-      "title": "Appartement à vendre à Ri Oulfa. 2 belles chambres",
-      "price_mad": 360000,
-      "surface_m2": 50,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "1",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "360 000 DH Appartement à vendre à Ri Oulfa. 2 belles chambres Oulfa, Casablanca 50m² 1 Pièce 2 Chambres 1 Salle de bain Jardin Située dans le quartier dynamique de RIAD cette propriété se distingue par un style modern...",
-      "rank_in_source": 26,
-      "source_listing_id": "8419599",
-      "image_url": "listing-thumbs/mubawab-8419599-01-eb6c88799798.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8419599-01-eb6c88799798.avif",
-        "listing-thumbs/mubawab-8419599-02-615a0d5740fd.avif",
-        "listing-thumbs/mubawab-8419599-03-410d5dfa58bf.avif",
-        "listing-thumbs/mubawab-8419599-04-8451a53d0753.avif",
-        "listing-thumbs/mubawab-8419599-05-e5cacfbf2792.avif",
-        "listing-thumbs/mubawab-8419599-06-298f4715bed1.avif",
-        "listing-thumbs/mubawab-8419599-07-3863db25cf3e.avif",
-        "listing-thumbs/mubawab-8419599-08-70f3a3aae4b1.avif",
-        "listing-thumbs/mubawab-8419599-09-2b068b2cb359.avif",
-        "listing-thumbs/mubawab-8419599-10-955122369be4.avif"
-      ],
-      "photo_count": 10,
-      "amenity_keys": [],
-      "published_at_ts": null,
-      "is_new": true,
-      "first_seen_at": "2026-09-20T16:54:51+00:00",
-      "price_label": "360 000 DH",
-      "surface_label": "50 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "",
-      "amenity_labels": []
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
