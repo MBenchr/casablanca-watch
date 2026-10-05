@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-05T09:21:34+00:00",
+  "generated_at": "2026-10-05T18:40:30+00:00",
   "all_listings_count": 73,
   "matches": [
     {
@@ -48,6 +48,60 @@
       "published_label": "",
       "amenity_labels": [],
       "default_sort_index": 0
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/pa/8353719/bel-appartement-%C3%A0-vendre-%C3%A0-oulfa-surface-de-45-m%C2%B2",
+      "title": "Bel appartement à vendre à Oulfa. Surface de 45 m²",
+      "price_mad": 910000,
+      "surface_m2": 45,
+      "location_text": "Oulfa, Casablanca",
+      "area_guess": "El Oulfa",
+      "rooms_label": "2",
+      "bedrooms_label": "3",
+      "bathrooms_label": "",
+      "age_label": "",
+      "summary": "910 000 DH Bel appartement à vendre à Oulfa. Surface de 45 m² Oulfa, Casablanca 82m² 2 Pièces Garage Ascenseur Cuisine équipée Large gamme de choix : Studios , Appartement 2 & 3 Chambres , Duplex et des commerces Cont...",
+      "rank_in_source": 15,
+      "source_listing_id": "8353719",
+      "image_url": "listing-thumbs/mubawab-8353719-01-1acdfba92126.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8353719-01-1acdfba92126.avif",
+        "listing-thumbs/mubawab-8353719-02-56765baf0043.avif",
+        "listing-thumbs/mubawab-8353719-03-16918809b642.avif",
+        "listing-thumbs/mubawab-8353719-04-adb314151468.avif",
+        "listing-thumbs/mubawab-8353719-05-1f7532a8608c.avif",
+        "listing-thumbs/mubawab-8353719-06-c4b5710b5159.avif",
+        "listing-thumbs/mubawab-8353719-07-559bab5c8bc4.avif",
+        "listing-thumbs/mubawab-8353719-08-4828de9e99b5.avif",
+        "listing-thumbs/mubawab-8353719-09-27a7747bdb62.avif",
+        "listing-thumbs/mubawab-8353719-10-241acee4ee83.avif",
+        "listing-thumbs/mubawab-8353719-11-e881482f50d3.avif",
+        "listing-thumbs/mubawab-8353719-12-61fb95805c2b.avif",
+        "listing-thumbs/mubawab-8353719-13-7fed42e2f6f4.avif",
+        "listing-thumbs/mubawab-8353719-14-bb52f3e07160.avif",
+        "listing-thumbs/mubawab-8353719-15-eb7d18b5b921.avif"
+      ],
+      "photo_count": 15,
+      "amenity_keys": [
+        "elevator",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "price_label": "910 000 DH",
+      "surface_label": "45 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-el-oulfa",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Parking"
+      ],
+      "default_sort_index": 1
     }
   ],
   "new_matches": [],
