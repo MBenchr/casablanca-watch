@@ -540,6 +540,26 @@
       "first_seen_at": "2026-10-25T14:08:45+00:00",
       "title": "Studio premium à saisir",
       "source": "mubawab"
+    },
+    "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10482194/Appart-riad-ouelfa.html": {
+      "first_seen_at": "2026-10-29T23:27:37+00:00",
+      "title": "Appart riad ouelfa",
+      "source": "marocannonces"
+    },
+    "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10479697/Appartement-à-vendre.html": {
+      "first_seen_at": "2026-10-29T23:27:37+00:00",
+      "title": "Appartement à vendre",
+      "source": "marocannonces"
+    },
+    "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10482650/Appartement-bassatine-oulfa-1.html": {
+      "first_seen_at": "2026-10-29T23:27:37+00:00",
+      "title": "Appartement bassatine oulfa 1",
+      "source": "marocannonces"
+    },
+    "https://www.marocannonces.com/maroc/categorie/315/Appartements/annonce/10482818/vent-dappartement-a-lisasfa,-casablanca.html": {
+      "first_seen_at": "2026-10-29T23:27:37+00:00",
+      "title": "Vent d'appartement a l'isasfa, casablanca",
+      "source": "marocannonces"
     }
   }
 }
