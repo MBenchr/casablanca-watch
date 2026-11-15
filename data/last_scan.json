@@ -1,7 +1,157 @@
 {
-  "generated_at": "2026-11-15T07:24:31+00:00",
+  "generated_at": "2026-11-15T14:53:43+00:00",
   "all_listings_count": 73,
-  "matches": [],
-  "new_matches": [],
+  "matches": [
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8453255/appartement-meubl%C3%A9-46m",
+      "title": "Appartement meublé 46m",
+      "price_mad": 550000,
+      "surface_m2": 46,
+      "location_text": "Sidi Maarouf, Casablanca",
+      "area_guess": "Sidi Maarouf",
+      "rooms_label": "4",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "550 000 DH Appartement meublé 46m Sidi Maarouf, Casablanca 46m² 4 Pièces 2 Chambres 1 Salle de bain Jardin Terrasse Meublé Façade extérieure Salon Marocain Salon européen Porte blindée Cuisine équipée Réfrigérateur Fo...",
+      "rank_in_source": 26,
+      "source_listing_id": "8453255",
+      "image_url": "listing-thumbs/mubawab-8453255-01-2566e61924b4.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8453255-01-2566e61924b4.avif",
+        "listing-thumbs/mubawab-8453255-02-75d912ee54da.avif",
+        "listing-thumbs/mubawab-8453255-03-2cf440dd0421.avif",
+        "listing-thumbs/mubawab-8453255-04-5f77d0f15c74.avif",
+        "listing-thumbs/mubawab-8453255-05-997c4f130c80.avif",
+        "listing-thumbs/mubawab-8453255-06-8a65f92f7e18.avif",
+        "listing-thumbs/mubawab-8453255-07-0c0778c2d4d2.avif",
+        "listing-thumbs/mubawab-8453255-08-371fe628df31.avif"
+      ],
+      "photo_count": 8,
+      "amenity_keys": [
+        "terrace",
+        "balcony",
+        "furnished"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-11-15T14:53:43+00:00",
+      "price_label": "550 000 DH",
+      "surface_label": "46 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-sidi-maarouf",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Balcon",
+        "Meuble"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8105051/studios-haut-standing-%C3%A0-quartier-des-h%C3%B4pitaux-possibilit%C3%A9-de-profiter-de-l%E2%80%99aide-au-logement-%E2%80%93-casablanca",
+      "title": "Studios Haut Standing à Quartier des Hôpitaux Possibilité de...",
+      "price_mad": 900000,
+      "surface_m2": 30,
+      "location_text": "Les Hôpitaux, Casablanca",
+      "area_guess": "Les Hôpitaux",
+      "rooms_label": "5",
+      "bedrooms_label": "1",
+      "bathrooms_label": "2",
+      "age_label": "",
+      "summary": "900 000 DH Studios Haut Standing à Quartier des Hôpitaux Possibilité de... Les Hôpitaux, Casablanca 38m² 5 Pièces 1 Ch. 2 Salles de bains Jardin Terrasse Garage Ascenseur Concierge Chambre rangement Meublé Façade exté...",
+      "rank_in_source": 23,
+      "source_listing_id": "8105051",
+      "image_url": "listing-thumbs/mubawab-8105051-01-a23c7b540aca.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8105051-01-a23c7b540aca.avif",
+        "listing-thumbs/mubawab-8105051-02-86cd0e6ed347.avif",
+        "listing-thumbs/mubawab-8105051-03-3f9911a5dbd7.avif",
+        "listing-thumbs/mubawab-8105051-04-b1fec2eb0847.avif",
+        "listing-thumbs/mubawab-8105051-05-bc1d2ae107ee.avif",
+        "listing-thumbs/mubawab-8105051-06-a7fba2131926.avif",
+        "listing-thumbs/mubawab-8105051-07-271960d285b4.avif",
+        "listing-thumbs/mubawab-8105051-08-c4def5866a50.avif"
+      ],
+      "photo_count": 8,
+      "amenity_keys": [
+        "terrace",
+        "elevator",
+        "parking",
+        "concierge",
+        "furnished"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-24T20:51:46+00:00",
+      "price_label": "900 000 DH",
+      "surface_label": "30 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-les-hopitaux",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Ascenseur",
+        "Parking",
+        "Concierge",
+        "Meuble"
+      ]
+    }
+  ],
+  "new_matches": [
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8453255/appartement-meubl%C3%A9-46m",
+      "title": "Appartement meublé 46m",
+      "price_mad": 550000,
+      "surface_m2": 46,
+      "location_text": "Sidi Maarouf, Casablanca",
+      "area_guess": "Sidi Maarouf",
+      "rooms_label": "4",
+      "bedrooms_label": "2",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "550 000 DH Appartement meublé 46m Sidi Maarouf, Casablanca 46m² 4 Pièces 2 Chambres 1 Salle de bain Jardin Terrasse Meublé Façade extérieure Salon Marocain Salon européen Porte blindée Cuisine équipée Réfrigérateur Fo...",
+      "rank_in_source": 26,
+      "source_listing_id": "8453255",
+      "image_url": "listing-thumbs/mubawab-8453255-01-2566e61924b4.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8453255-01-2566e61924b4.avif",
+        "listing-thumbs/mubawab-8453255-02-75d912ee54da.avif",
+        "listing-thumbs/mubawab-8453255-03-2cf440dd0421.avif",
+        "listing-thumbs/mubawab-8453255-04-5f77d0f15c74.avif",
+        "listing-thumbs/mubawab-8453255-05-997c4f130c80.avif",
+        "listing-thumbs/mubawab-8453255-06-8a65f92f7e18.avif",
+        "listing-thumbs/mubawab-8453255-07-0c0778c2d4d2.avif",
+        "listing-thumbs/mubawab-8453255-08-371fe628df31.avif"
+      ],
+      "photo_count": 8,
+      "amenity_keys": [
+        "terrace",
+        "balcony",
+        "furnished"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-11-15T14:53:43+00:00",
+      "price_label": "550 000 DH",
+      "surface_label": "46 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-sidi-maarouf",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Balcon",
+        "Meuble"
+      ]
+    }
+  ],
   "bootstrapped": false
 }
