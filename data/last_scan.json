@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-15T20:04:03+00:00",
+  "generated_at": "2026-11-16T00:06:15+00:00",
   "all_listings_count": 73,
   "matches": [
     {
@@ -38,7 +38,7 @@
         "concierge"
       ],
       "published_at_ts": null,
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-11-15T20:04:03+00:00",
       "price_label": "620 000 DH",
       "surface_label": "60 m2",
@@ -66,7 +66,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "890 000 DH Studio premium à saisir Maârif, Casablanca 40m² 1 Pièce 1 Ch. 1 Salle de bain Ascenseur Concierge Chambre rangement Meublé Salon européen Climatisation Chauffage central Sécurité Double vitrage Porte blindé...",
-      "rank_in_source": 19,
+      "rank_in_source": 20,
       "source_listing_id": "8126545",
       "image_url": "listing-thumbs/mubawab-8126545-01-cb229d2df3b3.avif",
       "image_urls": [
@@ -98,56 +98,6 @@
       ]
     }
   ],
-  "new_matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8453355/appartement-%C3%A0-vendre-%C3%A0-oulfa-farah-salam",
-      "title": "Appartement à vendre à Oulfa Farah Salam",
-      "price_mad": 620000,
-      "surface_m2": 60,
-      "location_text": "Oulfa, Casablanca",
-      "area_guess": "El Oulfa",
-      "rooms_label": "3",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "620 000 DH Appartement à vendre à Oulfa Farah Salam Oulfa, Casablanca 60m² 3 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Concierge Façade extérieure Appartement lumineux de 60m2 à Oulfa Farah Salam - idéal pour...",
-      "rank_in_source": 8,
-      "source_listing_id": "8453355",
-      "image_url": "listing-thumbs/mubawab-8453355-01-e2b8ef7e592d.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8453355-01-e2b8ef7e592d.avif",
-        "listing-thumbs/mubawab-8453355-02-a69df4188140.avif",
-        "listing-thumbs/mubawab-8453355-03-f4d99f3c9fa9.avif",
-        "listing-thumbs/mubawab-8453355-04-99b4a3509c3f.avif",
-        "listing-thumbs/mubawab-8453355-05-52dfe3f4ea58.avif",
-        "listing-thumbs/mubawab-8453355-06-a7f7e1683ef2.avif",
-        "listing-thumbs/mubawab-8453355-07-70e34ebc6273.avif",
-        "listing-thumbs/mubawab-8453355-08-5c277fbed642.avif",
-        "listing-thumbs/mubawab-8453355-09-0d2b57874e83.avif"
-      ],
-      "photo_count": 9,
-      "amenity_keys": [
-        "elevator",
-        "parking",
-        "concierge"
-      ],
-      "published_at_ts": null,
-      "is_new": true,
-      "first_seen_at": "2026-11-15T20:04:03+00:00",
-      "price_label": "620 000 DH",
-      "surface_label": "60 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-el-oulfa",
-      "published_label": "",
-      "amenity_labels": [
-        "Ascenseur",
-        "Parking",
-        "Concierge"
-      ]
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
