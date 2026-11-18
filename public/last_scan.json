@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-17T18:00:47+00:00",
+  "generated_at": "2026-11-18T01:05:30+00:00",
   "all_listings_count": 73,
   "matches": [
     {
@@ -17,7 +17,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "620 000 DH Appartement à vendre à Oulfa Farah Salam Oulfa, Casablanca 60m² 3 Pièces 2 Chambres 1 Salle de bain Garage Ascenseur Concierge Façade extérieure Appartement lumineux de 60m2 à Oulfa Farah Salam - idéal pour...",
-      "rank_in_source": 8,
+      "rank_in_source": 10,
       "source_listing_id": "8453355",
       "image_url": "listing-thumbs/mubawab-8453355-01-e2b8ef7e592d.avif",
       "image_urls": [
@@ -51,6 +51,105 @@
         "Concierge"
       ],
       "default_sort_index": 0
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/pa/8234646/vente-d-un-bel-appartement-%C3%A0-oasis-surface-totale-53-m%C2%B2-places-de-parking-et-terrasse",
+      "title": "Vente d'un bel appartement à Oasis. Surface totale 53 m². Pl...",
+      "price_mad": 941700,
+      "surface_m2": 43,
+      "location_text": "Oasis, Casablanca",
+      "area_guess": "L'Oasis",
+      "rooms_label": "3",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "941 700 DH Vente d'un bel appartement à Oasis. Surface totale 53 m². Pl... Oasis, Casablanca 43m² 3 Pièces 1 Ch. 1 Salle de bain Garage Ascenseur Concierge Sécurité Découvrez cet appartement à vendre. 3 pièces, 1 sall...",
+      "rank_in_source": 18,
+      "source_listing_id": "8234646",
+      "image_url": "listing-thumbs/mubawab-8234646-01-b3b60527dd70.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8234646-01-b3b60527dd70.avif",
+        "listing-thumbs/mubawab-8234646-02-9db7283a9850.avif",
+        "listing-thumbs/mubawab-8234646-03-3506983de9e2.avif"
+      ],
+      "photo_count": 3,
+      "amenity_keys": [
+        "terrace",
+        "elevator",
+        "parking",
+        "concierge"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-10T08:47:23+00:00",
+      "price_label": "941 700 DH",
+      "surface_label": "43 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-loasis",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Ascenseur",
+        "Parking",
+        "Concierge"
+      ],
+      "default_sort_index": 1
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8105051/studios-haut-standing-%C3%A0-quartier-des-h%C3%B4pitaux-possibilit%C3%A9-de-profiter-de-l%E2%80%99aide-au-logement-%E2%80%93-casablanca",
+      "title": "Studios Haut Standing à Quartier des Hôpitaux Possibilité de...",
+      "price_mad": 900000,
+      "surface_m2": 30,
+      "location_text": "Les Hôpitaux, Casablanca",
+      "area_guess": "Les Hôpitaux",
+      "rooms_label": "5",
+      "bedrooms_label": "1",
+      "bathrooms_label": "2",
+      "age_label": "",
+      "summary": "900 000 DH Studios Haut Standing à Quartier des Hôpitaux Possibilité de... Les Hôpitaux, Casablanca 38m² 5 Pièces 1 Ch. 2 Salles de bains Jardin Terrasse Garage Ascenseur Concierge Chambre rangement Meublé Façade exté...",
+      "rank_in_source": 21,
+      "source_listing_id": "8105051",
+      "image_url": "listing-thumbs/mubawab-8105051-01-a23c7b540aca.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8105051-01-a23c7b540aca.avif",
+        "listing-thumbs/mubawab-8105051-02-86cd0e6ed347.avif",
+        "listing-thumbs/mubawab-8105051-03-3f9911a5dbd7.avif",
+        "listing-thumbs/mubawab-8105051-04-b1fec2eb0847.avif",
+        "listing-thumbs/mubawab-8105051-05-bc1d2ae107ee.avif",
+        "listing-thumbs/mubawab-8105051-06-a7fba2131926.avif",
+        "listing-thumbs/mubawab-8105051-07-271960d285b4.avif",
+        "listing-thumbs/mubawab-8105051-08-c4def5866a50.avif"
+      ],
+      "photo_count": 8,
+      "amenity_keys": [
+        "terrace",
+        "elevator",
+        "parking",
+        "concierge",
+        "furnished"
+      ],
+      "published_at_ts": null,
+      "is_new": false,
+      "first_seen_at": "2026-07-24T20:51:46+00:00",
+      "price_label": "900 000 DH",
+      "surface_label": "30 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-les-hopitaux",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Ascenseur",
+        "Parking",
+        "Concierge",
+        "Meuble"
+      ],
+      "default_sort_index": 2
     }
   ],
   "new_matches": [],
