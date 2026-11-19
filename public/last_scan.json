@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-18T23:45:16+00:00",
+  "generated_at": "2026-11-19T05:21:11+00:00",
   "all_listings_count": 73,
   "matches": [
     {
@@ -42,7 +42,7 @@
         "furnished"
       ],
       "published_at_ts": null,
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-11-18T23:45:16+00:00",
       "price_label": "820 000 DH",
       "surface_label": "44 m2",
@@ -59,62 +59,6 @@
       "default_sort_index": 0
     }
   ],
-  "new_matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8096400/studio-haut-standing-meubl%C3%A9-a-3-min-de-cfc",
-      "title": "Studio Haut Standing meublé a 3 min de CFC",
-      "price_mad": 820000,
-      "surface_m2": 44,
-      "location_text": "Casablanca Finance City, Casablanca",
-      "area_guess": "Casablanca Finance City",
-      "rooms_label": "2",
-      "bedrooms_label": "1",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "820 000 DH Studio Haut Standing meublé a 3 min de CFC Casablanca Finance City, Casablanca 44m² 2 Pièces 1 Ch. 1 Salle de bain Terrasse Garage Ascenseur Concierge Chambre rangement Meublé Façade extérieure Salon europé...",
-      "rank_in_source": 16,
-      "source_listing_id": "8096400",
-      "image_url": "listing-thumbs/mubawab-8096400-01-b1c71370c730.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8096400-01-b1c71370c730.avif",
-        "listing-thumbs/mubawab-8096400-02-e0a1f66c63da.avif",
-        "listing-thumbs/mubawab-8096400-03-0a92edb042ec.avif",
-        "listing-thumbs/mubawab-8096400-04-2a9924c1f610.avif",
-        "listing-thumbs/mubawab-8096400-05-2355d8726e8e.avif",
-        "listing-thumbs/mubawab-8096400-06-810758d00fc1.avif",
-        "listing-thumbs/mubawab-8096400-07-7b7ff49857c6.avif",
-        "listing-thumbs/mubawab-8096400-08-dec3f2eb5d28.avif",
-        "listing-thumbs/mubawab-8096400-09-a1e6fd2e4adf.avif",
-        "listing-thumbs/mubawab-8096400-10-ddff6afcca34.avif",
-        "listing-thumbs/mubawab-8096400-11-1a9a458788f4.avif"
-      ],
-      "photo_count": 11,
-      "amenity_keys": [
-        "terrace",
-        "elevator",
-        "parking",
-        "concierge",
-        "furnished"
-      ],
-      "published_at_ts": null,
-      "is_new": true,
-      "first_seen_at": "2026-11-18T23:45:16+00:00",
-      "price_label": "820 000 DH",
-      "surface_label": "44 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-casablanca-finance-city",
-      "published_label": "",
-      "amenity_labels": [
-        "Terrasse",
-        "Ascenseur",
-        "Parking",
-        "Concierge",
-        "Meuble"
-      ]
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
