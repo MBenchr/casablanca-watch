@@ -1,7 +1,199 @@
 {
-  "generated_at": "2026-11-20T12:22:59+00:00",
+  "generated_at": "2026-11-20T20:36:54+00:00",
   "all_listings_count": 73,
-  "matches": [],
-  "new_matches": [],
+  "matches": [
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8368542/studios-de-prestige-a-vendre-quartier-les-hopitaux",
+      "title": "Studios de prestige a vendre quartier les hopitaux",
+      "price_mad": 850000,
+      "surface_m2": 44,
+      "location_text": "Les Hôpitaux, Casablanca",
+      "area_guess": "Les Hôpitaux",
+      "rooms_label": "3",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "850 000 DH Studios de prestige a vendre quartier les hopitaux Les Hôpitaux, Casablanca 44m² 3 Pièces 1 Ch. 1 Salle de bain Terrasse Garage Climatisation Sécurité Cuisine équipée - STUDIOS DE PRESTIGE Une nouvelle défi...",
+      "rank_in_source": 25,
+      "source_listing_id": "8368542",
+      "image_url": "listing-thumbs/mubawab-8368542-01-32935e5c6f12.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8368542-01-32935e5c6f12.avif",
+        "listing-thumbs/mubawab-8368542-02-7be6832e70e7.avif",
+        "listing-thumbs/mubawab-8368542-03-da57f651b7ca.avif",
+        "listing-thumbs/mubawab-8368542-04-d5c1ebef8212.avif",
+        "listing-thumbs/mubawab-8368542-05-56e52977a0f2.avif",
+        "listing-thumbs/mubawab-8368542-06-0d8ad202d858.avif"
+      ],
+      "photo_count": 6,
+      "amenity_keys": [
+        "terrace",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-11-20T20:36:54+00:00",
+      "price_label": "850 000 DH",
+      "surface_label": "44 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-les-hopitaux",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Parking"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8324173/studio-premium-a-saisir",
+      "title": "Studio premium a saisir",
+      "price_mad": 950000,
+      "surface_m2": 40,
+      "location_text": "Les princesses, Casablanca",
+      "area_guess": "Les Princesses",
+      "rooms_label": "1",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "950 000 DH Studio premium a saisir Les princesses, Casablanca 40m² 1 Pièce 1 Ch. 1 Salle de bain Garage Ascenseur Vue sur les montagnes Piscine Concierge Chambre rangement Salon Marocain Salon européen Antenne parabol...",
+      "rank_in_source": 23,
+      "source_listing_id": "8324173",
+      "image_url": "listing-thumbs/mubawab-8324173-01-ba2d09c286ab.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8324173-01-ba2d09c286ab.avif",
+        "listing-thumbs/mubawab-8324173-02-364e8227205e.avif",
+        "listing-thumbs/mubawab-8324173-03-739644cf405b.avif",
+        "listing-thumbs/mubawab-8324173-04-665653ea44b1.avif",
+        "listing-thumbs/mubawab-8324173-05-a549c56adad4.avif",
+        "listing-thumbs/mubawab-8324173-06-3dc80100cd16.avif",
+        "listing-thumbs/mubawab-8324173-07-3b6245f7cff7.avif",
+        "listing-thumbs/mubawab-8324173-08-a61b558e71c2.avif",
+        "listing-thumbs/mubawab-8324173-09-347c54844611.avif",
+        "listing-thumbs/mubawab-8324173-10-8221ef3bffa0.avif",
+        "listing-thumbs/mubawab-8324173-11-0e1f6517b456.avif"
+      ],
+      "photo_count": 11,
+      "amenity_keys": [
+        "elevator",
+        "parking",
+        "concierge"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-11-20T20:36:54+00:00",
+      "price_label": "950 000 DH",
+      "surface_label": "40 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-les-princesses",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Parking",
+        "Concierge"
+      ]
+    }
+  ],
+  "new_matches": [
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8368542/studios-de-prestige-a-vendre-quartier-les-hopitaux",
+      "title": "Studios de prestige a vendre quartier les hopitaux",
+      "price_mad": 850000,
+      "surface_m2": 44,
+      "location_text": "Les Hôpitaux, Casablanca",
+      "area_guess": "Les Hôpitaux",
+      "rooms_label": "3",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "850 000 DH Studios de prestige a vendre quartier les hopitaux Les Hôpitaux, Casablanca 44m² 3 Pièces 1 Ch. 1 Salle de bain Terrasse Garage Climatisation Sécurité Cuisine équipée - STUDIOS DE PRESTIGE Une nouvelle défi...",
+      "rank_in_source": 25,
+      "source_listing_id": "8368542",
+      "image_url": "listing-thumbs/mubawab-8368542-01-32935e5c6f12.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8368542-01-32935e5c6f12.avif",
+        "listing-thumbs/mubawab-8368542-02-7be6832e70e7.avif",
+        "listing-thumbs/mubawab-8368542-03-da57f651b7ca.avif",
+        "listing-thumbs/mubawab-8368542-04-d5c1ebef8212.avif",
+        "listing-thumbs/mubawab-8368542-05-56e52977a0f2.avif",
+        "listing-thumbs/mubawab-8368542-06-0d8ad202d858.avif"
+      ],
+      "photo_count": 6,
+      "amenity_keys": [
+        "terrace",
+        "parking"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-11-20T20:36:54+00:00",
+      "price_label": "850 000 DH",
+      "surface_label": "44 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-les-hopitaux",
+      "published_label": "",
+      "amenity_labels": [
+        "Terrasse",
+        "Parking"
+      ]
+    },
+    {
+      "source": "mubawab",
+      "source_name": "Mubawab Casablanca",
+      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
+      "url": "https://www.mubawab.ma/fr/a/8324173/studio-premium-a-saisir",
+      "title": "Studio premium a saisir",
+      "price_mad": 950000,
+      "surface_m2": 40,
+      "location_text": "Les princesses, Casablanca",
+      "area_guess": "Les Princesses",
+      "rooms_label": "1",
+      "bedrooms_label": "1",
+      "bathrooms_label": "1",
+      "age_label": "",
+      "summary": "950 000 DH Studio premium a saisir Les princesses, Casablanca 40m² 1 Pièce 1 Ch. 1 Salle de bain Garage Ascenseur Vue sur les montagnes Piscine Concierge Chambre rangement Salon Marocain Salon européen Antenne parabol...",
+      "rank_in_source": 23,
+      "source_listing_id": "8324173",
+      "image_url": "listing-thumbs/mubawab-8324173-01-ba2d09c286ab.avif",
+      "image_urls": [
+        "listing-thumbs/mubawab-8324173-01-ba2d09c286ab.avif",
+        "listing-thumbs/mubawab-8324173-02-364e8227205e.avif",
+        "listing-thumbs/mubawab-8324173-03-739644cf405b.avif",
+        "listing-thumbs/mubawab-8324173-04-665653ea44b1.avif",
+        "listing-thumbs/mubawab-8324173-05-a549c56adad4.avif",
+        "listing-thumbs/mubawab-8324173-06-3dc80100cd16.avif",
+        "listing-thumbs/mubawab-8324173-07-3b6245f7cff7.avif",
+        "listing-thumbs/mubawab-8324173-08-a61b558e71c2.avif",
+        "listing-thumbs/mubawab-8324173-09-347c54844611.avif",
+        "listing-thumbs/mubawab-8324173-10-8221ef3bffa0.avif",
+        "listing-thumbs/mubawab-8324173-11-0e1f6517b456.avif"
+      ],
+      "photo_count": 11,
+      "amenity_keys": [
+        "elevator",
+        "parking",
+        "concierge"
+      ],
+      "published_at_ts": null,
+      "is_new": true,
+      "first_seen_at": "2026-11-20T20:36:54+00:00",
+      "price_label": "950 000 DH",
+      "surface_label": "40 m2",
+      "source_label": "Mubawab",
+      "area_anchor": "area-les-princesses",
+      "published_label": "",
+      "amenity_labels": [
+        "Ascenseur",
+        "Parking",
+        "Concierge"
+      ]
+    }
+  ],
   "bootstrapped": false
 }
