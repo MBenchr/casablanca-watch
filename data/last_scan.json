@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-25T23:26:12+00:00",
+  "generated_at": "2026-11-26T05:15:49+00:00",
   "all_listings_count": 73,
   "matches": [
     {
@@ -17,7 +17,7 @@
       "bathrooms_label": "1",
       "age_label": "",
       "summary": "840 000 DH Vend appartement à Beauséjour. 1 Pièce. Cuisinière avec four Beauséjour, Casablanca 52m² 1 Pièce 2 Chambres 1 Salle de bain Cuisine équipée Réfrigérateur Four Machine à laver Micro-ondes À Hay Hassani, dans...",
-      "rank_in_source": 21,
+      "rank_in_source": 22,
       "source_listing_id": "8459556",
       "image_url": "listing-thumbs/mubawab-8459556-01-a5eba486b01c.avif",
       "image_urls": [
@@ -37,7 +37,7 @@
       "photo_count": 12,
       "amenity_keys": [],
       "published_at_ts": null,
-      "is_new": true,
+      "is_new": false,
       "first_seen_at": "2026-11-25T23:26:12+00:00",
       "price_label": "840 000 DH",
       "surface_label": "52 m2",
@@ -47,51 +47,6 @@
       "amenity_labels": []
     }
   ],
-  "new_matches": [
-    {
-      "source": "mubawab",
-      "source_name": "Mubawab Casablanca",
-      "source_page": "https://www.mubawab.ma/fr/st/casablanca/appartements-a-vendre",
-      "url": "https://www.mubawab.ma/fr/a/8459556/vend-appartement-%C3%A0-beaus%C3%A9jour-1-pi%C3%A8ce-cuisini%C3%A8re-avec-four",
-      "title": "Vend appartement à Beauséjour. 1 Pièce. Cuisinière avec four",
-      "price_mad": 840000,
-      "surface_m2": 52,
-      "location_text": "Beauséjour, Casablanca",
-      "area_guess": "Beausejour",
-      "rooms_label": "1",
-      "bedrooms_label": "2",
-      "bathrooms_label": "1",
-      "age_label": "",
-      "summary": "840 000 DH Vend appartement à Beauséjour. 1 Pièce. Cuisinière avec four Beauséjour, Casablanca 52m² 1 Pièce 2 Chambres 1 Salle de bain Cuisine équipée Réfrigérateur Four Machine à laver Micro-ondes À Hay Hassani, dans...",
-      "rank_in_source": 21,
-      "source_listing_id": "8459556",
-      "image_url": "listing-thumbs/mubawab-8459556-01-a5eba486b01c.avif",
-      "image_urls": [
-        "listing-thumbs/mubawab-8459556-01-a5eba486b01c.avif",
-        "listing-thumbs/mubawab-8459556-02-703d42407f49.avif",
-        "listing-thumbs/mubawab-8459556-03-03065d0e14e3.avif",
-        "listing-thumbs/mubawab-8459556-04-8657e96e2bad.avif",
-        "listing-thumbs/mubawab-8459556-05-403ecb1285bb.avif",
-        "listing-thumbs/mubawab-8459556-06-72b794eb852a.avif",
-        "listing-thumbs/mubawab-8459556-07-32d46197679f.avif",
-        "listing-thumbs/mubawab-8459556-08-fb693507b01c.avif",
-        "listing-thumbs/mubawab-8459556-09-a337a268c960.avif",
-        "listing-thumbs/mubawab-8459556-10-dff939331e8c.avif",
-        "listing-thumbs/mubawab-8459556-11-c4ff2774ab5b.avif",
-        "listing-thumbs/mubawab-8459556-12-842c819f0a78.avif"
-      ],
-      "photo_count": 12,
-      "amenity_keys": [],
-      "published_at_ts": null,
-      "is_new": true,
-      "first_seen_at": "2026-11-25T23:26:12+00:00",
-      "price_label": "840 000 DH",
-      "surface_label": "52 m2",
-      "source_label": "Mubawab",
-      "area_anchor": "area-beausejour",
-      "published_label": "",
-      "amenity_labels": []
-    }
-  ],
+  "new_matches": [],
   "bootstrapped": false
 }
